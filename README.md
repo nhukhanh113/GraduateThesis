@@ -7,6 +7,9 @@ Link Note tai lieu mua: https://1drv.ms/u/s!Alg-_KFBw7hdkp5tZ1HN9OgdvtbciQ?e=e4S
 
 <<<<<<< HEAD
 Git command:
+0. Cap nhat lai thu muc tren may tinh cho giong github (neu co)
+
+git pull
 
 1. Kiem tra thong tin (neu muon coi)
 
