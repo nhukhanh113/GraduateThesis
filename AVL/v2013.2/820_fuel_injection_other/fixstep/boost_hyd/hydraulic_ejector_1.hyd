@@ -1,0 +1,1567 @@
+VERSION-11.10
+SECTION CONTROL
+_C_ "GTEManager" "gtemanager" V1
+	_C_ "General" "general" V1
+		Grid int 0
+		GridOn int 0
+		GridValue double 4
+		GridOffset double 5
+		PageFormat string "A4"
+		PageStandard int 1
+		PageUserDefined int 0
+		PageWidth double 595
+		PageHeight double 842
+		PagePortrait int 0
+		PageLandscape int 1
+		PageUnit string "mm"
+		0_bits int 2
+	..
+	_C_ "Model" "model" V1
+		_C_ "noname" "strings" V1
+		..
+	..
+	_C_ "Domain" "Model" V1
+		_C_ "Domain" "Back Pressure 3" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Driving Pressure 1" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Hydraulic Ejector 4" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Tank 2" V1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_REV" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_SEC" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_DEGCRANK_PER_DEGCAM" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1000"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED1" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED2" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED3" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "0.00016666666666666666"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+	..
+	_C_ "VariantDomain" "Model" V1
+		_C_ "Variant" "Case Set 1" V1
+			variant_names array-1 none 1 0
+				string "Case 1"
+				DEF
+			variant_vars array-1 none 0 0
+				DEF
+			variant_values array-1 none 0 0
+				DEF
+			variant_active string "Case 1"
+			variant_realized string "Case 1"
+		..
+	..
+..
+ENDSECTION
+SECTION GRAPHIC
+ENDSECTION
+SECTION MODEL
+OS-1.50
+GTEEditorKit
+38
+OSOBJECT "Element" 0 101 0 0 0 0
+Type 1 5
+Id 1 1
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4E7C79DF5C28-00DEAAD1-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 0 0 0 0 0 0 1 0 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+366.159090909 212 
+440.560606061 212 
+440.560606061 249.810606061 
+366.159090909 249.810606061 
+366.159090909 212 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+366.159090909 212 
+440.560606061 212 
+440.560606061 249.810606061 
+366.159090909 249.810606061 
+366.159090909 212 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+366.159090909 249.810606061 
+366.159090909 212 
+440.560606061 212 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+367.378787879 249.810606061 
+440.560606061 249.810606061 
+440.560606061 213.21969697 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+378.356060606 244.931818182 
+427.143939394 244.931818182 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+378.356060606 216.878787879 
+427.143939394 216.878787879 0 
+TPOLYGON-21 "" 0 0 0 50 50 250 1 1 50 50 250 1 0 8066 -REALIZE- 11 
+402.75 218.098484848 
+408.848484848 226.636363636 
+403.96969697 226.636363636 
+403.96969697 233.954545455 
+408.848484848 233.954545455 
+402.75 242.492424242 
+396.651515152 233.954545455 
+401.53030303 233.954545455 
+401.53030303 226.636363636 
+396.651515152 226.636363636 
+402.75 218.098484848 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 12 1 0 "p" "" 383.234848485 222.977272727 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 12 1 0 "T" "" 412.507575758 224.196969697 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "1" "" 438.560606061 214 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 1 3 "Driving Pressure" "" 367.401515152 197.973484848 10 
+TTEXT-21 "excite-pu-link" 0 0 0 255 0 0 5 1 0 0 0 7 1 20608 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 403.359848485 254.810606061 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 1 101 0 0 0 0
+Type 1 5
+Id 1 2
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4E7C79E05C28-00DEACF9-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 1 0 0 0 0 0 1 0 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+282 371.78030303 
+356.401515152 371.78030303 
+356.401515152 409.590909091 
+282 409.590909091 
+282 371.78030303 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+282 371.78030303 
+356.401515152 371.78030303 
+356.401515152 409.590909091 
+282 409.590909091 
+282 371.78030303 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+282 409.590909091 
+282 371.78030303 
+356.401515152 371.78030303 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+283.21969697 409.590909091 
+356.401515152 409.590909091 
+356.401515152 373 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+294.196969697 404.712121212 
+342.984848485 404.712121212 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+294.196969697 376.659090909 
+342.984848485 376.659090909 0 
+TPOLYGON-21 "" 0 0 0 50 50 250 1 1 50 50 250 1 0 8066 -REALIZE- 11 
+318.590909091 377.878787879 
+324.689393939 386.416666667 
+319.810606061 386.416666667 
+319.810606061 393.734848485 
+324.689393939 393.734848485 
+318.590909091 402.272727273 
+312.492424242 393.734848485 
+317.371212121 393.734848485 
+317.371212121 386.416666667 
+312.492424242 386.416666667 
+318.590909091 377.878787879 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 12 1 0 "p" "" 299.075757576 382.757575758 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 12 1 0 "T" "" 328.348484848 383.977272727 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "2" "" 354.401515152 373.78030303 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 1 3 "Tank" "" 364.564393939 390.446969697 10 
+TTEXT-21 "excite-pu-link" 0 0 0 255 0 0 5 1 0 0 0 7 1 20608 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 319.200757576 414.590909091 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 2 101 0 0 0 0
+Type 1 5
+Id 1 3
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4E7C79E05C29-00DEAF29-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 2 0 0 0 0 0 1 0 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+522.598484848 296.598484848 
+597 296.598484848 
+597 334.409090909 
+522.598484848 334.409090909 
+522.598484848 296.598484848 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+522.598484848 296.598484848 
+597 296.598484848 
+597 334.409090909 
+522.598484848 334.409090909 
+522.598484848 296.598484848 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+522.598484848 334.409090909 
+522.598484848 296.598484848 
+597 296.598484848 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+523.818181818 334.409090909 
+597 334.409090909 
+597 297.818181818 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+534.795454545 329.53030303 
+583.583333333 329.53030303 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+534.795454545 301.477272727 
+583.583333333 301.477272727 0 
+TPOLYGON-21 "" 0 0 0 50 50 250 1 1 50 50 250 1 0 8066 -REALIZE- 11 
+559.189393939 302.696969697 
+565.287878788 311.234848485 
+560.409090909 311.234848485 
+560.409090909 318.553030303 
+565.287878788 318.553030303 
+559.189393939 327.090909091 
+553.090909091 318.553030303 
+557.96969697 318.553030303 
+557.96969697 311.234848485 
+553.090909091 311.234848485 
+559.189393939 302.696969697 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 12 1 0 "p" "" 539.674242424 307.575757576 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 12 1 0 "T" "" 568.946969697 308.795454545 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "3" "" 595 298.598484848 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 1 3 "Back Pressure" "" 520.795454545 280.314393939 10 
+TTEXT-21 "excite-pu-link" 0 0 0 255 0 0 5 1 0 0 0 7 1 20608 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 559.799242424 339.409090909 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 3 101 0 0 0 0
+Type 1 77
+Id 1 4
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4E8AF3BA8401-002D4057-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 3 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+383.234848485 296.378787879 
+457.636363636 296.378787879 
+457.636363636 334.189393939 
+383.234848485 334.189393939 
+383.234848485 296.378787879 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+383.234848485 296.378787879 
+457.636363636 296.378787879 
+457.636363636 334.189393939 
+383.234848485 334.189393939 
+383.234848485 296.378787879 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+383.234848485 334.189393939 
+383.234848485 296.378787879 
+457.636363636 296.378787879 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+384.454545455 334.189393939 
+457.636363636 334.189393939 
+457.636363636 297.598484848 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 250 250 150 1 0 8066 -REALIZE- 10 
+395.431818182 302.477272727 
+407.628787879 302.477272727 
+413.727272727 311.015151515 
+422.265151515 311.015151515 
+444.21969697 302.477272727 
+444.21969697 329.310606061 
+422.265151515 320.772727273 
+413.727272727 320.772727273 
+407.628787879 329.310606061 
+395.431818182 329.310606061 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 0 0 0 1 0 8066 -REALIZE- 10 
+401.53030303 298.818181818 
+403.96969697 298.818181818 
+403.96969697 314.674242424 
+412.507575758 314.674242424 
+412.507575758 317.113636364 
+403.96969697 317.113636364 
+402.75 316.86969697 
+402.140151515 316.503787879 
+401.774242424 315.893939394 
+401.53030303 314.674242424 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "4" "" 455.636363636 298.378787879 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 4 3 "Hydraulic Ejector" "" 375.431818182 350.435606061 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Anchor" 4 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 1
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 384.454545455 212 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 384.454545455 213 0 
+DefModel
+--
+OSOBJECT "Anchor" 5 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 2
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 402.75 212 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 402.75 213 0 
+DefModel
+--
+OSOBJECT "Anchor" 6 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 3
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 421.045454545 212 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 421.045454545 213 0 
+DefModel
+--
+OSOBJECT "Anchor" 7 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 4
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 440.560606061 231.515151515 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 439.560606061 231.515151515 0 
+DefModel
+--
+OSOBJECT "Anchor" 8 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 5
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 421.045454545 249.810606061 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 421.045454545 248.810606061 0 
+DefModel
+--
+OSOBJECT "Anchor" 9 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 6
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 402.75 249.810606061 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 402.75 248.810606061 0 
+DefModel
+--
+OSOBJECT "Anchor" 10 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 7
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 402.75 249.810606061 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 402.75 248.810606061 0 
+DefModel
+--
+OSOBJECT "Anchor" 11 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 8
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 366.159090909 231.515151515 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 368.159090909 231.515151515 0 
+DefModel
+--
+OSOBJECT "Anchor" 12 201 1 101 0 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 9
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 366.159090909 212 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 368.159090909 213 0 
+DefModel
+--
+OSOBJECT "Anchor" 13 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 10
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 300.295454545 371.78030303 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 300.295454545 372.78030303 0 
+DefModel
+--
+OSOBJECT "Anchor" 14 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 11
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 318.590909091 371.78030303 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 318.590909091 372.78030303 0 
+DefModel
+--
+OSOBJECT "Anchor" 15 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 12
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 336.886363636 371.78030303 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 336.886363636 372.78030303 0 
+DefModel
+--
+OSOBJECT "Anchor" 16 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 13
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 356.401515152 391.295454545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 355.401515152 391.295454545 0 
+DefModel
+--
+OSOBJECT "Anchor" 17 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 14
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 336.886363636 409.590909091 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 336.886363636 408.590909091 0 
+DefModel
+--
+OSOBJECT "Anchor" 18 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 15
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 318.590909091 409.590909091 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 318.590909091 408.590909091 0 
+DefModel
+--
+OSOBJECT "Anchor" 19 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 16
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 300.295454545 409.590909091 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 300.295454545 408.590909091 0 
+DefModel
+--
+OSOBJECT "Anchor" 20 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 17
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 282 391.295454545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 284 391.295454545 0 
+DefModel
+--
+OSOBJECT "Anchor" 21 201 1 101 1 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 18
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 282 371.78030303 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 284 372.78030303 0 
+DefModel
+--
+OSOBJECT "Anchor" 22 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 19
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 540.893939394 296.598484848 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 540.893939394 297.598484848 0 
+DefModel
+--
+OSOBJECT "Anchor" 23 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 20
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 559.189393939 296.598484848 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 559.189393939 297.598484848 0 
+DefModel
+--
+OSOBJECT "Anchor" 24 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 21
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 577.484848485 296.598484848 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 577.484848485 297.598484848 0 
+DefModel
+--
+OSOBJECT "Anchor" 25 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 22
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 597 316.113636364 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 596 316.113636364 0 
+DefModel
+--
+OSOBJECT "Anchor" 26 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 23
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 577.484848485 334.409090909 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 577.484848485 333.409090909 0 
+DefModel
+--
+OSOBJECT "Anchor" 27 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 24
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 559.189393939 334.409090909 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 559.189393939 333.409090909 0 
+DefModel
+--
+OSOBJECT "Anchor" 28 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 25
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 540.893939394 334.409090909 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 540.893939394 333.409090909 0 
+DefModel
+--
+OSOBJECT "Anchor" 29 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 26
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 522.598484848 316.113636364 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 524.598484848 316.113636364 0 
+DefModel
+--
+OSOBJECT "Anchor" 30 201 1 101 2 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 27
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 522.598484848 296.598484848 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 524.598484848 297.598484848 0 
+DefModel
+--
+OSOBJECT "Anchor" 31 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 28
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 402.75 296.378787879 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 250 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 " 1 " "" 402.75 297.378787879 0 
+DefModel
+--
+OSOBJECT "Anchor" 32 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 29
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 383.234848485 315.893939394 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 250 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 3 " 2 " "" 385.234848485 315.893939394 0 
+DefModel
+--
+OSOBJECT "Anchor" 33 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 30
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 457.636363636 315.893939394 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 250 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 5 " 3 " "" 456.636363636 315.893939394 0 
+DefModel
+--
+OSOBJECT "Anchor" 34 201 1 101 3 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 31
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 383.234848485 296.378787879 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 385.234848485 297.378787879 0 
+DefModel
+--
+OSOBJECT "Line" 35 301 0 0 0 0
+Type 1 1
+Id 1 1
+StartAnchor 1 7
+EndAnchor 1 28
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 4 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+402.75 249.810606061 
+402.75 296.378787879 0 
+..
+--
+OSOBJECT "Line" 36 301 0 0 0 0
+Type 1 1
+Id 1 2
+StartAnchor 1 11
+EndAnchor 1 29
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 5 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 3 
+318.590909091 371.78030303 
+318.842468437 316.404193465 
+383.234848485 315.893939394 0 
+..
+--
+OSOBJECT "Line" 37 301 0 0 0 0
+Type 1 1
+Id 1 3
+StartAnchor 1 30
+EndAnchor 1 26
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 6 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+457.636363636 315.893939394 
+522.598484848 316.113636364 0 
+..
+--
+ENDSECTION
+SECTION ADDON
+ADDON ASE  "Boundary_Pressure" "boundary_pressure" Cpp res/cpp/bndpres Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Boundary_Pressure" "boundary_pressure" V1
+		name string "Pressure_1"
+		SHIF double 0 "simtime~s"
+		xfac double 1
+		0_value_xfac int 1
+		cdec int 0
+		table array-1 none 3 3
+			array-1 double 1 0
+0
+			array-1 double 1 0
+700
+			array-1 double 1 0
+20
+			double 0
+			int 1
+			int 3
+			DEF "<COL> 0 simtime~ms~ms <COL> 1 pressure~bar~bar <COL> 2 temperature~degC"
+		file_table string ""
+		aut_rel_table int 0
+		def_pat_table int 0
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "l2exc" V1
+			0_type string "struct"
+			0_value int 0
+			link_type int 0
+			macro_elem_name int 0
+			channel_id int 0
+			macro_elem_nameSelKey_ string ""
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Store" "store" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Boundary_Pressure" "boundary_pressure" Cpp res/cpp/bndpres Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Boundary_Pressure" "boundary_pressure" V1
+		name string "Pressure_2"
+		SHIF double 0 "simtime~s"
+		xfac double 1
+		0_value_xfac int 1
+		cdec int 0
+		table array-1 none 3 3
+			array-1 double 1 0
+0
+			array-1 double 1 0
+700
+			array-1 double 1 0
+20
+			double 0
+			int 1
+			int 3
+			DEF "<COL> 0 simtime~ms~ms <COL> 1 pressure~bar~bar <COL> 2 temperature~degC"
+		file_table string ""
+		aut_rel_table int 0
+		def_pat_table int 0
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "l2exc" V1
+			0_type string "struct"
+			0_value int 0
+			link_type int 0
+			macro_elem_name int 0
+			channel_id int 0
+			macro_elem_nameSelKey_ string ""
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Store" "store" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Boundary_Pressure" "boundary_pressure" Cpp res/cpp/bndpres Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Boundary_Pressure" "boundary_pressure" V1
+		name string "Pressure_3"
+		SHIF double 0 "simtime~s"
+		xfac double 1
+		0_value_xfac int 1
+		cdec int 0
+		table array-1 none 3 3
+			array-1 double 4 0
+1
+1.5
+3
+3.5
+			array-1 double 4 0
+700
+150
+150
+700
+			array-1 double 4 0
+20
+20
+20
+20
+			double 0
+			int 1
+			int 3
+			DEF "<COL> 0 simtime~ms~ms <COL> 1 pressure~bar~bar <COL> 2 temperature~degC"
+		file_table string ""
+		aut_rel_table int 0
+		def_pat_table int 0
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "l2exc" V1
+			0_type string "struct"
+			0_value int 0
+			link_type int 0
+			macro_elem_name int 0
+			channel_id int 0
+			macro_elem_nameSelKey_ string ""
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Store" "store" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Ejector" "ejector" Cpp res/cpp/ejector Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Ejector" "ejector" V1
+		name string "Ejector"
+		type int 0
+		EEFF double 0.8 "no_unit~none"
+		DRAR double INF "area~m2"
+		DRDC double 1 "no_unit~none"
+		FORM string "x+y"
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+		_C_ "FluidPE" "pf" V1
+			0_type string "class"
+			fluidtype array-1 none 1 0
+				string "enter text"
+				DEF
+			0_bits int 2
+			_C_ "Struct" "lfp" V1
+				0_type string "struct"
+				0_value int 0
+				fluid string ""
+				temperature double INF "temperature~K"
+			..
+			_C_ "Struct" "convar" V1
+				0_type string "struct"
+				0_value int 1
+			..
+			_C_ "Struct" "alt" V1
+				0_type string "struct"
+				0_value int 0
+				elasticity double INF "strength~N_mm2"
+				density double INF "density~kg_m3"
+				viscosity double INF "kin_visc~cSt~mm2_s"
+				tension double INF "lin_stiff~N_mm"
+				refpress double 1 "pressure~bar"
+			..
+			_C_ "Struct" "altvar" V1
+				0_type string "struct"
+				0_value int 0
+				list array-1 none 5 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 5
+					DEF "<COL> 0 pressure~bar <COL> 1 strength~N_mm2 <COL> 2 density~kg_m3 <COL> 3 kin_visc~cSt~mm2_s <COL> 4 lin_stiff~N_mm"
+				file_list string ""
+				aut_rel_list int 0
+				def_pat_list int 0
+				emod_calc int 0
+			..
+		..
+		_C_ "Struct" "xsect_areas" V1
+			0_type string "struct"
+			_C_ "Struct" "at_connections" V1
+				0_type string "struct"
+				DRIA double 6e-007 "area~m2"
+				SUCA double 3e-007 "area~m2"
+				DIFA double 9e-007 "area~m2"
+			..
+			_C_ "Struct" "at_mixing_section" V1
+				0_type string "struct"
+				MI1A double 6e-007 "area~m2"
+				MI2A double 3e-007 "area~m2"
+				MI3A double 9e-007 "area~m2"
+			..
+		..
+		_C_ "Struct" "flow" V1
+			0_type string "struct"
+			_C_ "Struct" "flow_resistances" V1
+				0_type string "struct"
+				MI1R double 0.8 "no_unit~none"
+				MI2R double 0.8 "no_unit~none"
+				MI3R double 0.8 "no_unit~none"
+			..
+			_C_ "Struct" "at_mixing_section" V1
+				0_type string "struct"
+				REFF double 0.8 "no_unit~none"
+			..
+		..
+		_C_ "FlowRateRatioClass" "flow_rate_ratio" V1
+			0_type string "class"
+			name string ""
+			table array-1 none 4 3
+				array-1 none 4 0
+					double 0
+					double 0
+					double 0
+					double 0
+				array-1 none 4 0
+					double 0
+					double 0
+					double 0
+					double 0
+				array-1 none 4 0
+					double 0
+					double 0
+					double 0
+					double 0
+				array-1 none 4 0
+					double 0
+					double 0
+					double 0
+					double 0
+				double 0
+				int 4
+				int 4
+				DEF "<MAPX> dimensionless~no <MAPY> dimensionless~no <MAPZ> dimensionless~no"
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Ejector Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		A_10 int 0
+		A_11 int 0
+		A_12 int 0
+		A_13 int 0
+		A_14 int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Ejector Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 1
+		A_2 int 0
+		A_3 int 1
+		A_4 int 1
+		A_5 int 1
+		A_6 int 0
+		A_7 int 1
+		A_8 int 1
+		A_9 int 1
+		A_10 int 0
+		A_11 int 1
+		A_12 int 1
+		A_13 int 1
+		A_14 int 1
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ENDSECTION
+SECTION GLOBAL_ADDON
+ADDON ASE  "Animate_Nozzle_Flow_CR_22" "CR_22" Cpp res/cpp/animate_nozzle_flow.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "Animate_Nozzle_Flow_CR_22" "CR_22" V1
+		table array-1 none 4 3
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			string ""
+			int 1
+			int 4
+			DEF
+		active int 1
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Animate_Nozzle_Flow_UI_SID" "UI_SID" Cpp res/cpp/animate_nozzle_flow.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "Animate_Nozzle_Flow_UI_SID" "UI_SID" V1
+		table array-1 none 3 3
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			string ""
+			int 1
+			int 3
+			DEF
+		active int 1
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Numerics" "numerics" Cpp res/cpp/numerics.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Numerics" "numerics" V1
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "main" V1
+			0_type string "struct"
+			basis int 0
+			rspeed double 1000 "ang_vel~rpm~rpm"
+			_C_ "Struct" "engine_speed" V1
+				0_type string "struct"
+				0_value int 0
+				etype int 1
+				fixed_ratio int 1
+				espeed double 2000 "ang_vel~rpm~rpm"
+				start double 0 "angle~deg~deg"
+				ref_crank int 0
+			..
+		..
+		_C_ "Struct" "solver_options" V1
+			0_type string "struct"
+			solver_type int 0
+			_C_ "Struct" "no_label" V1
+				0_type string "struct"
+				error_type int 2
+				vs_tolerance double 1e-005
+				max_time_step double 1e+030 "time~s"
+				0_value_max_time_step int 0
+				ini_time_step double 1e-007 "time~s"
+				0_value_ini_time_step int 0
+				calc_end_time double 5 "time~ms~ms"
+				num_store_values double 500
+			..
+			_C_ "Struct" "cc" V1
+				0_type string "struct"
+				0_value int 1
+				cc_step double 1e-007 "time~s"
+				cc_time double 5 "time~ms~ms"
+				cc_values double 500
+			..
+			_C_ "Struct" "vc" V1
+				0_type string "struct"
+				0_value int 0
+				_C_ "VarCalcStep" "table" V1
+					0_type string "class"
+					list array-1 none 3 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 3
+						DEF "<COL> 0 time~s <COL> 1 time~s"
+				..
+			..
+			_C_ "Struct" "restart" V1
+				0_type string "struct"
+				restart_calculation int 0
+				rst_intrvl int 0
+				0_value_rst_intrvl int 0
+			..
+		..
+		_C_ "Struct" "out" V1
+			0_type string "struct"
+			solmap int 0
+			runtime int 1
+			output int 0
+		..
+	..
+..
+__
+ADDON ASE  "EpuMacroList" "epumacrolist" Cpp res/cpp/epu_me.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "EpuMacroList" "epumacrolist" V1
+		mes array-1 none 0 3
+			wrapper ASEClass
+			_C_ "EpuMacroElement" "mes" V1
+				0_type string "class"
+				name string ""
+				channel_id int 0
+				macro_elem_id int 0
+			..
+
+			int 1
+			int 1
+			DEF
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "HydMode" "hydmode" Cpp res/cpp/mode.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "HydMode" "hydmode" V1
+		flow int 0
+		conn int 1
+		Q_recalc int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "Initials_Hydr1" "special_initials_hydr1" Cpp res/cpp/initials.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "Initials_Hydr1" "special_initials_hydr1" V1
+		values array-1 none 2 3
+			array-1 none 1 0
+				double 700
+			array-1 none 1 0
+				double 20
+			double 0
+			int 1
+			int 2
+			DEF "<COL> 0 pressure~bar~bar <COL> 1 temperature~degC"
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Fluids" "fluids" Cpp res/cpp/fluids.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "Fluids" "fluids" V1
+		fluidtype array-1 none 1 0
+			string "Diesel"
+			DEF
+		spec_het double 1960000000 "spec_heat~Nmm_tK"
+		therm_exp double 0.001 "heat_expan_coeff~1_degC"
+		therm_con double 0.145 "conductivity~Nmm_smmK"
+		ref_temp double 20 "temperature~degC"
+		0_version int 1003
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "pdb" V1
+			0_type string "struct"
+			0_value int 0
+			fluid string ""
+			temperature double 20 "temperature~degC"
+		..
+		_C_ "Struct" "var" V1
+			0_type string "struct"
+			0_value int 0
+			list array-1 none 5 3
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				double 0
+				int 1
+				int 5
+				DEF "<COL> 0 pressure~MPa <COL> 1 strength~N_mm2 <COL> 2 density~t_mm3 <COL> 3 kin_visc~mm2_s~mm2_s <COL> 4 lin_stiff~N_mm"
+			file_list string ""
+			aut_rel_list int 0
+			def_pat_list int 0
+			emod_calc int 0
+		..
+		_C_ "Struct" "con" V1
+			0_type string "struct"
+			0_value int 1
+			elasticity double 1390 "strength~N_mm2"
+			density double 820 "density~kg_m3~kg_m3"
+			viscosity double 3 "kin_visc~mm2_s~mm2_s"
+			tension double 2.9e-005 "lin_stiff~N_mm"
+			refpress double 0.1 "pressure~MPa"
+		..
+		_C_ "VogelDV" "dyn_visc" V1
+			0_type string "class"
+			Vogel_B double 0 "temperature~K"
+			Vogel_C double 0 "temperature~K"
+		..
+	..
+..
+__
+ADDON ASE  "BoundaryCycling" "boundarycycling" Cpp res/cpp/boundary_cycling.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1003
+	_C_ "BoundaryCycling" "boundarycycling" V1
+		bhyd int 0
+		bmch int 0
+		bhmc int 0
+		bgas int 0
+		tfat int 0
+		tgas int 0
+		0_version int 1003
+	..
+..
+__
+ADDON ASE  "ReferencedSpecies" "referenced_species"  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "ReferencedSpecies" "referenced_species" V1
+	..
+..
+__
+ADDON ASE  "LocalPart" "local_part"  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "LocalPart" "local_part" V1
+	..
+..
+__
+ENDSECTION
+SECTION CONTEXT_ADDON
+ADDON ASE  "Macro" "macro" Cpp res/cpp/macro.h  !! "context"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1003
+	_C_ "Macro" "macro" V1
+		TITLE string ""
+		CUSTOMER_LOGO string ""
+		0_version int 1003
+		TITLE1 string ""
+		TITLE2 string ""
+		COMMENT string ""
+		REPORT string ""
+		HEADER string ""
+		FIGURE string ""
+		AVL_LOGO string ""
+	..
+..
+__
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_name
+6879647261756C69635F656A6563746F725F3120323031312D31302D31382031363A34343A3436
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_jms_fea_cache
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E32332E30223E0A3C646963742069643D2231222F3E0A3C2F6163743E0A
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_options
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E32332E30223E0A3C6F626A65637420747970653D226A6D732E6775692E7375626D69742E5375626D697373696F6E222069643D2231223E0A3C646963742069643D2232223E0A3C7374723E6370755F746F5F76616C3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D2233223E0A3C646963742069643D2234223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C696371
+756575655F746F5F76616C3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D2235223E0A3C646963742069643D2236223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6D616E75616C5F747970653C2F7374723E0A3C6F626A65637420747970653D226A6D732E6775692E7375626D69742E4D616E75616C4A6F625375626D697373696F6E222069643D2237223E0A3C646963742069643D2238223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E64623C2F7374723E0A3C2F646963743E0A3C2F6F62
+6A6563743E0A3C7374723E7461736B733C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D2239223E0A3C646963742069643D223130223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223131223E0A3C7374723E73696D756C6174696F6E3C2F7374723E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726F635F7065725F6A6F623C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6879647261756C69635F656A6563746F725F3120323031312D31302D31382031363A34343A34363C2F737472
+3E0A3C7374723E6B6565706F70656E3C2F7374723E0A3C66616C73652F3E0A3C7374723E6D616E75616C3C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F637072696F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D223132223E0A3C646963742069643D223133223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E303C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726570726F636573735F6572726F723C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F635F7065725F6A6F625F6669783C2F7374723E0A3C747275652F3E0A3C737472
+3E7461736B735F68696464656E3C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D223134223E0A3C646963742069643D223135223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223136222F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E686967685F7072696F726974793C2F7374723E0A3C66616C73652F3E0A3C7374723E6C69666574696D655F746F5F76616C3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D223137223E0A3C646963742069643D223138223E0A3C7374723E76616C75653C2F7374723E0A3C6E
+756D3E31323C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C696371756575655F746F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E426F6F6C222069643D223139223E0A3C646963742069643D223230223E0A3C7374723E76616C75653C2F7374723E0A3C747275652F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726570726F636573733C2F7374723E0A3C6C6973742069643D223231222F3E0A3C7374723E6370755F746F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E426F6F6C222069643D223232223E0A3C646963742069643D2232
+33223E0A3C7374723E76616C75653C2F7374723E0A3C66616C73652F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C69666574696D655F746F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E426F6F6C222069643D223234223E0A3C646963742069643D223235223E0A3C7374723E76616C75653C2F7374723E0A3C66616C73652F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E63617365733C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D223236223E0A3C646963742069643D223237223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C
+6C6973742069643D223238223E0A3C7475706C652069643D223239223E0A3C7374723E4361736520313C2F7374723E0A3C7374723E436173652053657420313C2F7374723E0A3C2F7475706C653E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C6963706F6C3C2F7374723E0A3C6F626A65637420747970653D226A6D732E6775692E7375626D69742E4C6963656E7365506F6C696379222069643D223330223E0A3C646963742069643D223331223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E6465646963617465643C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F646963743E0A3C
+2F6F626A6563743E0A3C2F6163743E0A
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_backend
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E32332E30223E0A3C6C6973742069643D2231223E0A3C7475706C652069643D2232223E0A3C7374722F3E0A3C6C6973742069643D2233223E0A3C6F626A65637420747970653D226A6D732E6775692E6261636B656E642E486F7374222069643D2234223E0A3C646963742069643D2235223E0A3C7374723E70726F6A6469723C2F7374723E0A3C7374723E266C743B50524F4A4543545F4449524543544F52593E3C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E617467727A77643030323431
+333C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6C6973743E0A3C2F7475706C653E0A3C2F6C6973743E0A3C2F6163743E0A
+ENDSECTION

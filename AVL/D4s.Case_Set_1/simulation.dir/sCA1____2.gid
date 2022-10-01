@@ -1,0 +1,19 @@
+BEGIN
+CHANNELNAME = ['Default_Case_Index', &
+               'PRESSURE_AI', &
+               'TEMPERATURE_AI', &
+               'MASS_AI', &
+               'A/F-RATIO_ASI', &
+               'COMBUSTIONPRODUCTCONCENTRATION_ASI', &
+               'FUELVAPOURCONCENTRATION_ASI', &
+               'VOLUME_AI']
+UNIT        = ['no', &
+               'Pa', &
+               'K', &
+               'kg', &
+               '-', &
+               '-', &
+               '-', &
+               'm3']
+END
+1.000000E+00   0.15182908E+006   0.95752202E+003   0.82093585E-004   0.13324656E+002   0.99913859E+000   0.60175780E-004   0.15000000E-003

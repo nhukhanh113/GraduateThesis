@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<avlast>
+<component name="examples/BOOST_HYD" version="v2013.2">
+<dependencies>
+<dependency name="AWS_Examples" version="v2013.2">
+<host>Welcome</host>
+<date>2021/05/14</date>
+<user>Welcome</user>
+<keyfile>[C:\Program Files (x86)\AVL1\documentation\index.html</keyfile>
+</dependency>
+</dependencies>
+</component>
+</avlast>

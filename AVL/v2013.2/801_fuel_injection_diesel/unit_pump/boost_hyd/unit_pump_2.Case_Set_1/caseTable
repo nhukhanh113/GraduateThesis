@@ -1,0 +1,5 @@
+Case_Set_1 Throttle_D  Switch_off  Swith_on  Valve_lift_1  Opening_Pressure  
+[UNITS] length~mm  simtime1~ms  simtime1~ms  length~mm  pressure~bar  
+Case_Set_1.Case_1 0.6  5  2.8  0.6  300  
+Case_Set_1.Case_2 0.7  5.5  3.3  0.6  300  
+Case_Set_1.Case_3 0.8  6  3.8  0.6  300  

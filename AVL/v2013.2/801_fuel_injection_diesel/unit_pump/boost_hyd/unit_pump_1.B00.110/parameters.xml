@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<summary title="BOOST™ Hydsim v2020.1 - Model Parameters">
+  <section name="ModelParameters" title="Model Parameters">
+    <dvalue name="BackPress" title="BackPress" unit="bar">5.7</dvalue>
+    <dvalue name="CalcStart" title="CalcStart" unit="deg">50</dvalue>
+    <dvalue name="CamBaseR" title="CamBaseR" unit="mm">87</dvalue>
+    <dvalue name="CamShift" title="CamShift" unit="deg" case_param="True">19.7</dvalue>
+    <dvalue name="CamSpeed" title="CamSpeed" unit="rpm" case_param="True">1500</dvalue>
+    <dvalue name="CylHeBo_Diam" title="CylHeBo_Diam" unit="mm">5</dvalue>
+    <svalue name="DATA_PATH" title="DATA_PATH"></svalue>
+    <dvalue name="EngSpeed" title="EngSpeed" unit="rpm">3000</dvalue>
+    <dvalue name="FuelA" title="FuelA" unit="m/s">1238</dvalue>
+    <dvalue name="FuelB" title="FuelB" unit="N/mm^2">1325.7371</dvalue>
+    <dvalue name="FuelT" title="FuelT" unit="degC" case_param="True">80</dvalue>
+    <dvalue name="Fuel_nu" title="Fuel_nu" unit="mm^2/s">2.8</dvalue>
+    <dvalue name="Fuel_rho" title="Fuel_rho" unit="kg/m^3">865</dvalue>
+    <dvalue name="Fuelling_g" title="Fuelling_g" unit="" case_param="True">3.367585</dvalue>
+    <dvalue name="Fuelling_mm3" title="Fuelling_mm3" unit="">3624</dvalue>
+    <dvalue name="HoleEffDiam" title="HoleEffDiam" unit="mm">0.41</dvalue>
+    <dvalue name="InjBore_Diam" title="InjBore_Diam" unit="mm">4.5</dvalue>
+    <dvalue name="InjPipe_Diam" title="InjPipe_Diam" unit="mm">5.5</dvalue>
+    <dvalue name="MaxIterNum" title="MaxIterNum" unit="">1</dvalue>
+    <dvalue name="NOP" title="NOP" unit="MPa">45</dvalue>
+    <dvalue name="NeeGuideD" title="NeeGuideD" unit="mm">9</dvalue>
+    <dvalue name="NeeSeatD" title="NeeSeatD" unit="mm">6.5</dvalue>
+    <dvalue name="NeeSpringDmp" title="NeeSpringDmp" unit="N.s/m">3.925</dvalue>
+    <dvalue name="NeeSpringPL" title="NeeSpringPL" unit="N">1369.5381</dvalue>
+    <dvalue name="NeeSpringSt" title="NeeSpringSt" unit="N/mm">392.5</dvalue>
+    <dvalue name="Nozzlevol" title="Nozzlevol" unit="mm^3">1558</dvalue>
+    <dvalue name="PreLiftCorr" title="PreLiftCorr" unit="mm">0</dvalue>
+    <dvalue name="PumpInitVol" title="PumpInitVol" unit="mm^3">28710</dvalue>
+    <dvalue name="RefAngleStep" title="RefAngleStep" unit="deg">0.0003</dvalue>
+  </section>
+</summary>

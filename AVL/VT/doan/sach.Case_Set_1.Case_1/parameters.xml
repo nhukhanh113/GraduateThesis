@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<summary title="BOOST Hydsim v2013.2 - Model Parameters">
+  <section name="ModelParameters" title="Model Parameters">
+    <dvalue name="p" title="p" unit="bar" case_param="True">1500</dvalue>
+  </section>
+</summary>

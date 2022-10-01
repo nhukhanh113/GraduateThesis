@@ -1,0 +1,102 @@
+FOLDER "flb" "Monitoring"
+	CURVE "iter" "Iter"
+		xlocation = GIDAS "ESE_flb.gid" "Iteration"
+		xunit = "iterations"
+		ylocation = GIDAS "ESE_flb.gid" "iter"
+		yunit = "-"
+	..
+	FOLDER "residuum" "Residuum"
+		CURVE "d" "D"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:d"
+			yunit = "-"
+		..
+		CURVE "h" "H"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:h"
+			yunit = "-"
+		..
+		CURVE "k" "K"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:k"
+			yunit = "-"
+		..
+		CURVE "m" "M"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:m"
+			yunit = "-"
+		..
+		CURVE "u" "U"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:u"
+			yunit = "-"
+		..
+		CURVE "v" "V"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:v"
+			yunit = "-"
+		..
+		CURVE "w" "W"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "residuum:w"
+			yunit = "-"
+		..
+	..
+	CURVE "timestep" "Timestep"
+		xlocation = GIDAS "ESE_flb.gid" "Iteration"
+		xunit = "iterations"
+		ylocation = GIDAS "ESE_flb.gid" "timestep"
+		yunit = "-"
+	..
+	FOLDER "cell_10" "cell_10"
+		CURVE "disp" "DISP"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:disp"
+			yunit = "m^2/s^3"
+		..
+		CURVE "p" "P"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:p"
+			yunit = "Pa"
+		..
+		CURVE "temp" "TEMP"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:temp"
+			yunit = "K"
+		..
+		CURVE "tkin" "TKIN"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:tkin"
+			yunit = "m^2/s^2"
+		..
+		CURVE "u" "U"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:u"
+			yunit = "m/s"
+		..
+		CURVE "v" "V"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:v"
+			yunit = "m/s"
+		..
+		CURVE "w" "W"
+			xlocation = GIDAS "ESE_flb.gid" "Iteration"
+			xunit = "iterations"
+			ylocation = GIDAS "ESE_flb.gid" "cell_10:w"
+			yunit = "m/s"
+		..
+	..
+..

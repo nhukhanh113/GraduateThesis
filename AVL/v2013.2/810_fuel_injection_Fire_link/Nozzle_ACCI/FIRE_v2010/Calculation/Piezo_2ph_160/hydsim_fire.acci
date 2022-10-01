@@ -1,0 +1,12 @@
+reporting level 3
+
+HYDSIM at time_step_start  gets FIRE_TO_HYDSIM at DATA_USER_DEF
+HYDSIM at time_step_start1 sets deltaTC        at DATA_USER_DEF
+HYDSIM at time_step_start1 sets endITC         at DATA_USER_DEF
+HYDSIM at time_step_end    sets HYDSIM_TO_FIRE at DATA_USER_DEF
+
+Piezo_2ph_160 at time_step_start    sets FIRE_TO_HYDSIM at DATA_USER_DEF
+Piezo_2ph_160 at time_step_start    gets deltaTC        at DATA_USER_DEF
+Piezo_2ph_160 at time_step_start    gets endITC         at DATA_USER_DEF
+Piezo_2ph_160 at mesh_deformation   gets HYDSIM_TO_FIRE at DATA_USER_DEF
+Piezo_2ph_160 at pre_initialization gets HYDSIM_TO_FIRE at DATA_USER_DEF

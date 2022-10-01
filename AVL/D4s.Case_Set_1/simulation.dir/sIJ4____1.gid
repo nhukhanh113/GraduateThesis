@@ -1,0 +1,7 @@
+BEGIN
+CHANNELNAME = ['Default_Case_Index', &
+               'ADDEDFUEL']
+UNIT        = ['no', &
+               'kg/cycle']
+END
+1.000000E+00   0.49385009E-004

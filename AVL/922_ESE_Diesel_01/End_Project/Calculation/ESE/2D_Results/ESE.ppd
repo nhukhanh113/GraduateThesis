@@ -1,0 +1,8 @@
+FOLDER "FirePost" "Calculation" "FIREPost - ESE"
+  LINK "link_fl2" "FL2"
+    link_to_file = "ESE_fl2.ppi"
+  ..
+  LINK "link_flb" "FLB"
+    link_to_file = "ESE_flb.ppi"
+  ..
+..

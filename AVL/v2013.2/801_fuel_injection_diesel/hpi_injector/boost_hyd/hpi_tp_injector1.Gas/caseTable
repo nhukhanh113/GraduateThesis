@@ -1,0 +1,5 @@
+Gas mass_fraction  
+[UNITS] dimensionless~percent~percent  
+Gas.massfr_0 0  
+Gas.massfr_1 1  
+Gas.massfr_2 1.5  

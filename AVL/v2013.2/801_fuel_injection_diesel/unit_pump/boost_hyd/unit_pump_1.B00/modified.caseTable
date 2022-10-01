@@ -1,0 +1,64 @@
+# --------------------------------------------------
+# Case Explorer Table
+# Exported from: unit_pump_1.hyd
+# Date: 2021/05/19 14:13:22
+# --------------------------------------------------
+# Syntax:
+#     [MERGE_SETS] ... comment out that parameter to merge case sets instead removing old ones
+#   For each Case Set ...
+#     [CASESET]    caseSetName
+#     [GROUP]      groupName parmeterName ... parmeterName
+#     [GROUP]      groupName parmeterName ... parmeterName
+#       ...        groupName parmeterName ... parmeterName
+#     [PARAMETERS] parmeterName parmeterName ... parmeterName
+#     [UNITS]      unitName     unitName     ... unitName
+#     caseName     value          value      ... value
+#     caseName     value          value      ... value
+#     ...
+# Mind:
+#   parameterName ... use names of existing model parameters only!
+#   [UNITS] lines ... are optional; if present, used to check consistency
+#   comments      ... comments ('#' as leftmost character) are ignored
+#   value         ... both, e.g. "0.5" and "0,5" are supported; the Export
+#                     format results from the Import format most recently used!
+# --------------------------------------------------
+# Model Parameters:
+#  BackPress     [bar]
+#  CalcStart     [deg]
+#  CamBaseR      [mm]
+#  CamShift      [deg]
+#  CamSpeed      [rpm]
+#  CylHeBo_Diam  [mm]
+#  DATA_PATH     []
+#  EngSpeed      [rpm]
+#  FuelA         [m/s]
+#  FuelB         [N/mm^2]
+#  FuelT         [degC]
+#  Fuel_nu       [mm^2/s]
+#  Fuel_rho      [kg/m^3]
+#  Fuelling_g    []
+#  Fuelling_mm3  []
+#  HoleEffDiam   [mm]
+#  InjBore_Diam  [mm]
+#  InjPipe_Diam  [mm]
+#  MaxIterNum    []
+#  NOP           [MPa]
+#  NeeGuideD     [mm]
+#  NeeSeatD      [mm]
+#  NeeSpringDmp  [N.s/m]
+#  NeeSpringPL   [N]
+#  NeeSpringSt   [N/mm]
+#  Nozzlevol     [mm^3]
+#  PreLiftCorr   [mm]
+#  PumpInitVol   [mm^3]
+#  RefAngleStep  [deg]
+# --------------------------------------------------
+
+#[MERGE_SETS]
+[CASESET]     B00  
+[GROUP]       Simulation FuelT
+[GROUP]       Engine CamSpeed Fuelling_g
+[GROUP]       Camshaft CamShift
+[PARAMETERS]  FuelT  CamSpeed  Fuelling_g  CamShift  
+[UNITS]       degC   rpm       ""          deg       
+110           80     1500      3.367585    19.7      

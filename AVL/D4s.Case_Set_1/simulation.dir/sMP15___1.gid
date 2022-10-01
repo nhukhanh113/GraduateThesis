@@ -1,0 +1,39 @@
+BEGIN
+CHANNELNAME = ['Default_Case_Index', &
+               'PRESSURE', &
+               'VELOCITY', &
+               'TEMPERATURE', &
+               'MASSFLOW', &
+               'MASSFLOWPERS', &
+               'MASSFLOWAVERAGED-TEMPERATURE', &
+               'MACHNUMBER', &
+               'STAGNATIONPRESSURE', &
+               'STAGNATIONTEMPERATURE', &
+               'ENTHALPYFLOWPERS', &
+               'REYNOLDSNUMBER', &
+               'WALLTEMPERATURE', &
+               'CONVERGENCE', &
+               'DENSITY', &
+               'SPECHEATCP', &
+               'ISENTROPIC-EXPONENT', &
+               'GAS-CONSTANT']
+UNIT        = ['no', &
+               'Pa', &
+               'm/s', &
+               'K', &
+               'kg/cycle', &
+               'kg/s', &
+               'K', &
+               '-', &
+               'Pa', &
+               'K', &
+               'J/s', &
+               '-', &
+               'K', &
+               '-', &
+               '-', &
+               'J/kgK', &
+               '-', &
+               'J/kgK']
+END
+1.000000E+00   0.15919713E+006   0.14142296E+003   0.11236661E+004   0.28209913E-002   0.11754130E+000   0.11166980E+004   0.21873098E+000   0.16474222E+006   0.11319188E+004   0.15277319E+006   0.73792444E+005   0.60000000E+003   0.11626855E-005   0.48987302E+000   0.12934523E+004   0.12888559E+001   0.28987096E+003

@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<nlc ver="4.0">
+  <size width="595" height="842"/>
+  <element name="AIRCLEANER" ord="1">
+    <pos x="65" y="397"/>
+    <size width="31" height="41"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="CATALYST" ord="1">
+    <pos x="506" y="460"/>
+    <size width="31" height="41"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="CYLINDER" ord="1">
+    <pos x="185" y="329"/>
+    <size width="46.3543" height="46.3543"/>
+  </element>
+  <element name="CYLINDER" ord="2">
+    <pos x="261" y="329"/>
+    <size width="46.3543" height="46.3543"/>
+  </element>
+  <element name="CYLINDER" ord="3">
+    <pos x="329" y="329"/>
+    <size width="46.3543" height="46.3543"/>
+  </element>
+  <element name="CYLINDER" ord="4">
+    <pos x="409" y="329"/>
+    <size width="46.3543" height="46.3543"/>
+  </element>
+  <element name="ENGINE" ord="1">
+    <pos x="389" y="21"/>
+    <size width="41" height="31"/>
+  </element>
+  <element name="FUELINJECTOR" ord="1">
+    <pos x="197" y="257"/>
+    <size width="21" height="31"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="FUELINJECTOR" ord="2">
+    <pos x="273" y="257"/>
+    <size width="21" height="31"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="FUELINJECTOR" ord="3">
+    <pos x="341" y="253"/>
+    <size width="21" height="31"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="FUELINJECTOR" ord="4">
+    <pos x="421" y="253"/>
+    <size width="21" height="31"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="JUNCTION" ord="1">
+    <pos x="69" y="501"/>
+    <size width="25" height="25"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="JUNCTION" ord="2">
+    <pos x="305" y="113"/>
+    <size width="19" height="19"/>
+    <rotation phi="90"/>
+  </element>
+  <element name="JUNCTION" ord="3">
+    <pos x="304.5" y="171.5"/>
+    <size width="19" height="19"/>
+    <rotation phi="90"/>
+  </element>
+  <element name="JUNCTION" ord="4">
+    <pos x="213" y="537"/>
+    <size width="19" height="19"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="JUNCTION" ord="5">
+    <pos x="313" y="489"/>
+    <size width="22.4286" height="22.4286"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="JUNCTION" ord="6">
+    <pos x="337" y="613"/>
+    <size width="22.4286" height="22.4286"/>
+    <rotation phi="-180"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="1">
+    <pos x="72.8553" y="456.502"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="2">
+    <pos x="72.1671" y="363.536"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="3">
+    <pos x="71.7446" y="330.58"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="4">
+    <pos x="276.397" y="57.9933"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="5">
+    <pos x="306.253" y="143.378"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="6">
+    <pos x="394.019" y="113.739"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="7">
+    <pos x="341.617" y="177.705"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="8">
+    <pos x="342.948" y="225.613"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="9">
+    <pos x="422.894" y="205.486"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="10">
+    <pos x="403.14" y="462.035"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="11">
+    <pos x="339.184" y="435.603"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="12">
+    <pos x="374.779" y="506.443"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="13">
+    <pos x="324.401" y="578.333"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="14">
+    <pos x="245.028" y="617.212"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="15">
+    <pos x="471.951" y="616.627"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="16">
+    <pos x="508.283" y="541.447"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="17">
+    <pos x="509.5" y="389.5"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="MEASURINGPOINT" ord="18">
+    <pos x="509.5" y="245.5"/>
+    <size width="16" height="16"/>
+  </element>
+  <element name="PLENUM" ord="1">
+    <pos x="5" y="417"/>
+    <size width="41" height="41"/>
+  </element>
+  <element name="PLENUM" ord="2">
+    <pos x="61" y="45"/>
+    <size width="41" height="41"/>
+  </element>
+  <element name="PLENUM" ord="3">
+    <pos x="497" y="333"/>
+    <size width="41" height="41"/>
+  </element>
+  <element name="PLENUM" ord="4">
+    <pos x="497" y="177"/>
+    <size width="41" height="41"/>
+  </element>
+  <element name="RESTRICTION" ord="1">
+    <pos x="69" y="289"/>
+    <size width="21" height="31"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="RESTRICTION" ord="2">
+    <pos x="69" y="221"/>
+    <size width="21" height="31"/>
+    <rotation phi="90"/>
+  </element>
+  <element name="RESTRICTION" ord="3">
+    <pos x="165" y="57"/>
+    <size width="31" height="21"/>
+  </element>
+  <element name="RESTRICTION" ord="4">
+    <pos x="201" y="405"/>
+    <size width="17" height="25"/>
+    <rotation phi="90"/>
+  </element>
+  <element name="RESTRICTION" ord="5">
+    <pos x="277" y="409"/>
+    <size width="17.6667" height="26"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="RESTRICTION" ord="6">
+    <pos x="345" y="409"/>
+    <size width="15" height="22"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="RESTRICTION" ord="7">
+    <pos x="425" y="409"/>
+    <size width="17.6667" height="26"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="RESTRICTION" ord="8">
+    <pos x="217" y="573"/>
+    <size width="15" height="22"/>
+    <rotation phi="90"/>
+  </element>
+  <element name="RESTRICTION" ord="9">
+    <pos x="318" y="548"/>
+    <size width="16" height="23.5"/>
+    <rotation phi="90"/>
+  </element>
+  <element name="RESTRICTION" ord="10">
+    <pos x="401" y="613"/>
+    <size width="31" height="21"/>
+  </element>
+  <element name="SYSTEMBOUNDARY" ord="1">
+    <pos x="65" y="569"/>
+    <size width="31.5" height="23.875"/>
+    <rotation phi="-90"/>
+  </element>
+  <element name="SYSTEMBOUNDARY" ord="2">
+    <pos x="505" y="97"/>
+    <size width="21" height="16"/>
+    <rotation phi="90"/>
+  </element>
+  <line name="PIPE" ord="1">
+    <points no="2">
+      <point x="80.25" y="569"/>
+      <point x="81" y="513"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="2">
+    <points no="2">
+      <point x="81" y="513"/>
+      <point x="25" y="457"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="3">
+    <points no="2">
+      <point x="81" y="513"/>
+      <point x="80" y="437"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="4">
+    <points no="2">
+      <point x="80" y="397"/>
+      <point x="79" y="319"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="5">
+    <points no="2">
+      <point x="79" y="289"/>
+      <point x="79" y="251"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="6">
+    <points no="2">
+      <point x="101" y="65"/>
+      <point x="165" y="67"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="7">
+    <points no="3">
+      <point x="195" y="67"/>
+      <point x="313" y="65"/>
+      <point x="314" y="122"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="8">
+    <points no="2">
+      <point x="314" y="122"/>
+      <point x="313.5" y="180.5"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="9">
+    <points no="3">
+      <point x="314" y="122"/>
+      <point x="205" y="121"/>
+      <point x="207" y="257"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="10">
+    <points no="3">
+      <point x="313.5" y="180.5"/>
+      <point x="281" y="181"/>
+      <point x="283" y="257"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="11">
+    <points no="3">
+      <point x="313.5" y="180.5"/>
+      <point x="349" y="181"/>
+      <point x="351" y="253"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="12">
+    <points no="3">
+      <point x="314" y="122"/>
+      <point x="429" y="121"/>
+      <point x="431" y="253"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="13">
+    <points no="2">
+      <point x="207" y="287"/>
+      <point x="207.677" y="329"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="14">
+    <points no="2">
+      <point x="283" y="287"/>
+      <point x="283.677" y="329"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="15">
+    <points no="2">
+      <point x="351" y="283"/>
+      <point x="351.677" y="329"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="16">
+    <points no="2">
+      <point x="431" y="283"/>
+      <point x="431.677" y="329"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="17">
+    <points no="2">
+      <point x="207.677" y="374.354"/>
+      <point x="209" y="405"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="18">
+    <points no="2">
+      <point x="283.677" y="374.354"/>
+      <point x="285.333" y="409"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="19">
+    <points no="2">
+      <point x="351.677" y="374.354"/>
+      <point x="352" y="409"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="20">
+    <points no="2">
+      <point x="431.677" y="374.354"/>
+      <point x="433.333" y="409"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="21">
+    <points no="2">
+      <point x="209" y="429"/>
+      <point x="222" y="546"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="22">
+    <points no="3">
+      <point x="433.333" y="434"/>
+      <point x="365" y="541"/>
+      <point x="222" y="546"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="23">
+    <points no="2">
+      <point x="285.333" y="434"/>
+      <point x="323.714" y="499.714"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="24">
+    <points no="2">
+      <point x="352" y="430"/>
+      <point x="323.714" y="499.714"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="25">
+    <points no="2">
+      <point x="222" y="546"/>
+      <point x="224" y="573"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="26">
+    <points no="2">
+      <point x="323.714" y="499.714"/>
+      <point x="325.5" y="548"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="27">
+    <points no="3">
+      <point x="224" y="594"/>
+      <point x="225" y="625"/>
+      <point x="347.714" y="623.714"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="28">
+    <points no="2">
+      <point x="325.5" y="570.5"/>
+      <point x="347.714" y="623.714"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="29">
+    <points no="2">
+      <point x="347.714" y="623.714"/>
+      <point x="401" y="623"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="30">
+    <points no="3">
+      <point x="431" y="623"/>
+      <point x="517" y="625"/>
+      <point x="515" y="500"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="31">
+    <points no="2">
+      <point x="517" y="460"/>
+      <point x="517" y="373"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="32">
+    <points no="2">
+      <point x="517" y="333"/>
+      <point x="517" y="217"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="33">
+    <points no="2">
+      <point x="517" y="177"/>
+      <point x="515" y="112"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+  <line name="PIPE" ord="34">
+    <points no="2">
+      <point x="79" y="221"/>
+      <point x="81" y="85"/>
+    </points>
+    <fg_color r="0" g="0" b="0"/>
+  </line>
+</nlc>

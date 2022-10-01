@@ -1,0 +1,16 @@
+00:01 00. Mục lục
+01:16 01. Ribbon trong Excel
+03:51 02. Thao tác với bảng tính trong Excel
+13:35 03. Các thành phần của bảng tính Excel
+19:25 04. Nhập dữ liệu
+36:03 05. Nhập công thức
+43:27 06. Các kiểu dữ liệu trong Excel
+50:53 07. Các hàm xử lý dữ liệu ngày tháng, thời gian trong Excel
+56:28 08. Lọc dữ liệu bằng AutoFilter trong Excel
+01:02:03 09. Hàm trong Excel
+01:31:28 10. Nhóm hàm tra cứu trong Excel
+01:43:20 11. Nhóm hàm thống kê trong Excel
+01:57:49 12. Pivot Table trong Excel
+02:00:19 13. Vẽ đồ thị trong Excel
+02:01:29 14. In ấn trong Excel
+02:03:12 15. Định dạng dữ liệu theo điều kiện

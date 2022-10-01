@@ -1,0 +1,29 @@
+BEGIN
+CHANNELNAME = ['Default_Case_Index', &
+               'FLOWCOEFFICIENT_I#16', &
+               'MASSFLOW_I#16', &
+               'PORTWALLHEAT_I#16', &
+               'VALVEPORTOPENING-CLR0MM-CRANKANGLE_I#16', &
+               'VALVEPORTOPENING-EFF0MM-CRANKANGLE_I#16', &
+               'VALVEPORTOPENING-EFF1MM-CRANKANGLE_I#16', &
+               'VALVEPORTOPENING-UDEFMM-CRANKANGLE_I#16', &
+               'VALVEPORTCLOSING-CLR0MM-CRANKANGLE_I#16', &
+               'VALVEPORTCLOSING-EFF0MM-CRANKANGLE_I#16', &
+               'VALVEPORTCLOSING-EFF1MM-CRANKANGLE_I#16', &
+               'VALVEPORTCLOSING-UDEFMM-CRANKANGLE_I#16', &
+               'CAMPHASING_I#16']
+UNIT        = ['no', &
+               '-', &
+               'kg/cycle', &
+               'J/cycle', &
+               'deg', &
+               'deg', &
+               'deg', &
+               'deg', &
+               'deg', &
+               'deg', &
+               'deg', &
+               'deg', &
+               'deg']
+END
+1.000000E+00   0.23803621E+000   0.71844268E-003   0.00000000E+000   0.34000007E+003   0.34000007E+003   0.36250022E+003   0.34000007E+003   0.61000057E+003   0.61000057E+003   0.57752537E+003   0.61000057E+003   0.00000000E+000

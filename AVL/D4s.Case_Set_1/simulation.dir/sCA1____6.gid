@@ -1,0 +1,9 @@
+BEGIN
+CHANNELNAME = ['Default_Case_Index', &
+               'WALLHEATFLOW_H', &
+               'ALPHA-GAS-WALL_H']
+UNIT        = ['no', &
+               'J/cycle', &
+               'W/m2/K']
+END
+1.000000E+00   0.00000000E+000   0.27847879E+002

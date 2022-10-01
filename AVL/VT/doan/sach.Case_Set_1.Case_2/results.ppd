@@ -1,0 +1,28 @@
+# Hydsim MetaTemplate for ASE-PP2
+
+# *** Hydsim ***
+
+# File Variables:
+ModelFile = "../sach.hyd"
+
+# Result Node:
+FOLDER "Hydsim" "sach" "Hydsim - sach/Case Set 1.Case 2"
+
+	FOLDER "elements" "Elements" "no description"
+		FOLDER "@16" "Nozzle_Orifice (16)" 
+			uuid = 606D25FDD04A-001FC4AE-57454C434F-01
+			symbol = h_nozzle
+			CURVE "16@16" "inj.duration (Nozzle_Orifice)" 
+				xlocation = GIDAS "sach.GID" "time"
+				xunit = "s"
+				ylocation = GIDAS "sach.GID" "Nozzle_Orifi(16):inj.duration"
+				yunit = "time"
+			..
+		..
+	..
+
+	FOLDER "adjust" "Search Adjust" 
+	..
+
+..
+

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="settings.xsl" type="text/xsl"?>
+<settings>
+  <element name="ENGINE_DATA", shortname="ED", ord="1">
+    <dvalue name="Stroke" unit="m">0.12</dvalue>
+    <dvalue name="Bore" unit="m">0.105</dvalue>
+    <dvalue name="Connecting rod length" unit="m">0.2</dvalue>
+    <dvalue name="Compression ratio", unit="-">16.0</dvalue>
+    <dvalue name="Engine speed" unit="1/min">1800</dvalue>
+    <dvalue name="Number of nozzle holes" unit="-">1</dvalue>
+    <dvalue name="Injected fuel mass" unit="kg">0</dvalue>
+    <dvalue name="Fuel temperature" unit="K">350</dvalue>
+    <dvalue name="Start of injection" unit="-">714</dvalue>
+    <dvalue name="End of injection or injection duration" unit="-">734</dvalue>
+    <dvalue name="Wave breakup model constant C1" unit="-">0.61</dvalue>
+    <dvalue name="Wave breakup model constant C2" unit="-">15</dvalue>
+    <dvalue name="Wave breakup model constant C3" unit="-">1</dvalue>
+    <dvalue name="Wave breakup model constant C4" unit="-">0.1</dvalue>
+    <dvalue name="Wave breakup model constant C5" unit="-">1</dvalue>
+    <dvalue name="Wave breakup model constant C6" unit="-">0</dvalue>
+    <dvalue name="Wave breakup model constant C7" unit="-">0</dvalue>
+    <dvalue name="Wave breakup model constant C8" unit="-">0</dvalue>
+    <dvalue name="Injection angle delta 1" unit="-">160</dvalue>
+    <dvalue name="Injection angle delta 2" unit="-">0</dvalue>
+    <dvalue name="Nozzle hole outer diameter" unit="m">0.000168</dvalue>
+    <dvalue name="Nozzle hole inner diameter" unit="m">0</dvalue>
+    <dvalue name="Nozzle hole half outer cone angle" unit="-">8</dvalue>
+    <dvalue name="Nozzle hole half inner cone angle" unit="-">0</dvalue>
+    <dvalue name="Nozzle diameter" unit="m">0.00216</dvalue>
+    <dvalue name="Nozzle circumferential hole distribution" unit="-">0</dvalue>
+  </element>
+</settings>

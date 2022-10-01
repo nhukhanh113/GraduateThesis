@@ -1,0 +1,316 @@
+# Hydsim MetaTemplate for ASE-PP2
+
+# *** Hydsim ***
+
+# File Variables:
+ModelFile = "../inline_pump1.hyd"
+
+# Result Node:
+FOLDER "Hydsim" "inline_pump1" "Hydsim - inline_pump1/Case Set 1.Case 1"
+
+	FOLDER "elements" "Elements" "no description"
+		FOLDER "@1" "Cam Profile (1)" 
+			uuid = 3E89B73F9260-0149660C-504D4F5437-01
+			symbol = cam
+			CURVE "1@7" "profile lift (Cam Profile)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Cam Profile(1):profile lift"
+				yunit = "length"
+			..
+			CURVE "1@8" "profile velo (Cam Profile)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Cam Profile(1):profile velo"
+				yunit = "velocity"
+			..
+			CURVE "1@11" "press. angle (Cam Profile)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Cam Profile(1):press. angle"
+				yunit = "angle"
+			..
+			CURVE "1@14" "normal force (Cam Profile)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Cam Profile(1):normal force"
+				yunit = "force"
+			..
+		..
+		FOLDER "@2" "Plunger (2)" 
+			uuid = 3E89B73F9261-0149661C-504D4F5437-01
+			symbol = pump
+			CURVE "2@3" "Xinp-coord. (Plunger)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Plunger(2):Xinp-coord."
+				yunit = "length"
+			..
+			CURVE "2@4" "Xinp-veloc. (Plunger)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Plunger(2):Xinp-veloc."
+				yunit = "velocity"
+			..
+		..
+		FOLDER "@3" "Spill Port (3)" 
+			uuid = 3E89B73F9262-0149662C-504D4F5437-01
+			symbol = port
+			CURVE "3@4" "volum.-rate (Spill Port)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Spill Port(3):volum.-rate"
+				yunit = "volflow2"
+			..
+			CURVE "3@6" "flow resist. (Spill Port)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Spill Port(3):flow resist."
+				yunit = "dimensionless"
+			..
+		..
+		FOLDER "@4" "Pump Chamber (4)" 
+			uuid = 3E89B73F9263-0149663B-504D4F5437-01
+			symbol = volume
+			CURVE "4@3" "pressure (Pump Chamber)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Pump Chamber(4):pressure"
+				yunit = "pressure"
+			..
+		..
+		FOLDER "@5" "Delivery (5)" 
+			uuid = 3E89B73F9260-0149664B-504D4F5437-01
+			symbol = valve
+			CURVE "5@3" "X-coord. (Delivery)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Delivery(5):X-coord."
+				yunit = "length"
+			..
+			CURVE "5@6" "volum.-rate (Delivery)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Delivery(5):volum.-rate"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@6" "Valve Chamber (6)" 
+			uuid = 3E89B73F9261-0149665A-504D4F5437-01
+			symbol = volume
+			CURVE "6@3" "pressure (Valve Chamber)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Valve Chambe(6):pressure"
+				yunit = "pressure"
+			..
+		..
+		FOLDER "@7" "Injection Line (7)" 
+			uuid = 3E89B73F9262-0149666A-504D4F5437-01
+			symbol = line
+			CURVE "7@3" "inp.pressure (Injection Line)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Injection Li(7):inp.pressure"
+				yunit = "pressure"
+			..
+			CURVE "7@4" "out.pressure (Injection Line)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Injection Li(7):out.pressure"
+				yunit = "pressure"
+			..
+			CURVE "7@11" "pressure 1st (Injection Line)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Injection Li(7):pressure 1st"
+				yunit = "pressure"
+			..
+			CURVE "7@12" "pressure 2nd (Injection Line)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Injection Li(7):pressure 2nd"
+				yunit = "pressure"
+			..
+			CURVE "7@13" "pressure 3rd (Injection Line)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Injection Li(7):pressure 3rd"
+				yunit = "pressure"
+			..
+			CURVE "7@14" "pressure 4th (Injection Line)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Injection Li(7):pressure 4th"
+				yunit = "pressure"
+			..
+		..
+		FOLDER "@8" "Conn. Volume (8)" 
+			uuid = 3E89B73F9263-0149667A-504D4F5437-01
+			symbol = volume
+			CURVE "8@3" "pressure (Conn. Volume)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Conn. Volume(8):pressure"
+				yunit = "pressure"
+			..
+		..
+		FOLDER "@10" "Nozzle Chamber (10)" 
+			uuid = 3E89B73F9261-01496699-504D4F5437-01
+			symbol = volume
+			CURVE "10@3" "pressure (Nozzle Chamber)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Nozzle Chamb(10):pressure"
+				yunit = "pressure"
+			..
+		..
+		FOLDER "@12" "Check Valve (12)" 
+			uuid = 3E89B73F9260-014966C8-504D4F5437-01
+			symbol = valve
+			CURVE "12@3" "X-coord. (Check Valve)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Check Valve(12):X-coord."
+				yunit = "length"
+			..
+			CURVE "12@6" "volum.-rate (Check Valve)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Check Valve(12):volum.-rate"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@15" "Needle (15)" 
+			uuid = 3E89B7409264-014966F7-504D4F5437-01
+			symbol = needle
+			CURVE "15@3" "Xinp-coord. (Needle)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Needle(15):Xinp-coord."
+				yunit = "length"
+			..
+			CURVE "15@4" "Xinp-veloc. (Needle)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Needle(15):Xinp-veloc."
+				yunit = "velocity"
+			..
+			CURVE "15@6" "hydr. force (Needle)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Needle(15):hydr. force"
+				yunit = "force"
+			..
+		..
+		FOLDER "@16" "Sac Orifice (16)" 
+			uuid = 3E89B7409270-01496706-504D4F5437-01
+			symbol = h_nozzle
+			CURVE "16@4" "inject.-rate (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):inject.-rate"
+				yunit = "volflow2"
+			..
+			CURVE "16@5" "inj. volume (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):inj. volume"
+				yunit = "volume"
+			..
+			CURVE "16@6" "sac pressure (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):sac pressure"
+				yunit = "pressure"
+			..
+			CURVE "16@7" "ge.seat area (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):ge.seat area"
+				yunit = "area"
+			..
+			CURVE "16@9" "cavit.factor (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):cavit.factor"
+				yunit = "dimensionless"
+			..
+			CURVE "16@10" "ven.con.area (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):ven.con.area"
+				yunit = "area"
+			..
+			CURVE "16@11" "ef.exit area (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):ef.exit area"
+				yunit = "area"
+			..
+			CURVE "16@15" "seat disch. (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):seat disch."
+				yunit = "dimensionless"
+			..
+			CURVE "16@16" "hole disch. (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):hole disch."
+				yunit = "dimensionless"
+			..
+			CURVE "16@17" "Sauter diam. (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):Sauter diam."
+				yunit = "length"
+			..
+			CURVE "16@18" "spray angle (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):spray angle"
+				yunit = "angle"
+			..
+			CURVE "16@19" "penetration (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):penetration"
+				yunit = "length"
+			..
+			CURVE "16@20" "corr-penetr. (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):corr-penetr."
+				yunit = "length"
+			..
+			CURVE "16@21" "inject.power (Sac Orifice)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Sac Orifice(16):inject.power"
+				yunit = "power"
+			..
+		..
+		FOLDER "@17" "Nozzle Leak (17)" 
+			uuid = 3E89B4BE994A-013F9EA1-504D4F5437-01
+			symbol = leakage
+			CURVE "17@4" "volum.-rate (Nozzle Leak)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Nozzle Leak(17):volum.-rate"
+				yunit = "volflow2"
+			..
+			CURVE "17@5" "cumul. rate (Nozzle Leak)" 
+				xlocation = GIDAS "inline_pump1.GID" "ref. angle"
+				xunit = "deg"
+				ylocation = GIDAS "inline_pump1.GID" "Nozzle Leak(17):cumul. rate"
+				yunit = "volume"
+			..
+		..
+	..
+
+	FOLDER "adjust" "Search Adjust" 
+	..
+
+..
+

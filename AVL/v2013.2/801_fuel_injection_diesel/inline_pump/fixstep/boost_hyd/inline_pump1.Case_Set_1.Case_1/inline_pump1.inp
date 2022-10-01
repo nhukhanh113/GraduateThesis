@@ -1,0 +1,372 @@
+ELEMENTS No.  >[  17] BOUNDARY No.  >[   4] MECH_ELEM No. >[  12] VIRT_ELEM No. >[   0] 
+LINE_A_LA No. >[   1] LINE_CHAR No. >[   1] LINE_GODU No. >[   0] LINE_2-PH No. >[   0] 
+BAS. SOL. No. >[   0] EXT. SOL. No. >[   0] LEAKAGE No.   >[   1] VOLU_2-PH No. >[   0] 
+VOLU_ST_C No. >[   4] 
+Boost PL. No. >[   0] Boost VL. No. >[   0] 
+NUMERICS *********************************************************************************
+ REF. ANGLE/REF.
+------------------------------------------------------------------------------------------
+ Engine type       =    4-stroke   
+ Referencd Speed   =    500.000     rpm
+ Engine Speed      =    1000.00     rpm
+ Calculation start =    0.00000     deg
+------------------------------------------------------------------------------------------
+ SOLVER TYPE/FIXED
+  => constant calculation step
+CAL.STEP s/deg|CALC to s/deg | STORE VALUES |
+  0.00150000  |   50.0000    |   250.000    |
+SAVE INTERVAL |
+              |
+------------------------------------------------------------------------------------------
+ RUNTIME OUTPUT [ 1 ]
+------------------------------------------------------------------------------------------
+SIM_MODE *********************************************************************************
+isothermal
+insert_vol
+output_org
+FLUIDPROP ********************************************************************************
+ BULK-MODULUS | VEL-OF-SOUND |   DENSITY    |KIN. VISCOSITY| SURFACE TEN. |  REF. PRES.  |
+  (N/mm2)     |     (m/s)    |   (kg/m3)    |    (cSt)     |    (N/mm)    |    (bar)     |
+   1386.00    |   1300.09    |   820.000    |   3.00000    | 2.90000E-05  |   1.00000    |
+THERMALPROP ******************************************************************************
+  SPEC. HEAT  | THERM. EXPAN.|THERM. CONDUC.|  REF. TEMP.  |VOGEL CONST. B|VOGEL CONST. C|
+   (J/kgK)    |     (1/K)    |    (W/mK)    |     (K)      |     (K)      |     (K)      |
+   1960.00    |  0.00100000  |   0.145000   |   293.150    |   0.00000    |   0.00000    |
+CYLINDER CHARGE PROPERTIES ***************************************************************
+  LOCAL PROPERTIES
+  REFERENCE TEMPERATURE -  293.150   K
+  SPECIFIC HEAT RATIO   -  1.40000   -
+  PRESSURE    |   DENSITY    |KIN. VISCOSITY|
+   (bar)      |   (kg/m3)    |     (cSt)    |
+   1.00000    |   0.737463   |   5.50000    |
+   5.00000    |   3.68189    |   5.50000    |
+   10.0000    |   7.34754    |   5.50000    |
+   20.0000    |   14.6349    |   5.50000    |
+   40.0000    |   29.0360    |   5.50000    |
+   60.0000    |   33.1965    |   5.50000    |
+   80.0000    |   37.1429    |   5.50000    |
+   100.000    |   50.8717    |   5.50000    |
+EQUIPMENT ********************************************************************************
+  1 Cam Profile   12        -2
+   14    0
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+CBRA- 47.5000    mm|RORA- 27.5000    mm|LFT0- 0.00000    mm|VEL0- 0.00000   m/s|
+SHIF- 0.00000   deg|EMOD-          N/m*|BROL-            mm|XCOM- 1.00000     -|
+YCOM- 0.00000     -|ZCOM- 0.00000     -|TRat- 1.00000     -|LEPU-             -|
+SRFR-             -|ECCE- 0.00000    mm|-                 -|-                 -|
+                  -|-                 -|-                 -|-                 -|
+                   |     F0 / M0       |   c    /  ct      |    d   /   dt     |
+               CC  |    (N) / (Nm)     | (N/mm) / (Nm/rad) | (Ns/m) / (Nms/rad)|
+CONNECTION TO   2 x|      0.00000      |      150000.      |      800.000      |
+      direction -> |      1.00000      |      0.00000      |      0.00000      |
+CAM-ACCELERATION
+-------------------|-------------------|
+     CAMANGLE      |      A-1000       |
+       (deg)       |      (m/s2)       |
+-------------------|-------------------|
+      0.00000      |      0.00000      |
+      1.00000      |      823.094      |
+      2.00000      |      824.975      |
+      3.00000      |      828.120      |
+      4.00000      |      832.538      |
+      5.00000      |      838.248      |
+      6.00000      |      845.269      |
+      7.00000      |      853.629      |
+      8.00000      |      863.359      |
+      9.00000      |      874.498      |
+      10.0000      |      887.087      |
+      11.0000      |      901.176      |
+      12.0000      |      916.820      |
+      13.0000      |      934.083      |
+      14.0000      |      953.033      |
+      15.0000      |      973.748      |
+      16.0000      |      996.314      |
+      17.0000      |      1020.83      |
+      18.0000      |      1047.39      |
+      19.0000      |      1076.12      |
+      20.0000      |      1107.15      |
+      21.0000      |      1140.61      |
+      22.0000      |      1176.66      |
+      23.0000      |      1215.47      |
+      24.0000      |      1257.23      |
+      25.0000      |      1302.15      |
+      26.0000      |      1350.44      |
+      27.0000      |      1402.37      |
+      27.3000      |      1418.69      |
+      30.3000      |     -780.000      |
+      40.0000      |     -780.000      |
+      41.2000      |     -1704.00      |
+      41.5000      |     -1709.26      |
+      42.0000      |     -1717.18      |
+      43.0000      |     -1731.90      |
+      44.0000      |     -1745.13      |
+      45.0000      |     -1756.85      |
+      46.0000      |     -1767.05      |
+      47.0000      |     -1775.72      |
+      48.0000      |     -1782.87      |
+      49.0000      |     -1788.47      |
+      50.0000      |     -1792.52      |
+      51.0000      |     -1795.03      |
+      52.0000      |     -1795.99      |
+-------------------|-------------------|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  2 Plunger       30         1   -4
+   19    4
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+MASS- 999.000     g|PDIA- 17.0000    mm|FRIC-             N|PPRS- 1.50000   bar|
+PSFO- 1120.00     N|PS-C- 40.0000  N/mm|PS-D- 10.0000  Ns/m|ELBO- 0.00000     -|
+SDRA-             -|TBLS-             -|ADMI-             g|ADMO-             g|
+FFIN-             N|FFOU-             N|XCOM- 1.00000     -|YCOM- 0.00000     -|
+ZCOM- 0.00000     -|LEPU-             -|SRFR-             -|-                 -|
+ INTEGERPARAMETER -|-                 -|-                 -|-                 -|
+                  3|                                                           |
+                  -|-                 -|-                 -|-                 -|
+                   |     F0 / M0       |   c    /  ct      |    d   /   dt     |
+               CC  |    (N) / (Nm)     | (N/mm) / (Nm/rad) | (Ns/m) / (Nms/rad)|
+CONNECTION TO   1 x|      0.00000      |      150000.      |      800.000      |
+      direction -> |      1.00000      |      0.00000      |      0.00000      |
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  3 Spill Port    35         4  -14
+   30    1          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+DIAM- 6.00000    mm|RETH-             -|PSTR- 6.00000    mm|ESTR- 8.00000    mm|
+HAN1- 43.0000   deg|HAN2- 0.00000   deg|SLOT- 20.0000    mm|NOPT- 2.00000     -|
+GROV- 30.0000   mm2|HANF-           deg|PLDI-            mm|SHGM- 0.00000     -|
+STRG-             -|STHD-             -|DEPS-            mm|CLEA-            mm|
+DEPT-            mm|TANG-           deg|MYF1-             -|EDG1-           deg|
+EDG2-           deg|GPHO-           deg|CPOR-           deg|DEP1-            mm|
+RCLA-            mm|GINA-           deg|TREA-           deg|MYF2-             -|
+MYE1-             -|MYE2-             -|-                 -|-                 -|
+ INTEGERPARAMETER -|-                 -|-                 -|-                 -|
+                  2|                                                           |
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  4 Pump Chamber  21         2   12   -5   -3
+    8    0          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+VOLU- 7000.00   mm3|PLIM-0.00100000 bar|CAVO- 0.00000   mm3|HETR-          W/m*|
+AREA-           mm2|TOUT-             K|LEPU-             -|SRFR-             -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  5 Delivery      40         4   -6
+   30    2          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+MASS- 5.00000     g|DNOM- 8.00000    mm|FRIC-             N|RETH- 2.80000     -|
+DPOP- 20.0000   bar|VS-C- 20.0000  N/mm|VS-D- 1.00000  Ns/m|LIFT- 0.700000   mm|
+SE-C- 50000.0  N/mm|SE-D- 50.0000  Ns/m|ST-C- 50000.0  N/mm|ST-D- 50.0000  Ns/m|
+DCVL-          Ns/m|SeSt- 0.00000     -|XCOM- 1.00000     -|YCOM- 0.00000     -|
+ZCOM- 0.00000     -|StFI- 1.50000     -|EICI-0.00500000 s/m|StFO- 1.50000     -|
+EICO-0.00500000 s/m|DTHI-            mm| REI- 0.500000    -|DTHO-            mm|
+ REO- 1.00000     -|TABL- 0.00000     -|DSTE- 8.00000    mm|THRT- 0.00000     -|
+LEPU-             -|SRFR-             -|-                 -|-                 -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  6 Valve Chambe  21         5   -7  -12
+    8    0          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+VOLU- 3000.00   mm3|PLIM-0.00100000 bar|CAVO- 0.00000   mm3|HETR-          W/m*|
+AREA-           mm2|TOUT-             K|LEPU-             -|SRFR-             -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  7 Injection Li  25         6   -8
+   19    0          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+LENG- 500.000    mm|DIAM- 3.00000    mm|DAMP-             -|THIK-            mm|
+EMAT-          N/m*|POIS-             -|AQIN-           mm2|REI+-             -|
+REI--             -|AQOU-           mm2|REO+-             -|REO--             -|
+IDCM- 1.00000     -|BESS- 20.0000     -|  L1- 100.000    mm|  L2- 200.000    mm|
+  L3- 300.000    mm|  L4- 400.000    mm|  L5-            mm|-                 -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  8 Conn. Volume  21         7   -9
+    8    0          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+VOLU- 100.000   mm3|PLIM-0.00100000 bar|CAVO- 0.00000   mm3|HETR-          W/m*|
+AREA-           mm2|TOUT-             K|LEPU-             -|SRFR-             -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+  9 Nozzle Bore   23         8  -10
+   11    0          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+LENG- 300.000    mm|DIAM- 3.00000    mm|THIK-            mm|EMAT-          N/m*|
+AQIN-           mm2|REI+-             -|REI--             -|AQOU-           mm2|
+REO+-             -|REO--             -|FRSW- 1.00000     -|-                 -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 10 Nozzle Chamb  21         9  -17  -16  -15
+    8    0          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+VOLU- 900.000   mm3|PLIM-0.00100000 bar|CAVO- 0.00000   mm3|HETR-          W/m*|
+AREA-           mm2|TOUT-             K|LEPU-             -|SRFR-             -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 11 Nozzle Holde   0        17   15
+    7    0
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+SHIF- 0.00000     s|CDEC- 0.00000     -|XCOM- 1.00000     -|YCOM- 0.00000     -|
+ZCOM- 0.00000     -|LEPU-             -|SRFR-             -|-                 -|
+BOUNDARY HYDROMECHANICAL
+-------------------|-------------------|-------------------|-------------------|
+       TIME        |     => X  <=      |     PRESSURE      |       FLOW        |
+        (s)        |       (mm)        |       (mm)        |      (mm3/s)      |
+-------------------|-------------------|-------------------|-------------------|
+      0.00000      |      0.00000      |      3.00000      |      0.00000      |
+-------------------|-------------------|-------------------|-------------------|
+                  -|-                 -|-                 -|-                 -|
+                   |     F0 / M0       |   c    /  ct      |    d   /   dt     |
+               CC  |    (N) / (Nm)     | (N/mm) / (Nm/rad) | (Ns/m) / (Nms/rad)|
+CONNECTION TO  15 x|      777.540      |      250.000      |      20.0000      |
+      direction -> |      1.00000      |      0.00000      |      0.00000      |
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 12 Check Valve   43         6   -4
+   27    2          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+MASS- 2.00000     g|DSEA- 1.50000    mm|SANG- 45.0000   deg|DCVL- 20.0000  Ns/m|
+DTHI- 1.50000    mm| REI- 0.500000    -|DTHO- 1.50000    mm| REO- 1.00000     -|
+RETH- 2.78000     -|DPOP- 100.000   bar|VS-C- 18.0000  N/mm|VS-D- 1.00000  Ns/m|
+LIFT- 0.300000   mm|SE-C- 10000.0  N/mm|SE-D- 25.0000  Ns/m|ST-C- 10000.0  N/mm|
+ST-D- 25.0000  Ns/m|SeSt- 0.00000     -|XCOM- 1.00000     -|YCOM- 0.00000     -|
+ZCOM- 0.00000     -|StFI- 1.50000     -|EICI-0.00500000 s/m|StFO- 1.50000     -|
+EICO-0.00500000 s/m|LEPU-             -|SRFR-             -|-                 -|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 13 Cyl. Pressur   5        16
+    4    0
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+SHIF- 0.00000     s|CDEC- 0.00000     -|LEPU-             -|SRFR-             -|
+BOUNDARY PRESSURE/TEMPERATURE
+-------------------|-------------------|-------------------|
+       TIME        |     PRESSURE      |    TEMPERATURE    |
+        (s)        |       (bar)       |        (K)        |
+-------------------|-------------------|-------------------|
+      0.00000      |      80.0000      |      353.150      |
+-------------------|-------------------|-------------------|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 14 Feed Pressur   5         3
+    4    0
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+SHIF- 0.00000     s|CDEC- 0.00000     -|LEPU-             -|SRFR-             -|
+BOUNDARY PRESSURE/TEMPERATURE
+-------------------|-------------------|-------------------|
+       TIME        |     PRESSURE      |    TEMPERATURE    |
+        (s)        |       (bar)       |        (K)        |
+-------------------|-------------------|-------------------|
+      0.00000      |      3.00000      |      313.150      |
+-------------------|-------------------|-------------------|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 15 Needle        52        10  -11
+   47    3
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+MASS- 20.0000     g|DING- 7.00000    mm|DINS- 4.00000    mm|FRIC-             N|
+DNCL-          Ns/m|LIFT- 0.400000   mm|SE-C- 100000.  N/mm|SE-D- 500.000  Ns/m|
+ST-C- 100000.  N/mm|ST-D- 500.000  Ns/m|BOUG-            mm|FLAG- 0.00000     -|
+ELBO- 0.00000     -|SDRA-             -|TBLS-             -|ADMI-             g|
+ADMO-             g|FFIN-             N|FFOU-             N|SeSt- 0.00000     -|
+XCOM- 1.00000     -|YCOM- 0.00000     -|ZCOM- 0.00000     -|StFI- 1.50000     -|
+EICI- 5.00000   s/m|StFO- 1.50000     -|EICO- 5.00000   s/m|NDOF- 0.00000     -|
+RCGD- 1.00000     -|LorT- 0.00000     -|Hrtz- 0.00000     -|EMOD-          N/m*|
+POIS-             -|DAMR-             -|CCGD- 0.00000     -|CGAP-0.00050000  mm|
+ELSE- 0.00000     -|CorO-             -|SENC-          N/mm|SEND-          Ns/m|
+DINB-            mm|DONB-            mm|BDRA-             -|WALC-          N/mm|
+WALD-          Ns/m|LEPU-             -|SRFR-             -|-                 -|
+ INTEGERPARAMETER -|-                 -|-                 -|-                 -|
+                 17|                                                           |
+                 16|                                                           |
+                  -|-                 -|-                 -|-                 -|
+                   |     F0 / M0       |   c    /  ct      |    d   /   dt     |
+               CC  |    (N) / (Nm)     | (N/mm) / (Nm/rad) | (Ns/m) / (Nms/rad)|
+CONNECTION TO  11 x|      777.540      |      250.000      |      20.0000      |
+      direction -> |      1.00000      |      0.00000      |      0.00000      |
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 16 Sac Orifice   57        10  -13
+   22    1          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+NRHO- 8.00000     -|DIHO- 0.420000   mm|DSAC- 1.50000    mm|DTIP- 0.700000   mm|
+SANG- 60.0000   deg|TANG- 120.000   deg| MYH-             -| MYK-             -|
+ CSL- 5000.00     -|R_PW- 1.00000     -| CST- 1.00000     -|LHOL- 1.00000    mm|
+IBWL- 2.00000    mm|RINL-0.00500000  mm|PLIM-0.00100000 bar|MYHI-             -|
+CHkF-             -|NTIP- 0.00000     -|DTND- 0.00000    mm|DSND- 0.00000    mm|
+MYSA- 0.00000     -|CNTI- 0.00000     -|-                 -|-                 -|
+ INTEGERPARAMETER -|-                 -|-                 -|-                 -|
+                 15|                                                           |
+SPRAY FORMATION --------------------------------------------------------------------------
+ELKTOB           - D32 FORMULA
+SITKEI           - SPRAY CONE ANGLE FORMULA
+WAKURI           - PENETRATION FORMULA
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+ 17 Nozzle Leak   38        10  -11
+    5    2          
+   REALPARAMETER  -|-                 -|-                 -|-                 -|
+DIAM-            mm|LENG- 30.0000    mm|FACT- 0.00000     -|NOpP- 1.00000     -|
+TABL- 1.00000     -|-                 -|-                 -|-                 -|
+ INTEGERPARAMETER -|-                 -|-                 -|-                 -|
+                 15|                                                           |
+GAP FUNCTION
+-------------------|-------------------|
+     Pressure      |     Clearance     |
+       (bar)       |       (mm)        |
+-------------------|-------------------|
+      0.00000      |    0.00500000     |
+-------------------|-------------------|
+--E-""""""""""""---X---------C----C----C----C----C----C------------------------|
+INITIALS *********************************************************************************
+              |    COORD.    |   VELOCITY   |   PRESSURE   |     FLOW     | TEMPERATURE  |
+              |   (mm,deg)   |  (m/s,rpm)   |    (bar)     |    (mm3/s)   |     (K)      |
+             -|-            -|-            -|-            -|-            -|-            -|
+    4 x  IN ->|   0.00000    |   0.00000    |   3.00000    |   0.00000    |   313.150    |
+         OUT->|   0.00000    |   0.00000    |   3.00000    |   0.00000    |   313.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+    6 x  IN ->|   0.00000    |   0.00000    |   80.0000    |   0.00000    |   313.150    |
+         OUT->|   0.00000    |   0.00000    |   80.0000    |   0.00000    |   313.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+    8 x  IN ->|   0.00000    |   0.00000    |   80.0000    |   0.00000    |   313.150    |
+         OUT->|   0.00000    |   0.00000    |   80.0000    |   0.00000    |   313.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+   10 x  IN ->|   0.00000    |   0.00000    |   80.0000    |   0.00000    |   313.150    |
+         OUT->|   0.00000    |   0.00000    |   80.0000    |   0.00000    |   313.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+------------------------------------------------------------------------------------------
+STORE-RESULT GIDAS ***********************************************************************
+time            => EQNR=        1|RESL=        1|s
+ref. angle      => EQNR=        1|RESL=        2|deg
+profile lift    => EQNR=        1|RESL=        7|mm          
+profile velo    => EQNR=        1|RESL=        8|m/s         
+press. angle    => EQNR=        1|RESL=       11|deg         
+normal force    => EQNR=        1|RESL=       14|N           
+Xinp-coord.     => EQNR=        2|RESL=        3|mm          
+Xinp-veloc.     => EQNR=        2|RESL=        4|m/s         
+volum.-rate     => EQNR=        3|RESL=        4|mm^3/deg    
+flow resist.    => EQNR=        3|RESL=        6|-           
+pressure        => EQNR=        4|RESL=        3|bar         
+X-coord.        => EQNR=        5|RESL=        3|mm          
+volum.-rate     => EQNR=        5|RESL=        6|mm^3/deg    
+pressure        => EQNR=        6|RESL=        3|bar         
+inp.pressure    => EQNR=        7|RESL=        3|bar         
+out.pressure    => EQNR=        7|RESL=        4|bar         
+pressure 1st    => EQNR=        7|RESL=       11|bar         
+pressure 2nd    => EQNR=        7|RESL=       12|bar         
+pressure 3rd    => EQNR=        7|RESL=       13|bar         
+pressure 4th    => EQNR=        7|RESL=       14|bar         
+pressure        => EQNR=        8|RESL=        3|bar         
+pressure        => EQNR=       10|RESL=        3|bar         
+X-coord.        => EQNR=       12|RESL=        3|mm          
+volum.-rate     => EQNR=       12|RESL=        6|mm^3/deg    
+Xinp-coord.     => EQNR=       15|RESL=        3|mm          
+Xinp-veloc.     => EQNR=       15|RESL=        4|m/s         
+hydr. force     => EQNR=       15|RESL=        6|N           
+inject.-rate    => EQNR=       16|RESL=        4|mm^3/deg    
+inj. volume     => EQNR=       16|RESL=        5|mm^3        
+sac pressure    => EQNR=       16|RESL=        6|bar         
+ge.seat area    => EQNR=       16|RESL=        7|mm^2        
+cavit.factor    => EQNR=       16|RESL=        9|-           
+ven.con.area    => EQNR=       16|RESL=       10|mm^2        
+ef.exit area    => EQNR=       16|RESL=       11|mm^2        
+seat disch.     => EQNR=       16|RESL=       15|-           
+hole disch.     => EQNR=       16|RESL=       16|-           
+Sauter diam.    => EQNR=       16|RESL=       17|mym         
+spray angle     => EQNR=       16|RESL=       18|deg         
+penetration     => EQNR=       16|RESL=       19|mm          
+corr-penetr.    => EQNR=       16|RESL=       20|mm          
+inject.power    => EQNR=       16|RESL=       21|W           
+volum.-rate     => EQNR=       17|RESL=        4|mm^3/deg    
+cumul. rate     => EQNR=       17|RESL=        5|mm^3        
+ANIMATION **********************************************************************
+Nozzle elements:
+--------------------------------------------------------------------------------
+  ID number = 16
+--------------------------------------------------------------------------------
+    |  Scale Lift  |  Scale Rate  |
+    |   1.00000    |   1.00000    |
+--------------------------------------------------------------------------------
+CALCULATE ********************************************************************************

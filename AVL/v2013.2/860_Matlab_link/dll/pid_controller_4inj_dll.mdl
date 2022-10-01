@@ -1,0 +1,928 @@
+Model {
+  Name			  "pid_controller_4inj_dll"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Aug 06 10:14:28 1999"
+  Creator		  "mandic"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "CAIKA"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Jul 18 15:18:20 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:478>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "RTW"
+  StartTime		  "0.0"
+  StopTime		  "10"
+  SolverMode		  "SingleTasking"
+  Solver		  "ode5"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.0005"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aFoldNonRol"
+"ledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -aIgnoreCustomStor"
+"ageClasses=0 -aIncHierarchyInIds=0 -aInlineInvariantSignals=0 -aLocalBlockOut"
+"puts=1 -aLogVarNameModifier=\"rt_\" -aRTWVerbose=1 -aRollThreshold=5 -aShowEl"
+"iminatedStatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  on
+  RTWTemplateMakefile	  "avl_grt_dll_nt.tmf"
+  RTWMakeCommand	  "make_rtw PROGRAM=pid_controller_4inj"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "pid_controller_4inj_dll"
+    Location		    [72, 200, 1212, 630]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "Set Rail \nPressure"
+      Position		      [25, 173, 55, 187]
+      Port		      "1"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Actual Rail \nVolume pressure"
+      Position		      [30, 73, 60, 87]
+      Port		      "2"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Bulk modulus"
+      Position		      [225, 18, 255, 32]
+      Port		      "3"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Volume"
+      Position		      [225, 73, 255, 87]
+      Port		      "4"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Density"
+      Position		      [510, 188, 540, 202]
+      Port		      "5"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Feed Pressure"
+      Position		      [510, 278, 540, 292]
+      Port		      "6"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Actual Time"
+      Position		      [635, 23, 665, 37]
+      Port		      "7"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Inlet Pressure"
+      Position		      [510, 323, 540, 337]
+      Port		      "8"
+      LatchInput	      off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1]
+      Position		      [1030, 190, 1120, 220]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Initial opening \ntime"
+      Position		      [640, 75, 670, 105]
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Product
+      Name		      "K=E/V"
+      Ports		      [2, 1]
+      Position		      [290, 37, 320, 68]
+      Inputs		      "*/"
+      Multiplication	      "Element-wise(.*)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "PID Controller \n(dp-error = Pset>Pactual)"
+      Ports		      [1, 1]
+      Position		      [185, 125, 320, 215]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"PID Controller \n(dp-error = Pset>Pactual)"
+	Location		[49, 134, 688, 457]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pressure \nDrop"
+	  Position		  [80, 73, 110, 87]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Deriv_Gain"
+	  Position		  [200, 120, 220, 150]
+	  Gain			  "3.831e-8"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Int_Gain"
+	  Position		  [205, 15, 235, 45]
+	  Gain			  "1.4e+8"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [280, 15, 310, 45]
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Prop_Gain"
+	  Position		  [205, 65, 235, 95]
+	  Gain			  "4.6"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [3, 1]
+	  Position		  [355, 34, 380, 106]
+	  ShowName		  off
+	  IconShape		  "rectangular"
+	  Inputs		  "|+++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  TransferFcn
+	  Name			  "Transfer Fcn"
+	  Position		  [255, 117, 315, 153]
+	  Numerator		  "[1 0]"
+	  Denominator		  "[1 1]"
+	  AbsoluteTolerance	  "auto"
+	  Realization		  "auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P Output"
+	  Position		  [440, 63, 470, 77]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Int_Gain"
+	  SrcPort		  1
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Prop_Gain"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Transfer Fcn"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -35]
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Deriv_Gain"
+	  SrcPort		  1
+	  DstBlock		  "Transfer Fcn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pressure \nDrop"
+	  SrcPort		  1
+	  Points		  [0, 0; 30, 0]
+	  Branch {
+	    DstBlock		    "Prop_Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "Int_Gain"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Deriv_Gain"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "P Output"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Resp. time"
+      Position		      [955, 15, 985, 45]
+      Value		      "0.0005"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      Ports		      [5, 1]
+      Position		      [615, 122, 755, 358]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Subsystem"
+	Location		[185, 569, 1317, 872]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Cumulative \nFlow Rate"
+	  Position		  [195, 43, 225, 57]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Density"
+	  Position		  [480, 123, 510, 137]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "mju_A"
+	  Position		  [475, 163, 505, 177]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Feed Pressure"
+	  Position		  [185, 128, 215, 142]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Inlet Pressure"
+	  Position		  [185, 183, 215, 197]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [525, 60, 555, 90]
+	  Gain			  "2"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "K1=2*dp/ro"
+	  Ports			  [2, 1]
+	  Position		  [580, 66, 625, 99]
+	  Inputs		  "*/"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "K2=mjuA*sqrt(K1)"
+	  Ports			  [2, 1]
+	  Position		  [750, 76, 795, 109]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Min. opening\n time"
+	  Position		  [855, 110, 885, 140]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Neg. pressure diff."
+	  Position		  [290, 210, 320, 240]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Opening limits"
+	  Position		  [925, 50, 955, 80]
+	  UpperLimit		  "40e-5"
+	  LowerLimit		  "3e-5"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [280, 117, 300, 153]
+	  ShowName		  off
+	  IconShape		  "rectangular"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Time switch"
+	  Position		  [375, 91, 425, 179]
+	  Threshold		  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Time switch1"
+	  Position		  [990, 51, 1040, 139]
+	  Threshold		  "1e-5"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "flow rate/K2"
+	  Ports			  [2, 1]
+	  Position		  [845, 46, 890, 79]
+	  Inputs		  "*/"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "sqrt(K1)"
+	  Ports			  [1, 1]
+	  Position		  [655, 70, 685, 100]
+	  Operator		  "sqrt"
+	  OutputSignalType	  "auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Filling time1"
+	  Position		  [1075, 88, 1105, 102]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Inlet Pressure"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -45]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Feed Pressure"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Time switch"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Neg. pressure diff."
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -60]
+	  DstBlock		  "Time switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "K1=2*dp/ro"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "K1=2*dp/ro"
+	  SrcPort		  1
+	  DstBlock		  "sqrt(K1)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "sqrt(K1)"
+	  SrcPort		  1
+	  DstBlock		  "K2=mjuA*sqrt(K1)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "K2=mjuA*sqrt(K1)"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -25]
+	  DstBlock		  "flow rate/K2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "flow rate/K2"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    DstBlock		    "Opening limits"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 30]
+	    DstBlock		    "Time switch1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Opening limits"
+	  SrcPort		  1
+	  DstBlock		  "Time switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Min. opening\n time"
+	  SrcPort		  1
+	  DstBlock		  "Time switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Time switch1"
+	  SrcPort		  1
+	  DstBlock		  "Filling time1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Density"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "K1=2*dp/ro"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "mju_A"
+	  SrcPort		  1
+	  Points		  [165, 0; 0, -50; 50, 0; 0, -20]
+	  DstBlock		  "K2=mjuA*sqrt(K1)"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Cumulative \nFlow Rate"
+	  SrcPort		  1
+	  Points		  [90, 0; 0, 55]
+	  DstBlock		  "Time switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Time switch"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, -80]
+	  DstBlock		  "flow rate/K2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [125, 152, 145, 188]
+      ShowName		      off
+      IconShape		      "rectangular"
+      Inputs		      "|-+"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum4"
+      Ports		      [2, 1]
+      Position		      [1020, 24, 1045, 66]
+      ShowName		      off
+      IconShape		      "rectangular"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Time switch"
+      Position		      [890, 16, 940, 104]
+      Threshold		      "5e-7"
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Time switch3"
+      Position		      [440, 106, 490, 194]
+      Threshold		      "0"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "dp/K"
+      Ports		      [2, 1]
+      Position		      [360, 117, 390, 148]
+      NamePlacement	      "alternate"
+      Inputs		      "/*"
+      Multiplication	      "Element-wise(.*)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "dp>0"
+      Position		      [360, 165, 390, 195]
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "mju_A"
+      Position		      [515, 225, 545, 255]
+      Value		      "5e-6"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Opening Time1"
+      Position		      [1075, 38, 1105, 52]
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Closing Time1"
+      Position		      [1035, 143, 1065, 157]
+      Port		      "2"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Line {
+      SrcBlock		      "Initial opening \ntime"
+      SrcPort		      1
+      DstBlock		      "Time switch"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Actual Time"
+      SrcPort		      1
+      DstBlock		      "Time switch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "PID Controller \n(dp-error = Pset>Pactual)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Actual Rail \nVolume pressure"
+      SrcPort		      1
+      Points		      [30, 0; 0, 90]
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Set Rail \nPressure"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Bulk modulus"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "K=E/V"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Volume"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "K=E/V"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "K=E/V"
+      SrcPort		      1
+      Points		      [10, 0; 0, 70]
+      DstBlock		      "dp/K"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID Controller \n(dp-error = Pset>Pactual)"
+      SrcPort		      1
+      Points		      [10, 0; 0, -30]
+      DstBlock		      "dp/K"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "dp/K"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, -15]
+	DstBlock		"Time switch3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 15]
+	DstBlock		"Time switch3"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      Points		      [55, 0; 0, -90; 45, 0]
+      Branch {
+	Points			[0, -90]
+	DstBlock		"Time switch"
+	DstPort			2
+      }
+      Branch {
+	Points			[120, 0]
+	Branch {
+	  DstBlock		  "Closing Time1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 55]
+	  DstBlock		  "Display1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Resp. time"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Sum4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Time switch"
+      SrcPort		      1
+      DstBlock		      "Sum4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum4"
+      SrcPort		      1
+      DstBlock		      "Opening Time1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "dp>0"
+      SrcPort		      1
+      DstBlock		      "Time switch3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Time switch3"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Density"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "mju_A"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Feed Pressure"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Inlet Pressure"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      5
+    }
+  }
+}

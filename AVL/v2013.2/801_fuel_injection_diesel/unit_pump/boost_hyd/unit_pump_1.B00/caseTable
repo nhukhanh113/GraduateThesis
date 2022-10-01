@@ -1,0 +1,3 @@
+B00 FuelT  CamSpeed  Fuelling_g  CamShift  
+[UNITS] temperature~degC  ang_vel~rpm  undefined  simtime~deg  
+B00.110 80  413  3.367585  19.7  

@@ -1,0 +1,43 @@
+
+ o------------------------------------------------------------o
+ | AVL BOOST Hydsim / VarStep solver / v2020.1 / March 2020 |
+ o------------------------------------------------------------o
+
+ Internal data file name .... inline_pump_lift.inp                                            
+ Input control file name .... inline_pump_lift.lst                                            
+
+ WARNING: Melcher friction model not supported by this solver
+          Inner friction neglected for all lines of this type
+          Element No.  8: Nozzle Bore 
+          Element No. 17: Injection Li
+
+   EQUIPMENT (ELEMENTS):
+
+       1  Cam Profile     -MODULE 12
+       2  Plunger         -MODULE 30
+       3  Spill Port      -MODULE 35
+       4  Pump Chamber    -MODULE 21
+       5  Delivery        -MODULE 40
+       6  Valve Chambe    -MODULE 21
+       7  Conn. Volume    -MODULE 21
+       8  Nozzle Bore     -MODULE 23
+       9  Nozzle Chamb    -MODULE 21
+      10  Nozzle Holde    -MODULE 00
+      11  Check Valve     -MODULE 43
+      12  Cyl. Pressur    -MODULE 05
+      13  Feed Pressur    -MODULE 05
+      14  Needle          -MODULE 52
+      15  Sac Orifice     -MODULE 57
+      16  Nozzle Leak     -MODULE 38
+      17  Injection Li    -MODULE 29
+
+   EQUATION SYSTEM:
+
+      NR. ORDINARY DIFF. EQUATIONS = 12
+      NR. PARTIAL  DIFF. EQUATIONS =  4
+
+ Output file name (for Impress chart) ..inline_pump_lift.GID                                            
+
+ *** Calculation completed ***
+ -----------------------------
+

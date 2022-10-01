@@ -1,0 +1,10 @@
+  TASK: simulation
+   
+  Calculation cannot be started!
+   
+  Engine Speed in Calculation Control is required for Penetration with swirl correction!
+  Task "simulation"
+*** Error in Pre-Processing Task simulation!
+  finished Pre-Processing
+  
+  Calculation cannot be started.

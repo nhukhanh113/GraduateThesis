@@ -1,0 +1,18 @@
+# Hydsim MetaTemplate for ASE-PP2
+
+# *** Hydsim ***
+
+# File Variables:
+ModelFile = "../sach.hyd"
+
+# Result Node:
+FOLDER "Hydsim" "sach" "Hydsim - sach/Case Set 1.Case 1"
+
+	FOLDER "elements" "Elements" "no description"
+	..
+
+	FOLDER "adjust" "Search Adjust" 
+	..
+
+..
+

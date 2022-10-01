@@ -1,0 +1,4595 @@
+================================================================================
+CSR - Case Set Result Creator
+================================================================================
+Case Set Table File: 'C:\Users\Welcome\Desktop/D4s.Case_Set_1/caseTable'
+SUCCESS: When opening Case Set Table File
+
+Case Set Name:        'Case_Set_1'
+Main Parameter Name:  'Default_Case_Index'
+Main Parameter Group: 'dimensionless'
+Main Parameter Unit:  'no'
+
+C A S E S  -->  R E A D   S T A T E
+Number of Cases:  '1'
+1. Case:  name='Case_Set_1.Case_9'  value='1.000000' state='Unknown'
+
+C A S E S  -->  A C T U A L   S T A T E
+Number of Cases:  '1'
+1. Case:  name='Case_Set_1.Case_9'  value='1.000000' state='Completed'
+
+Source PPD-File:  'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/Results.ppd'
+
+Target PPD-File:  'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/Results.ppd'
+
+SUCCESS: When opening PPD Source File
+Stored Filenames
+
+The following Gidas Files are available in the PPD-File: 
+-> 'kEG1____1.gid'
+-> 'kCY1____1.gid'
+-> 'kCY1____2.gid'
+-> 'kCY1____3.gid'
+-> 'kCY2____1.gid'
+-> 'kCY2____2.gid'
+-> 'kCY2____3.gid'
+-> 'kCY3____1.gid'
+-> 'kCY3____2.gid'
+-> 'kCY3____3.gid'
+-> 'kCY4____1.gid'
+-> 'kCY4____2.gid'
+-> 'kCY4____3.gid'
+-> 'kAC1____2.gid'
+-> 'kAC1____3.gid'
+-> 'kAC1____4.gid'
+-> 'kAC1____5.gid'
+-> 'kAC1____6.gid'
+-> 'kCA1____2.gid'
+-> 'kCA1____3.gid'
+-> 'kCA1____4.gid'
+-> 'kCA1____5.gid'
+-> 'kCA1____6.gid'
+-> 'kPL1____1.gid'
+-> 'kPL1____2.gid'
+-> 'kPL2____1.gid'
+-> 'kPL2____2.gid'
+-> 'kPL2____3.gid'
+-> 'kPL3____1.gid'
+-> 'kPL3____2.gid'
+-> 'kPL3____3.gid'
+-> 'kPL4____1.gid'
+-> 'kPL4____2.gid'
+-> 'kPL4____3.gid'
+-> 'kMP1____1.gid'
+-> 'kMP2____1.gid'
+-> 'kMP3____1.gid'
+-> 'kMP4____1.gid'
+-> 'kMP5____1.gid'
+-> 'kMP6____1.gid'
+-> 'kMP7____1.gid'
+-> 'kMP8____1.gid'
+-> 'kMP9____1.gid'
+-> 'kMP10___1.gid'
+-> 'kMP11___1.gid'
+-> 'kMP12___1.gid'
+-> 'kMP13___1.gid'
+-> 'kMP14___1.gid'
+-> 'kMP15___1.gid'
+-> 'kMP16___1.gid'
+-> 'kMP17___1.gid'
+-> 'kMP18___1.gid'
+-> 'kSB1____1.gid'
+-> 'kSB2____1.gid'
+-> 'kFR1____1.gid'
+-> 'kFR1____2.gid'
+-> 'kFR2____1.gid'
+-> 'kFR2____2.gid'
+-> 'kFR3____1.gid'
+-> 'kFR3____2.gid'
+-> 'kFR4____1.gid'
+-> 'kFR4____2.gid'
+-> 'kFR5____1.gid'
+-> 'kFR5____2.gid'
+-> 'kFR6____1.gid'
+-> 'kFR6____2.gid'
+-> 'kFR7____1.gid'
+-> 'kFR7____2.gid'
+-> 'kFR8____1.gid'
+-> 'kFR8____2.gid'
+-> 'kFR9____1.gid'
+-> 'kFR9____2.gid'
+-> 'kFR10___1.gid'
+-> 'kFR10___2.gid'
+-> 'kIJ1____1.gid'
+-> 'kIJ1____2.gid'
+-> 'kIJ1____3.gid'
+-> 'kIJ2____1.gid'
+-> 'kIJ2____2.gid'
+-> 'kIJ2____3.gid'
+-> 'kIJ3____1.gid'
+-> 'kIJ3____2.gid'
+-> 'kIJ3____3.gid'
+-> 'kIJ4____1.gid'
+-> 'kIJ4____2.gid'
+-> 'kIJ4____3.gid'
+-> 'kJC1____1.gid'
+-> 'kJC1____2.gid'
+-> 'kJC1____3.gid'
+-> 'kJC2____1.gid'
+-> 'kJC2____2.gid'
+-> 'kJC2____3.gid'
+-> 'kJC2____4.gid'
+-> 'kJC3____1.gid'
+-> 'kJC3____2.gid'
+-> 'kJC3____3.gid'
+-> 'kJC4____1.gid'
+-> 'kJC4____2.gid'
+-> 'kJC4____3.gid'
+-> 'kJC5____1.gid'
+-> 'kJC5____2.gid'
+-> 'kJC5____3.gid'
+-> 'kJC6____1.gid'
+-> 'kJC6____2.gid'
+-> 'kJC6____3.gid'
+-> 'kPI1____1.gid'
+-> 'kPI2____1.gid'
+-> 'kPI3____1.gid'
+-> 'kPI4____1.gid'
+-> 'kPI5____1.gid'
+-> 'kPI6____1.gid'
+-> 'kPI7____1.gid'
+-> 'kPI8____1.gid'
+-> 'kPI9____1.gid'
+-> 'kPI10___1.gid'
+-> 'kPI11___1.gid'
+-> 'kPI12___1.gid'
+-> 'kPI13___1.gid'
+-> 'kPI14___1.gid'
+-> 'kPI15___1.gid'
+-> 'kPI16___1.gid'
+-> 'kPI17___1.gid'
+-> 'kPI18___1.gid'
+-> 'kPI19___1.gid'
+-> 'kPI20___1.gid'
+-> 'kPI21___1.gid'
+-> 'kPI22___1.gid'
+-> 'kPI23___1.gid'
+-> 'kPI24___1.gid'
+-> 'kPI25___1.gid'
+-> 'kPI26___1.gid'
+-> 'kPI27___1.gid'
+-> 'kPI28___1.gid'
+-> 'kPI29___1.gid'
+-> 'kPI30___1.gid'
+-> 'kPI31___1.gid'
+-> 'kPI32___1.gid'
+-> 'kPI33___1.gid'
+-> 'kPI34___1.gid'
+-> 'kTT1____1.gid'
+
+Source Gidas Files: 
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kEG1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____5.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____6.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____5.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____6.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP11___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP12___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP13___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP14___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP15___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP16___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP17___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP18___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kSB1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kSB2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR5____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR6____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR7____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR8____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR9____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR10___2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC5____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC5____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC6____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC6____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI11___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI12___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI13___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI14___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI15___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI16___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI17___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI18___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI19___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI20___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI21___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI22___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI23___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI24___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI25___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI26___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI27___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI28___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI29___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI30___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI31___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI32___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI33___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI34___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kTT1____1.gid'
+
+Target Gidas Files: 
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sEG1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCY4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sAC1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sAC1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sAC1____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sAC1____5.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sAC1____6.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCA1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCA1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCA1____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCA1____5.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sCA1____6.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPL4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP11___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP12___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP13___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP14___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP15___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP16___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP17___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sMP18___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sSB1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sSB2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR5____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR6____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR7____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR8____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR9____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sFR10___2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sIJ4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC2____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC5____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC5____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC6____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sJC6____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI11___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI12___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI13___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI14___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI15___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI16___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI17___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI18___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI19___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI20___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI21___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI22___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI23___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI24___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI25___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI26___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI27___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI28___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI29___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI30___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI31___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI32___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI33___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sPI34___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/sTT1____1.gid'
+
+SUCCESS: When opening PPD Source File 'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/Results.ppd'
+SUCCESS: When opening PPD Target File 'C:\Users\Welcome\Desktop/D4s.Case_Set_1/simulation.dir/Results.ppd'
+
++FOLDER 'Boost'
+++FOLDER 'TRANSIENTS'
++++FOLDER 'Engine'
+++++CURVE 'ENDOFCYCLE-TIME'
+++++..
+++++CURVE 'CYCLEAVERAGEDSPEED'
+++++..
+++++CURVE 'CYCLEFREQUENCY'
+++++..
+++++CURVE 'CYCLEPERIOD'
+++++..
+++++CURVE 'PRESSURE-AMB'
+++++..
+++++CURVE 'TEMPERATURE-AMB'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE-CRANKANGLE'
+++++..
+++++CURVE 'FUELMASSINJECTED'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++FOLDER 'SHP'
++++++CURVE 'A/F-RATIO-STOICH'
++++++..
++++++CURVE 'A/F-RATIO-UNBRND'
++++++..
++++++CURVE 'AIR-EXCESS-RATIO'
++++++..
+++++..
+++++FOLDER 'C'
++++++CURVE 'LOWER-HEAT-VALUE'
++++++..
++++++CURVE 'PEAKCYLINDERPRESSURE'
++++++..
++++++CURVE 'PEAKCYLINDERPRESSURE-CRANKANGLE'
++++++..
++++++CURVE 'PEAKPRESSURERISE'
++++++..
++++++CURVE 'PEAKPRESSURERISE-CRANKANGLE'
++++++..
++++++CURVE 'RES-GASCOMPRESS'
++++++..
++++++CURVE 'RES-GASCOMPRESS-CRANKANGLE'
++++++..
++++++CURVE 'COMBUSTIONSTART'
++++++..
++++++CURVE 'COMBUSTIONDURATION'
++++++..
+++++..
+++++FOLDER 'GEO'
++++++CURVE 'NBR-OF-CYLINDERS'
++++++..
++++++CURVE 'ENGINE-DISPLACEMENT'
++++++..
++++++CURVE 'COMPRESSIONRATIO'
++++++..
+++++..
+++++FOLDER 'PF'
++++++CURVE 'IMEP'
++++++..
++++++CURVE 'BMEP'
++++++..
++++++CURVE 'FMEP'
++++++..
++++++CURVE 'AMEP'
++++++..
++++++CURVE 'TORQUE'
++++++..
++++++CURVE 'POWER'
++++++..
++++++CURVE 'FRICTIONTORQUE'
++++++..
++++++CURVE 'FRICTIONPOWER'
++++++..
++++++CURVE 'ISFC1'
++++++..
++++++CURVE 'ISFC2'
++++++..
++++++CURVE 'BSFC'
++++++..
++++++CURVE 'IMEP-EX'
++++++..
++++++CURVE 'IMEP-IN'
++++++..
++++++CURVE 'IMEP-GE'
++++++..
++++++CURVE 'IMEP-HP'
++++++..
++++++CURVE 'ISO-VOL-COMB-EFFICIENCY'
++++++..
++++++CURVE 'INDICATED-EFFICIENCY'
++++++..
++++++CURVE 'EFFECTIVE-EFFICIENCY'
++++++..
++++++CURVE 'MECHANICAL-EFFICIENCY'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'DELIVERYRATIO-AMB'
++++++..
++++++CURVE 'DELIVERYRATIO-INT'
++++++..
++++++CURVE 'AIRDELIVERYRATIO-AMB'
++++++..
++++++CURVE 'AIRDELIVERYRATIO-INT'
++++++..
++++++CURVE 'VOLUMETRICEFFICIENCY-AMB'
++++++..
++++++CURVE 'VOLUMETRICEFFICIENCY-INT'
++++++..
++++++CURVE 'SWIRL'
++++++..
++++++CURVE 'BLOWBY'
++++++..
+++++..
+++++FOLDER 'MB'
++++++CURVE 'TRAPPED-FUEL'
++++++..
++++++CURVE 'MASS-ASPIRATED'
++++++..
++++++CURVE 'AIRMASS-ASPIRATED'
++++++..
++++++CURVE 'FUELMASS-ASPIRATED'
++++++..
++++++CURVE 'MASS-ASPIRATED-PERS'
++++++..
++++++CURVE 'AIRMASS-ASPIRATED-PERS'
++++++..
++++++CURVE 'FUELMASS-ASPIRATED-PERS'
++++++..
++++++CURVE 'RESIDUALGASMASSIN'
++++++..
++++++CURVE 'RESIDUALGASMASSIN-PERS'
++++++..
++++++CURVE 'RESIDUALGASMASSINTOCYL'
++++++..
++++++CURVE 'RESIDUALGASMASSEX'
++++++..
++++++CURVE 'RESIDUALGASMASSEXTOCYL'
++++++..
++++++CURVE 'TOTALRESIDUALGAS-CONC'
++++++..
++++++CURVE 'TRAPPED-FUEL-PERS'
++++++..
+++++..
+++++FOLDER 'EB'
++++++CURVE 'FUEL-ENERGY'
++++++..
++++++CURVE 'FUEL-ENERGY-PERS'
++++++..
++++++CURVE 'RELEASED-ENERGY'
++++++..
++++++CURVE 'RELEASED-ENERGY-PERS'
++++++..
++++++CURVE 'GROSS-RELEASED-ENERGY'
++++++..
++++++CURVE 'EFF-RELEASED-ENERGY'
++++++..
++++++CURVE 'EFF-RELEASED-ENERGY-PERS'
++++++..
++++++CURVE 'EFF-GROSS-RELEASED-ENERGY'
++++++..
++++++CURVE 'ENERGYBALANCE'
++++++..
++++++CURVE 'EFFENERGYBALANCE'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
++++++CURVE 'EVAPORATIONENERGY'
++++++..
++++++CURVE 'ENTHALPYFLUX-IN'
++++++..
++++++CURVE 'ENTHALPYFLUX-EX'
++++++..
++++++CURVE 'PORTWALLHEATFLOW-IN'
++++++..
++++++CURVE 'PORTWALLHEATFLOW-EX'
++++++..
++++++CURVE 'ENTHALPYFLUX-FUEL'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'WALLHEATFLOWPERS'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONTEMPERATURE'
++++++..
++++++CURVE 'HEADTEMPERATURE'
++++++..
++++++CURVE 'LINERTDCTEMPERATURE'
++++++..
++++++CURVE 'LINERBDCTEMPERATURE'
++++++..
++++++CURVE 'MEAN-EFF-HTC'
++++++..
++++++CURVE 'MEAN-EFF-HTGASTEMP'
++++++..
+++++..
+++++FOLDER 'M'
++++++CURVE 'ACCUMULATEDSOOT-TIME'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 1'
+++++CURVE 'CYLINDER-DISPLACEMENT'
+++++..
+++++CURVE 'IMEP'
+++++..
+++++CURVE 'BMEP'
+++++..
+++++CURVE 'FMEP'
+++++..
+++++CURVE 'ISFC1'
+++++..
+++++CURVE 'ISFC2'
+++++..
+++++CURVE 'BSFC'
+++++..
+++++CURVE 'IMEP-EX'
+++++..
+++++CURVE 'IMEP-IN'
+++++..
+++++CURVE 'IMEP-GE'
+++++..
+++++CURVE 'DELIVERYRATIO-AMB'
+++++..
+++++CURVE 'DELIVERYRATIO-INT'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-INT'
+++++..
+++++CURVE 'TOTALFUELMASS'
+++++..
+++++CURVE 'FUELMASSINJECTED'
+++++..
+++++CURVE 'FUELMASS-ASPIRATED'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKPRESSURERISE'
+++++..
+++++CURVE 'PEAKPRESSURERISE-CRANKANGLE'
+++++..
+++++CURVE 'RES-GASCOMPRESS'
+++++..
+++++CURVE 'RES-GASCOMPRESS-CRANKANGLE'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-INT'
+++++..
+++++CURVE 'ENTHALPYFLUX-FUEL'
+++++..
+++++FOLDER 'SHP'
++++++CURVE 'HP-START-PRESSURE'
++++++..
++++++CURVE 'HP-START-TEMPERATURE'
++++++..
++++++CURVE 'HP-START-TOTALMASS'
++++++..
++++++CURVE 'HP-START-AIRMASS'
++++++..
++++++CURVE 'TOTALRESIDUALGAS-CONC'
++++++..
++++++CURVE 'A/F-RATIO-UNBRND'
++++++..
++++++CURVE 'A/F-RATIO-BRND'
++++++..
++++++CURVE 'AIR-EXCESS-RATIO'
++++++..
++++++CURVE 'HP-START-FBMASS'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'RESIDUALGASMASSIN'
++++++..
++++++CURVE 'RESIDUALGASMASSINTOCYL'
++++++..
++++++CURVE 'RESIDUALGASMASSEX'
++++++..
++++++CURVE 'RESIDUALGASMASSEXTOCYL'
++++++..
++++++CURVE 'BLOWBY'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONTEMPERATURE'
++++++..
++++++CURVE 'HEADTEMPERATURE'
++++++..
++++++CURVE 'LINERTDCTEMPERATURE'
++++++..
++++++CURVE 'LINERBDCTEMPERATURE'
++++++..
++++++CURVE 'MEAN-EFF-HTC'
++++++..
++++++CURVE 'MEAN-EFF-HTGASTEMP'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
+++++..
+++++FOLDER 'C'
++++++CURVE 'COMBUSTIONSTART'
++++++..
++++++CURVE 'COMBUSTIONDURATION'
++++++..
++++++CURVE 'VIBEPARAMETER-M'
++++++..
++++++CURVE 'VIBEPARAMETER-A'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-02-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-05-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-10-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-50-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-90-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-95-CRANKANGLE'
++++++..
++++++CURVE 'SOC-TEMPERATURE'
++++++..
++++++CURVE 'SOC-PRESSURE'
++++++..
+++++..
+++++FOLDER 'PF'
++++++CURVE 'INDICATED-EFFICIENCY'
++++++..
++++++CURVE 'EFFECTIVE-EFFICIENCY'
++++++..
+++++..
+++++FOLDER 'I#13'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
+++++FOLDER 'E#17'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLTEMPERATURE'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 2'
+++++CURVE 'CYLINDER-DISPLACEMENT'
+++++..
+++++CURVE 'IMEP'
+++++..
+++++CURVE 'BMEP'
+++++..
+++++CURVE 'FMEP'
+++++..
+++++CURVE 'ISFC1'
+++++..
+++++CURVE 'ISFC2'
+++++..
+++++CURVE 'BSFC'
+++++..
+++++CURVE 'IMEP-EX'
+++++..
+++++CURVE 'IMEP-IN'
+++++..
+++++CURVE 'IMEP-GE'
+++++..
+++++CURVE 'DELIVERYRATIO-AMB'
+++++..
+++++CURVE 'DELIVERYRATIO-INT'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-INT'
+++++..
+++++CURVE 'TOTALFUELMASS'
+++++..
+++++CURVE 'FUELMASSINJECTED'
+++++..
+++++CURVE 'FUELMASS-ASPIRATED'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKPRESSURERISE'
+++++..
+++++CURVE 'PEAKPRESSURERISE-CRANKANGLE'
+++++..
+++++CURVE 'RES-GASCOMPRESS'
+++++..
+++++CURVE 'RES-GASCOMPRESS-CRANKANGLE'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-INT'
+++++..
+++++CURVE 'ENTHALPYFLUX-FUEL'
+++++..
+++++FOLDER 'SHP'
++++++CURVE 'HP-START-PRESSURE'
++++++..
++++++CURVE 'HP-START-TEMPERATURE'
++++++..
++++++CURVE 'HP-START-TOTALMASS'
++++++..
++++++CURVE 'HP-START-AIRMASS'
++++++..
++++++CURVE 'TOTALRESIDUALGAS-CONC'
++++++..
++++++CURVE 'A/F-RATIO-UNBRND'
++++++..
++++++CURVE 'A/F-RATIO-BRND'
++++++..
++++++CURVE 'AIR-EXCESS-RATIO'
++++++..
++++++CURVE 'HP-START-FBMASS'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'RESIDUALGASMASSIN'
++++++..
++++++CURVE 'RESIDUALGASMASSINTOCYL'
++++++..
++++++CURVE 'RESIDUALGASMASSEX'
++++++..
++++++CURVE 'RESIDUALGASMASSEXTOCYL'
++++++..
++++++CURVE 'BLOWBY'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONTEMPERATURE'
++++++..
++++++CURVE 'HEADTEMPERATURE'
++++++..
++++++CURVE 'LINERTDCTEMPERATURE'
++++++..
++++++CURVE 'LINERBDCTEMPERATURE'
++++++..
++++++CURVE 'MEAN-EFF-HTC'
++++++..
++++++CURVE 'MEAN-EFF-HTGASTEMP'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
+++++..
+++++FOLDER 'C'
++++++CURVE 'COMBUSTIONSTART'
++++++..
++++++CURVE 'COMBUSTIONDURATION'
++++++..
++++++CURVE 'VIBEPARAMETER-M'
++++++..
++++++CURVE 'VIBEPARAMETER-A'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-02-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-05-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-10-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-50-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-90-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-95-CRANKANGLE'
++++++..
++++++CURVE 'SOC-TEMPERATURE'
++++++..
++++++CURVE 'SOC-PRESSURE'
++++++..
+++++..
+++++FOLDER 'PF'
++++++CURVE 'INDICATED-EFFICIENCY'
++++++..
++++++CURVE 'EFFECTIVE-EFFICIENCY'
++++++..
+++++..
+++++FOLDER 'I#14'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
+++++FOLDER 'E#18'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLTEMPERATURE'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 3'
+++++CURVE 'CYLINDER-DISPLACEMENT'
+++++..
+++++CURVE 'IMEP'
+++++..
+++++CURVE 'BMEP'
+++++..
+++++CURVE 'FMEP'
+++++..
+++++CURVE 'ISFC1'
+++++..
+++++CURVE 'ISFC2'
+++++..
+++++CURVE 'BSFC'
+++++..
+++++CURVE 'IMEP-EX'
+++++..
+++++CURVE 'IMEP-IN'
+++++..
+++++CURVE 'IMEP-GE'
+++++..
+++++CURVE 'DELIVERYRATIO-AMB'
+++++..
+++++CURVE 'DELIVERYRATIO-INT'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-INT'
+++++..
+++++CURVE 'TOTALFUELMASS'
+++++..
+++++CURVE 'FUELMASSINJECTED'
+++++..
+++++CURVE 'FUELMASS-ASPIRATED'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKPRESSURERISE'
+++++..
+++++CURVE 'PEAKPRESSURERISE-CRANKANGLE'
+++++..
+++++CURVE 'RES-GASCOMPRESS'
+++++..
+++++CURVE 'RES-GASCOMPRESS-CRANKANGLE'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-INT'
+++++..
+++++CURVE 'ENTHALPYFLUX-FUEL'
+++++..
+++++FOLDER 'SHP'
++++++CURVE 'HP-START-PRESSURE'
++++++..
++++++CURVE 'HP-START-TEMPERATURE'
++++++..
++++++CURVE 'HP-START-TOTALMASS'
++++++..
++++++CURVE 'HP-START-AIRMASS'
++++++..
++++++CURVE 'TOTALRESIDUALGAS-CONC'
++++++..
++++++CURVE 'A/F-RATIO-UNBRND'
++++++..
++++++CURVE 'A/F-RATIO-BRND'
++++++..
++++++CURVE 'AIR-EXCESS-RATIO'
++++++..
++++++CURVE 'HP-START-FBMASS'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'RESIDUALGASMASSIN'
++++++..
++++++CURVE 'RESIDUALGASMASSINTOCYL'
++++++..
++++++CURVE 'RESIDUALGASMASSEX'
++++++..
++++++CURVE 'RESIDUALGASMASSEXTOCYL'
++++++..
++++++CURVE 'BLOWBY'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONTEMPERATURE'
++++++..
++++++CURVE 'HEADTEMPERATURE'
++++++..
++++++CURVE 'LINERTDCTEMPERATURE'
++++++..
++++++CURVE 'LINERBDCTEMPERATURE'
++++++..
++++++CURVE 'MEAN-EFF-HTC'
++++++..
++++++CURVE 'MEAN-EFF-HTGASTEMP'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
+++++..
+++++FOLDER 'C'
++++++CURVE 'COMBUSTIONSTART'
++++++..
++++++CURVE 'COMBUSTIONDURATION'
++++++..
++++++CURVE 'VIBEPARAMETER-M'
++++++..
++++++CURVE 'VIBEPARAMETER-A'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-02-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-05-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-10-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-50-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-90-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-95-CRANKANGLE'
++++++..
++++++CURVE 'SOC-TEMPERATURE'
++++++..
++++++CURVE 'SOC-PRESSURE'
++++++..
+++++..
+++++FOLDER 'PF'
++++++CURVE 'INDICATED-EFFICIENCY'
++++++..
++++++CURVE 'EFFECTIVE-EFFICIENCY'
++++++..
+++++..
+++++FOLDER 'I#15'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
+++++FOLDER 'E#19'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLTEMPERATURE'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 4'
+++++CURVE 'CYLINDER-DISPLACEMENT'
+++++..
+++++CURVE 'IMEP'
+++++..
+++++CURVE 'BMEP'
+++++..
+++++CURVE 'FMEP'
+++++..
+++++CURVE 'ISFC1'
+++++..
+++++CURVE 'ISFC2'
+++++..
+++++CURVE 'BSFC'
+++++..
+++++CURVE 'IMEP-EX'
+++++..
+++++CURVE 'IMEP-IN'
+++++..
+++++CURVE 'IMEP-GE'
+++++..
+++++CURVE 'DELIVERYRATIO-AMB'
+++++..
+++++CURVE 'DELIVERYRATIO-INT'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-AMB'
+++++..
+++++CURVE 'VOLUMETRICEFFICIENCY-INT'
+++++..
+++++CURVE 'TOTALFUELMASS'
+++++..
+++++CURVE 'FUELMASSINJECTED'
+++++..
+++++CURVE 'FUELMASS-ASPIRATED'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE'
+++++..
+++++CURVE 'PEAKCYLINDERPRESSURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE'
+++++..
+++++CURVE 'PEAKCYLINDERTEMPERATURE-CRANKANGLE'
+++++..
+++++CURVE 'PEAKPRESSURERISE'
+++++..
+++++CURVE 'PEAKPRESSURERISE-CRANKANGLE'
+++++..
+++++CURVE 'RES-GASCOMPRESS'
+++++..
+++++CURVE 'RES-GASCOMPRESS-CRANKANGLE'
+++++..
+++++CURVE 'AIRDELIVERYRATIO-INT'
+++++..
+++++CURVE 'ENTHALPYFLUX-FUEL'
+++++..
+++++FOLDER 'SHP'
++++++CURVE 'HP-START-PRESSURE'
++++++..
++++++CURVE 'HP-START-TEMPERATURE'
++++++..
++++++CURVE 'HP-START-TOTALMASS'
++++++..
++++++CURVE 'HP-START-AIRMASS'
++++++..
++++++CURVE 'TOTALRESIDUALGAS-CONC'
++++++..
++++++CURVE 'A/F-RATIO-UNBRND'
++++++..
++++++CURVE 'A/F-RATIO-BRND'
++++++..
++++++CURVE 'AIR-EXCESS-RATIO'
++++++..
++++++CURVE 'HP-START-FBMASS'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'RESIDUALGASMASSIN'
++++++..
++++++CURVE 'RESIDUALGASMASSINTOCYL'
++++++..
++++++CURVE 'RESIDUALGASMASSEX'
++++++..
++++++CURVE 'RESIDUALGASMASSEXTOCYL'
++++++..
++++++CURVE 'BLOWBY'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONTEMPERATURE'
++++++..
++++++CURVE 'HEADTEMPERATURE'
++++++..
++++++CURVE 'LINERTDCTEMPERATURE'
++++++..
++++++CURVE 'LINERBDCTEMPERATURE'
++++++..
++++++CURVE 'MEAN-EFF-HTC'
++++++..
++++++CURVE 'MEAN-EFF-HTGASTEMP'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
+++++..
+++++FOLDER 'C'
++++++CURVE 'COMBUSTIONSTART'
++++++..
++++++CURVE 'COMBUSTIONDURATION'
++++++..
++++++CURVE 'VIBEPARAMETER-M'
++++++..
++++++CURVE 'VIBEPARAMETER-A'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-02-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-05-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-10-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-50-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-90-CRANKANGLE'
++++++..
++++++CURVE 'MASS-FRAC-BURNED-95-CRANKANGLE'
++++++..
++++++CURVE 'SOC-TEMPERATURE'
++++++..
++++++CURVE 'SOC-PRESSURE'
++++++..
+++++..
+++++FOLDER 'PF'
++++++CURVE 'INDICATED-EFFICIENCY'
++++++..
++++++CURVE 'EFFECTIVE-EFFICIENCY'
++++++..
+++++..
+++++FOLDER 'I#16'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
+++++FOLDER 'E#20'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'PORTWALLTEMPERATURE'
++++++..
++++++CURVE 'PORTWALLHEAT'
++++++..
++++++CURVE 'VALVEPORTOPENING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTOPENING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-CLR0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF0MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-EFF1MM-CRANKANGLE'
++++++..
++++++CURVE 'VALVEPORTCLOSING-UDEFMM-CRANKANGLE'
++++++..
++++++CURVE 'CAMPHASING'
++++++..
+++++..
++++..
++++FOLDER 'AIRCLEANER 1'
+++++FOLDER 'AI'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASI'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'AO'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASO'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#3'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#4'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'CATALYST 1'
+++++FOLDER 'AI'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASI'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'AO'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASO'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#30'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#31'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 1'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#2'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#6'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#34'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 3'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#31'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#32'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 4'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#32'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#33'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 1'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 3'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 4'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 5'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 6'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 7'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 8'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 9'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 10'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 11'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 12'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 13'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 14'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 15'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 16'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 17'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 18'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MASSFLOWPERS'
+++++..
+++++CURVE 'MASSFLOWAVERAGED-TEMPERATURE'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
+++++CURVE 'STAGNATIONPRESSURE'
+++++..
+++++CURVE 'STAGNATIONTEMPERATURE'
+++++..
+++++CURVE 'ENTHALPYFLOWPERS'
+++++..
+++++CURVE 'REYNOLDSNUMBER'
+++++..
+++++CURVE 'WALLTEMPERATURE'
+++++..
+++++CURVE 'CONVERGENCE'
+++++..
+++++CURVE 'DENSITY'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'ISENTROPIC-EXPONENT'
+++++..
+++++CURVE 'GAS-CONSTANT'
+++++..
++++..
++++FOLDER 'SYSTEMBOUNDARY 1'
+++++FOLDER 'P#1'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'SYSTEMBOUNDARY 2'
+++++FOLDER 'P#33'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 1'
+++++FOLDER 'P#4'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#5'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 2'
+++++FOLDER 'P#5'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#34'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 3'
+++++FOLDER 'P#6'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#7'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 4'
+++++FOLDER 'P#17'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#21'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 5'
+++++FOLDER 'P#18'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#23'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 6'
+++++FOLDER 'P#19'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#24'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 7'
+++++FOLDER 'P#20'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#22'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 8'
+++++FOLDER 'P#25'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#27'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 9'
+++++FOLDER 'P#26'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#28'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 10'
+++++FOLDER 'P#29'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#30'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 1'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#9'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#13'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 2'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#10'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#14'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 3'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#11'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#15'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 4'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#12'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#16'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 1'
+++++FOLDER 'P#1'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#2'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#3'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 2'
+++++FOLDER 'P#7'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#8'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#9'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#12'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 3'
+++++FOLDER 'P#8'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#10'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#11'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 4'
+++++FOLDER 'P#21'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#22'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#25'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 5'
+++++FOLDER 'P#23'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#24'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#26'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 6'
+++++FOLDER 'P#27'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#28'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#29'
++++++CURVE 'FLOWCOEFFICIENT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 1'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 2'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 3'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 4'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 5'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 6'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 7'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 8'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 9'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 10'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 11'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 12'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 13'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 14'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 15'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 16'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 17'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 18'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 19'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 20'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 21'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 22'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 23'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 24'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 25'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 26'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 27'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 28'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 29'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 30'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 31'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 32'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 33'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'PIPE 34'
+++++FOLDER 'H'
++++++CURVE 'WALLHEATFLOW'
++++++..
++++++CURVE 'ALPHA-GAS-WALL'
++++++..
+++++..
++++..
++++FOLDER 'TEST_BED_REFERENCE 1'
+++++CURVE 'P-0-A'
+++++..
++++..
+++..
+++FOLDER 'TRACES'
++++FOLDER 'Engine'
+++++CURVE 'TRACESTIME'
+++++..
+++++CURVE 'ENGINESPEED'
+++++..
+++++CURVE 'TORQUE'
+++++..
++++..
++++FOLDER 'CYLINDER 1'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++CURVE 'VOLUMEWORK'
+++++..
+++++CURVE 'VOLUMEWORKINTEGRAL'
+++++..
+++++CURVE 'PRESSURERISE'
+++++..
+++++CURVE 'TEMPERATURERISE'
+++++..
+++++CURVE 'ENTHALPY'
+++++..
+++++CURVE 'ENTROPY'
+++++..
+++++CURVE 'SPECHEATCV'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'RGASMIX'
+++++..
+++++CURVE 'PISTONPOSITION'
+++++..
+++++FOLDER 'C'
++++++CURVE 'RATEOFHEATRELEASE'
++++++..
++++++CURVE 'RATEOFHEATRELEASE-EFF'
++++++..
++++++CURVE 'NETRATEOFHEATRELEASE'
++++++..
++++++CURVE 'NORMRATEOFHEATRELEASE'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'TOTALWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'HEATTRANSFERCOEFFICIENT'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
++++++CURVE 'MOTOREDPRESSUREREF'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'INTAKEMASSFLOW'
++++++..
++++++CURVE 'EXHAUSTMASSFLOW'
++++++..
++++++CURVE 'BLOWBY'
++++++..
++++++CURVE 'MASSASPIRATED'
++++++..
+++++..
+++++FOLDER 'S'
++++++CURVE 'FUELBURNEDCONCENTRATION'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
++++++CURVE 'A/F-RATIO'
++++++..
+++++..
+++++FOLDER 'I#13'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
+++++..
+++++FOLDER 'E#17'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
++++++CURVE 'PORT-HEATTRANSFERCOEFF'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++CURVE 'VOLUMEWORK'
+++++..
+++++CURVE 'VOLUMEWORKINTEGRAL'
+++++..
+++++CURVE 'PRESSURERISE'
+++++..
+++++CURVE 'TEMPERATURERISE'
+++++..
+++++CURVE 'ENTHALPY'
+++++..
+++++CURVE 'ENTROPY'
+++++..
+++++CURVE 'SPECHEATCV'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'RGASMIX'
+++++..
+++++CURVE 'PISTONPOSITION'
+++++..
+++++FOLDER 'C'
++++++CURVE 'RATEOFHEATRELEASE'
++++++..
++++++CURVE 'RATEOFHEATRELEASE-EFF'
++++++..
++++++CURVE 'NETRATEOFHEATRELEASE'
++++++..
++++++CURVE 'NORMRATEOFHEATRELEASE'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'TOTALWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'HEATTRANSFERCOEFFICIENT'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
++++++CURVE 'MOTOREDPRESSUREREF'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'INTAKEMASSFLOW'
++++++..
++++++CURVE 'EXHAUSTMASSFLOW'
++++++..
++++++CURVE 'BLOWBY'
++++++..
++++++CURVE 'MASSASPIRATED'
++++++..
+++++..
+++++FOLDER 'S'
++++++CURVE 'FUELBURNEDCONCENTRATION'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
++++++CURVE 'A/F-RATIO'
++++++..
+++++..
+++++FOLDER 'I#14'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
+++++..
+++++FOLDER 'E#18'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
++++++CURVE 'PORT-HEATTRANSFERCOEFF'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 3'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++CURVE 'VOLUMEWORK'
+++++..
+++++CURVE 'VOLUMEWORKINTEGRAL'
+++++..
+++++CURVE 'PRESSURERISE'
+++++..
+++++CURVE 'TEMPERATURERISE'
+++++..
+++++CURVE 'ENTHALPY'
+++++..
+++++CURVE 'ENTROPY'
+++++..
+++++CURVE 'SPECHEATCV'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'RGASMIX'
+++++..
+++++CURVE 'PISTONPOSITION'
+++++..
+++++FOLDER 'C'
++++++CURVE 'RATEOFHEATRELEASE'
++++++..
++++++CURVE 'RATEOFHEATRELEASE-EFF'
++++++..
++++++CURVE 'NETRATEOFHEATRELEASE'
++++++..
++++++CURVE 'NORMRATEOFHEATRELEASE'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'TOTALWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'HEATTRANSFERCOEFFICIENT'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
++++++CURVE 'MOTOREDPRESSUREREF'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'INTAKEMASSFLOW'
++++++..
++++++CURVE 'EXHAUSTMASSFLOW'
++++++..
++++++CURVE 'BLOWBY'
++++++..
++++++CURVE 'MASSASPIRATED'
++++++..
+++++..
+++++FOLDER 'S'
++++++CURVE 'FUELBURNEDCONCENTRATION'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
++++++CURVE 'A/F-RATIO'
++++++..
+++++..
+++++FOLDER 'I#15'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
+++++..
+++++FOLDER 'E#19'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
++++++CURVE 'PORT-HEATTRANSFERCOEFF'
++++++..
+++++..
++++..
++++FOLDER 'CYLINDER 4'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++CURVE 'VOLUMEWORK'
+++++..
+++++CURVE 'VOLUMEWORKINTEGRAL'
+++++..
+++++CURVE 'PRESSURERISE'
+++++..
+++++CURVE 'TEMPERATURERISE'
+++++..
+++++CURVE 'ENTHALPY'
+++++..
+++++CURVE 'ENTROPY'
+++++..
+++++CURVE 'SPECHEATCV'
+++++..
+++++CURVE 'SPECHEATCP'
+++++..
+++++CURVE 'RGASMIX'
+++++..
+++++CURVE 'PISTONPOSITION'
+++++..
+++++FOLDER 'C'
++++++CURVE 'RATEOFHEATRELEASE'
++++++..
++++++CURVE 'RATEOFHEATRELEASE-EFF'
++++++..
++++++CURVE 'NETRATEOFHEATRELEASE'
++++++..
++++++CURVE 'NORMRATEOFHEATRELEASE'
++++++..
+++++..
+++++FOLDER 'H'
++++++CURVE 'TOTALWALLHEATFLOW'
++++++..
++++++CURVE 'PISTONWALLHEATFLOW'
++++++..
++++++CURVE 'HEADWALLHEATFLOW'
++++++..
++++++CURVE 'LINERWALLHEATFLOW'
++++++..
++++++CURVE 'HEATTRANSFERCOEFFICIENT'
++++++..
++++++CURVE 'BLOWBYENTHALPYFLOW'
++++++..
++++++CURVE 'MOTOREDPRESSUREREF'
++++++..
+++++..
+++++FOLDER 'G'
++++++CURVE 'INTAKEMASSFLOW'
++++++..
++++++CURVE 'EXHAUSTMASSFLOW'
++++++..
++++++CURVE 'BLOWBY'
++++++..
++++++CURVE 'MASSASPIRATED'
++++++..
+++++..
+++++FOLDER 'S'
++++++CURVE 'FUELBURNEDCONCENTRATION'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
++++++CURVE 'A/F-RATIO'
++++++..
+++++..
+++++FOLDER 'I#16'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
+++++..
+++++FOLDER 'E#20'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'VALVELIFT'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
++++++CURVE 'EFFECTIVEFLOWAREA'
++++++..
++++++CURVE 'PORTWALLHEATFLOW'
++++++..
++++++CURVE 'PORT-HEATTRANSFERCOEFF'
++++++..
+++++..
++++..
++++FOLDER 'AIRCLEANER 1'
+++++FOLDER 'AI'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASI'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'AO'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASO'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#3'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#4'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'CATALYST 1'
+++++FOLDER 'AI'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASI'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'AO'
++++++CURVE 'PRESSURE'
++++++..
++++++CURVE 'TEMPERATURE'
++++++..
++++++CURVE 'MASS'
++++++..
++++++CURVE 'VOLUME'
++++++..
+++++..
+++++FOLDER 'ASO'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#30'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#31'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 1'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#2'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#6'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#34'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 3'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#31'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#32'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'PLENUM 4'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASS'
+++++..
+++++CURVE 'VOLUME'
+++++..
+++++FOLDER 'S'
++++++CURVE 'A/F-RATIO'
++++++..
++++++CURVE 'COMBUSTIONPRODUCTCONCENTRATION'
++++++..
++++++CURVE 'FUELVAPOURCONCENTRATION'
++++++..
+++++..
+++++FOLDER 'P#32'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#33'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 1'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 3'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 4'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 5'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 6'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 7'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 8'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 9'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 10'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 11'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 12'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 13'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 14'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 15'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 16'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 17'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'MEASURINGPOINT 18'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'VELOCITY'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++CURVE 'MASSFLOW'
+++++..
+++++CURVE 'MACHNUMBER'
+++++..
++++..
++++FOLDER 'SYSTEMBOUNDARY 1'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++FOLDER 'P#1'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'SYSTEMBOUNDARY 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++FOLDER 'P#33'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 1'
+++++FOLDER 'P#4'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#5'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 2'
+++++FOLDER 'P#5'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#34'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 3'
+++++FOLDER 'P#6'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#7'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 4'
+++++FOLDER 'P#17'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#21'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 5'
+++++FOLDER 'P#18'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#23'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 6'
+++++FOLDER 'P#19'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#24'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 7'
+++++FOLDER 'P#20'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#22'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 8'
+++++FOLDER 'P#25'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#27'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 9'
+++++FOLDER 'P#26'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#28'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'RESTRICTION 10'
+++++FOLDER 'P#29'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#30'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 1'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#9'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#13'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 2'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#10'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#14'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 3'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#11'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#15'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'FUELINJECTOR 4'
+++++CURVE 'ADDEDFUEL'
+++++..
+++++FOLDER 'P#12'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#16'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 1'
+++++CURVE 'FLOWPATTERN'
+++++..
+++++FOLDER 'P#1'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#2'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#3'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 2'
+++++CURVE 'PRESSURE'
+++++..
+++++CURVE 'TEMPERATURE'
+++++..
+++++FOLDER 'P#7'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#8'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#9'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#12'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 3'
+++++CURVE 'FLOWPATTERN'
+++++..
+++++FOLDER 'P#8'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#10'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#11'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 4'
+++++CURVE 'FLOWPATTERN'
+++++..
+++++FOLDER 'P#21'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#22'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#25'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 5'
+++++CURVE 'FLOWPATTERN'
+++++..
+++++FOLDER 'P#23'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#24'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#26'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
++++FOLDER 'JUNCTION 6'
+++++CURVE 'FLOWPATTERN'
+++++..
+++++FOLDER 'P#27'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#28'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
+++++FOLDER 'P#29'
++++++CURVE 'FLOWCOEFFICIENTS'
++++++..
++++++CURVE 'MASSFLOW'
++++++..
++++++CURVE 'VELOCITY'
++++++..
+++++..
++++..
+++..
++..
+
+Source Gidas Files: 
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kEG1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCY4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____5.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kAC1____6.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____5.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kCA1____6.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPL4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP11___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP12___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP13___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP14___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP15___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP16___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP17___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kMP18___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kSB1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kSB2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR5____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR6____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR7____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR8____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR9____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kFR10___2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kIJ4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC1____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC1____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC2____4.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC3____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC3____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC4____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC4____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC5____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC5____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC6____2.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kJC6____3.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI1____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI2____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI3____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI4____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI5____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI6____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI7____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI8____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI9____1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI10___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI11___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI12___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI13___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI14___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI15___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI16___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI17___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI18___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI19___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI20___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI21___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI22___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI23___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI24___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI25___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI26___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI27___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI28___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI29___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI30___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI31___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI32___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI33___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kPI34___1.gid'
+     'C:\Users\Welcome\Desktop/D4s.Case_Set_1.Case_9/simulation.dir/kTT1____1.gid'
+
+------------------------------------------------------------------------
+OVERVIEW ERROR EVENTS:
+Name of the Case     PPD APP 
+Case_Set_1.Case_9    OK  OK 
+
+Legend:
+   PPD ... ppd-File not found
+   APP ... Could not append Results
+
+   ERR --> Error occurred
+   OK  --> No Error occurred
+   -   --> Error state unkown
+------------------------------------------------------------------------
+================================================================================
+

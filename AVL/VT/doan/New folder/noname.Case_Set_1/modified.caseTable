@@ -1,0 +1,32 @@
+# --------------------------------------------------
+# Case Explorer Table
+# Exported from: noname.hyd
+# Date: 2021/04/23 15:01:05
+# --------------------------------------------------
+# Syntax:
+#     [MERGE_SETS] ... comment out that parameter to merge case sets instead removing old ones
+#   For each Case Set ...
+#     [CASESET]    caseSetName
+#     [GROUP]      groupName parmeterName ... parmeterName
+#     [GROUP]      groupName parmeterName ... parmeterName
+#       ...        groupName parmeterName ... parmeterName
+#     [PARAMETERS] parmeterName parmeterName ... parmeterName
+#     [UNITS]      unitName     unitName     ... unitName
+#     caseName     value          value      ... value
+#     caseName     value          value      ... value
+#     ...
+# Mind:
+#   parameterName ... use names of existing model parameters only!
+#   [UNITS] lines ... are optional; if present, used to check consistency
+#   comments      ... comments ('#' as leftmost character) are ignored
+#   value         ... both, e.g. "0.5" and "0,5" are supported; the Export
+#                     format results from the Import format most recently used!
+# --------------------------------------------------
+# Model Parameters:
+# --------------------------------------------------
+
+#[MERGE_SETS]
+[CASESET]     "Case Set 1"  
+[PARAMETERS]  
+[UNITS]       
+"Case 1"      

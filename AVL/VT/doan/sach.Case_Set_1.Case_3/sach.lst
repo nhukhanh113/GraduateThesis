@@ -1,0 +1,468 @@
+
+ o-------------------------------------------------------------o
+ | AVL BOOST Hydsim / FixStep solver / v2013.2 / November 2013 |
+ o-------------------------------------------------------------o
+
+                        DIMENSIONS
+                        ==========
+
+  Max number of elements (EQUIPMENTs)             999
+  Max number of 1st order diff. equations         999
+  Max number of BOUNDARY-type elements            100
+  Max number of boundary values per element      7200
+  Max number of rows in var. connection table     100
+  Max number of rows in var. fluid prop. table     50
+  Max number of sets in SEARCH/ADJUST-PARAMETER    10
+  Max number of optimized parameters in one set    20
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  LINE - d"Alembert solution, Laplace transform 
+         and method of characteristics:
+  Max number of calculation steps along line    *****
+
+  LINE - Max number of discrete line cells:
+         Method of characteristics               5000
+         1st order Godunov method               10000
+         2nd order MacCormack scheme            10000
+
+  LINE - frictional losses (Melcher"s method):
+  Max number of roots of BESSEL function           20
+
+------------------------------------------------------------------------
+
+
+                       DATA LISTING
+                       ============
+
+ TOTAL NUMBER OF ELEMENTS                       =  22
+ TOTAL NUMBER OF REAL ELEMENTS                  =  20
+ NUMBER OF BOUNDARY ELEMENTS                    =   4
+ NUMBER OF d"ALEMBERT & LAPLACE LINE ELEMENTS   =   3
+ NUMBER OF LEAKAGE ELEMENTS                     =   1
+ NUMBER OF SINGLE-PHASE VOLUME ELEMENTS         =   6
+
+
+ VALUES FOR CALCULATION CONTROL:
+ ==============================
+
+ REFERENCE SPEED            =  1000.00000 rpm
+ ENGINE SPEED               =  2000.00000 rpm
+ CRANK ANGLE AT CALC. START =    0.00     deg BTDC
+
+ SOLVER TYPE:
+   RUNGE-KUTTA-GILL 4th order (RKG4), FIXED STEP
+
+ CALCULATION INTERVAL No  1:
+   CALCULATION START TIME   =  0.0000     s
+   TIME STEP                = .200000E-06 s
+   CALCULATION END TIME     = 0.30000E-02 s
+   NUMBER OF STORED VALUES  =   300
+
+
+
+ SIMULATION MODE
+ ===============
+
+  FLOW TYPE: ISOTHERMAL
+  CONNECTION TREATMENT: INSERT VIRTUAL VOLUMES
+  ORIFICE FLOW: USE ORIGINAL VALUE FROM RKG4
+
+
+ GLOBAL FLUID PROPERTIES (CONSTANT):
+ ==================================
+
+ BULK MODULUS          =   1630.000 (N/mm2)
+ VELOCITY OF SOUND     =   1372.730 (m/s)
+ MASS DENSITY          =    865.000 (kg/m3)
+ KINEMATIC VISCOSITY   =      1.700 (cSt)
+ DYNAMIC VISCOSITY     =   0.001470 (Ns/m2)
+ SURFACE TENSION       =   0.000029 (N/mm)
+ REFERENCE PRESSURE    =   1.000000 (bar)
+
+
+ THERMAL FLUID PROPERTIES (CONSTANT):
+ ===================================
+
+ SPECIFIC HEAT CAPACITY  =   1960.000 (J/kgK)
+ THERMAL EXPANSION COEF. =      0.001 (1/K)
+ THERMAL CONDUCTIVITY    =      0.145 (W/mK)
+ REFERENCE TEMPERATURE   =    293.150 (K)
+
+
+ GAS PROPERTIES (GLOBAL):
+ =======================
+
+--------------|--------------|--------------|--------------|
+   PRESSURE   |  SPEC. HEAT  |  HEAT RATIO  |DYN. VISCOSITY|
+      bar     |     J/kgK    |       -      |     Pa.s     |
+--------------|--------------|--------------|--------------|
+      293.150 |     1005.000 |        1.400 |        0.000 |
+
+
+ EQUIPMENT (ELEMENTS):
+ ====================
+
+--------------------------------------------------------------------------------
+  1 Injection_Tu  CODE= 23   CONNECTIONS =    17  -18
+ ***************
+
+ INPUT PARAMETERS:
+   LINE LENGTH   =    200.00 (mm)
+   LINE DIAMETER =     2.500 (mm)
+
+FRICTION MODEL -> (none)
+--------------------------------------------------------------------------------
+  2 Nozzle_Volum  CODE= 21   CONNECTIONS =    19  -10  -15  -16
+ ***************
+
+ INPUT PARAMETERS:
+   INITIAL VOLUME       =   170.     (mm3)
+   VAPOUR PRESSURE      =  0.100E-02 (bar)
+--------------------------------------------------------------------------------
+  3 Volume        CODE= 21   CONNECTIONS =     8    9  -14
+ ***************
+
+ INPUT PARAMETERS:
+   INITIAL VOLUME       =   20.0     (mm3)
+   VAPOUR PRESSURE      =  0.100E-02 (bar)
+--------------------------------------------------------------------------------
+  4 Valve_Volume  CODE= 21   CONNECTIONS =    14   -5
+ ***************
+
+ INPUT PARAMETERS:
+   INITIAL VOLUME       =   15.0     (mm3)
+   VAPOUR PRESSURE      =  0.100E-02 (bar)
+--------------------------------------------------------------------------------
+  5 Solenoid_Val  CODE= 44   CONNECTIONS =     4   -6
+ ***************
+
+ TIMING TABLE 
+   TIMING DATA   = ABSOLUTE
+   INITIAL STATE = CLOSED
+|------------------|------------------|
+| Opening Start (s)| Closing Start (s)|
+|------------------|------------------|
+|    0.100000E-02  |    0.180000E-02  |
+|------------------|------------------|
+
+VALVE OPENING                                                                   
+-------------------|-------------------|                                        
+       time        |       my*A        |                                        
+        (s)        |       (mm2)       |                                        
+-------------------|-------------------|                                        
+     0.000000      |     0.000000      |                                        
+    0.000138000    |     0.0589200     |                                        
+-------------------|-------------------|                                        
+VALVE CLOSING                                                                   
+-------------------|-------------------|                                        
+       time        |       my*A        |                                        
+        (s)        |       (mm2)       |                                        
+-------------------|-------------------|                                        
+     0.000000      |     0.0589200     |          
+     0.136000      |     0.000000      |          
+-------------------|-------------------|                                        
+--------------------------------------------------------------------------------
+  6 Spill_Volume  CODE= 21   CONNECTIONS =     5  -13
+ ***************
+
+ INPUT PARAMETERS:
+   INITIAL VOLUME       =   300.     (mm3)
+   VAPOUR PRESSURE      =  0.100E-02 (bar)
+--------------------------------------------------------------------------------
+  7 Nozzle_Holde  CODE=  3   CONNECTIONS =    10
+ ***************
+
+ INPUT PARAMETERS:
+   SHIFT TIME/ANGLE RELATIVE TO CALC. START =   0.00    
+   COPY DATA FOR EACH CYCLE = NO
+ ELEMENT UNIT VECTOR IN GLOBAL COORDINATE SYSTEM:
+   GLOBAL X COORDINATE  =      1.000
+   GLOBAL Y COORDINATE  =      0.000
+   GLOBAL W COORDINATE  =      0.000
+
+BOUNDARY MECHANICAL                                                             
+-------------------|-------------------|                                        
+       TIME        |     => X  <=      |                                        
+        (s)        |       (mm)        |                                        
+-------------------|-------------------|                                        
+    0.00000000     |    0.00000000     |
+
+ MECHANICAL CONNECTION DATA:
+ CONNECTION x TO 10 => F0 =0.218E+04 N  C =  0.00     N/mm  D = 0.00     Ns/m
+       direction    => X(e1) = 1.00     Y(e2) = 0.00     Z(e2) = 0.00    
+--------------------------------------------------------------------------------
+  8 Control_Pist  CODE= 20   CONNECTIONS =    10   12   -3
+ ***************
+
+ INPUT PARAMETERS:
+   MOVING MASS                   =   10.7     (g)
+   COULOMB FRICTION FORCE        =   5.00     (N)
+    INPUT CROSS-SECT. DIAMETER   =   4.30     (mm)
+   OUTPUT CROSS-SECT. DIAMETER   =   4.30     (mm)
+    INPUT STOP CROSS-SECT. AREA  =   0.00     (mm2)
+   OUTPUT STOP CROSS-SECT. AREA  =   0.00     (mm2)
+   PISTON STROKE (MAX. LIFT)     =  0.210     (mm)
+
+ LINEAR SEAT/STOP MODEL
+    INPUT STOP STIFFNESS         =   0.00     (N/mm)
+               DAMPING           =   0.00     (Ns/m)
+   OUTPUT STOP STIFFNESS         =  0.100E+06 (N/mm)
+               DAMPING           =   100.     (Ns/m)
+
+ ELEMENT UNIT VECTOR IN GLOBAL COORDINATE SYSTEM:
+   GLOBAL X COORDINATE  =      1.000
+   GLOBAL Y COORDINATE  =      0.000
+   GLOBAL W COORDINATE  =      0.000
+
+ MECHANICAL CONNECTION DATA:
+ CONNECTION x TO 10 => F0 = 0.00     N  C =  0.00     N/mm  D = 0.00     Ns/m
+--------------------------------------------------------------------------------
+  9 Inlet_Thrott  CODE= 22   CONNECTIONS =    21   -3
+ ***************
+
+ INPUT PARAMETERS:
+   TUBE CROSS-SECTIONAL AREA   =  0.800     (mm2)
+   THROTTLE CROSS-SECT. AREA   =  0.460E-01 (mm2)
+   CRITICAL FLOW NUMBER        =    0.1E+04
+   THROTTLE FLOW RESIST. COEF. =   1.83    
+   (user-defined flow resistance)
+--------------------------------------------------------------------------------
+ 10 Needle        CODE= 52   CONNECTIONS =     2  -12   -7   -8
+ ***************
+
+ INPUT PARAMETERS:
+   MOVING MASS                  =   2.60     (g) 
+   COULOMB FRICTION FORCE       =   3.00     (N)
+   NEEDLE GUIDE DIAMETER        =   4.00     (mm)
+   NEEDLE SEAT DIAMETER         =   1.70     (mm)
+
+ LINEAR SEAT/STOP MODEL
+   NEEDLE SEAT STIFFNESS        =  0.400E+06 (N/mm)
+               DAMPING          =   400.     (Ns/m)
+   NEEDLE STOP STIFFNESS        =   0.00     (N/mm)
+               DAMPING          =   0.00     (Ns/m)
+
+ SPECIAL CONNECTION TO ELEMENT(S) No. =>   15   16
+
+ ELEMENT UNIT VECTOR IN GLOBAL COORDINATE SYSTEM:
+   GLOBAL X COORDINATE   =      1.000
+   GLOBAL Y COORDINATE   =      0.000
+   GLOBAL W COORDINATE   =      0.000
+
+ MECHANICAL CONNECTION DATA:
+ CONNECTION x TO  7 => F0 =0.218E+04 N  C =  0.00     N/mm  D = 0.00     Ns/m
+ CONNECTION x TO  8 => F0 = 0.00     N  C =  0.00     N/mm  D = 0.00     Ns/m
+--------------------------------------------------------------------------------
+ 11 Pressure_Tem  CODE=  5   CONNECTIONS =    16
+ ***************
+
+ INPUT PARAMETERS:
+   SHIFT TIME/ANGLE RELATIVE TO CALC. START =   0.00    
+   COPY DATA FOR EACH CYCLE = NO
+BOUNDARY PRESSURE/TEMPERATURE                                                   
+-------------------|-------------------|-------------------|                    
+       TIME        |     PRESSURE      |    TEMPERATURE    |                    
+        (s)        |       (bar)       |        (K)        |                    
+-------------------|-------------------|-------------------|                    
+    0.00000000     |    100.000000     |    293.150000     |
+--------------------------------------------------------------------------------
+ 12 Fuel_Tank     CODE=  5   CONNECTIONS =    13   15   10   -8
+ ***************
+
+ INPUT PARAMETERS:
+   SHIFT TIME/ANGLE RELATIVE TO CALC. START =   0.00    
+   COPY DATA FOR EACH CYCLE = NO
+BOUNDARY PRESSURE/TEMPERATURE                                                   
+-------------------|-------------------|-------------------|                    
+       TIME        |     PRESSURE      |    TEMPERATURE    |                    
+        (s)        |       (bar)       |        (K)        |                    
+-------------------|-------------------|-------------------|                    
+    0.00000000     |    1.50000000     |    293.150000     |
+--------------------------------------------------------------------------------
+ 13 Sump_Throttl  CODE= 22   CONNECTIONS =     6  -12
+ ***************
+
+ INPUT PARAMETERS:
+   TUBE CROSS-SECTIONAL AREA   =   2.54     (mm2)
+   THROTTLE CROSS-SECT. AREA   =  0.100     (mm2)
+   CRITICAL FLOW NUMBER        =    0.1E+04
+   THROTTLE FLOW RESIST. COEF. =   1.60    
+   (user-defined flow resistance)
+--------------------------------------------------------------------------------
+ 14 Outlet_Throt  CODE= 22   CONNECTIONS =     3   -4
+ ***************
+
+ INPUT PARAMETERS:
+   TUBE CROSS-SECTIONAL AREA   =  0.800     (mm2)
+   THROTTLE CROSS-SECT. AREA   =  0.570E-01 (mm2)
+   CRITICAL FLOW NUMBER        =    0.1E+04
+   THROTTLE FLOW RESIST. COEF. =   1.83    
+   (user-defined flow resistance)
+--------------------------------------------------------------------------------
+ 15 Nozzle_Leak   CODE= 38   CONNECTIONS =     2  -12
+ ***************
+
+ INPUT PARAMETERS:
+   PISTON DIAMETER IS TAKEN FROM CONNECTED
+   PISTON-TYPE ELEMENT WHICH HAS SMALLER DIAMETER
+   NUMBER OF PISTONS   =  1
+   INITIAL GAP LENGTH  = 11000.000 (mm)
+
+ SPECIAL CONNECTION TO ELEMENT(S) No. =>   10
+
+GAP FUNCTION                                                                    
+-------------------|-------------------|                                        
+     Pressure      |     Clearance     |                                        
+       (bar)       |       (mm)        |                                        
+-------------------|-------------------|                                        
+    1.00000000     |   0.400000000E-02 |
+    1000.00000     |   0.700000000E-02 |
+-------------------|-------------------|                                        
+--------------------------------------------------------------------------------
+ 16 Nozzle_Orifi  CODE= 56   CONNECTIONS =     2  -11
+ ***************
+
+ INPUT PARAMETERS:
+   NUMBER OF SPRAY HOLES           =   4
+   SPRAY HOLE DIAMETER             =  0.160     (mm)
+   NOZZLE DIAMETER AT SPRAY HOLES  =  0.900     (mm)
+   NEEDLE SEAT ANGLE               =   55.0     (deg)
+
+ SPECIAL CONNECTION TO NEEDLE ELEMENT No. 10
+
+my*A FUNCTION                                                                   
+-------------------|-------------------|                                        
+    needle lift    |       my*A        |                                        
+       (mm)        |       (mm2)       |                                        
+-------------------|-------------------|                                        
+     0.000000      |     0.000000      |                                        
+     0.0220000     |     0.0152000     |                                        
+     0.0450000     |     0.0279000     |                                        
+     0.0670000     |     0.0390000     |                                        
+     0.0900000     |     0.0506000     |                                        
+     0.112000      |     0.0608000     |                                        
+     0.135000      |     0.0708000     |                                        
+     0.150000      |     0.0750000     |                                        
+     0.178373      |     0.0797051     |                                        
+     0.178400      |     0.0800000     |                                        
+     0.350000      |     0.0800000     |                                        
+--------------------------------------------------------------------------------
+ 17 Rail_Pressur  CODE=  5   CONNECTIONS =    -1
+ ***************
+
+ INPUT PARAMETERS:
+   SHIFT TIME/ANGLE RELATIVE TO CALC. START =   0.00    
+   COPY DATA FOR EACH CYCLE = NO
+BOUNDARY PRESSURE/TEMPERATURE                                                   
+-------------------|-------------------|-------------------|                    
+       TIME        |     PRESSURE      |    TEMPERATURE    |                    
+        (s)        |       (bar)       |        (K)        |                    
+-------------------|-------------------|-------------------|                    
+    0.00000000     |    50.0000000     |    293.150000     |
+--------------------------------------------------------------------------------
+ 18 Junction      CODE= 76   CONNECTIONS =     1  -20  -22
+ ***************
+
+ INPUT PARAMETERS:
+ CODE AT PORT 1   =  1.00    
+ CODE AT PORT 2   =  20.0    
+ CODE AT PORT 3   =  19.0    
+
+ ANGLE            =  60.0     deg
+
+--------------------------------------------------------------------------------
+ 19 Nozzle_Bore   CODE= 23   CONNECTIONS =    22   -2
+ ***************
+
+ INPUT PARAMETERS:
+   LINE LENGTH   =    110.00 (mm)
+   LINE DIAMETER =     2.400 (mm)
+
+FRICTION MODEL -> (none)
+--------------------------------------------------------------------------------
+ 20 Holder_Bore   CODE= 23   CONNECTIONS =    18  -21
+ ***************
+
+ INPUT PARAMETERS:
+   LINE LENGTH   =     70.00 (mm)
+   LINE DIAMETER =  2400.000 (mm)
+
+FRICTION MODEL -> (none)
+--------------------------------------------------------------------------------
+ 21 $VIRTUAL_21   CODE= 21   CONNECTIONS =    20   -9
+ ***************
+
+ INPUT PARAMETERS:
+   INITIAL VOLUME       =  0.109E+11 (mm3)
+   VAPOUR PRESSURE      =  0.100E-02 (bar)
+--------------------------------------------------------------------------------
+ 22 $VIRTUAL_22   CODE= 21   CONNECTIONS =    18  -19
+ ***************
+
+ INPUT PARAMETERS:
+   INITIAL VOLUME       =   21.7     (mm3)
+   VAPOUR PRESSURE      =  0.100E-02 (bar)
+--------------------------------------------------------------------------------
+
+
+                            INITIAL CONDITIONS
+                            ==================
+--------------|--------------|--------------|--------------|--------------|--------------|
+  No. Axis    |    COORD.    |   VELOCITY   |   PRESSURE   |     FLOW     | TEMPERATURE  |
+              |   (mm,deg)   |  (m/s,rpm)   |    (bar)     |    (mm3/s)   |     (K)      |
+             -|-            -|-            -|-            -|-            -|-            -|
+    2 x  IN ->|    0.000     |    0.000     |    1.000     |    0.000     |   293.150    |
+         OUT->|    0.000     |    0.000     |    1.000     |    0.000     |   293.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+    3 x  IN ->|    0.000     |    0.000     |    1.000     |    0.000     |   293.150    |
+         OUT->|    0.000     |    0.000     |    1.000     |    0.000     |   293.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+    4 x  IN ->|    0.000     |    0.000     |    1.000     |    0.000     |   293.150    |
+         OUT->|    0.000     |    0.000     |    1.000     |    0.000     |   293.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+    6 x  IN ->|    0.000     |    0.000     |    1500.     |    0.000     |   0.000000   |
+         OUT->|    0.000     |    0.000     |    1500.     |    0.000     |   0.000000   |
+             -|-            -|-            -|-            -|-            -|-            -|
+   21 x  IN ->|    0.000     |    0.000     |    9.167     |    0.000     |   293.150    |
+         OUT->|    0.000     |    0.000     |    9.167     |    0.000     |   293.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+   22 x  IN ->|    0.000     |    0.000     |    17.33     |    0.000     |   293.150    |
+         OUT->|    0.000     |    0.000     |    17.33     |    0.000     |   293.150    |
+             -|-            -|-            -|-            -|-            -|-            -|
+
+
+ ANIMATION ACTIVE:
+ ================
+
+ NOZZLE ELEMENT No. 16: Nozzle_Orifi
+
+
+                             SYSTEM MAP
+                             ==========
+
+   No.  EQUIPMENT-NAME  CODE                       counters                                           CONNECTIONS
+ |-----|--------------|-----|----IPR-IPL1-IPL2-IPL3--IPC-IPMA-IPMD--IPS-IPSE-IPAG|--------------------------------------------------|
+ |   1 | Injection_Tu |  23 |     0    1    0    0    0    0    0    0    0    0 |   17  -18    0    0    0    0    0    0    0    0|
+ |   2 | Nozzle_Volum |  21 |     0    0    0    0    1    0    0    0    0    0 |   19  -10  -15  -16    0    0    0    0    0    0|
+ |   3 | Volume       |  21 |     0    0    0    0    2    0    0    0    0    0 |    8    9  -14    0    0    0    0    0    0    0|
+ |   4 | Valve_Volume |  21 |     0    0    0    0    3    0    0    0    0    0 |   14   -5    0    0    0    0    0    0    0    0|
+ |   5 | Solenoid_Val |  44 |     0    0    0    0    0    0    0    0    0    0 |    4   -6    0    0    0    0    0    0    0    0|
+ |   6 | Spill_Volume |  21 |     0    0    0    0    4    0    0    0    0    0 |    5  -13    0    0    0    0    0    0    0    0|
+ |   7 | Nozzle_Holde |   3 |     1    0    0    0    5    0    0    0    0    0 |   10    0    0    0    0    0    0    0    0    0|
+ |   8 | Control_Pist |  20 |     0    0    0    0    6    0    0    0    0    0 |   10   12   -3    0    0    0    0    0    0    0|
+ |   9 | Inlet_Thrott |  22 |     0    0    0    0    0    0    0    0    0    0 |   21   -3    0    0    0    0    0    0    0    0|
+ |  10 | Needle       |  52 |     0    0    0    0    7    0    0    0    0    0 |    2  -12   -7   -8    0    0    0    0    0    0|
+ |  11 | Pressure_Tem |   5 |     2    0    0    0    8    0    0    0    0    0 |   16    0    0    0    0    0    0    0    0    0|
+ |  12 | Fuel_Tank    |   5 |     3    0    0    0    9    0    0    0    0    0 |   13   15   10   -8    0    0    0    0    0    0|
+ |  13 | Sump_Throttl |  22 |     0    0    0    0    0    0    0    0    0    0 |    6  -12    0    0    0    0    0    0    0    0|
+ |  14 | Outlet_Throt |  22 |     0    0    0    0    0    0    0    0    0    0 |    3   -4    0    0    0    0    0    0    0    0|
+ |  15 | Nozzle_Leak  |  38 |     0    0    0    0    0    0    0    0    0    1 |    2  -12    0    0    0    0    0    0    0    0|
+ |  16 | Nozzle_Orifi |  56 |     0    0    0    0    0    0    0    0    0    0 |    2  -11    0    0    0    0    0    0    0    0|
+ |  17 | Rail_Pressur |   5 |     4    0    0    0   10    0    0    0    0    0 |   -1    0    0    0    0    0    0    0    0    0|
+ |  18 | Junction     |  76 |     0    0    0    0    0    0    0    0    0    0 |    1  -20  -22    0    0    0    0    0    0    0|
+ |  19 | Nozzle_Bore  |  23 |     0    2    0    0    0    0    0    0    0    0 |   22   -2    0    0    0    0    0    0    0    0|
+ |  20 | Holder_Bore  |  23 |     0    3    0    0    0    0    0    0    0    0 |   18  -21    0    0    0    0    0    0    0    0|
+ |  21 | $VIRTUAL_21  |  21 |     0    0    0    0   11    0    0    0    0    0 |   20   -9    0    0    0    0    0    0    0    0|
+ |  22 | $VIRTUAL_22  |  21 |     0    0    0    0   12    0    0    0    0    0 |   18  -19    0    0    0    0    0    0    0    0|
+ |-----|--------------|-----|----IPR-IPL1-IPL2-IPL3--IPC-IPMA-IPMD--IPS-IPSE-IPAG|--------------------------------------------------|

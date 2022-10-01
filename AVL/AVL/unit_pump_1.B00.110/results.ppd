@@ -1,0 +1,512 @@
+# Hydsim MetaTemplate for ASE-PP2
+
+# *** Hydsim ***
+
+# File Variables:
+ModelFile = "../unit_pump_1.hyd"
+
+# Result Node:
+FOLDER "Hydsim" "unit_pump_1" "Hydsim - unit_pump_1/B00.110"
+
+	FOLDER "elements" "Elements" "no description"
+		FOLDER "@1" "InjPipe (1)" 
+			uuid = 44C4EAE94002-004A16CA-415447525A-01
+			symbol = line
+			CURVE "1@5" "vol.rate inp (InjPipe)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjPipe(1):vol.rate inp"
+				yunit = "volflow"
+			..
+			CURVE "1@6" "vol.rate-inp (InjPipe)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjPipe(1):vol.rate-inp"
+				yunit = "volflow2"
+			..
+			CURVE "1@7" "vol.rate out (InjPipe)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjPipe(1):vol.rate out"
+				yunit = "volflow"
+			..
+			CURVE "1@8" "vol.rate-out (InjPipe)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjPipe(1):vol.rate-out"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@2" "CylHeBo1 (2)" 
+			uuid = 44C5E4D7C4C4-03CECD6F-415447525A-01
+			symbol = line
+			CURVE "2@5" "vol.rate inp (CylHeBo1)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "CylHeBo1(2):vol.rate inp"
+				yunit = "volflow"
+			..
+			CURVE "2@6" "vol.rate-inp (CylHeBo1)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "CylHeBo1(2):vol.rate-inp"
+				yunit = "volflow2"
+			..
+			CURVE "2@7" "vol.rate out (CylHeBo1)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "CylHeBo1(2):vol.rate out"
+				yunit = "volflow"
+			..
+			CURVE "2@8" "vol.rate-out (CylHeBo1)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "CylHeBo1(2):vol.rate-out"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@3" "Pressure_Temperature (3)" 
+			uuid = 44BB77E0A962-00AD6A61-415447525A-01
+			symbol = boundary
+			CURVE "3@3" "pressure (Pressure_Temperature)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pressure_Tem(3):pressure"
+				yunit = "pressure"
+			..
+		..
+		FOLDER "@4" "Nozzlevol (4)" 
+			uuid = 44BCFF641044-00104403-415447525A-01
+			symbol = volume
+			CURVE "4@3" "pressure (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):pressure"
+				yunit = "pressure"
+			..
+			CURVE "4@5" "vol.rate inp (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):vol.rate inp"
+				yunit = "volflow"
+			..
+			CURVE "4@6" "vol.rate-inp (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):vol.rate-inp"
+				yunit = "volflow2"
+			..
+			CURVE "4@7" "vol.rate out (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):vol.rate out"
+				yunit = "volflow"
+			..
+			CURVE "4@8" "vol.rate-out (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):vol.rate-out"
+				yunit = "volflow2"
+			..
+			CURVE "4@12" "temperature (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):temperature"
+				yunit = "temperature"
+			..
+			CURVE "4@15" "density (Nozzlevol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Nozzlevol(4):density"
+				yunit = "density"
+			..
+		..
+		FOLDER "@5" "Needle (5)" 
+			uuid = 44BD00D41500-0015E1B8-415447525A-01
+			symbol = needle
+			CURVE "5@3" "Xinp-coord. (Needle)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Needle(5):Xinp-coord."
+				yunit = "length"
+			..
+			CURVE "5@4" "Xinp-veloc. (Needle)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Needle(5):Xinp-veloc."
+				yunit = "velocity"
+			..
+			CURVE "5@5" "Xinp-accel. (Needle)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Needle(5):Xinp-accel."
+				yunit = "acceleration"
+			..
+			CURVE "5@6" "hydr. force (Needle)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Needle(5):hydr. force"
+				yunit = "force"
+			..
+			CURVE "5@7" "total force (Needle)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Needle(5):total force"
+				yunit = "force"
+			..
+			CURVE "5@8" "mech. force (Needle)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Needle(5):mech. force"
+				yunit = "force"
+			..
+		..
+		FOLDER "@6" "NeeLeak (6)" 
+			uuid = 44BD01461500-0017A095-415447525A-01
+			symbol = leakage
+			CURVE "6@3" "volum. rate (NeeLeak)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "NeeLeak(6):volum. rate"
+				yunit = "volflow"
+			..
+			CURVE "6@4" "volum.-rate (NeeLeak)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "NeeLeak(6):volum.-rate"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@7" "InjBore (7)" 
+			uuid = 44C5E4D7C4C4-03CECD6F-415447525A-01
+			symbol = line
+			CURVE "7@5" "vol.rate inp (InjBore)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjBore(7):vol.rate inp"
+				yunit = "volflow"
+			..
+			CURVE "7@6" "vol.rate-inp (InjBore)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjBore(7):vol.rate-inp"
+				yunit = "volflow2"
+			..
+			CURVE "7@7" "vol.rate out (InjBore)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjBore(7):vol.rate out"
+				yunit = "volflow"
+			..
+			CURVE "7@8" "vol.rate-out (InjBore)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjBore(7):vol.rate-out"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@8" "SAC_Orifice (8)" 
+			uuid = 44D9971C9195-02B1D5B4-415447525A-01
+			symbol = h_nozzle
+			CURVE "8@3" "inject. rate (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):inject. rate"
+				yunit = "volflow"
+			..
+			CURVE "8@4" "inject.-rate (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):inject.-rate"
+				yunit = "volflow2"
+			..
+			CURVE "8@5" "inj. volume (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):inj. volume"
+				yunit = "volume"
+			..
+			CURVE "8@6" "sac pressure (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):sac pressure"
+				yunit = "pressure"
+			..
+			CURVE "8@8" "hole switch (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):hole switch"
+				yunit = "dimensionless"
+			..
+			CURVE "8@9" "cavit.factor (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):cavit.factor"
+				yunit = "dimensionless"
+			..
+			CURVE "8@11" "ef.exit area (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):ef.exit area"
+				yunit = "area"
+			..
+			CURVE "8@12" "mass rate (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):mass rate"
+				yunit = "massflow"
+			..
+			CURVE "8@13" "mass-rate (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):mass-rate"
+				yunit = "massflow2"
+			..
+			CURVE "8@14" "inject. mass (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):inject. mass"
+				yunit = "mass"
+			..
+			CURVE "8@15" "seat disch. (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):seat disch."
+				yunit = "dimensionless"
+			..
+			CURVE "8@16" "hole disch. (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):hole disch."
+				yunit = "dimensionless"
+			..
+			CURVE "8@21" "inject.power (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):inject.power"
+				yunit = "power"
+			..
+			CURVE "8@22" "inj.duration (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):inj.duration"
+				yunit = "time"
+			..
+			CURVE "8@24" "seat switch (SAC_Orifice)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "SAC_Orifice(8):seat switch"
+				yunit = "dimensionless"
+			..
+		..
+		FOLDER "@10" "InjVol (10)" 
+			uuid = 44C5E4A1C5E0-03CDFA7C-415447525A-01
+			symbol = volume
+			CURVE "10@3" "pressure (InjVol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjVol(10):pressure"
+				yunit = "pressure"
+			..
+			CURVE "10@12" "temperature (InjVol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjVol(10):temperature"
+				yunit = "temperature"
+			..
+			CURVE "10@15" "density (InjVol)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "InjVol(10):density"
+				yunit = "density"
+			..
+		..
+		FOLDER "@11" "Plunger (11)" 
+			uuid = 3E8987A18904-008F64DC-504D4F5437-01
+			symbol = pump
+			CURVE "11@3" "Xinp-coord. (Plunger)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger(11):Xinp-coord."
+				yunit = "length"
+			..
+			CURVE "11@4" "Xinp-veloc. (Plunger)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger(11):Xinp-veloc."
+				yunit = "velocity"
+			..
+			CURVE "11@5" "Xinp-accel. (Plunger)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger(11):Xinp-accel."
+				yunit = "acceleration"
+			..
+			CURVE "11@6" "mech. force (Plunger)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger(11):mech. force"
+				yunit = "force"
+			..
+			CURVE "11@7" "mech. work (Plunger)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger(11):mech. work"
+				yunit = "work"
+			..
+		..
+		FOLDER "@12" "Pump_Volume (12)" 
+			uuid = 3E8987A18904-008F64EC-504D4F5437-01
+			symbol = volume
+			CURVE "12@3" "pressure (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):pressure"
+				yunit = "pressure"
+			..
+			CURVE "12@4" "volume (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):volume"
+				yunit = "volume"
+			..
+			CURVE "12@5" "vol.rate inp (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):vol.rate inp"
+				yunit = "volflow"
+			..
+			CURVE "12@6" "vol.rate-inp (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):vol.rate-inp"
+				yunit = "volflow2"
+			..
+			CURVE "12@7" "vol.rate out (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):vol.rate out"
+				yunit = "volflow"
+			..
+			CURVE "12@8" "vol.rate-out (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):vol.rate-out"
+				yunit = "volflow2"
+			..
+			CURVE "12@11" "bulk modulus (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):bulk modulus"
+				yunit = "strength"
+			..
+			CURVE "12@15" "density (Pump_Volume)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Pump_Volume(12):density"
+				yunit = "density"
+			..
+		..
+		FOLDER "@13" "Plunger_Leakage (13)" 
+			uuid = 44BB752DA260-00A2E030-415447525A-01
+			symbol = leakage
+			CURVE "13@3" "volum. rate (Plunger_Leakage)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger_Leak(13):volum. rate"
+				yunit = "volflow"
+			..
+			CURVE "13@4" "volum.-rate (Plunger_Leakage)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Plunger_Leak(13):volum.-rate"
+				yunit = "volflow2"
+			..
+		..
+		FOLDER "@14" "CutOffVa (14)" 
+			uuid = 498BEC6C3AC6-0013AFE7-415447525A-01
+			symbol = throttle
+			CURVE "14@4" "volum.-rate (CutOffVa)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "CutOffVa(14):volum.-rate"
+				yunit = "volflow2"
+			..
+			CURVE "14@6" "flow area (CutOffVa)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "CutOffVa(14):flow area"
+				yunit = "area"
+			..
+		..
+		FOLDER "@18" "Cam_Profile (18)" 
+			uuid = 4D0A528B2008-003600F9-415447525A-01
+			symbol = cam
+			CURVE "18@6" "cam velocity (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):cam velocity"
+				yunit = "ang_vel"
+			..
+			CURVE "18@7" "profile lift (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):profile lift"
+				yunit = "length"
+			..
+			CURVE "18@8" "profile velo (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):profile velo"
+				yunit = "velocity"
+			..
+			CURVE "18@9" "velocity1000 (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):velocity1000"
+				yunit = "velocity"
+			..
+			CURVE "18@10" "acceler.1000 (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):acceler.1000"
+				yunit = "acceleration"
+			..
+			CURVE "18@11" "press. angle (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):press. angle"
+				yunit = "angle"
+			..
+			CURVE "18@14" "normal force (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):normal force"
+				yunit = "force"
+			..
+			CURVE "18@15" "shaft torque (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):shaft torque"
+				yunit = "moment"
+			..
+			CURVE "18@18" "Hertz stress (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):Hertz stress"
+				yunit = "strength"
+			..
+			CURVE "18@19" "max. stress (Cam_Profile)" 
+				xlocation = GIDAS "unit_pump_1.GID" "crank angle"
+				xunit = "deg"
+				ylocation = GIDAS "unit_pump_1.GID" "Cam_Profile(18):max. stress"
+				yunit = "strength"
+			..
+		..
+	..
+
+	FOLDER "adjust" "Search Adjust" 
+	..
+
+..
+

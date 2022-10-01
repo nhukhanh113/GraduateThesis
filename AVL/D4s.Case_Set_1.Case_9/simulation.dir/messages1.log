@@ -1,0 +1,503 @@
+MESSAGE
+RUNINFO      1 CONTROL      1 BOOST       0.00 DEGCRA
+ System date and time : 21.09.2022 09:42:47
+ENDOFMESSAGE
+MESSAGE
+RUNINFO      2 CONTROL      2 BOOST       0.00 DEGCRA
+ Executable information:
+  Version  : v2020.1.0.0.0
+  Build    : Apr 10 2020 22:45:12
+  Platform : x86_64-unknown-winnt_i16v15
+ENDOFMESSAGE
+MESSAGE
+RUNINFO      3 CONTROL      3 BOOST       0.00 DEGCRA
+ Opened file :  D4s.bst
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 70011 INPUT     0 BST_READ_GLOBAL 0.00DEGCRA
+  The following User Defined Parameters were identified:
+ENDOFMESSAGE
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 571129 INPUT      0 BST_READ_INPUT       0.00 DEGCRA
+ Using C gas property library
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  12377 INPUT      0 BST_READ_INPUT       0.00 DEGCRA
+ No reference element set for volumetric efficiency.
+ No gas exchange data related to intake manifold conditions will be calculated.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 270000 REACTION_LIBRARY      1 CL_BOOST_MessageSystem       0.00 DEGCRA
+>>> Catalyst Library <<<
+  Version: 2.600
+  Platform: x86_64-unknown-winnt_i16v15
+  Build date: Apr  6 2020 15:35:37
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 270000 REACTION_LIBRARY      1 CL_BOOST_MessageSystem       0.00 DEGCRA
+>>> Transfer Model Library Version 1.400 <<<
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 100001 BOOST      1 BOOST_GPR_printf       0.00 DEGCRA
+    Classic gas property data are read from:
+      C:/Program Files (x86)/AVL/R2020.1/BOOST/files/GASOLINE.BGP
+
+ENDOFMESSAGE
+MESSAGE
+WARNING 121774 RESTRICTION      1 INPUT       0.00 DEGCRA
+ Extensions from a tapered pipe not yet supported.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121776 RESTRICTION      2 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       6.87
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121773 RESTRICTION      2 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
+ENDOFMESSAGE
+MESSAGE
+WARNING 121775 RESTRICTION      3 INPUT       0.00 DEGCRA
+ Extensions into a tapered pipe not yet supported.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121776 RESTRICTION      8 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       0.46
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121773 RESTRICTION      8 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121776 RESTRICTION      9 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       0.30
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121773 RESTRICTION      9 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
+ENDOFMESSAGE
+MESSAGE
+WARNING 121775 RESTRICTION     10 INPUT       0.00 DEGCRA
+ Extensions into a tapered pipe not yet supported.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  10660 GLOBAL      1 LICENSING       0.00 DEGCRA
+  >>>
+  >>>   The Licence for application "sys_1DCFD_solver"
+  >>>   has been checked out!
+  >>>
+ENDOFMESSAGE
+MESSAGE
+RUNINFO      0 POSTLINKS      0 BOOST       0.00 DEGCRA
+ Opened file : D4s.glb
+ Unit Number :    13
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150002 RESTRICTION      2 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150002 RESTRICTION      8 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150002 RESTRICTION      9 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150006 SYSTEMBOUNDARY      1 BOOST       0.00 DEGCRA
+ Open end correction for PIPE :     1
+ End correction   [mm] :     16.500
+ Original Length  [mm] :    110.000
+ Corrected Length [mm] :    126.500
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150006 SYSTEMBOUNDARY      2 BOOST       0.00 DEGCRA
+ Open end correction for PIPE :    33
+ End correction   [mm] :     13.800
+ Original Length  [mm] :    330.000
+ Corrected Length [mm] :    343.800
+ENDOFMESSAGE
+MESSAGE
+WARNING 111134 COMPOSITE     35 CLRINI       0.00 DEGCRA
+  The evaluated part of the target pressure drop for the Core Pipe of
+  AIRCLEANER   1  is smaller that 1E-4 Pa!
+  The laminar friction factor and the
+  turbulent friction coefficient are set to 1E-6.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  62461 JUNCTION      1 INIJUN       0.00 DEGCRA
+ No suitable measured flowcoefficients found, flowcoefficients were interpolated from the catalogue:
+ CALCULATED     0  45      1.0000     0.9560
+ 11   0     1.0000       0.0000     0.1570     0.3187     0.4800     0.6251     0.7438     0.8276     0.8828     0.9177     0.9295     0.9181
+ 12  45     1.0460       0.0000     0.1291     0.2522     0.3699     0.4813     0.5825     0.6680     0.7364     0.7904     0.8253     0.8411
+ 21  45     0.9560       0.0000     0.1438     0.2784     0.4041     0.5200     0.6224     0.7057     0.7695     0.8181     0.8485     0.8607
+ 22 135     0.9560       0.0000     0.1025     0.1964     0.2804     0.3545     0.4187     0.4737     0.5205     0.5593     0.5938     0.6239
+ 31   0     1.0000       0.0000     0.1570     0.3187     0.4800     0.6251     0.7438     0.8276     0.8828     0.9177     0.9295     0.9181
+ 32 135     1.0460       0.0000     0.0911     0.1762     0.2549     0.3268     0.3906     0.4464     0.4946     0.5354     0.5717     0.6035
+ 41   0     1.0000       0.0000     0.1065     0.1997     0.2840     0.3600     0.4335     0.5085     0.5889     0.6784     0.7882     0.9181
+ 42  45     0.9560       0.0000     0.1016     0.1953     0.2813     0.3639     0.4410     0.5153     0.5899     0.6657     0.7434     0.8229
+ 51  45     1.0460       0.0000     0.1188     0.2252     0.3201     0.4089     0.4899     0.5664     0.6423     0.7190     0.7982     0.8798
+ 52 135     1.0460       0.0000     0.0949     0.1807     0.2585     0.3288     0.3933     0.4522     0.5060     0.5549     0.5966     0.6313
+ 61   0     1.0000       0.0000     0.1065     0.1997     0.2840     0.3600     0.4335     0.5085     0.5889     0.6784     0.7882     0.9181
+ 62 135     0.9560       0.0000     0.0868     0.1659     0.2382     0.3041     0.3648     0.4208     0.4722     0.5195     0.5609     0.5964
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  62461 JUNCTION      3 INIJUN       0.00 DEGCRA
+ No suitable measured flowcoefficients found, flowcoefficients were interpolated from the catalogue:
+ CALCULATED    90  90      1.4938     1.4938
+ 11  90     0.6694       0.0000     0.1692     0.3149     0.4362     0.5327     0.6075     0.6647     0.7077     0.7385     0.7636     0.7829
+ 12  90     0.6694       0.0000     0.1692     0.3149     0.4362     0.5327     0.6075     0.6647     0.7077     0.7385     0.7636     0.7829
+ 21  90     1.4938       0.0000     0.0681     0.1328     0.1950     0.2549     0.3127     0.3685     0.4225     0.4749     0.5228     0.5662
+ 22   0     1.0000       0.0000     0.1570     0.3187     0.4800     0.6251     0.7438     0.8276     0.8828     0.9177     0.9295     0.9181
+ 31  90     1.4938       0.0000     0.0681     0.1328     0.1950     0.2549     0.3127     0.3685     0.4225     0.4749     0.5228     0.5662
+ 32   0     1.0000       0.0000     0.1570     0.3187     0.4800     0.6251     0.7438     0.8276     0.8828     0.9177     0.9295     0.9181
+ 41  90     1.4938       0.0000     0.1532     0.2827     0.3955     0.4938     0.5811     0.6586     0.7257     0.7814     0.8214     0.8459
+ 42  90     1.4938       0.0000     0.1532     0.2827     0.3955     0.4938     0.5811     0.6586     0.7257     0.7814     0.8214     0.8459
+ 51  90     0.6694       0.0000     0.0619     0.1222     0.1798     0.2355     0.2892     0.3409     0.3904     0.4378     0.4823     0.5241
+ 52   0     1.0000       0.0000     0.1065     0.1997     0.2840     0.3600     0.4335     0.5085     0.5889     0.6784     0.7882     0.9181
+ 61  90     0.6694       0.0000     0.0619     0.1222     0.1798     0.2355     0.2892     0.3409     0.3904     0.4378     0.4823     0.5241
+ 62   0     1.0000       0.0000     0.1065     0.1997     0.2840     0.3600     0.4335     0.5085     0.5889     0.6784     0.7882     0.9181
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  62461 JUNCTION      4 INIJUN       0.00 DEGCRA
+ No suitable measured flowcoefficients found, flowcoefficients were interpolated from the catalogue:
+ CALCULATED    15 150      0.8858     1.0000
+ 11  15     1.1289       0.0000     0.1269     0.2574     0.3896     0.5157     0.6287     0.7210     0.7928     0.8476     0.8768     0.8806
+ 12 150     1.0000       0.0000     0.0965     0.1857     0.2670     0.3398     0.4033     0.4576     0.5030     0.5403     0.5722     0.5988
+ 21 150     1.0000       0.0000     0.0965     0.1857     0.2670     0.3398     0.4033     0.4576     0.5030     0.5403     0.5722     0.5988
+ 22  15     1.1289       0.0000     0.1269     0.2574     0.3896     0.5157     0.6287     0.7210     0.7928     0.8476     0.8768     0.8806
+ 31  15     0.8858       0.0000     0.1770     0.3450     0.5016     0.6394     0.7514     0.8298     0.8799     0.9113     0.9237     0.9172
+ 32  15     0.8858       0.0000     0.1770     0.3450     0.5016     0.6394     0.7514     0.8298     0.8799     0.9113     0.9237     0.9172
+ 41  15     0.8858       0.0000     0.0890     0.1703     0.2461     0.3189     0.3893     0.4602     0.5352     0.6166     0.7091     0.8125
+ 42 150     1.0000       0.0000     0.0895     0.1698     0.2423     0.3081     0.3682     0.4236     0.4748     0.5224     0.5637     0.5988
+ 51 150     1.0000       0.0000     0.0895     0.1698     0.2423     0.3081     0.3682     0.4236     0.4748     0.5224     0.5637     0.5988
+ 52  15     0.8858       0.0000     0.0890     0.1703     0.2461     0.3189     0.3893     0.4602     0.5352     0.6166     0.7091     0.8125
+ 61  15     1.1289       0.0000     0.1086     0.2172     0.3259     0.4345     0.5211     0.6070     0.6856     0.7710     0.8738     0.9941
+ 62  15     1.1289       0.0000     0.1086     0.2172     0.3259     0.4345     0.5211     0.6070     0.6856     0.7710     0.8738     0.9941
+S61  15     1.1289       0.8806     0.8957     0.9075     0.9159     0.9210     0.9227     0.9210     0.9159     0.9075     0.8957     0.8806
+S62  15     1.1289       0.8806     0.8957     0.9075     0.9159     0.9210     0.9227     0.9210     0.9159     0.9075     0.8957     0.8806
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  62461 JUNCTION      5 INIJUN       0.00 DEGCRA
+ No suitable measured flowcoefficients found, flowcoefficients were interpolated from the catalogue:
+ CALCULATED    15 150      0.8359     1.0000
+ 11  15     1.1963       0.0000     0.1208     0.2439     0.3675     0.4862     0.5946     0.6868     0.7621     0.8217     0.8559     0.8646
+ 12 150     1.0000       0.0000     0.0965     0.1857     0.2670     0.3398     0.4033     0.4576     0.5030     0.5403     0.5722     0.5988
+ 21 150     1.0000       0.0000     0.0965     0.1857     0.2670     0.3398     0.4033     0.4576     0.5030     0.5403     0.5722     0.5988
+ 22  15     1.1963       0.0000     0.1208     0.2439     0.3675     0.4862     0.5946     0.6868     0.7621     0.8217     0.8559     0.8646
+ 31  15     0.8359       0.0000     0.1928     0.3703     0.5294     0.6658     0.7738     0.8470     0.8915     0.9179     0.9276     0.9207
+ 32  15     0.8359       0.0000     0.1928     0.3703     0.5294     0.6658     0.7738     0.8470     0.8915     0.9179     0.9276     0.9207
+ 41  15     0.8359       0.0000     0.0804     0.1551     0.2258     0.2948     0.3625     0.4313     0.5042     0.5831     0.6716     0.7696
+ 42 150     1.0000       0.0000     0.0895     0.1698     0.2423     0.3081     0.3682     0.4236     0.4748     0.5224     0.5637     0.5988
+ 51 150     1.0000       0.0000     0.0895     0.1698     0.2423     0.3081     0.3682     0.4236     0.4748     0.5224     0.5637     0.5988
+ 52  15     0.8359       0.0000     0.0804     0.1551     0.2258     0.2948     0.3625     0.4313     0.5042     0.5831     0.6716     0.7696
+ 61  15     1.1963       0.0000     0.1155     0.2310     0.3465     0.4620     0.5548     0.6457     0.7250     0.8104     0.9135     1.0344
+ 62  15     1.1963       0.0000     0.1155     0.2310     0.3465     0.4620     0.5548     0.6457     0.7250     0.8104     0.9135     1.0344
+S61  15     1.1963       0.8646     0.8870     0.9045     0.9169     0.9244     0.9269     0.9244     0.9169     0.9045     0.8870     0.8646
+S62  15     1.1963       0.8646     0.8870     0.9045     0.9169     0.9244     0.9269     0.9244     0.9169     0.9045     0.8870     0.8646
+ENDOFMESSAGE
+MESSAGE
+RUNINFO  62461 JUNCTION      6 INIJUN       0.00 DEGCRA
+ No suitable measured flowcoefficients found, flowcoefficients were interpolated from the catalogue:
+ CALCULATED    15 150      0.7071     1.0000
+ 11  15     1.4142       0.0000     0.1019     0.2035     0.3038     0.4019     0.4966     0.5861     0.6677     0.7377     0.7833     0.8044
+ 12 150     1.0000       0.0000     0.0965     0.1857     0.2670     0.3398     0.4033     0.4576     0.5030     0.5403     0.5722     0.5988
+ 21 150     1.0000       0.0000     0.0965     0.1857     0.2670     0.3398     0.4033     0.4576     0.5030     0.5403     0.5722     0.5988
+ 22  15     1.4142       0.0000     0.1019     0.2035     0.3038     0.4019     0.4966     0.5861     0.6677     0.7377     0.7833     0.8044
+ 31  15     0.7071       0.0000     0.2422     0.4471     0.6105     0.7389     0.8325     0.8889     0.9174     0.9300     0.9320     0.9234
+ 32  15     0.7071       0.0000     0.2422     0.4471     0.6105     0.7389     0.8325     0.8889     0.9174     0.9300     0.9320     0.9234
+ 41  15     0.7071       0.0000     0.0592     0.1174     0.1752     0.2340     0.2936     0.3554     0.4212     0.4921     0.5694     0.6530
+ 42 150     1.0000       0.0000     0.0895     0.1698     0.2423     0.3081     0.3682     0.4236     0.4748     0.5224     0.5637     0.5988
+ 51 150     1.0000       0.0000     0.0895     0.1698     0.2423     0.3081     0.3682     0.4236     0.4748     0.5224     0.5637     0.5988
+ 52  15     0.7071       0.0000     0.0592     0.1174     0.1752     0.2340     0.2936     0.3554     0.4212     0.4921     0.5694     0.6530
+ 61  15     1.4142       0.0000     0.1357     0.2714     0.4070     0.5427     0.6505     0.7524     0.8312     0.9145     1.0166     1.1375
+ 62  15     1.4142       0.0000     0.1357     0.2714     0.4070     0.5427     0.6505     0.7524     0.8312     0.9145     1.0166     1.1375
+S61  15     1.4142       0.8044     0.8455     0.8774     0.9002     0.9139     0.9185     0.9139     0.9002     0.8774     0.8455     0.8044
+S62  15     1.4142       0.8044     0.8455     0.8774     0.9002     0.9139     0.9185     0.9139     0.9002     0.8774     0.8455     0.8044
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      4 RVERZW    1134.00 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000060    0.000048    0.062609
+ attached pipe 2:    0.019098    0.019098    0.000000
+ attached pipe 3:    0.010715    0.019158   44.071788
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      4 RVERZW    1148.70 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 4.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000094    0.007864   98.802980
+ attached pipe 2:    0.007864    0.000094   98.802980
+ attached pipe 3:    0.000000    0.000000    0.000000
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      4 RVERZW    1149.98 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000000    0.000000    0.000000
+ attached pipe 2:    0.008487    0.010371   12.380466
+ attached pipe 3:    0.015213    0.008487   44.209549
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      4 RVERZW    1152.48 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 1.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.004902    0.000002   99.965178
+ attached pipe 2:    0.000000    0.000000    0.000000
+ attached pipe 3:    0.000002    0.004902   99.965178
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2556.38 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.110109    0.110109    0.000000
+ attached pipe 2:    0.081659    0.090700    3.785276
+ attached pipe 3:    0.238863    0.191768   19.716345
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2557.80 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.107785    0.107785    0.000000
+ attached pipe 2:    0.079310    0.080058    0.348756
+ attached pipe 3:    0.214480    0.187095   12.767778
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2559.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.113200    0.113200    0.000000
+ attached pipe 2:    0.076515    0.068875    3.886250
+ attached pipe 3:    0.196600    0.189715    3.501963
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2560.64 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.117455    0.117455    0.000000
+ attached pipe 2:    0.073555    0.075726    1.033927
+ attached pipe 3:    0.209917    0.191010    9.007120
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2562.08 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.121186    0.121186    0.000000
+ attached pipe 2:    0.070836    0.063950    3.506999
+ attached pipe 3:    0.196348    0.192023    2.202767
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2563.53 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.124926    0.124926    0.000000
+ attached pipe 2:    0.067625    0.068233    0.294128
+ attached pipe 3:    0.206541    0.192551    6.773325
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2564.99 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.128096    0.128096    0.000000
+ attached pipe 2:    0.064359    0.057415    3.589768
+ attached pipe 3:    0.193431    0.192455    0.504715
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2566.44 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.130406    0.130406    0.000000
+ attached pipe 2:    0.062460    0.056945    2.750487
+ attached pipe 3:    0.200495    0.192866    3.805375
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2567.87 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.132089    0.132089    0.000000
+ attached pipe 2:    0.059706    0.054368    2.677472
+ attached pipe 3:    0.199390    0.191795    3.808714
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2569.31 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.133154    0.133154    0.000000
+ attached pipe 2:    0.056880    0.051153    2.940489
+ attached pipe 3:    0.194763    0.190034    2.428079
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2570.04 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.012827    0.009580    2.110646
+ attached pipe 2:    0.140984    0.140984    0.000000
+ attached pipe 3:    0.150541    0.153810    2.125413
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2570.84 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.132547    0.132547    0.000000
+ attached pipe 2:    0.054785    0.048331    3.418600
+ attached pipe 3:    0.188791    0.187333    0.772356
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2572.31 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.131293    0.131293    0.000000
+ attached pipe 2:    0.053576    0.048363    2.716180
+ attached pipe 3:    0.191901    0.184869    3.664142
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2573.06 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.007602    0.004958    1.715572
+ attached pipe 2:    0.146488    0.146488    0.000000
+ attached pipe 3:    0.103104    0.154090   33.088509
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143000 PIPE     36 PIPE_POLY_LOOP    2614.59 DEGCRA
+ The iteration of the static pressure for the required
+ stagnation pressure failed to converge within  25 iterations.
+ Required stagnation pressure [Pa]:   142389.89
+ Achieved stagnation pressure [Pa]:   143391.91
+ Difference [percent of required press.]:       0.70
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2653.87 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.103902    0.103902    0.000000
+ attached pipe 2:    0.030911    0.025702    3.864224
+ attached pipe 3:    0.129655    0.134813    3.825758
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2662.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.044431    0.067134    9.850871
+ attached pipe 2:    0.158427    0.158427    0.000000
+ attached pipe 3:    0.230465    0.202859   11.978463
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2664.49 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.034669    0.064010   15.553177
+ attached pipe 2:    0.153986    0.153986    0.000000
+ attached pipe 3:    0.187700    0.188655    0.506033
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2691.32 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000093    0.000093    0.000000
+ attached pipe 2:    0.047011    0.048175    2.412217
+ attached pipe 3:    0.048265    0.047104    2.406153
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2692.93 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000151    0.000151    0.000000
+ attached pipe 2:    0.044671    0.046632    4.192606
+ attached pipe 3:    0.046788    0.044822    4.203399
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2694.50 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.041592    0.070753   14.150907
+ attached pipe 2:    0.154633    0.154633    0.000000
+ attached pipe 3:    0.206071    0.196226    4.777543
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      6 RVERZW    2695.27 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.075878    0.075878    0.000000
+ attached pipe 2:    0.009659    0.006204    4.039153
+ attached pipe 3:    0.082107    0.085537    4.009803
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2699.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.018812    0.018840    0.149960
+ attached pipe 2:    0.000000    0.000000    0.000000
+ attached pipe 3:    0.018432    0.018812    2.017401
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2700.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.015046    0.014999    0.296143
+ attached pipe 2:    0.000000    0.000000    0.000000
+ attached pipe 3:    0.015895    0.015046    5.342689
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2813.47 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000000    0.000000    0.000000
+ attached pipe 2:    0.037305    0.036866    1.176369
+ attached pipe 3:    0.036528    0.037305    2.084312
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2816.42 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000000    0.000000    0.000000
+ attached pipe 2:    0.018634    0.018526    0.556170
+ attached pipe 3:    0.019362    0.018634    3.758199
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 143302 JUNCTION      5 RVERZW    2817.42 DEGCRA
+ The iteration of the junction massflow failed to
+ converge at flowpattern 6.
+ calculated values:   type 1      type 2 difference in percent of total massflow
+ attached pipe 1:    0.000002    0.000002    0.000000
+ attached pipe 2:    0.012112    0.012038    0.563324
+ attached pipe 3:    0.013028    0.012114    7.021389
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 100000 CONTROL      0 CONVCONTROLFINISH   10080.00 DEGCRA
+ Calculation converged!
+ENDOFMESSAGE

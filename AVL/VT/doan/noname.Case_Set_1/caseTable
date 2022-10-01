@@ -1,0 +1,5 @@
+Case_Set_1 close_time  open_time  
+[UNITS] time~s  time~s  
+Case_Set_1.Case_1 1e-5  2e-4  
+Case_Set_1.Case_2 1e-5  3e-6  
+Case_Set_1.Case_3 1e-5  2e-4  

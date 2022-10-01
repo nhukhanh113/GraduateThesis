@@ -1,0 +1,55 @@
+# name
+nozzle_holder2_16.obj
+
+# Ursprung und Orientierung des Objekts
+0.  0.    0.       # Position
+1. 0. 0.  0.  1. 0.  0. 0. 1. # Orientierung (Euler-Koordinatensystem)
+
+# Anzahl der Farben
+2
+
+# Farben die im Objekt benutzt werden
+# (Farbnummer, rot, gruen, blau)
+
+0	0	0	0
+1 	 150 	 150 	 150 
+
+# Anzahl der Punkte die im Objekt benutzt werden
+10
+
+# Punkte die im Objekt benutzt werden (Punktnummer,x,y,z)
+
+0	15.600000	-4.500000	0.0
+1	15.600000	-2.400000	0.0
+2	14.500000	-1.500000	0.0
+3	14.000000	-1.500000	0.0
+4	14.000000	-4.500000	0.0
+5	15.600000	4.500000	0.0
+6	15.600000	2.400000	0.0
+7	14.500000	1.500000	0.0
+8	14.000000	1.500000	0.0
+9	14.000000	4.500000	0.0
+
+# Anzahl der Segmente (Linien) im Objekt)
+10
+
+# Segmente im Objekt (Segmentnummer, Farbe, Startpunkt p, Endpunkt q)
+0	0	0	1
+1	0	1	2
+2	0	2	3
+3	0	3	4
+4	0	4	0
+5	0	5	6
+6	0	6	7
+7	0	7	8
+8	0	8	9
+9	0	9	5
+
+# Anzahl Polygone im Objekt (Polygonnummer,Farbe,Segmentanzahl,Segmentnummern..)
+2
+0	1	5	 0 1 2 3 4
+1	1	5	 5 6 7 8 9
+
+# Anzahl der Animationsschritte
+0
+

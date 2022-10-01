@@ -1,0 +1,11 @@
+BEGIN
+CHANNELNAME = ['Default_Case_Index', &
+               'FLOWCOEFFICIENT_P#25', &
+               'MASSFLOW_P#25', &
+               'VELOCITY_P#25']
+UNIT        = ['no', &
+               '-', &
+               'kg/cycle', &
+               'm/s']
+END
+1.000000E+00   0.10160747E+001   0.14303160E-002   0.13442090E+003

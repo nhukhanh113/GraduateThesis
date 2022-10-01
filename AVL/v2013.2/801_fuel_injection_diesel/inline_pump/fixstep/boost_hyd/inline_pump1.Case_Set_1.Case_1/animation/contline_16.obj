@@ -1,0 +1,38 @@
+# name
+contline_16.obj
+
+# Ursprung und Orientierung des Objekts
+0.  0.    0.       # Position
+1. 0. 0.  0.  1. 0.  0. 0. 1. # Orientierung (Euler-Koordinatensystem)
+
+# Anzahl der Farben
+2
+
+# Farben die im Objekt benutzt werden
+# (Farbnummer, rot, gruen, blau)
+
+0	0	0	0
+1 	 150 	 150 	 150 
+
+# Anzahl der Punkte die im Objekt benutzt werden
+4
+
+# Punkte die im Objekt benutzt werden (Punktnummer,x,y,z)
+
+0	0.152073	0.800000	0.0	0
+1	-0.483446	0.328250	0.0	1
+2	0.152073	-0.800000	0.0	2
+3	-0.483446	-0.328250	0.0	3
+
+# Anzahl der Segmente (Linien) im Objekt)
+2
+
+# Segmente im Objekt (Segmentnummer, Farbe, Startpunkt p, Endpunkt q)
+0	0	0	1
+1	0	2	3
+
+# Anzahl Polygone im Objekt (Polygonnummer,Farbe,Segmentanzahl,Segmentnummern..)
+0
+# Anzahl der Animationsschritte
+0
+

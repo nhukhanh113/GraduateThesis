@@ -1,0 +1,1917 @@
+VERSION-13.10
+SECTION CONTROL
+_C_ "GTEManager" "gtemanager" V1
+	_C_ "General" "general" V1
+		PageFormat string "A4"
+		PageStandard int 1
+		PageUserDefined int 0
+		PageWidth double 595
+		PageHeight double 842
+		PagePortrait int 1
+		PageLandscape int 0
+		PageUnit string "mm"
+		Grid int 0
+		GridOn int 0
+		GridValue double 5
+		GridOffset double 0
+		0_bits int 2
+	..
+	_C_ "Model" "model" V1
+		_C_ "noname" "strings" V1
+		..
+	..
+	_C_ "Domain" "Model" V1
+		_C_ "Domain" "Gas Volume 2" V1
+			var_variant int 0
+			_C_ "Variable" "kappa" V1
+				var_type string "auto"
+				var_enabled int 1
+				var_value string "1.01"
+				var_unit string ""
+			..
+		..
+		_C_ "Domain" "Piston 1" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Pressure Source 3" V1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_REV" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_SEC" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_DEGCRANK_PER_DEGCAM" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1000"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED1" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED2" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED3" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "0.00016666666666666666"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "kappa" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.01"
+			var_unit string "dimensionless~no"
+			var_variant int 1
+			var_value_saved string "1.4"
+		..
+	..
+	_C_ "VariantDomain" "Model" V1
+		aseboxvariant_width array-1 none 3 0
+			int -1
+			int -1
+			int -1
+			DEF
+		_C_ "Variant" "PV" V1
+			variant_names array-1 none 5 0
+				string "kappa_1-01"
+				string "kappa_1-1"
+				string "kappa_1-2"
+				string "kappa_1-3"
+				string "kappa_1-4"
+				DEF
+			variant_vars array-1 none 1 0
+				string "kappa"
+				DEF
+			variant_values array-1 none 1 0
+				array-1 none 5 0
+					string "1.01"
+					string "1.1"
+					string "1.2"
+					string "1.3"
+					string "1.4"
+				DEF
+			variant_active string "kappa_1-01"
+			variant_realized string "kappa_1-01"
+		..
+	..
+..
+ENDSECTION
+SECTION GRAPHIC
+TIMAGE-22 "" 0 0 0 255 255 255 2 5 0 0 0 0 0 128 -T- "Arial" 14 1 2 "PV_Diagram_02.gif" "" "PV_Diagram_02.gif" 0 "render_3d_graph" "" 31.5055900621 480.223602484 556.505590062 805.223602484 0. -1 
+TRECTANGLE-21 "" 1 0 0 0 0 0 2 5 0 0 0 0 0 0 -T- 4 
+148.526708075 55.4360248447 
+461.269565217 55.4360248447 
+461.269565217 456.039751553 
+148.526708075 456.039751553 
+TTEXTRECTANGLE-21 "" 2 0 0 0 0 0 2 5 0 0 0 0 0 0 -T- 241.49068323 19.9652173913 328.49068323 47.9652173913 "adobe-helvetica" 24 4 0 0 0 1 0 "MODEL" "" 
+TRECTANGLE-21 "" 3 0 0 0 0 0 2 5 0 0 0 0 0 0 -T- 4 
+31.3788819876 478.004968944 
+554.360248447 478.004968944 
+554.360248447 804.345341615 
+31.3788819876 804.345341615 
+ENDSECTION
+SECTION MODEL
+OS-1.50
+GTEEditorKit
+37
+OSOBJECT "Element" 0 101 0 0 0 0
+Type 1 20
+Id 1 1
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "41A6EE842A20-005AA320-736F6C6173-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 4 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+199.413664596 210.537272224 
+364.719008107 210.537272224 
+364.719008107 267.043331253 
+199.413664596 267.043331253 
+199.413664596 210.537272224 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 0.1 0 200 200 200 0 0 256 - 5 
+199.413664596 210.537272224 
+364.719008107 210.537272224 
+364.719008107 267.043331253 
+199.413664596 267.043331253 
+199.413664596 210.537272224 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+199.413664596 267.043331253 
+199.413664596 210.537272224 
+364.719008107 210.537272224 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+202.12358826 267.043331253 
+364.719008107 267.043331253 
+364.719008107 212.360048322 0 
+TPOLYGON-21 "" 0 0 0 250 250 250 0 0 250 250 150 1 0 8066 -REALIZE- 4 
+240.062519558 246.992794178 
+321.360229481 246.992794178 
+321.360229481 261.575002959 
+240.062519558 261.575002959 0 
+TMULTILINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 4 
+240.062519558 214.182824419 
+240.062519558 261.575002959 
+321.360229481 214.182824419 
+321.360229481 261.575002959 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 100 200 100 1 0 8066 -REALIZE- 4 
+245.482366886 246.992794178 
+315.940382153 246.992794178 
+315.940382153 228.765033201 
+245.482366886 228.765033201 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 100 200 100 1 0 8066 -REALIZE- 4 
+286.131221848 228.765033201 
+286.131221848 214.182824419 
+275.291527191 214.182824419 
+275.291527191 228.765033201 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "1" "" 362.719008107 212.537272224 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 4 3 "Piston" "" 377.719008107 239.350243751 10 
+TTEXT-21 "excite-pu-link" 0 0 0 255 0 0 5 1 255 0 0 7 1 4096 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 282.066336352 272.043331253 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 1 101 0 0 0 0
+Type 1 32
+Id 1 2
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "41A6EE872A48-005BB490-736F6C6173-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 5 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+199.413664596 361.879034139 
+364.719008107 361.879034139 
+364.719008107 418.385093168 
+199.413664596 418.385093168 
+199.413664596 361.879034139 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 0.1 0 200 200 200 0 0 256 - 5 
+199.413664596 361.879034139 
+364.719008107 361.879034139 
+364.719008107 418.385093168 
+199.413664596 418.385093168 
+199.413664596 361.879034139 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+199.413664596 418.385093168 
+199.413664596 361.879034139 
+364.719008107 361.879034139 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+202.12358826 418.385093168 
+364.719008107 418.385093168 
+364.719008107 363.701810236 0 
+TPOLYGON-21 "" 0 0 0 240 120 0 0 0 240 120 0 1 0 8066 -REALIZE- 25 
+226.512901237 374.638466823 
+240.062519558 374.638466823 
+240.062519558 369.170138529 
+253.612137878 369.170138529 
+253.612137878 374.638466823 
+294.26099284 374.638466823 
+294.26099284 369.170138529 
+307.810611161 369.170138529 
+307.810611161 374.638466823 
+321.360229481 374.638466823 
+321.360229481 389.220675604 
+329.490000474 389.220675604 
+329.490000474 398.334556092 
+321.360229481 398.334556092 
+321.360229481 407.448436581 
+280.71137452 407.448436581 
+280.71137452 412.916764874 
+267.161756199 412.916764874 
+267.161756199 407.448436581 
+226.512901237 407.448436581 
+226.512901237 398.334556092 
+218.383130245 398.334556092 
+218.383130245 389.220675604 
+226.512901237 389.220675604 
+226.512901237 374.638466823 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+218.383130245 389.220675604 
+226.512901237 389.220675604 
+226.512901237 374.638466823 
+240.062519558 374.638466823 
+240.062519558 369.170138529 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 4 
+253.612137878 369.170138529 
+253.612137878 374.638466823 
+294.26099284 374.638466823 
+294.26099284 369.170138529 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+307.810611161 369.170138529 
+307.810611161 374.638466823 
+321.360229481 374.638466823 
+321.360229481 389.220675604 
+329.490000474 389.220675604 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+329.490000474 398.334556092 
+321.360229481 398.334556092 
+321.360229481 407.448436581 
+280.71137452 407.448436581 
+280.71137452 412.916764874 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+267.161756199 412.916764874 
+267.161756199 407.448436581 
+226.512901237 407.448436581 
+226.512901237 398.334556092 
+218.383130245 398.334556092 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "2" "" 362.719008107 363.879034139 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 4 3 "Gas Volume" "" 375.719008107 393.019375612 10 
+TTEXT-21 "excite-pu-link" 0 0 0 255 0 0 5 1 255 0 0 7 1 4096 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 282.066336352 423.385093168 10 
+..
+Variables 
+_C_ "Domain" "Gas Volume 2" V1
+	var_variant int 0
+	_C_ "Variable" "kappa" V1
+		var_type string "auto"
+		var_enabled int 1
+		var_value string "1.01"
+		var_unit string ""
+	..
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 2 101 0 0 0 0
+Type 1 5
+Id 1 3
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "41A6EEC122E6-0233F700-736F6C6173-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 7 0 0 0 0 0 1 0 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+199.413664596 77.3565217391 
+361.994309757 77.3565217391 
+361.994309757 132.931201524 
+199.413664596 132.931201524 
+199.413664596 77.3565217391 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 0.1 0 200 200 200 0 0 256 - 5 
+199.413664596 77.3565217391 
+361.994309757 77.3565217391 
+361.994309757 132.931201524 
+199.413664596 132.931201524 
+199.413664596 77.3565217391 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+199.413664596 132.931201524 
+199.413664596 77.3565217391 
+361.994309757 77.3565217391 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+202.078921074 132.931201524 
+361.994309757 132.931201524 
+361.994309757 79.1492533451 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+226.066229377 125.7602751 
+332.676488499 125.7602751 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+226.066229377 84.5274481628 
+332.676488499 84.5274481628 0 
+TPOLYGON-21 "" 0 0 0 50 50 250 1 1 50 50 250 1 0 8066 -REALIZE- 11 
+279.371358938 86.3201797691 
+292.697641328 98.8693010111 
+282.036615416 98.8693010111 
+282.036615416 109.625690646 
+292.697641328 109.625690646 
+279.371358938 122.174811888 
+266.045076547 109.625690646 
+276.70610246 109.625690646 
+276.70610246 98.8693010111 
+266.045076547 98.8693010111 
+279.371358938 86.3201797691 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 31 1 0 "p" "" 236.727255289 93.4911061921 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 31 1 0 "T" "" 300.693410762 95.2838377991 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "3" "" 359.994309757 79.3565217391 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 12 4 3 "Pressure Source" "" 376.413664596 106.239776941 10 
+TTEXT-21 "excite-pu-link" 0 0 0 255 0 0 5 1 255 0 0 7 1 4096 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 280.703987176 137.931201524 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Anchor" 3 201 1 101 0 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 1
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 199.413664596 210.537272224 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 201.413664596 211.537272224 0 
+DefModel
+--
+OSOBJECT "Anchor" 4 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 0
+Id 1 2
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 280.062519558 210.537272224 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 280.062519558 211.537272224 0 
+DefModel
+--
+OSOBJECT "Anchor" 5 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 3
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 279.71137452 210.537272224 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 279.71137452 211.537272224 0 
+DefModel
+--
+OSOBJECT "Anchor" 6 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 4
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 321.360229481 210.537272224 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 321.360229481 211.537272224 0 
+DefModel
+--
+OSOBJECT "Anchor" 7 201 1 101 0 109
+Type 1 3
+SubType 1 0
+Status 1 3
+Id 1 5
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 128 0 1 1 0 128 0 1 1 3459 -NODOSCALEDIM- 364.719008107 210.537272224 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 2 "" "" 363.719008107 211.537272224 0 
+DefModel
+--
+OSOBJECT "Anchor" 8 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 6
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 364.719008107 239.701689787 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 363.719008107 239.701689787 0 
+DefModel
+--
+OSOBJECT "Anchor" 9 201 1 101 0 109
+Type 1 3
+SubType 1 0
+Status 1 3
+Id 1 7
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 128 0 1 1 0 128 0 1 1 3459 -NODOSCALEDIM- 364.719008107 267.043331253 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 8 "" "" 363.719008107 266.043331253 0 
+DefModel
+--
+OSOBJECT "Anchor" 10 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 8
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 321.360229481 267.043331253 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 321.360229481 266.043331253 0 
+DefModel
+--
+OSOBJECT "Anchor" 11 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 9
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 280.71137452 267.043331253 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 280.71137452 266.043331253 0 
+DefModel
+--
+OSOBJECT "Anchor" 12 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 10
+Occupied 9 0
+Letter 1 74
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 240.062519558 267.043331253 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 240.062519558 266.043331253 0 
+DefModel
+--
+OSOBJECT "Anchor" 13 201 1 101 0 109
+Type 1 3
+SubType 1 0
+Status 1 3
+Id 1 11
+Occupied 9 0
+Letter 1 75
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 128 0 1 1 0 128 0 1 1 3459 -NODOSCALEDIM- 199.413664596 267.043331253 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 6 "" "" 201.413664596 266.043331253 0 
+DefModel
+--
+OSOBJECT "Anchor" 14 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 12
+Occupied 9 0
+Letter 1 76
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 199.413664596 239.701689787 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 201.413664596 239.701689787 0 
+DefModel
+--
+OSOBJECT "Anchor" 15 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 13
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 199.413664596 361.879034139 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 201.413664596 362.879034139 0 
+DefModel
+--
+OSOBJECT "Anchor" 16 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 14
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 240.062519558 361.879034139 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 240.062519558 362.879034139 0 
+DefModel
+--
+OSOBJECT "Anchor" 17 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 15
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 280.71137452 361.879034139 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 280.71137452 362.879034139 0 
+DefModel
+--
+OSOBJECT "Anchor" 18 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 16
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 321.360229481 361.879034139 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 321.360229481 362.879034139 0 
+DefModel
+--
+OSOBJECT "Anchor" 19 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 17
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 364.719008107 391.043451702 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 363.719008107 391.043451702 0 
+DefModel
+--
+OSOBJECT "Anchor" 20 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 18
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 364.719008107 418.385093168 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 8 "" "" 363.719008107 417.385093168 0 
+DefModel
+--
+OSOBJECT "Anchor" 21 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 19
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 321.360229481 418.385093168 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 321.360229481 417.385093168 0 
+DefModel
+--
+OSOBJECT "Anchor" 22 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 20
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 280.71137452 418.385093168 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 280.71137452 417.385093168 0 
+DefModel
+--
+OSOBJECT "Anchor" 23 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 21
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 240.062519558 418.385093168 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 240.062519558 417.385093168 0 
+DefModel
+--
+OSOBJECT "Anchor" 24 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 22
+Occupied 9 0
+Letter 1 74
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 199.413664596 391.043451702 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 201.413664596 391.043451702 0 
+DefModel
+--
+OSOBJECT "Anchor" 25 201 1 101 1 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 23
+Occupied 9 0
+Letter 1 75
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 199.413664596 418.385093168 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 6 "" "" 201.413664596 417.385093168 0 
+DefModel
+--
+OSOBJECT "Anchor" 26 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 24
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 239.392511767 77.3565217391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 239.392511767 78.3565217391 0 
+DefModel
+--
+OSOBJECT "Anchor" 27 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 25
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 279.371358938 77.3565217391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 279.371358938 78.3565217391 0 
+DefModel
+--
+OSOBJECT "Anchor" 28 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 26
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 319.350206108 77.3565217391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 319.350206108 78.3565217391 0 
+DefModel
+--
+OSOBJECT "Anchor" 29 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 27
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 361.994309757 106.040227435 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 360.994309757 106.040227435 0 
+DefModel
+--
+OSOBJECT "Anchor" 30 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 28
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 319.350206108 132.931201524 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 319.350206108 131.931201524 0 
+DefModel
+--
+OSOBJECT "Anchor" 31 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 29
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 279.371358938 132.931201524 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 279.371358938 131.931201524 0 
+DefModel
+--
+OSOBJECT "Anchor" 32 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 30
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 239.392511767 132.931201524 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 239.392511767 131.931201524 0 
+DefModel
+--
+OSOBJECT "Anchor" 33 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 31
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 199.413664596 106.040227435 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 201.413664596 106.040227435 0 
+DefModel
+--
+OSOBJECT "Anchor" 34 201 1 101 2 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 32
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 199.413664596 77.3565217391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 201.413664596 78.3565217391 0 
+DefModel
+--
+OSOBJECT "Line" 35 301 0 0 0 0
+Type 1 1
+Id 1 1
+StartAnchor 1 9
+EndAnchor 1 15
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 6 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+280.71137452 267.043331253 
+280.71137452 361.879034139 0 
+..
+--
+OSOBJECT "Line" 36 301 0 0 0 0
+Type 1 1
+Id 1 2
+StartAnchor 1 29
+EndAnchor 1 3
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 8 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+279.371358938 132.931201524 
+279.71137452 210.537272224 0 
+..
+--
+ENDSECTION
+SECTION ADDON
+ADDON ASE  "Piston" "piston" Cpp res/cpp/piston Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Piston" "piston" V1
+		name string "Piston"
+		ELBO int 0
+		MASS double 10 "mass~g~g"
+		FRIC double INF "force~N"
+		0_value_FRIC int 0
+		LIFT double INF "length~m"
+		0_value_LIFT int 0
+		StopMod int 0
+		STCI_STCO_STDI_STDO array-1 none 2 3
+			array-1 double 2 0
+INF
+INF
+			array-1 double 2 0
+INF
+INF
+			double INF
+			int 2
+			int 2
+			DEF "<ROW> 0 lin_stiff~N_m <ROW> 1 lin_damping~Ns_m"
+		ST_CI_CO_DI_DO array-1 none 2 3
+			array-1 double 3 0
+INF
+1.5
+0.005
+			array-1 double 3 0
+INF
+1.5
+0.005
+			double 0
+			int 3
+			int 2
+			DEF "<ROW> 0 lin_stiff~N_mm <ROW> 1 dimensionless~no <ROW> 2 lin_stiff~N_mm"
+		VECT array-1 none 3 3
+			array-1 double 1 0
+1
+			array-1 double 1 0
+0
+			array-1 double 1 0
+0
+			double 0
+			int 1
+			int 3
+			DEF
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+		_C_ "ElasticBody" "elBo" V1
+			0_type string "class"
+			SDRA double 1 "dimensionless~no"
+			TBLS int 0
+			table1 array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 length~m <COL> 1 length~m"
+			file1 string ""
+			aut_rel1 int 0
+			def_pat1 int 0
+			table2 array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 area~mm2 <COL> 1 length~m"
+			file2 string ""
+			aut_rel2 int 0
+			def_pat2 int 0
+			hyd_ok int 0
+			_C_ "SolidPE" "ps" V1
+				0_type string "class"
+				_C_ "Struct" "global_mat" V1
+					0_type string "struct"
+					0_value int 1
+				..
+				_C_ "Struct" "lsp" V1
+					0_type string "struct"
+					0_value int 0
+					solid string ""
+					temperature double INF "temperature~K"
+				..
+			..
+			_C_ "Struct" "addmass" V1
+				0_type string "struct"
+				0_value int 1
+				mass array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 mass~kg"
+			..
+			_C_ "Struct" "addfric" V1
+				0_type string "struct"
+				0_value int 1
+				force array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 force~N"
+			..
+		..
+		_C_ "Struct" "cross_section" V1
+			0_type string "struct"
+			AorD_1 int 0
+			_C_ "Struct" "piston_area" V1
+				0_type string "struct"
+				AQIN_AQOU array-1 none 2 3
+					array-1 double 1 0
+2e-005
+					array-1 double 1 0
+2e-005
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 area~m2"
+			..
+			_C_ "Struct" "piston_diam" V1
+				0_type string "struct"
+				DPIN_DPOU array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 length~m"
+			..
+		..
+		_C_ "Struct" "stoparea" V1
+			0_type string "struct"
+			0_value int 0
+			AorD_2 int 0
+			_C_ "Struct" "piston_stop_area" V1
+				0_type string "struct"
+				SQIN_SQOU array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 area~m2"
+			..
+			_C_ "Struct" "piston_stop_diam" V1
+				0_type string "struct"
+				DSIN_DSOU array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 length~m"
+			..
+		..
+		_C_ "Struct" "l2exc" V1
+			0_type string "struct"
+			0_value int 0
+			link_type int 0
+			macro_elem_name int -1
+			channel_id int 0
+		..
+	..
+..
+__
+ADDON ASE  "Initials_Mech9" "initials_mech9" Cpp res/cpp/initials Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Initials_Mech9" "initials_mech9" V1
+		values_x array-1 none 2 3
+			array-1 double 2 0
+0
+0
+			array-1 double 2 0
+0
+0
+			double 0
+			int 2
+			int 2
+			DEF "<COL> 0 length~mm <COL> 1 velocity~m_s"
+		values_xyz array-1 none 2 3
+			array-1 double 4 0
+0
+0
+0
+0
+			array-1 double 4 0
+0
+0
+0
+0
+			double 0
+			int 4
+			int 2
+			DEF "<COL> 0 length~mm <COL> 1 velocity~m_s"
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Piston Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Piston Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 1
+		A_2 int 0
+		A_3 int 0
+		A_4 int 1
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Modifications" "modifications" CppSelectionNClass hydsim.reals_Piston Modify modify Cpp res/cpp/modify Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Modifications" "modifications" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		0_version int 1012
+		_C_ "Modify" "B_0" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_1" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_2" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_3" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_4" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_5" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_6" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+	..
+..
+__
+ADDON ASE  "Volume_Gas" "volume_gas" Cpp res/cpp/volgas Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Volume_Gas" "volume_gas" V1
+		name string "Gas_Volume"
+		VOLU double 50 "volume~mm3"
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+		_C_ "GasPE" "pg" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "lgp" V1
+				0_type string "struct"
+				0_value int 0
+				gas string ""
+				temperature double INF "temperature~K"
+				Mass_kappa int 1
+			..
+			_C_ "Struct" "global_gas" V1
+				0_type string "struct"
+				0_value int 0
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 1
+				list array-1 none 3 4
+					array-1 double 1 0
+20
+					array-1 double 1 0
+1005000000
+					array-1 double 1 0
+1.4
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+0
+0
+0
+					DEF "<COL> 0 temperature~degC <COL> 1 spec_heat~Nmm_tK <COL> 2 dimensionless~no" "<ITEM> kappa 0 2"
+				file_list string ""
+				aut_rel_list int 0
+				def_pat_list int 0
+			..
+		..
+		_C_ "Struct" "l2exc" V1
+			0_type string "struct"
+			0_value int 0
+			link_type int 0
+			macro_elem_name int -1
+			channel_id int 0
+		..
+	..
+..
+__
+ADDON ASE  "Initials_Hydr1" "initials_hydr1" Cpp res/cpp/initials Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Initials_Hydr1" "initials_hydr1" V1
+		values array-1 none 2 3
+			array-1 double 1 0
+1
+			array-1 double 1 0
+20
+			double 0
+			int 1
+			int 2
+			DEF "<COL> 0 pressure~bar~bar <COL> 1 temperature~degC~degC"
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Volume_Gas Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		A_10 int 0
+		A_11 int 0
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Volume_Gas Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 1
+		A_2 int 0
+		A_3 int 1
+		A_4 int 0
+		A_5 int 1
+		A_6 int 1
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		A_10 int 0
+		A_11 int 0
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Boundary_Pressure" "boundary_pressure" Cpp res/cpp/bndpres Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Boundary_Pressure" "boundary_pressure" V1
+		name string "Pressure_Source"
+		SHIF double 0 "simtime~s"
+		xfac double 1
+		0_value_xfac int 1
+		cdec int 0
+		table array-1 none 3 3
+			array-1 double 2 0
+0
+250
+			array-1 double 2 0
+1
+2
+			array-1 double 2 0
+20
+20
+			double 0
+			int 1
+			int 3
+			DEF "<COL> 0 simtime~ms~ms <COL> 1 pressure~bar~bar <COL> 2 temperature~degC~degC"
+		file_table string ""
+		aut_rel_table int 0
+		def_pat_table int 0
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "l2exc" V1
+			0_type string "struct"
+			0_value int 0
+			link_type int 0
+			macro_elem_name int -1
+			channel_id int 0
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 0
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ENDSECTION
+SECTION GLOBAL_ADDON
+ADDON ASE  "Numerics" "numerics" Cpp res/cpp/numerics.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Numerics" "numerics" V1
+		0_version int 1012
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "main" V1
+			0_type string "struct"
+			basis int 0
+			rspeed double 1000 "ang_vel~rpm~rpm"
+			_C_ "Struct" "engine_speed" V1
+				0_type string "struct"
+				0_value int 0
+				etype int 1
+				fixed_ratio int 1
+				espeed double 2000 "ang_vel~rpm~rpm"
+				start double 0 "angle~deg~deg"
+				ref_crank int 0
+			..
+		..
+		_C_ "Struct" "solver_options" V1
+			0_type string "struct"
+			solver_type int 0
+			_C_ "Struct" "no_label" V1
+				0_type string "struct"
+				error_type int 2
+				vs_tolerance double 1e-005
+				max_time_step double 1e+030 "time~s"
+				0_value_max_time_step int 0
+				ini_time_step double 1e-007 "time~s"
+				0_value_ini_time_step int 0
+				calc_end_time double 300 "time~ms~ms"
+				num_store_values double 300
+			..
+			_C_ "Struct" "cc" V1
+				0_type string "struct"
+				0_value int 1
+				cc_step double 1e-006 "time~s"
+				cc_time double 300 "time~ms~ms"
+				cc_values double 300
+			..
+			_C_ "Struct" "vc" V1
+				0_type string "struct"
+				0_value int 0
+				_C_ "VarCalcStep" "table" V1
+					0_type string "class"
+					list array-1 none 3 3
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						double 0
+						int 2
+						int 3
+						DEF "<COL> 0 time~s~s <COL> 1 time~ms~ms"
+					0_bits int 2
+				..
+			..
+			_C_ "Struct" "restart" V1
+				0_type string "struct"
+				restart_calculation int 0
+				rst_intrvl int 0
+				0_value_rst_intrvl int 0
+			..
+		..
+		_C_ "Struct" "out" V1
+			0_type string "struct"
+			solmap int 0
+			runtime int 1
+			output int 0
+		..
+	..
+..
+__
+ADDON ASE  "HydMode" "hydmode" Cpp res/cpp/mode.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "HydMode" "hydmode" V1
+		flow int 0
+		conn int 1
+		Q_recalc int 0
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "Fluids" "fluids" Cpp res/cpp/fluids.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Fluids" "fluids" V1
+		fluidtype array-1 none 1 0
+			string "Diesel"
+			DEF
+		spec_het double 1960 "spec_heat~J/kgK"
+		therm_exp double 0.001 "heat_expan_coeff~1/K"
+		therm_con double 0.145 "conductivity~W_mK"
+		ref_temp double 293.15 "temperature~K"
+		0_version int 1012
+		0_bits int 2
+		_C_ "Struct" "pdb" V1
+			0_type string "struct"
+			0_value int 0
+			fluid string ""
+			temperature double 293.15 "temperature~K"
+		..
+		_C_ "Struct" "var" V1
+			0_type string "struct"
+			0_value int 0
+			list array-1 none 5 3
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				double 0
+				int 1
+				int 5
+				DEF "<COL> 0 pressure~bar <COL> 1 strength~N_mm2 <COL> 2 density~kg_m3 <COL> 3 kin_visc~cSt~mm2_s <COL> 4 lin_stiff~N_mm"
+			file_list string ""
+			aut_rel_list int 0
+			def_pat_list int 0
+			emod_calc int 0
+		..
+		_C_ "Struct" "con" V1
+			0_type string "struct"
+			0_value int 1
+			elasticity double 1390 "strength~N_mm2"
+			density double 820 "density~kg_m3"
+			viscosity double 3 "kin_visc~cSt~mm2_s"
+			tension double 2.9e-005 "lin_stiff~N_mm"
+			refpress double 1 "pressure~bar"
+		..
+		_C_ "VogelDV" "dyn_visc" V1
+			0_type string "class"
+			Vogel_B double 0 "temperature~K"
+			Vogel_C double 0 "temperature~K"
+		..
+	..
+..
+__
+ADDON ASE  "GlobalGases" "globalgases" Cpp res/cpp/gases.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "GlobalGases" "globalgases" V1
+		0_version int 1012
+		0_bits int 2
+		_C_ "Struct" "pdb" V1
+			0_type string "struct"
+			0_value int 0
+			gas string ""
+			temperature double INF "temperature~K"
+			Mass_kappa int 1
+		..
+		_C_ "Struct" "var" V1
+			0_type string "struct"
+			0_value int 1
+			list array-1 none 4 4
+				array-1 double 1 0
+20
+				array-1 double 1 0
+1005
+				array-1 double 1 0
+1.4
+				array-1 double 1 0
+1.8e-005
+				double 0
+				int 1
+				int 4
+				array-1 double 4 0
+0
+0
+0
+0
+				DEF "<COL> 0 temperature~degC <COL> 1 spec_heat~J_kgK <COL> 2 dimensionless~no <COL> 3 dyn_visc~Ns_m2"
+			file_list string ""
+			aut_rel_list int 0
+			def_pat_list int 0
+		..
+	..
+..
+__
+ADDON ASE  "Air" "air" Cpp res/cpp/air.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "Air" "air" V1
+		0_version int 1012
+		0_bits int 2
+		_C_ "Struct" "pdb" V1
+			0_type string "struct"
+			0_value int 0
+			gas string ""
+			temperature double INF "temperature~K"
+			Mass_kappa int 1
+		..
+		_C_ "Struct" "glob" V1
+			0_type string "struct"
+			0_value int 1
+		..
+		_C_ "Struct" "var" V1
+			0_type string "struct"
+			0_value int 0
+			list array-1 none 3 4
+				array-1 double 1 0
+1
+				array-1 double 1 0
+1.2
+				array-1 double 1 0
+15
+				double 0
+				int 1
+				int 3
+				array-1 double 3 0
+0
+0
+0
+				DEF "<COL> 0 pressure~bar~bar <COL> 1 density~kg_m3 <COL> 2 kin_visc~cSt~mm2_s"
+			file_list string ""
+			aut_rel_list int 0
+			def_pat_list int 0
+			Ref_T double 293.15 "temperature~K"
+			Gas_K double 1.4 "dimensionless~no"
+		..
+	..
+..
+__
+ADDON ASE  "ViewLogfile" "viewlogfile" Cpp $(AWS_HOME)/clients/common/res/cpp/viewlogfile  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "ViewLogfile" "viewlogfile" V1
+		list array-1 none 0 0
+			DEF
+		onlineView int 1
+		0_version int 1012
+		_C_ "Struct" "status" V1
+			0_type string "struct"
+			case int 0
+			state string ""
+			progress string ""
+			cpuTime string ""
+			processID string ""
+		..
+		_C_ "Struct" "s_task" V1
+			0_type string "struct"
+			taskRadio int 0
+			taskCombo int 0
+		..
+	..
+..
+__
+ADDON ASE  "Animate_Nozzle_Flow_CR_22" "CR_22" Cpp res/cpp/animate_nozzle_flow.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "Animate_Nozzle_Flow_CR_22" "CR_22" V1
+		table array-1 none 4 3
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			string ""
+			int 1
+			int 4
+			DEF
+		active int 1
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "Animate_Nozzle_Flow_UI_SID" "UI_SID" Cpp res/cpp/animate_nozzle_flow.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "Animate_Nozzle_Flow_UI_SID" "UI_SID" V1
+		table array-1 none 3 3
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			string ""
+			int 1
+			int 3
+			DEF
+		active int 1
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "JobStatus" "jobstatus" Cpp $(AWS_HOME)/clients/common/res/cpp/jobstatus  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "JobStatus" "jobstatus" V1
+		caseList array-1 none 2 3
+			array-1 none 0 0
+			array-1 none 0 0
+			string ""
+			int 1
+			int 2
+			DEF
+		state string ""
+		progress string ""
+		cpuTime string ""
+		processID string ""
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "BoundaryCycling" "boundarycycling" Cpp res/cpp/boundary_cycling.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 1012
+	_C_ "BoundaryCycling" "boundarycycling" V1
+		bhyd int 0
+		bmch int 0
+		bhmc int 0
+		bgas int 0
+		tfat int 0
+		tgas int 0
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "EpuMacroList" "epumacrolist" Cpp res/cpp/epu_me.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "EpuMacroList" "epumacrolist" V1
+		mes array-1 none 0 3
+			wrapper ASEClass
+			_C_ "EpuMacroElement" "mes" V1
+				0_type string "class"
+				name string ""
+				channel_id int 0
+				macro_elem_id int 0
+			..
+
+			int 1
+			int 1
+			DEF
+		0_version int 1012
+	..
+..
+__
+ADDON ASE  "ReferencedSpecies" "referenced_species"  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "ReferencedSpecies" "referenced_species" V1
+	..
+..
+__
+ADDON ASE  "LocalPart" "local_part"  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "LocalPart" "local_part" V1
+	..
+..
+__
+ENDSECTION
+SECTION CONTEXT_ADDON
+ADDON ASE  "Macro" "macro" Cpp res/cpp/macro.h  !! "context"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 1012
+	_C_ "Macro" "macro" V1
+		TITLE string ""
+		CUSTOMER_LOGO string ""
+		0_version int 1012
+		TITLE1 string ""
+		TITLE2 string ""
+		COMMENT string ""
+		REPORT string ""
+		HEADER string ""
+		FIGURE string ""
+		AVL_LOGO string ""
+	..
+..
+__
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_options
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E33322E34223E0A3C6F626A65637420747970653D226A6D732E646D2E7375626D69742E5375626D697373696F6E222069643D2231223E0A3C6469637420747970653D22636F6C6C656374696F6E732E4F72646572656444696374222069643D2232223E0A3C7374723E70726F635F7065725F6A6F625F76616C3C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D2233223E0A3C646963742069643D2234223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C69737420
+69643D2235223E0A3C6E756D3E313C2F6E756D3E0A3C6E756D3E323C2F6E756D3E0A3C6E756D3E333C2F6E756D3E0A3C6E756D3E343C2F6E756D3E0A3C6E756D3E353C2F6E756D3E0A3C6E756D3E363C2F6E756D3E0A3C6E756D3E373C2F6E756D3E0A3C6E756D3E383C2F6E756D3E0A3C6E756D3E393C2F6E756D3E0A3C6E756D3E31303C2F6E756D3E0A3C6E756D3E31313C2F6E756D3E0A3C6E756D3E31323C2F6E756D3E0A3C6E756D3E31333C2F6E756D3E0A3C6E756D3E31343C2F6E756D3E0A3C6E756D3E31353C2F6E756D3E0A3C6E756D3E31363C2F6E756D3E0A3C6E756D3E31373C2F6E756D3E0A3C6E756D3E31383C2F6E756D3E0A3C6E756D3E
+31393C2F6E756D3E0A3C6E756D3E32303C2F6E756D3E0A3C6E756D3E32313C2F6E756D3E0A3C6E756D3E32323C2F6E756D3E0A3C6E756D3E32333C2F6E756D3E0A3C6E756D3E32343C2F6E756D3E0A3C6E756D3E32353C2F6E756D3E0A3C6E756D3E32363C2F6E756D3E0A3C6E756D3E32373C2F6E756D3E0A3C6E756D3E32383C2F6E756D3E0A3C6E756D3E32393C2F6E756D3E0A3C6E756D3E33303C2F6E756D3E0A3C6E756D3E33313C2F6E756D3E0A3C6E756D3E33323C2F6E756D3E0A3C6E756D3E33333C2F6E756D3E0A3C6E756D3E33343C2F6E756D3E0A3C6E756D3E33353C2F6E756D3E0A3C6E756D3E33363C2F6E756D3E0A3C6E756D3E33373C2F
+6E756D3E0A3C6E756D3E33383C2F6E756D3E0A3C6E756D3E33393C2F6E756D3E0A3C6E756D3E34303C2F6E756D3E0A3C6E756D3E34313C2F6E756D3E0A3C6E756D3E34323C2F6E756D3E0A3C6E756D3E34333C2F6E756D3E0A3C6E756D3E34343C2F6E756D3E0A3C6E756D3E34353C2F6E756D3E0A3C6E756D3E34363C2F6E756D3E0A3C6E756D3E34373C2F6E756D3E0A3C6E756D3E34383C2F6E756D3E0A3C6E756D3E34393C2F6E756D3E0A3C6E756D3E35303C2F6E756D3E0A3C6E756D3E35313C2F6E756D3E0A3C6E756D3E35323C2F6E756D3E0A3C6E756D3E35333C2F6E756D3E0A3C6E756D3E35343C2F6E756D3E0A3C6E756D3E35353C2F6E756D3E
+0A3C6E756D3E35363C2F6E756D3E0A3C6E756D3E35373C2F6E756D3E0A3C6E756D3E35383C2F6E756D3E0A3C6E756D3E35393C2F6E756D3E0A3C6E756D3E36303C2F6E756D3E0A3C6E756D3E36313C2F6E756D3E0A3C6E756D3E36323C2F6E756D3E0A3C6E756D3E36333C2F6E756D3E0A3C6E756D3E36343C2F6E756D3E0A3C6E756D3E36353C2F6E756D3E0A3C6E756D3E36363C2F6E756D3E0A3C6E756D3E36373C2F6E756D3E0A3C6E756D3E36383C2F6E756D3E0A3C6E756D3E36393C2F6E756D3E0A3C6E756D3E37303C2F6E756D3E0A3C6E756D3E37313C2F6E756D3E0A3C6E756D3E37323C2F6E756D3E0A3C6E756D3E37333C2F6E756D3E0A3C6E75
+6D3E37343C2F6E756D3E0A3C6E756D3E37353C2F6E756D3E0A3C6E756D3E37363C2F6E756D3E0A3C6E756D3E37373C2F6E756D3E0A3C6E756D3E37383C2F6E756D3E0A3C6E756D3E37393C2F6E756D3E0A3C6E756D3E38303C2F6E756D3E0A3C6E756D3E38313C2F6E756D3E0A3C6E756D3E38323C2F6E756D3E0A3C6E756D3E38333C2F6E756D3E0A3C6E756D3E38343C2F6E756D3E0A3C6E756D3E38353C2F6E756D3E0A3C6E756D3E38363C2F6E756D3E0A3C6E756D3E38373C2F6E756D3E0A3C6E756D3E38383C2F6E756D3E0A3C6E756D3E38393C2F6E756D3E0A3C6E756D3E39303C2F6E756D3E0A3C6E756D3E39313C2F6E756D3E0A3C6E756D3E3932
+3C2F6E756D3E0A3C6E756D3E39333C2F6E756D3E0A3C6E756D3E39343C2F6E756D3E0A3C6E756D3E39353C2F6E756D3E0A3C6E756D3E39363C2F6E756D3E0A3C6E756D3E39373C2F6E756D3E0A3C6E756D3E39383C2F6E756D3E0A3C6E756D3E39393C2F6E756D3E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E7365715F63617365733C2F7374723E0A3C66616C73652F3E0A3C7374723E637573746F6D5F747970653C2F7374723E0A3C6F626A65637420747970653D226A6D732E646D2E7375626D69742E5175657565696E6753797374656D222069643D2236223E0A3C646963742069643D2237223E0A3C7374723E76
+616C75653C2F7374723E0A3C7374723E6E6F71756575653C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726F635F7065725F6A6F625F6669783C2F7374723E0A3C747275652F3E0A3C7374723E686967685F7072696F726974793C2F7374723E0A3C66616C73652F3E0A3C7374723E636C65616E75703C2F7374723E0A3C66616C73652F3E0A3C7374723E6C6963706F6C3C2F7374723E0A3C6F626A65637420747970653D226A6D732E646D2E7375626D69742E4C6963656E7365506F6C696379222069643D2238223E0A3C646963742069643D2239223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E6465646963
+617465643C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6F726465725F63617365733C2F7374723E0A3C66616C73652F3E0A3C7374723E706172616C6C656C5F6A6F62733C2F7374723E0A3C66616C73652F3E0A3C7374723E637573746F6D3C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F637072696F3C2F7374723E0A3C6E756D3E303C2F6E756D3E0A3C7374723E6261636B656E64733C2F7374723E0A3C6C6973742069643D223130223E0A3C6F626A65637420747970653D226A6D732E646D2E6261636B656E642E4261636B656E64546162222069643D223131223E0A3C6469637420747970653D22636F6C6C
+656374696F6E732E4F72646572656444696374222069643D223132223E0A3C7374723E73686F775F686F7374733C2F7374723E0A3C6E756D3E313032343C2F6E756D3E0A3C7374723E63617074696F6E3C2F7374723E0A3C7374723E5374616E646172643C2F7374723E0A3C7374723E70726F6A6469723C2F7374723E0A3C7374723E443A5C48796473696D5C76323031332E315C6578616D706C65735C3835305F67656E6572616C5C766172737465703C2F7374723E0A3C7374723E73686F775F677269643C2F7374723E0A3C747275652F3E0A3C7374723E747970653C2F7374723E0A3C6F626A65637420747970653D226A6D732E646D2E6261636B656E
+642E4261636B656E6454797065222069643D223133223E0A3C646963742069643D223134223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E486F73743C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6E616D653C2F7374723E0A3C7374723E5374616E646172643C2F7374723E0A3C7374723E686F7374733C2F7374723E0A3C6C6973742069643D223135223E0A3C7475706C652069643D223136223E0A3C7374723E6C6F63616C686F73743C2F7374723E0A3C7374723E266C743B50524F4A4543545F4449524543544F52593E3C2F7374723E0A3C2F7475706C653E0A3C2F6C6973743E0A3C7374723E677269643C
+2F7374723E0A3C7475706C652069643D223137223E0A3C7374723E4C534637303C2F7374723E0A3C7374723E6C6963656E73653C2F7374723E0A3C7374723E266C743B50524F4A4543545F4449524543544F52593E3C2F7374723E0A3C7374722F3E0A3C2F7475706C653E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6C6973743E0A3C7374723E6C69666574696D655F746F3C2F7374723E0A3C66616C73652F3E0A3C7374723E70726570726F636573733C2F7374723E0A3C6C6973742069643D223138222F3E0A3C7374723E6C696371756575655F746F3C2F7374723E0A3C747275652F3E0A3C7374723E6B6565706F70656E3C2F7374723E0A3C
+66616C73652F3E0A3C7374723E6C696371756575655F746F5F76616C3C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C7374723E70726F6A6469723C2F7374723E0A3C7374723E443A5C48796473696D5C76323031332E315C6578616D706C65735C3835305F67656E6572616C5C766172737465703C2F7374723E0A3C7374723E6370755F746F5F76616C3C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C7374723E70726F635F7065725F6A6F623C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E6C69666574696D655F746F5F76616C3C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C7374723E6D616E75616C5F74797065
+3C2F7374723E0A3C6F626A65637420747970653D226A6D732E646D2E7375626D69742E4D616E75616C4A6F625375626D697373696F6E222069643D223139223E0A3C646963742069643D223230223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E64623C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E616C6C63617365733C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D223231223E0A3C646963742069643D223232223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223233223E0A3C6F626A65637420747970653D226A6D732E626173652E
+43617365222069643D223234223E0A3C646963742069643D223235223E0A3C7374723E7365743C2F7374723E0A3C7374723E50563C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6B617070615F312D30313C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C6F626A65637420747970653D226A6D732E626173652E43617365222069643D223236223E0A3C646963742069643D223237223E0A3C7374723E7365743C2F7374723E0A3C7374723E50563C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6B617070615F312D313C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C6F626A
+65637420747970653D226A6D732E626173652E43617365222069643D223238223E0A3C646963742069643D223239223E0A3C7374723E7365743C2F7374723E0A3C7374723E50563C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6B617070615F312D323C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C6F626A65637420747970653D226A6D732E626173652E43617365222069643D223330223E0A3C646963742069643D223331223E0A3C7374723E7365743C2F7374723E0A3C7374723E50563C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6B617070615F312D333C2F7374723E0A3C2F6469
+63743E0A3C2F6F626A6563743E0A3C6F626A65637420747970653D226A6D732E626173652E43617365222069643D223332223E0A3C646963742069643D223333223E0A3C7374723E7365743C2F7374723E0A3C7374723E50563C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6B617070615F312D343C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6E616D653C2F7374723E0A3C7374723E4761735F566F6C756D655F3220323031332D30372D32322031313A32373A33383C2F7374723E0A3C7374723E70726570726F636573735F657272
+6F723C2F7374723E0A3C66616C73652F3E0A3C7374723E6D616E75616C3C2F7374723E0A3C66616C73652F3E0A3C7374723E6370755F746F3C2F7374723E0A3C66616C73652F3E0A3C7374723E616C6C7461736B733C2F7374723E0A3C6F626A65637420747970653D226A6D732E626173652E5461736B536574222069643D223334223E0A3C646963742069643D223335223E0A3C7374723E73706C6974746572733C2F7374723E0A3C646963742069643D223336223E0A3C7374723E73696D756C6174696F6E3C2F7374723E0A3C6C6973742069643D223337222F3E0A3C2F646963743E0A3C7374723E7461736B733C2F7374723E0A3C6C6973742069643D
+223338223E0A3C646963742069643D223339223E0A3C7374723E73656C65637465643C2F7374723E0A3C747275652F3E0A3C7374723E6E616D653C2F7374723E0A3C7374723E73696D756C6174696F6E3C2F7374723E0A3C7374723E646F5F73686F773C2F7374723E0A3C747275652F3E0A3C7374723E6370755F636F756E743C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E617267756D656E743C2F7374723E0A3C7374722F3E0A3C7374723E776F726B696E675F6469725F7375666669783C2F7374723E0A3C7374722F3E0A3C7374723E6170706C69636174696F6E3C2F7374723E0A3C7374723E626F6F73745F6879643C2F7374723E0A
+3C7374723E636F6D6D616E643C2F7374723E0A3C7374722F3E0A3C7374723E6261636B656E647461623C2F7374723E0A3C7374723E5374616E646172643C2F7374723E0A3C7374723E706F736974696F6E3C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E6D6573736167653C2F7374723E0A3C7374723E53696D756C6174696F6E3C2F7374723E0A3C7374723E7265736F75726365733C2F7374723E0A3C646963742069643D223430222F3E0A3C7374723E6C6F673C2F7374723E0A3C6C6973742069643D223431223E0A3C7475706C652069643D223432223E0A3C7374723E53696D756C6174696F6E204F75747075743C2F7374723E0A3C73
+74723E73696D756C6174696F6E2E6F75743C2F7374723E0A3C2F7475706C653E0A3C7475706C652069643D223433223E0A3C7374723E496E7075742044617461204C697374696E673C2F7374723E0A3C7374723E266C743B4D4F44454C3E2E6C73743C2F7374723E0A3C2F7475706C653E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6C6973743E0A3C7374723E7072656465636573736F72733C2F7374723E0A3C646963742069643D223434223E0A3C7374723E73696D756C6174696F6E3C2F7374723E0A3C6C6973742069643D223435222F3E0A3C2F646963743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E637573746F6D5F6F7074
+696F6E733C2F7374723E0A3C6F626A65637420747970653D226A6D732E646D2E637573746F6D5F6F7074696F6E732E437573746F6D4F7074696F6E73222069643D223436223E0A3C646963742069643D223437223E0A3C7374723E6D61705F646972733C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F647563743C2F7374723E0A3C7374722F3E0A3C7374723E6A6F625F6E616D653C2F7374723E0A3C7374723E6A6D736A6F625F6361696B613C2F7374723E0A3C7374723E65787472615F6F7074696F6E733C2F7374723E0A3C7374723E23504253202D6C206E6F6465733D313A70706E3D313C2F7374723E0A3C7374723E72656D6F76655F66
+696C65733C2F7374723E0A3C66616C73652F3E0A3C7374723E7175657565733C2F7374723E0A3C6C6973742069643D223438222F3E0A3C7374723E6D61737465725F686F73743C2F7374723E0A3C7374722F3E0A3C7374723E71756575653C2F7374723E0A3C7374722F3E0A3C7374723E636F70795F66726F6D3C2F7374723E0A3C747275652F3E0A3C7374723E706572696F6469635F636F70793C2F7374723E0A3C747275652F3E0A3C7374723E64656C61793C2F7374723E0A3C7374722F3E0A3C7374723E71756575655F6D61737465725F686F7374733C2F7374723E0A3C6C6973742069643D223439222F3E0A3C7374723E696F6469726563746F7279
+3C2F7374723E0A3C7374723E2F776F726B2F6361696B613C2F7374723E0A3C7374723E696F6469725F656E61626C65643C2F7374723E0A3C747275652F3E0A3C7374723E656D61696C3C2F7374723E0A3C7374722F3E0A3C7374723E636F70795F746F3C2F7374723E0A3C747275652F3E0A3C7374723E77616C6C74696D653C2F7374723E0A3C7374722F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E706172616C6C656C5F6A6F62735F76616C3C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E7461736B733C2F7374723E0A3C6C6973742069643D223530223E0A3C7374723E73696D756C6174696F6E3C2F7374723E0A3C
+2F6C6973743E0A3C7374723E63617365733C2F7374723E0A3C6C6973742069643D223531223E0A3C7374723E50562E6B617070615F312D30313C2F7374723E0A3C7374723E50562E6B617070615F312D343C2F7374723E0A3C2F6C6973743E0A3C7374723E5F5F73657269616C697A655F766572733C2F7374723E0A3C6E756D3E383C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6163743E0A
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_name
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E33322E34223E0A3C7374723E4761735F566F6C756D655F3220323031332D30372D32322031313A32373A33383C2F7374723E0A3C2F6163743E0A
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_jms_fea_cache
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E33322E34223E0A3C646963742069643D2231222F3E0A3C2F6163743E0A
+ENDSECTION

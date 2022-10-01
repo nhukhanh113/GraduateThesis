@@ -1,0 +1,8445 @@
+VERSION-11.00
+SECTION CONTROL
+_C_ "GTEManager" "gtemanager" V1
+	_C_ "General" "general" V1
+		Grid int 0
+		GridOn int 0
+		GridValue double 4
+		GridOffset double 5
+		PageFormat string "A4"
+		PageStandard int 1
+		PageUserDefined int 0
+		PageWidth double 595
+		PageHeight double 842
+		PagePortrait int 1
+		PageLandscape int 0
+		PageUnit string "mm"
+		0_bits int 2
+	..
+	_C_ "Model" "model" V1
+		_C_ "noname" "strings" V1
+		..
+		_C_ "CEData" "case_explorer_data" V1
+			Version int 6
+			_C_ "CECaseSet" "Gas" V1
+				CaseSetType string ""
+				MainParamName string ""
+				ActiveParamGroupIndex int 0
+				_C_ "CEParamGroup" "Default" V1
+					ParamNames array-1 none 0 0
+						DEF
+					CaseColumnWidth int 100
+					ParamColumnWidths array-1 none 0 0
+						DEF
+				..
+			..
+		..
+	..
+	_C_ "Domain" "Model" V1
+		_C_ "Domain" "1" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "2" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "3" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "4" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "5" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "CV1: Metering Valve" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "CV2: Nozzle Valve" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "PL1: Inlet Volume" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "PL2: Nozzle Volume" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "SB1: Supply Pressure" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "SB2: Cyl. Pressure" V1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_REV" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "0.5"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_SEC" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "16.666666666667"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_DEGCRANK_PER_DEGCAM" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED1" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "2000"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED2" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED3" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+	..
+	_C_ "VariantDomain" "Model" V1
+		_C_ "Variant" "Gas" V1
+			variant_names array-1 none 1 0
+				string "methane"
+				DEF
+			variant_vars array-1 none 0 0
+				DEF
+			variant_values array-1 none 0 0
+				DEF
+			variant_active string "methane"
+			variant_realized string "methane"
+		..
+	..
+..
+ENDSECTION
+SECTION GRAPHIC
+TRECTANGLE-21 "" 11 0 0 255 160 66 2 2 255 255 255 0 0 0 -T- 4 
+176 376 
+386 376 
+386 424 
+176 424 
+TRECTANGLE-21 "" 12 0 0 255 160 66 2 2 255 255 255 0 0 0 -T- 4 
+176 280 
+386 280 
+386 328 
+176 328 
+TRECTANGLE-21 "" 13 0 0 255 160 66 2 2 255 255 255 0 0 0 -T- 4 
+276 580 
+486 580 
+486 628 
+276 628 
+TTEXTRECTANGLE-21 "" 14 0 0 0 0 0 3 1 192 192 192 1 0 0 -T- 206 66 392 94 "Arial" 20 1 0 0 1 1 0 "Natural Gas Injector" "" 
+TTEXTRECTANGLE-21 "" 15 0 0 0 0 0 3 5 192 192 192 0 0 0 -T- 215 133 374 157 "Arial" 16 4 0 0 1 1 0 "/ Gas Components /" "" 
+TTEXTRECTANGLE-21 "" 16 0 0 0 0 0 3 5 192 192 192 0 0 0 -T- 228 106 369 127 "Arial" 14 4 0 0 1 1 0 "/ simplified model /" "" 
+ENDSECTION
+SECTION MODEL
+OS-1.50
+GTEEditorKit
+103
+OSOBJECT "Element" 0 101 0 0 0 0
+Type 1 2
+Id 1 1
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4A5205052010-000349C9-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 90
+Root
+TMULTI-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 255 0 0 0 255 0 128 -NODOSCALEDIM- "Arial" 12 4 0 "SB1: Supply Pressure" "" 158 181 2 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 0.1 0 255 255 255 1 0 8064 -REALIZE- 6 
+221 201 
+201 201 
+211 201 
+211 216 
+211 201 
+221 201 4 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 3 0 255 255 255 1 0 8066 -REALIZE- 6 
+221 201 
+201 201 
+211 201 
+211 216 
+211 201 
+221 201 0 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 1 101 0 0 0 0
+Type 1 8
+Id 1 2
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4A52050F2000-000370AA-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 90
+Root
+TMULTI-21 "" 1 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 
+TTEXT-21 "" 0 0 0 255 0 0 0 255 0 0 0 255 0 128 -NODOSCALEDIM- "Arial" 12 4 0 "CV1: Metering Valve" "" 238 295 2 
+TPOLYGON-21 "outline" 0 0 0 255 255 255 0.1 0 255 255 255 1 0 8064 -REALIZE- 5 
+227 285 
+227 325 
+197 325 
+197 285 
+227 285 4 
+TPOLYGON-21 "outline" 0 0 0 255 255 255 1 0 255 255 255 1 0 8066 -REALIZE- 5 
+227 285 
+227 325 
+197 325 
+197 285 
+227 285 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 2 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+212 285 
+197 315 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 2 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+212 285 
+227 315 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 1 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+197 315 
+199 318 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 1 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+212 321 
+212 325 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 1 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+227 315 
+225 318 0 
+TCIRCLE-21 "" 0 0 0 0 0 0 2 1 255 255 255 1 0 8066 -REALIZE-NOSCALE- 212 311 10 10 0 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 2 101 0 0 0 0
+Type 1 4
+Id 1 3
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4A5205142011-000383D4-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 2 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 
+TTEXT-21 "" 0 0 0 255 0 0 0 255 0 0 0 255 0 128 -NODOSCALEDIM- "Arial" 12 4 0 "PL1: Inlet Volume" "" 243 394 2 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 0.1 0 255 255 255 1 0 8064 -REALIZE- 5 
+193 381 
+233 381 
+233 421 
+193 421 
+193 381 4 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 2 0 190 190 190 1 0 8066 -REALIZE- 5 
+193 381 
+233 381 
+233 421 
+193 421 
+193 381 0 
+TBITMAP-21 "refel_symbol" 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -NODOSCALEDIM- "dummy" 193 381 192 380 0 -1 0 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 3 101 0 0 0 0
+Type 1 4
+Id 1 4
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4A52051F2040-0003AEAC-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 3 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 255 0 0 0 255 0 128 -NODOSCALEDIM- "Arial" 12 4 0 "PL2: Nozzle Volume" "" 151 574 2 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 0.1 0 255 255 255 1 0 8064 -REALIZE- 5 
+193 525 
+233 525 
+233 565 
+193 565 
+193 525 4 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 2 0 190 190 190 1 0 8066 -REALIZE- 5 
+193 525 
+233 525 
+233 565 
+193 565 
+193 525 0 
+TBITMAP-21 "refel_symbol" 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -NODOSCALEDIM- "dummy" 193 525 192 524 0 -1 0 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 4 101 0 0 0 0
+Type 1 8
+Id 1 5
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4A52052D2040-0003E49F-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 90
+Root
+TMULTI-21 "" 4 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 
+TTEXT-21 "" 0 0 0 255 0 0 0 255 0 0 0 255 0 128 -NODOSCALEDIM- "Arial" 12 4 0 "CV2: Nozzle Valve" "" 330 595 2 
+TPOLYGON-21 "outline" 0 0 0 255 255 255 0.1 0 255 255 255 1 0 8064 -REALIZE- 5 
+323 585 
+323 625 
+293 625 
+293 585 
+323 585 4 
+TPOLYGON-21 "outline" 0 0 0 255 255 255 1 0 255 255 255 1 0 8066 -REALIZE- 5 
+323 585 
+323 625 
+293 625 
+293 585 
+323 585 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 2 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+308 585 
+293 615 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 2 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+308 585 
+323 615 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 1 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+293 615 
+295 618 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 1 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+308 621 
+308 625 0 
+TPOLYLINE-21 "outline" 0 0 0 0 0 0 1 0 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+323 615 
+321 618 0 
+TCIRCLE-21 "" 0 0 0 0 0 0 2 1 255 255 255 1 0 8066 -REALIZE-NOSCALE- 308 611 10 10 0 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 5 101 0 0 0 0
+Type 1 2
+Id 1 6
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "4A5205332040-0003FC4D-48525A4147-01"
+..
+GTEElement
+Managed 1
+Angle 270
+Root
+TMULTI-21 "" 5 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 255 0 0 0 255 0 128 -NODOSCALEDIM- "Arial" 12 4 0 "SB2: Cyl. Pressure" "" 256 712 2 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 0.1 0 255 255 255 1 0 8064 -REALIZE- 6 
+297 704 
+317 704 
+307 704 
+307 689 
+307 704 
+297 704 4 
+TPOLYGON-21 "outline" 0 0 0 0 0 0 3 0 255 255 255 1 0 8066 -REALIZE- 6 
+297 704 
+317 704 
+307 704 
+307 689 
+307 704 
+297 704 0 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Anchor" 6 201 1 101 0 109
+Type 1 1
+SubType 1 0
+Status 1 2
+Id 1 1
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSHIFT-NODOSCALEDIM-NOSELECT- 211 216 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 211 215 0 
+DefModel
+--
+OSOBJECT "Anchor" 7 201 1 101 0 109
+Type 1 99
+SubType 1 0
+Status 1 3
+Id 1 2
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 153 204 255 1 1 153 204 255 1 2 3459 -NODOSCALEDIM-NOSELECT- 211 201 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 211 202 0 
+DefModel
+--
+OSOBJECT "Anchor" 8 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 1
+Id 1 3
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSHIFT-NODOSCALEDIM-NOSELECT- 212 285 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 212 286 0 
+DefModel
+--
+OSOBJECT "Anchor" 9 201 1 101 1 109
+Type 1 1
+SubType 1 0
+Status 1 2
+Id 1 4
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSHIFT-NODOSCALEDIM-NOSELECT- 212 325 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 212 324 0 
+DefModel
+--
+OSOBJECT "Anchor" 10 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 5
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 195 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 11 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 6
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 203 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 203 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 12 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 1
+Id 1 7
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSCALE-NODOSCALEDIM- 213 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 213 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 13 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 8
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 223 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 223 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 14 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 9
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 2 "" "" 232 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 15 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 10
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 391 0 
+DefModel
+--
+OSOBJECT "Anchor" 16 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 11
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 401 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 401 0 
+DefModel
+--
+OSOBJECT "Anchor" 17 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 12
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 411 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 411 0 
+DefModel
+--
+OSOBJECT "Anchor" 18 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 13
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 8 "" "" 232 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 19 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 14
+Occupied 9 0
+Letter 1 74
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 223 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 223 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 20 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 2
+Id 1 15
+Occupied 9 0
+Letter 1 75
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSCALE-NODOSCALEDIM- 213 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 213 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 21 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 16
+Occupied 9 0
+Letter 1 76
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 203 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 203 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 22 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 17
+Occupied 9 0
+Letter 1 77
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 6 "" "" 195 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 23 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 18
+Occupied 9 0
+Letter 1 78
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 411 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 411 0 
+DefModel
+--
+OSOBJECT "Anchor" 24 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 19
+Occupied 9 0
+Letter 1 79
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 401 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 401 0 
+DefModel
+--
+OSOBJECT "Anchor" 25 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 20
+Occupied 9 0
+Letter 1 80
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 391 0 
+DefModel
+--
+OSOBJECT "Anchor" 26 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 21
+Occupied 9 0
+Letter 1 81
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 203 391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 205 392 0 
+DefModel
+--
+OSOBJECT "Anchor" 27 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 22
+Occupied 9 0
+Letter 1 82
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 213 391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 381 0 
+DefModel
+--
+OSOBJECT "Anchor" 28 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 23
+Occupied 9 0
+Letter 1 83
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 223 391 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 2 "" "" 222 392 0 
+DefModel
+--
+OSOBJECT "Anchor" 29 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 24
+Occupied 9 0
+Letter 1 84
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 223 401 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 381 0 
+DefModel
+--
+OSOBJECT "Anchor" 30 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 25
+Occupied 9 0
+Letter 1 85
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 223 411 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 8 "" "" 222 410 0 
+DefModel
+--
+OSOBJECT "Anchor" 31 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 26
+Occupied 9 0
+Letter 1 86
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 213 411 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 381 0 
+DefModel
+--
+OSOBJECT "Anchor" 32 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 27
+Occupied 9 0
+Letter 1 87
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 203 411 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 6 "" "" 205 410 0 
+DefModel
+--
+OSOBJECT "Anchor" 33 201 1 101 2 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 28
+Occupied 9 0
+Letter 1 88
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 203 401 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 381 0 
+DefModel
+--
+OSOBJECT "Anchor" 34 201 1 101 2 109
+Type 1 99
+SubType 1 0
+Status 1 3
+Id 1 29
+Occupied 9 0
+Letter 1 89
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 153 204 255 1 1 153 204 255 1 2 3459 -NODOSCALEDIM-NOSELECT- 213 401 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 381 0 
+DefModel
+--
+OSOBJECT "Anchor" 35 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 30
+Occupied 9 0
+Letter 1 90
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 198 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 198 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 36 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 31
+Occupied 9 0
+Letter 1 91
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 208 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 208 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 37 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 32
+Occupied 9 0
+Letter 1 92
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 218 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 218 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 38 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 33
+Occupied 9 0
+Letter 1 93
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 228 381 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 228 382 0 
+DefModel
+--
+OSOBJECT "Anchor" 39 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 34
+Occupied 9 0
+Letter 1 94
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 386 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 386 0 
+DefModel
+--
+OSOBJECT "Anchor" 40 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 35
+Occupied 9 0
+Letter 1 95
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 396 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 396 0 
+DefModel
+--
+OSOBJECT "Anchor" 41 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 36
+Occupied 9 0
+Letter 1 96
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 406 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 406 0 
+DefModel
+--
+OSOBJECT "Anchor" 42 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 37
+Occupied 9 0
+Letter 1 97
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 416 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 416 0 
+DefModel
+--
+OSOBJECT "Anchor" 43 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 38
+Occupied 9 0
+Letter 1 98
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 198 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 198 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 44 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 39
+Occupied 9 0
+Letter 1 99
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 208 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 208 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 45 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 40
+Occupied 9 0
+Letter 1 100
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 218 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 218 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 46 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 41
+Occupied 9 0
+Letter 1 101
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 228 421 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 228 420 0 
+DefModel
+--
+OSOBJECT "Anchor" 47 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 42
+Occupied 9 0
+Letter 1 102
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 386 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 386 0 
+DefModel
+--
+OSOBJECT "Anchor" 48 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 43
+Occupied 9 0
+Letter 1 103
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 396 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 396 0 
+DefModel
+--
+OSOBJECT "Anchor" 49 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 44
+Occupied 9 0
+Letter 1 104
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 406 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 406 0 
+DefModel
+--
+OSOBJECT "Anchor" 50 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 45
+Occupied 9 0
+Letter 1 105
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 416 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 416 0 
+DefModel
+--
+OSOBJECT "Anchor" 51 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 46
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 195 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 52 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 47
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 203 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 203 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 53 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 1
+Id 1 48
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSCALE-NODOSCALEDIM- 213 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 213 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 54 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 49
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 223 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 223 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 55 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 50
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 2 "" "" 232 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 56 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 51
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 535 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 535 0 
+DefModel
+--
+OSOBJECT "Anchor" 57 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 2
+Id 1 52
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSCALE-NODOSCALEDIM- 233 545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 545 0 
+DefModel
+--
+OSOBJECT "Anchor" 58 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 53
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 555 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 555 0 
+DefModel
+--
+OSOBJECT "Anchor" 59 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 54
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 8 "" "" 232 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 60 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 55
+Occupied 9 0
+Letter 1 74
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 223 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 223 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 61 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 56
+Occupied 9 0
+Letter 1 75
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 213 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 213 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 62 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 57
+Occupied 9 0
+Letter 1 76
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 203 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 203 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 63 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 58
+Occupied 9 0
+Letter 1 77
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 6 "" "" 195 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 64 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 59
+Occupied 9 0
+Letter 1 78
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 555 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 555 0 
+DefModel
+--
+OSOBJECT "Anchor" 65 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 60
+Occupied 9 0
+Letter 1 79
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 545 0 
+DefModel
+--
+OSOBJECT "Anchor" 66 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 61
+Occupied 9 0
+Letter 1 80
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 535 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 535 0 
+DefModel
+--
+OSOBJECT "Anchor" 67 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 62
+Occupied 9 0
+Letter 1 81
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 203 535 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 205 536 0 
+DefModel
+--
+OSOBJECT "Anchor" 68 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 63
+Occupied 9 0
+Letter 1 82
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 213 535 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 525 0 
+DefModel
+--
+OSOBJECT "Anchor" 69 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 64
+Occupied 9 0
+Letter 1 83
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 223 535 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 2 "" "" 222 536 0 
+DefModel
+--
+OSOBJECT "Anchor" 70 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 65
+Occupied 9 0
+Letter 1 84
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 223 545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 525 0 
+DefModel
+--
+OSOBJECT "Anchor" 71 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 66
+Occupied 9 0
+Letter 1 85
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 223 555 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 8 "" "" 222 554 0 
+DefModel
+--
+OSOBJECT "Anchor" 72 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 67
+Occupied 9 0
+Letter 1 86
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 213 555 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 525 0 
+DefModel
+--
+OSOBJECT "Anchor" 73 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 68
+Occupied 9 0
+Letter 1 87
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 203 555 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 6 "" "" 205 554 0 
+DefModel
+--
+OSOBJECT "Anchor" 74 201 1 101 3 109
+Type 1 51
+SubType 1 0
+Status 1 3
+Id 1 69
+Occupied 9 0
+Letter 1 88
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 0 1 0 0 0 1 2 3459 -NODOSCALEDIM-NOSELECT- 203 545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 525 0 
+DefModel
+--
+OSOBJECT "Anchor" 75 201 1 101 3 109
+Type 1 99
+SubType 1 0
+Status 1 3
+Id 1 70
+Occupied 9 0
+Letter 1 89
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 153 204 255 1 1 153 204 255 1 2 3459 -NODOSCALEDIM-NOSELECT- 213 545 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 193 525 0 
+DefModel
+--
+OSOBJECT "Anchor" 76 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 71
+Occupied 9 0
+Letter 1 90
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 198 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 198 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 77 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 72
+Occupied 9 0
+Letter 1 91
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 208 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 208 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 78 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 73
+Occupied 9 0
+Letter 1 92
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 218 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 218 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 79 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 74
+Occupied 9 0
+Letter 1 93
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 228 525 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 228 526 0 
+DefModel
+--
+OSOBJECT "Anchor" 80 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 75
+Occupied 9 0
+Letter 1 94
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 530 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 530 0 
+DefModel
+--
+OSOBJECT "Anchor" 81 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 76
+Occupied 9 0
+Letter 1 95
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 540 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 540 0 
+DefModel
+--
+OSOBJECT "Anchor" 82 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 77
+Occupied 9 0
+Letter 1 96
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 550 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 550 0 
+DefModel
+--
+OSOBJECT "Anchor" 83 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 78
+Occupied 9 0
+Letter 1 97
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 233 560 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 232 560 0 
+DefModel
+--
+OSOBJECT "Anchor" 84 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 79
+Occupied 9 0
+Letter 1 98
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 198 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 198 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 85 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 80
+Occupied 9 0
+Letter 1 99
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 208 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 208 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 86 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 81
+Occupied 9 0
+Letter 1 100
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 218 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 218 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 87 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 82
+Occupied 9 0
+Letter 1 101
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 228 565 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 228 564 0 
+DefModel
+--
+OSOBJECT "Anchor" 88 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 83
+Occupied 9 0
+Letter 1 102
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 530 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 530 0 
+DefModel
+--
+OSOBJECT "Anchor" 89 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 84
+Occupied 9 0
+Letter 1 103
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 540 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 540 0 
+DefModel
+--
+OSOBJECT "Anchor" 90 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 85
+Occupied 9 0
+Letter 1 104
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 550 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 550 0 
+DefModel
+--
+OSOBJECT "Anchor" 91 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 86
+Occupied 9 0
+Letter 1 105
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 1 3459 -NOSCALE-NODOSCALEDIM- 193 560 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 195 560 0 
+DefModel
+--
+OSOBJECT "Anchor" 92 201 1 101 4 109
+Type 1 1
+SubType 1 0
+Status 1 1
+Id 1 87
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSHIFT-NODOSCALEDIM-NOSELECT- 308 585 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 308 586 0 
+DefModel
+--
+OSOBJECT "Anchor" 93 201 1 101 4 109
+Type 1 1
+SubType 1 0
+Status 1 2
+Id 1 88
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSHIFT-NODOSCALEDIM-NOSELECT- 308 625 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 308 624 0 
+DefModel
+--
+OSOBJECT "Anchor" 94 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 1
+Id 1 89
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 0 0 0 1 1 0 0 0 1 0 3458 -NOSHIFT-NODOSCALEDIM-NOSELECT- 307 689 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 307 690 0 
+DefModel
+--
+OSOBJECT "Anchor" 95 201 1 101 5 109
+Type 1 99
+SubType 1 0
+Status 1 3
+Id 1 90
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "in" 0 0 0 153 204 255 1 1 153 204 255 1 2 3459 -NODOSCALEDIM-NOSELECT- 307 704 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 307 703 0 
+DefModel
+--
+OSOBJECT "Anchor" 96 201 1 101 1 109
+Type 1 99
+SubType 1 0
+Status 1 3
+Id 1 91
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 153 204 255 1 1 153 204 255 1 2 3459 -NODOSCALEDIM- 212 305 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" -68 96 0 
+DefLocal
+Label 
+Index 2
+Type 99
+Input 3
+Conn 1
+Symbol 2 0 0
+.. 
+--
+OSOBJECT "Anchor" 97 201 1 101 4 109
+Type 1 99
+SubType 1 0
+Status 1 3
+Id 1 92
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 153 204 255 1 1 153 204 255 1 2 3459 -NODOSCALEDIM- 308 605 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" -96 44 0 
+DefLocal
+Label 
+Index 2
+Type 99
+Input 3
+Conn 1
+Symbol 2 0 0
+.. 
+--
+OSOBJECT "Line" 98 301 0 0 0 0
+Type 1 1
+Id 1 1
+StartAnchor 1 1
+EndAnchor 1 3
+RefId 1 -1
+UUId 12 os_UUId 1 "4A52053B041A-00041C1A-48525A4147-01"
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 6 0 0 0 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+211 216 
+212 285 0 
+TTEXT-21 "text" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 - "Arial" 12 1 0 "1" "" 213.5 243 0 
+..
+--
+OSOBJECT "Line" 99 301 0 0 0 0
+Type 1 1
+Id 1 2
+StartAnchor 1 4
+EndAnchor 1 7
+RefId 1 -1
+UUId 12 os_UUId 1 "4A52053D012C-0004232E-48525A4147-01"
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 7 0 0 0 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+212 325 
+213 381 0 
+TTEXT-21 "text" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 - "Arial" 12 1 0 "2" "" 214.5 345.5 0 
+..
+--
+OSOBJECT "Line" 100 301 0 0 0 0
+Type 1 1
+Id 1 3
+StartAnchor 1 15
+EndAnchor 1 48
+RefId 1 -1
+UUId 12 os_UUId 1 "4A5205400400-00042E88-48525A4147-01"
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 8 0 0 0 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+213 421 
+213 525 0 
+TTEXT-21 "text" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 - "Arial" 12 1 0 "3" "" 215 465.5 0 
+..
+--
+OSOBJECT "Line" 101 301 0 0 0 0
+Type 1 1
+Id 1 4
+StartAnchor 1 52
+EndAnchor 1 87
+RefId 1 -1
+UUId 12 os_UUId 1 "4A52054D0548-00045FE8-48525A4147-01"
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 9 0 0 0 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 3 
+233 545 
+309 545 
+308 585 0 
+TTEXT-21 "text" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 - "Arial" 12 1 0 "4" "" 267.5 528 0 
+..
+--
+OSOBJECT "Line" 102 301 0 0 0 0
+Type 1 1
+Id 1 5
+StartAnchor 1 88
+EndAnchor 1 89
+RefId 1 -1
+UUId 12 os_UUId 1 "4A52054F014D-0004696D-48525A4147-01"
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 10 0 0 0 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+308 625 
+307 689 0 
+TTEXT-21 "text" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 - "Arial" 12 1 0 "5" "" 309.5 649.5 0 
+..
+--
+ENDSECTION
+SECTION ADDON
+ADDON ASE  "SystemBoundary" "bt_sysby" Cpp res/cpp/bt_sysby  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "SystemBoundary" "bt_sysby" V1
+		0_page string "global_init"
+		0_version int 17
+		ord long 1
+		0_bits int 2
+		0_ok int 1
+		_C_ "pg_GeneralSysBy" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string "Supply Pressure"
+			lbl_element_date string "13. Jul 2009 15:13:58"
+			memory int 0
+			boundaryType int 0
+			endCorrection int 0
+			0_bits int 2
+		..
+		_C_ "pg_Init" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			massFraction int 0
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 80 "temperature~degC"
+				gas_temp~sel string "const"
+				massFraction int 0
+				fuel_vapour double 0 "dimensionless~no"
+				fuel_vapour~sel string "const"
+				comb_product double 0 "dimensionless~no"
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10 "dimensionless~no"
+				ratio_value~sel string "const"
+				_C_ "Pressure" "pressure_table" V1
+					symbol string "table"
+					param int 0
+					pressure array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "Temperature" "gas_temp_table" V1
+					symbol string "table"
+					param int 0
+					gas_temp array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour" "fuel_vapour_table" V1
+					symbol string "table"
+					param int 0
+					fuel_vapour array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts" "comb_product_table" V1
+					symbol string "table"
+					param int 0
+					comb_product array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "Ratio" "ratio_value_table" V1
+					symbol string "table"
+					param int 0
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+			_C_ "GasMassFraction" "massFraction" V1
+				0_type string "class"
+				unitGroup int 0
+				table array-1 none 0 3
+					double 0
+					int 1
+					int 1
+					DEF "<COL> 0 time~s <COL> 1 dimensionless~none <COL> 2 dimensionless~none <COL> 3 dimensionless~none <COL> 4 dimensionless~none <COL> 5 dimensionless~none <COL> 6 dimensionless~none"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+		..
+		_C_ "FlowCoeff" "sysby_flow" V1
+			0_type string "class"
+			symbol string "table"
+			flow_list array-1 none 1 3
+				array-1 none 1 0
+					wrapper ASEClass
+					_C_ "FlowList" "Pipe 1" V1
+						symbol string "table"
+						inflow double 1
+						inflow~sel string "const"
+						outflow double 1
+						outflow~sel string "const"
+						bOoSt_UUId__iNtErNaL__ string "4A52053B041A-00041C1A-48525A4147-01"
+						bOoSt_OrIgInAtOr__iNtErNaL__ string "4A52053B041A-00041C1A-48525A4147-01"
+						_C_ "InflowTable" "inflow_table" V1
+							symbol string "table"
+							param int 1
+							inflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+						_C_ "OutflowTable" "outflow_table" V1
+							symbol string "table"
+							param int 1
+							outflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+					..
+
+				wrapper ASEClass
+				_C_ "FlowList" "flow_list" V1
+					symbol string "table"
+					inflow double 1
+					inflow~sel string "const"
+					outflow double 1
+					outflow~sel string "const"
+					0_type string "class"
+					_C_ "InflowTable" "inflow_table" V1
+						symbol string "table"
+						param int 1
+						inflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+					_C_ "OutflowTable" "outflow_table" V1
+						symbol string "table"
+						param int 1
+						outflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+				..
+
+				int 1
+				int 1
+				DEF
+			0_bits int 2
+			inflow_0 double 1
+			outflow_0 double 1
+		..
+		_C_ "pg_SysBy_WhiteNoiseGenerator" "whiteNoiseGenerator" V1
+			0_type string "class"
+			minFrequency double 10 "frequency~Hz"
+			maxFrequency double 2000 "frequency~Hz"
+			meanPressure double 100000 "pressure~Pa"
+			deltaPressure double 50 "pressure~Pa"
+			enableTransmission int 0
+			0_bits int 256
+			_C_ "SBTransmissionLoss" "transmissionLoss" V1
+				0_type string "class"
+				upstreamMP int 0
+				downstreamMP int 0
+				0_bits int 256
+			..
+		..
+		_C_ "SbAcoustics" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			enableTermination int 0
+			sourceCharacterization int 0
+			impedanceDefinition string "Baffle"
+			strengthType int 0
+			impedanceType int 0
+			0_bits int 256
+			impedanceDefinitionSelKey_ string "Baffle"
+			_C_ "SBImpedance" "impedancePage" V1
+				0_type string "class"
+				normalizedImpedance int 1
+				table array-1 none 3 4
+					array-1 double 1 0
+1
+					array-1 double 1 0
+0.7
+					array-1 double 1 0
+-0.7
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+1
+0.7
+-0.7
+					DEF "<COL> 0 frequency~Hz <COL> 1 dimensionless~no <COL> 2 dimensionless~no"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+			_C_ "SBPressure" "pressurePage" V1
+				0_type string "class"
+				table array-1 none 3 4
+					array-1 double 1 0
+1
+					array-1 double 1 0
+0.001
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+1
+0.001
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 pressure~bar <COL> 2 pressure~bar"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+			_C_ "SBVolumeFlow" "volumePage" V1
+				0_type string "class"
+				table array-1 none 3 4
+					array-1 double 1 0
+1
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+1
+0
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 volflow~m3_s <COL> 2 volflow~m3_s"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+			_C_ "SBSourceCharacterization" "characterization" V1
+				0_type string "class"
+				table array-1 none 5 3
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					double 0
+					int 1
+					int 5
+					DEF "<COL> 0 time~s <COL> 1 pressure~Pa <COL> 2 velocity~m_s <COL> 3 pressure~Pa <COL> 4 velocity~m_s"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+		..
+	..
+..
+__
+ADDON ASE  "CheckValve" "bt_chkvl" Cpp res/cpp/bt_chkvl  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "CheckValve" "bt_chkvl" V1
+		0_page string "pg_full_model"
+		0_version int 17
+		ord long 1
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralChkVl" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string ""
+			lbl_element_date string "9. Jul 2009 13:50:47"
+			btn_model int 1
+			0_bits int 2
+		..
+		_C_ "pg_SimpleModelChkVl" "pg_sim_model" V1
+			0_type string "class"
+			0_bits int 256
+			_C_ "pg_FlowCoefSimpl" "pg_fc_simpl1" V1
+				0_type string "class"
+				i_pipe1 int 1
+				i_pipe2 int 2
+				tbl_fcs array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 pressure~Pa <COL> 1 dimensionless~no"
+			..
+			_C_ "pg_FlowCoefSimpl" "pg_fc_simpl2" V1
+				0_type string "class"
+				i_pipe1 int 2
+				i_pipe2 int 1
+				tbl_fcs array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 pressure~Pa <COL> 1 dimensionless~no"
+			..
+		..
+		_C_ "pg_FullModelChkVl" "pg_full_model" V1
+			0_type string "class"
+			0_bits int 2
+			d_mov_mas double 1 "mass~kg"
+			d_vis_dam_coef double 1 "visc_damp_coeff~Ns_m"
+			d_val_spr_pre double 1 "force~N"
+			d_val_spr_rate double 1 "lin_stiff~N_m"
+			d_ref_ar_clo_val double 1 "area~mm2"
+			d_ref_ar_ope_val double 1 "area~mm2"
+			d_max_val_lift double 1 "length~mm"
+			_C_ "pg_FlowCoefFull" "pg_fc_full1" V1
+				0_type string "class"
+				i_pipe1 int 1
+				i_pipe2 int 2
+				tbl_fcf array-1 none 2 3
+					array-1 double 2 0
+0
+0.3
+					array-1 double 2 0
+0
+0.8
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 2
+			..
+			_C_ "pg_FlowCoefFull" "pg_fc_full2" V1
+				0_type string "class"
+				i_pipe1 int 2
+				i_pipe2 int 1
+				tbl_fcf array-1 none 2 3
+					array-1 double 2 0
+0
+0.3
+					array-1 double 2 0
+0
+0.8
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 2
+			..
+		..
+	..
+..
+__
+ADDON ASE  "Plenum" "bt_plenm" Cpp res/cpp/bt_plenm  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Plenum" "bt_plenm" V1
+		0_page string "general"
+		0_version int 17
+		ord long 1
+		0_bits int 2
+		0_ok int 1
+		_C_ "PlenumGeneral" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string "Inlet Volume"
+			lbl_element_date string "13. Jul 2009 15:17:02"
+			geom_definition int 0
+			volume double 30 "volume~mm3~mm3"
+			length double 0 "length~mm"
+			diameter double 0 "length~mm"
+			heat_trans int 0
+			enableChemistry int 0
+			singleZone string "None"
+			0_bits int 2
+		..
+		_C_ "PlenumConnectionGeo" "plenm_con_geo" V1
+			0_type string "class"
+			conn_definition int 0
+			tor_angle double INF "angle~deg"
+			in_distance double INF "length~mm"
+			out_distance double INF "length~mm"
+			in_extension double 0 "length~mm"
+			out_extension double 0 "length~mm"
+			torsionAngle double 180 "angle~deg"
+			inletOffsetDistance double 41.82 "length~mm"
+			outletOffsetDistance double 41.82 "length~mm"
+		..
+		_C_ "GlobalInit" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				temperature double 80 "temperature~degC"
+				fuel_vapour double 0 "dimensionless~no"
+				comb_product double 0 "dimensionless~no"
+				ratio_type int 0
+				ratio_value double 10 "dimensionless~no"
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				temperature double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "FlowCoeff" "plenm_flow" V1
+			0_type string "class"
+			symbol string "table"
+			flow_list array-1 none 1 3
+				array-1 none 2 0
+					wrapper ASEClass
+					_C_ "FlowList" "Pipe 2" V1
+						symbol string "table"
+						inflow double 1
+						inflow~sel string "const"
+						outflow double 1
+						outflow~sel string "const"
+						bOoSt_UUId__iNtErNaL__ string "4A52053D012C-0004232E-48525A4147-01"
+						bOoSt_OrIgInAtOr__iNtErNaL__ string "4A52053D012C-0004232E-48525A4147-01"
+						_C_ "InflowTable" "inflow_table" V1
+							symbol string "table"
+							param int 1
+							inflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+						_C_ "OutflowTable" "outflow_table" V1
+							symbol string "table"
+							param int 1
+							outflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+					..
+
+					wrapper ASEClass
+					_C_ "FlowList" "Pipe 3" V1
+						symbol string "table"
+						inflow double 1
+						inflow~sel string "const"
+						outflow double 1
+						outflow~sel string "const"
+						bOoSt_UUId__iNtErNaL__ string "4A5205400400-00042E88-48525A4147-01"
+						bOoSt_OrIgInAtOr__iNtErNaL__ string "4A5205400400-00042E88-48525A4147-01"
+						_C_ "InflowTable" "inflow_table" V1
+							symbol string "table"
+							param int 1
+							inflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+						_C_ "OutflowTable" "outflow_table" V1
+							symbol string "table"
+							param int 1
+							outflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+					..
+
+				wrapper ASEClass
+				_C_ "FlowList" "flow_list" V1
+					symbol string "table"
+					inflow double 1
+					inflow~sel string "const"
+					outflow double 1
+					outflow~sel string "const"
+					0_type string "class"
+					_C_ "InflowTable" "inflow_table" V1
+						symbol string "table"
+						param int 1
+						inflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+					_C_ "OutflowTable" "outflow_table" V1
+						symbol string "table"
+						param int 1
+						outflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+				..
+
+				int 1
+				int 1
+				DEF
+			0_bits int 2
+			inflow_0 double 1
+			outflow_0 double 1
+			inflow_1 double 1
+			outflow_1 double 1
+		..
+		_C_ "PlenumHeatTrans" "plenm_heat_trans" V1
+			0_type string "class"
+			0_bits int 256
+			plenum_surface double INF "area~m2"
+			wall_temp double 0.1 "temperature~K"
+			heat_trans_cv int 0
+			heat_trans_coeff double INF "corr_massflow~W_m2K"
+			amp_factor double INF
+			var_wall_temp int 0
+			wall_thick double INF "length~mm"
+			conductivity double INF "conductivity~W_mK"
+			heat_cap double INF "vol_heat_cap~kJ_m3K"
+			cool_type int 0
+			ambient_temp double INF "temperature~K"
+			char_vel_cool double INF "velocity~m_s"
+		..
+		_C_ "PlenAcoustics" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			mach_number double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			isHigherOrderModes int 0
+			0_bits int 256
+			_C_ "PlenAcoustImpedanceIn" "impedanceIn" V1
+				0_type string "class"
+				impedanceIn array-1 none 3 4
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+0
+100000
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 dimensionless~no <COL> 2 dimensionless~no"
+			..
+			_C_ "PlenAcoustImpedanceOut" "impedanceOut" V1
+				0_type string "class"
+				impedanceOut array-1 none 3 4
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+0
+100000
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 dimensionless~no <COL> 2 dimensionless~no"
+			..
+		..
+	..
+..
+__
+ADDON ASE  "Plenum" "bt_plenm" Cpp res/cpp/bt_plenm  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Plenum" "bt_plenm" V1
+		0_page string "general"
+		0_version int 17
+		ord long 2
+		0_bits int 2
+		0_ok int 1
+		_C_ "PlenumGeneral" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string "Nozzle Volume"
+			lbl_element_date string "13. Jul 2009 15:16:58"
+			geom_definition int 0
+			volume double 30 "volume~mm3~mm3"
+			length double 0 "length~mm"
+			diameter double 0 "length~mm"
+			heat_trans int 0
+			enableChemistry int 0
+			singleZone string "None"
+			0_bits int 2
+		..
+		_C_ "PlenumConnectionGeo" "plenm_con_geo" V1
+			0_type string "class"
+			conn_definition int 0
+			tor_angle double INF "angle~deg"
+			in_distance double INF "length~mm"
+			out_distance double INF "length~mm"
+			in_extension double 0 "length~mm"
+			out_extension double 0 "length~mm"
+			torsionAngle double 180 "angle~deg"
+			inletOffsetDistance double 41.82 "length~mm"
+			outletOffsetDistance double 41.82 "length~mm"
+		..
+		_C_ "GlobalInit" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				temperature double 80 "temperature~degC"
+				fuel_vapour double 0 "dimensionless~no"
+				comb_product double 0 "dimensionless~no"
+				ratio_type int 0
+				ratio_value double 10 "dimensionless~no"
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				temperature double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "FlowCoeff" "plenm_flow" V1
+			0_type string "class"
+			symbol string "table"
+			flow_list array-1 none 1 3
+				array-1 none 2 0
+					wrapper ASEClass
+					_C_ "FlowList" "Pipe 3" V1
+						symbol string "table"
+						inflow double 1
+						inflow~sel string "const"
+						outflow double 1
+						outflow~sel string "const"
+						bOoSt_UUId__iNtErNaL__ string "4A5205400400-00042E88-48525A4147-01"
+						bOoSt_OrIgInAtOr__iNtErNaL__ string "4A5205400400-00042E88-48525A4147-01"
+						_C_ "InflowTable" "inflow_table" V1
+							symbol string "table"
+							param int 1
+							inflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+						_C_ "OutflowTable" "outflow_table" V1
+							symbol string "table"
+							param int 1
+							outflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+					..
+
+					wrapper ASEClass
+					_C_ "FlowList" "Pipe 4" V1
+						symbol string "table"
+						inflow double 1
+						inflow~sel string "const"
+						outflow double 1
+						outflow~sel string "const"
+						bOoSt_UUId__iNtErNaL__ string "4A52054D0548-00045FE8-48525A4147-01"
+						bOoSt_OrIgInAtOr__iNtErNaL__ string "4A52054D0548-00045FE8-48525A4147-01"
+						_C_ "InflowTable" "inflow_table" V1
+							symbol string "table"
+							param int 1
+							inflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+						_C_ "OutflowTable" "outflow_table" V1
+							symbol string "table"
+							param int 1
+							outflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+					..
+
+				wrapper ASEClass
+				_C_ "FlowList" "flow_list" V1
+					symbol string "table"
+					inflow double 1
+					inflow~sel string "const"
+					outflow double 1
+					outflow~sel string "const"
+					0_type string "class"
+					_C_ "InflowTable" "inflow_table" V1
+						symbol string "table"
+						param int 1
+						inflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+					_C_ "OutflowTable" "outflow_table" V1
+						symbol string "table"
+						param int 1
+						outflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+				..
+
+				int 1
+				int 1
+				DEF
+			0_bits int 0
+		..
+		_C_ "PlenumHeatTrans" "plenm_heat_trans" V1
+			0_type string "class"
+			0_bits int 256
+			plenum_surface double INF "area~m2"
+			wall_temp double 0.1 "temperature~K"
+			heat_trans_cv int 0
+			heat_trans_coeff double INF "corr_massflow~W_m2K"
+			amp_factor double INF
+			var_wall_temp int 0
+			wall_thick double INF "length~mm"
+			conductivity double INF "conductivity~W_mK"
+			heat_cap double INF "vol_heat_cap~kJ_m3K"
+			cool_type int 0
+			ambient_temp double INF "temperature~K"
+			char_vel_cool double INF "velocity~m_s"
+		..
+		_C_ "PlenAcoustics" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			mach_number double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			isHigherOrderModes int 0
+			0_bits int 256
+			_C_ "PlenAcoustImpedanceIn" "impedanceIn" V1
+				0_type string "class"
+				impedanceIn array-1 none 3 4
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+0
+100000
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 dimensionless~no <COL> 2 dimensionless~no"
+			..
+			_C_ "PlenAcoustImpedanceOut" "impedanceOut" V1
+				0_type string "class"
+				impedanceOut array-1 none 3 4
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+0
+100000
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 dimensionless~no <COL> 2 dimensionless~no"
+			..
+		..
+	..
+..
+__
+ADDON ASE  "CheckValve" "bt_chkvl" Cpp res/cpp/bt_chkvl  !! "elem5"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "CheckValve" "bt_chkvl" V1
+		0_page string "general"
+		0_version int 17
+		ord long 2
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralChkVl" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string "Nozzle Valve"
+			lbl_element_date string "9. Jul 2009 13:53:10"
+			btn_model int 1
+			0_bits int 2
+		..
+		_C_ "pg_SimpleModelChkVl" "pg_sim_model" V1
+			0_type string "class"
+			0_bits int 256
+			_C_ "pg_FlowCoefSimpl" "pg_fc_simpl1" V1
+				0_type string "class"
+				i_pipe1 int 4
+				i_pipe2 int 5
+				tbl_fcs array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 pressure~Pa <COL> 1 dimensionless~no"
+			..
+			_C_ "pg_FlowCoefSimpl" "pg_fc_simpl2" V1
+				0_type string "class"
+				i_pipe1 int 5
+				i_pipe2 int 4
+				tbl_fcs array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 pressure~Pa <COL> 1 dimensionless~no"
+			..
+		..
+		_C_ "pg_FullModelChkVl" "pg_full_model" V1
+			0_type string "class"
+			0_bits int 2
+			d_mov_mas double 1 "mass~kg"
+			d_vis_dam_coef double 1 "visc_damp_coeff~Ns_m"
+			d_val_spr_pre double 1 "force~N"
+			d_val_spr_rate double 1 "lin_stiff~N_m"
+			d_ref_ar_clo_val double 1 "area~mm2"
+			d_ref_ar_ope_val double 1 "area~mm2"
+			d_max_val_lift double 1 "length~mm"
+			_C_ "pg_FlowCoefFull" "pg_fc_full1" V1
+				0_type string "class"
+				i_pipe1 int 4
+				i_pipe2 int 5
+				tbl_fcf array-1 none 2 3
+					array-1 double 2 0
+0
+0.3
+					array-1 double 2 0
+0
+0.8
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 2
+			..
+			_C_ "pg_FlowCoefFull" "pg_fc_full2" V1
+				0_type string "class"
+				i_pipe1 int 5
+				i_pipe2 int 4
+				tbl_fcf array-1 none 2 3
+					array-1 double 2 0
+0
+0.3
+					array-1 double 2 0
+0
+0.8
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 2
+			..
+		..
+	..
+..
+__
+ADDON ASE  "SystemBoundary" "bt_sysby" Cpp res/cpp/bt_sysby  !! "elem6"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "SystemBoundary" "bt_sysby" V1
+		0_page string "general"
+		0_version int 17
+		ord long 2
+		0_bits int 2
+		0_ok int 1
+		_C_ "pg_GeneralSysBy" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string "Cyl. Pressure"
+			lbl_element_date string "9. Jul 2009 13:53:44"
+			memory int 0
+			boundaryType int 0
+			endCorrection int 0
+			0_bits int 2
+		..
+		_C_ "pg_Init" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			massFraction int 0
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 10 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 100 "temperature~degC"
+				gas_temp~sel string "const"
+				massFraction int 0
+				fuel_vapour double 0 "dimensionless~no"
+				fuel_vapour~sel string "const"
+				comb_product double 0 "dimensionless~no"
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10 "dimensionless~no"
+				ratio_value~sel string "const"
+				_C_ "Pressure" "pressure_table" V1
+					symbol string "table"
+					param int 0
+					pressure array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "Temperature" "gas_temp_table" V1
+					symbol string "table"
+					param int 0
+					gas_temp array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour" "fuel_vapour_table" V1
+					symbol string "table"
+					param int 0
+					fuel_vapour array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts" "comb_product_table" V1
+					symbol string "table"
+					param int 0
+					comb_product array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "Ratio" "ratio_value_table" V1
+					symbol string "table"
+					param int 0
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+			_C_ "GasMassFraction" "massFraction" V1
+				0_type string "class"
+				unitGroup int 0
+				table array-1 none 0 3
+					double 0
+					int 1
+					int 1
+					DEF "<COL> 0 time~s <COL> 1 dimensionless~none <COL> 2 dimensionless~none <COL> 3 dimensionless~none <COL> 4 dimensionless~none <COL> 5 dimensionless~none <COL> 6 dimensionless~none"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+		..
+		_C_ "FlowCoeff" "sysby_flow" V1
+			0_type string "class"
+			symbol string "table"
+			flow_list array-1 none 1 3
+				array-1 none 1 0
+					wrapper ASEClass
+					_C_ "FlowList" "Pipe 6" V1
+						symbol string "table"
+						inflow double 1
+						inflow~sel string "const"
+						outflow double 1
+						outflow~sel string "const"
+						bOoSt_UUId__iNtErNaL__ string "4A52054F014D-0004696D-48525A4147-01"
+						bOoSt_OrIgInAtOr__iNtErNaL__ string "4A52054F014D-0004696D-48525A4147-01"
+						_C_ "InflowTable" "inflow_table" V1
+							symbol string "table"
+							param int 1
+							inflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+						_C_ "OutflowTable" "outflow_table" V1
+							symbol string "table"
+							param int 1
+							outflow array-1 none 2 3
+								array-1 double 1 0
+0
+								array-1 double 1 0
+0
+								double 0
+								int 1
+								int 2
+								DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+							0_bits int 256
+						..
+					..
+
+				wrapper ASEClass
+				_C_ "FlowList" "flow_list" V1
+					symbol string "table"
+					inflow double 1
+					inflow~sel string "const"
+					outflow double 1
+					outflow~sel string "const"
+					0_type string "class"
+					_C_ "InflowTable" "inflow_table" V1
+						symbol string "table"
+						param int 1
+						inflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+					_C_ "OutflowTable" "outflow_table" V1
+						symbol string "table"
+						param int 1
+						outflow array-1 none 2 3
+							array-1 double 1 0
+0
+							array-1 double 1 0
+0
+							double 0
+							int 1
+							int 2
+							DEF "<COL> 0 angle~deg <COL> 1 dimensionless~no"
+						0_bits int 256
+					..
+				..
+
+				int 1
+				int 1
+				DEF
+			0_bits int 2
+			inflow_0 double 1
+			outflow_0 double 1
+		..
+		_C_ "pg_SysBy_WhiteNoiseGenerator" "whiteNoiseGenerator" V1
+			0_type string "class"
+			minFrequency double 10 "frequency~Hz"
+			maxFrequency double 2000 "frequency~Hz"
+			meanPressure double 100000 "pressure~Pa"
+			deltaPressure double 50 "pressure~Pa"
+			enableTransmission int 0
+			0_bits int 256
+			_C_ "SBTransmissionLoss" "transmissionLoss" V1
+				0_type string "class"
+				upstreamMP int 0
+				downstreamMP int 0
+				0_bits int 256
+			..
+		..
+		_C_ "SbAcoustics" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			enableTermination int 0
+			sourceCharacterization int 0
+			impedanceDefinition string "Baffle"
+			strengthType int 0
+			impedanceType int 0
+			0_bits int 256
+			impedanceDefinitionSelKey_ string "Baffle"
+			_C_ "SBImpedance" "impedancePage" V1
+				0_type string "class"
+				normalizedImpedance int 1
+				table array-1 none 3 4
+					array-1 double 1 0
+1
+					array-1 double 1 0
+0.7
+					array-1 double 1 0
+-0.7
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+1
+0.7
+-0.7
+					DEF "<COL> 0 frequency~Hz <COL> 1 dimensionless~no <COL> 2 dimensionless~no"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+			_C_ "SBPressure" "pressurePage" V1
+				0_type string "class"
+				table array-1 none 3 4
+					array-1 double 1 0
+1
+					array-1 double 1 0
+0.001
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+1
+0.001
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 pressure~bar <COL> 2 pressure~bar"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+			_C_ "SBVolumeFlow" "volumePage" V1
+				0_type string "class"
+				table array-1 none 3 4
+					array-1 double 1 0
+1
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 3
+					array-1 double 3 0
+1
+0
+0
+					DEF "<COL> 0 frequency~Hz <COL> 1 volflow~m3_s <COL> 2 volflow~m3_s"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+			_C_ "SBSourceCharacterization" "characterization" V1
+				0_type string "class"
+				table array-1 none 5 3
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					double 0
+					int 1
+					int 5
+					DEF "<COL> 0 time~s <COL> 1 pressure~Pa <COL> 2 velocity~m_s <COL> 3 pressure~Pa <COL> 4 velocity~m_s"
+				file string ""
+				aut_rel int 0
+				def_pat int 0
+				0_bits int 256
+			..
+		..
+	..
+..
+__
+ADDON ASE  "Pipe" "bt_pipe" Cpp res/cpp/bt__pipe  !! "line1"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Pipe" "bt_pipe" V1
+		0_page string "general"
+		0_version int 17
+		ord long 1
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralPipe" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string ""
+			lbl_element_date string "13. Jul 2009 15:09:55"
+			pipe_length double 5 "length~mm"
+			gridPoints int 10
+			diameter double 5 "length~mm"
+			diameter~sel string "const"
+			hydraulicSetting int 0
+			isBendingRadius int 0
+			hydraulicUnit int 0
+			hydrDiameter double INF "length~mm"
+			hydrDiameter~sel string "const"
+			hydrArea double INF "area~mm2"
+			hydrArea~sel string "const"
+			bending_radius double 100000 "length~mm"
+			bending_radius~sel string "const"
+			lam_fric_coeff double 64 "dimensionless~no"
+			lam_fric_coeff~sel string "const"
+			turbulentFriction int 0
+			friction_coeff double 0.019 "dimensionless~no"
+			friction_coeff~sel string "const"
+			surfaceRoughness double 0.1 "length~mm"
+			surfaceRoughness~sel string "const"
+			frictionMultiplier double 1 "dimensionless~no"
+			frictionMultiplier~sel string "const"
+			absorptiveMaterial int 0
+			gasWallTransfer int 1
+			heatCoefficient double 10 "heat_transf_coeff~W_m2K"
+			heat_transf_fact double 1 "dimensionless~no"
+			heat_transf_fact~sel string "const"
+			wall_temp double 26.85 "temperature~degC"
+			wall_temp~sel string "const"
+			btn_var_wall_temp int 0
+			perforation int 1
+			type int 0
+			inner_type int 0
+			inner_pipe int 0
+			outer_pipe int 0
+			outer_plenum int 0
+			porosity double INF "dimensionless~no"
+			porosity~sel string "const"
+			porosity_in double INF "dimensionless~no"
+			porosity_out double INF "dimensionless~no"
+			perf_hole_diam double INF "length~mm"
+			perf_hole_diam~sel string "const"
+			perf_wall_thick double INF "length~mm"
+			perf_wall_thick~sel string "const"
+			enableChemistry int 0
+			singleZone string "None"
+			atmChemistry int 0
+			chemistrySelection string "None"
+			0_bits int 2
+			_C_ "Diameter3" "diameter_table" V1
+				symbol string "table"
+				diameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicDiameterInPipe" "hydrDiameter_table" V1
+				symbol string "table"
+				hydrDiameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicAreaInPipe" "hydrArea_table" V1
+				symbol string "table"
+				hydrArea array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2"
+				0_bits int 256
+			..
+			_C_ "BendingRadius3" "bending_radius_table" V1
+				symbol string "table"
+				bending_radius array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "LamFrictionCoefficient3" "lam_fric_coeff_table" V1
+				symbol string "table"
+				lam_fric_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "FrictionCoefficient3" "friction_coeff_table" V1
+				symbol string "table"
+				friction_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "SurfaceRoughness3" "surfaceRoughness_table" V1
+				symbol string "table"
+				surfaceRoughness array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "FrictionMultiplier3" "frictionMultiplier_table" V1
+				symbol string "table"
+				frictionMultiplier array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "HeatTransferFactor3" "heat_transf_fact_table" V1
+				symbol string "table"
+				heat_transf_fact array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "WallTemperature3" "wall_temp_table" V1
+				symbol string "table"
+				tree_invisible int 0
+				wall_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "Porosity3" "porosity_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				porosity array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "PerfHoleDiam3" "perf_hole_diam_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_hole_diam array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "PerfWallThick3" "perf_wall_thick_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_wall_thick array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+		..
+		_C_ "Initialization3" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 80 "temperature~degC"
+				gas_temp~sel string "const"
+				fuel_vapour double 0
+				fuel_vapour~sel string "const"
+				comb_product double 0
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10
+				ratio_value~sel string "const"
+				_C_ "Pressure3" "pressure_table" V1
+					symbol string "table"
+					pressure array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "GasTemperature3" "gas_temp_table" V1
+					symbol string "table"
+					gas_temp array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour3" "fuel_vapour_table" V1
+					symbol string "table"
+					fuel_vapour array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts3" "comb_product_table" V1
+					symbol string "table"
+					comb_product array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "AFRatio3" "ratio_value_table" V1
+					symbol string "table"
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "VariableWallTemperature3" "vwtemp" V1
+			0_type string "class"
+			0_bits int 256
+			solidMaterials array-1 none 3 3
+				array-1 none 0 0
+				array-1 none 0 0
+				array-1 none 0 0
+				string ""
+				int 1
+				int 3
+				DEF "<COL> 1 length~mm"
+			ambient_temp double 298.15 "temperature~K"
+			ambient_temp~sel string "const"
+			radiationTemperature double 298.15 "temperature~K"
+			radiationTemperature~sel string "const"
+			convectionType int 0
+			coolant int 0
+			cool_velocity double 25 "velocity~m_s"
+			convectionCoefficient double 30 "heat_transf_coeff~W_m2K"
+			convectionCoefficient~sel string "const"
+			_C_ "AmbientTemperature3" "ambient_temp_table" V1
+				symbol string "table"
+				ambient_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "RadiationSinkTemperature3" "radiationTemperature_table" V1
+				symbol string "table"
+				radiationTemperature array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "ConvectionCoefficient3" "convectionCoefficient_table" V1
+				symbol string "table"
+				convectionCoefficient array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+		..
+		_C_ "ResultsSpecification3" "results" V1
+			0_type string "class"
+			positions int 2
+			axial_points int INF
+			user_table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF
+			type_results int 1
+			0_bits int 768
+		..
+		_C_ "AcousticsPipe" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			hornSegments int 7
+			lossesType int 0
+			resistance double 0.01 "ac_impedance~kg_m4s"
+			end_correction int 1
+			0_bits int 256
+		..
+		_C_ "AbsorptiveMaterial" "absorptiveMaterial" V1
+			0_type string "class"
+			flowResistivity double 100000 "fl_resist~Ns_m4"
+			materialPorosity double 0 "dimensionless~no"
+			0_bits int 256
+		..
+	..
+..
+__
+ADDON ASE  "Pipe" "bt_pipe" Cpp res/cpp/bt__pipe  !! "line2"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Pipe" "bt_pipe" V1
+		0_page string "general"
+		0_version int 17
+		ord long 2
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralPipe" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string ""
+			lbl_element_date string "13. Jul 2009 11:16:14"
+			pipe_length double 5 "length~mm"
+			gridPoints int 10
+			diameter double 1.5 "length~mm"
+			diameter~sel string "const"
+			hydraulicSetting int 0
+			isBendingRadius int 0
+			hydraulicUnit int 0
+			hydrDiameter double INF "length~mm"
+			hydrDiameter~sel string "const"
+			hydrArea double INF "area~mm2"
+			hydrArea~sel string "const"
+			bending_radius double 100000 "length~mm"
+			bending_radius~sel string "const"
+			lam_fric_coeff double 0 "dimensionless~no"
+			lam_fric_coeff~sel string "const"
+			turbulentFriction int 0
+			friction_coeff double 0 "dimensionless~no"
+			friction_coeff~sel string "const"
+			surfaceRoughness double 0.1 "length~mm"
+			surfaceRoughness~sel string "const"
+			frictionMultiplier double 1 "dimensionless~no"
+			frictionMultiplier~sel string "const"
+			absorptiveMaterial int 0
+			gasWallTransfer int 1
+			heatCoefficient double 10 "heat_transf_coeff~W_m2K"
+			heat_transf_fact double 1 "dimensionless~no"
+			heat_transf_fact~sel string "const"
+			wall_temp double 26.85 "temperature~degC"
+			wall_temp~sel string "const"
+			btn_var_wall_temp int 0
+			perforation int 1
+			type int 0
+			inner_type int 0
+			inner_pipe int 0
+			outer_pipe int 0
+			outer_plenum int 0
+			porosity double INF "dimensionless~no"
+			porosity~sel string "const"
+			porosity_in double INF "dimensionless~no"
+			porosity_out double INF "dimensionless~no"
+			perf_hole_diam double INF "length~mm"
+			perf_hole_diam~sel string "const"
+			perf_wall_thick double INF "length~mm"
+			perf_wall_thick~sel string "const"
+			enableChemistry int 0
+			singleZone string "None"
+			atmChemistry int 0
+			chemistrySelection string "None"
+			0_bits int 2
+			_C_ "Diameter3" "diameter_table" V1
+				symbol string "table"
+				diameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicDiameterInPipe" "hydrDiameter_table" V1
+				symbol string "table"
+				hydrDiameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicAreaInPipe" "hydrArea_table" V1
+				symbol string "table"
+				hydrArea array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2"
+				0_bits int 256
+			..
+			_C_ "BendingRadius3" "bending_radius_table" V1
+				symbol string "table"
+				bending_radius array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "LamFrictionCoefficient3" "lam_fric_coeff_table" V1
+				symbol string "table"
+				lam_fric_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "FrictionCoefficient3" "friction_coeff_table" V1
+				symbol string "table"
+				friction_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "SurfaceRoughness3" "surfaceRoughness_table" V1
+				symbol string "table"
+				surfaceRoughness array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "FrictionMultiplier3" "frictionMultiplier_table" V1
+				symbol string "table"
+				frictionMultiplier array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "HeatTransferFactor3" "heat_transf_fact_table" V1
+				symbol string "table"
+				heat_transf_fact array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "WallTemperature3" "wall_temp_table" V1
+				symbol string "table"
+				tree_invisible int 0
+				wall_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "Porosity3" "porosity_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				porosity array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "PerfHoleDiam3" "perf_hole_diam_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_hole_diam array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "PerfWallThick3" "perf_wall_thick_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_wall_thick array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+		..
+		_C_ "Initialization3" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 80 "temperature~degC"
+				gas_temp~sel string "const"
+				fuel_vapour double 0
+				fuel_vapour~sel string "const"
+				comb_product double 0
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10
+				ratio_value~sel string "const"
+				_C_ "Pressure3" "pressure_table" V1
+					symbol string "table"
+					pressure array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "GasTemperature3" "gas_temp_table" V1
+					symbol string "table"
+					gas_temp array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour3" "fuel_vapour_table" V1
+					symbol string "table"
+					fuel_vapour array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts3" "comb_product_table" V1
+					symbol string "table"
+					comb_product array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "AFRatio3" "ratio_value_table" V1
+					symbol string "table"
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "VariableWallTemperature3" "vwtemp" V1
+			0_type string "class"
+			0_bits int 256
+			solidMaterials array-1 none 3 3
+				array-1 none 0 0
+				array-1 none 0 0
+				array-1 none 0 0
+				string ""
+				int 1
+				int 3
+				DEF "<COL> 1 length~mm"
+			ambient_temp double 298.15 "temperature~K"
+			ambient_temp~sel string "const"
+			radiationTemperature double 298.15 "temperature~K"
+			radiationTemperature~sel string "const"
+			convectionType int 0
+			coolant int 0
+			cool_velocity double 25 "velocity~m_s"
+			convectionCoefficient double 30 "heat_transf_coeff~W_m2K"
+			convectionCoefficient~sel string "const"
+			_C_ "AmbientTemperature3" "ambient_temp_table" V1
+				symbol string "table"
+				ambient_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "RadiationSinkTemperature3" "radiationTemperature_table" V1
+				symbol string "table"
+				radiationTemperature array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "ConvectionCoefficient3" "convectionCoefficient_table" V1
+				symbol string "table"
+				convectionCoefficient array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+		..
+		_C_ "ResultsSpecification3" "results" V1
+			0_type string "class"
+			positions int 2
+			axial_points int INF
+			user_table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF
+			type_results int 1
+			0_bits int 768
+		..
+		_C_ "AcousticsPipe" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			hornSegments int 7
+			lossesType int 0
+			resistance double 0.01 "ac_impedance~kg_m4s"
+			end_correction int 1
+			0_bits int 256
+		..
+		_C_ "AbsorptiveMaterial" "absorptiveMaterial" V1
+			0_type string "class"
+			flowResistivity double 100000 "fl_resist~Ns_m4"
+			materialPorosity double 0 "dimensionless~no"
+			0_bits int 256
+		..
+	..
+..
+__
+ADDON ASE  "Pipe" "bt_pipe" Cpp res/cpp/bt__pipe  !! "line3"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Pipe" "bt_pipe" V1
+		0_page string "general"
+		0_version int 17
+		ord long 3
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralPipe" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string ""
+			lbl_element_date string "13. Jul 2009 18:33:13"
+			pipe_length double 25 "length~mm"
+			gridPoints int 10
+			diameter double 1.5 "length~mm"
+			diameter~sel string "const"
+			hydraulicSetting int 0
+			isBendingRadius int 0
+			hydraulicUnit int 0
+			hydrDiameter double INF "length~mm"
+			hydrDiameter~sel string "const"
+			hydrArea double INF "area~mm2"
+			hydrArea~sel string "const"
+			bending_radius double 100000 "length~mm"
+			bending_radius~sel string "const"
+			lam_fric_coeff double 64 "dimensionless~no"
+			lam_fric_coeff~sel string "const"
+			turbulentFriction int 0
+			friction_coeff double 0.019 "dimensionless~no"
+			friction_coeff~sel string "const"
+			surfaceRoughness double 0.1 "length~mm"
+			surfaceRoughness~sel string "const"
+			frictionMultiplier double 1 "dimensionless~no"
+			frictionMultiplier~sel string "const"
+			absorptiveMaterial int 0
+			gasWallTransfer int 1
+			heatCoefficient double 10 "heat_transf_coeff~W_m2K"
+			heat_transf_fact double 1 "dimensionless~no"
+			heat_transf_fact~sel string "const"
+			wall_temp double 26.85 "temperature~degC"
+			wall_temp~sel string "const"
+			btn_var_wall_temp int 0
+			perforation int 1
+			type int 0
+			inner_type int 0
+			inner_pipe int 0
+			outer_pipe int 0
+			outer_plenum int 0
+			porosity double INF "dimensionless~no"
+			porosity~sel string "const"
+			porosity_in double INF "dimensionless~no"
+			porosity_out double INF "dimensionless~no"
+			perf_hole_diam double INF "length~mm"
+			perf_hole_diam~sel string "const"
+			perf_wall_thick double INF "length~mm"
+			perf_wall_thick~sel string "const"
+			enableChemistry int 0
+			singleZone string "None"
+			atmChemistry int 0
+			chemistrySelection string "None"
+			0_bits int 2
+			_C_ "Diameter3" "diameter_table" V1
+				symbol string "table"
+				diameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicDiameterInPipe" "hydrDiameter_table" V1
+				symbol string "table"
+				hydrDiameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicAreaInPipe" "hydrArea_table" V1
+				symbol string "table"
+				hydrArea array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2"
+				0_bits int 256
+			..
+			_C_ "BendingRadius3" "bending_radius_table" V1
+				symbol string "table"
+				bending_radius array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "LamFrictionCoefficient3" "lam_fric_coeff_table" V1
+				symbol string "table"
+				lam_fric_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "FrictionCoefficient3" "friction_coeff_table" V1
+				symbol string "table"
+				friction_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "SurfaceRoughness3" "surfaceRoughness_table" V1
+				symbol string "table"
+				surfaceRoughness array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "FrictionMultiplier3" "frictionMultiplier_table" V1
+				symbol string "table"
+				frictionMultiplier array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "HeatTransferFactor3" "heat_transf_fact_table" V1
+				symbol string "table"
+				heat_transf_fact array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "WallTemperature3" "wall_temp_table" V1
+				symbol string "table"
+				tree_invisible int 0
+				wall_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "Porosity3" "porosity_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				porosity array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "PerfHoleDiam3" "perf_hole_diam_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_hole_diam array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "PerfWallThick3" "perf_wall_thick_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_wall_thick array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+		..
+		_C_ "Initialization3" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 80 "temperature~degC"
+				gas_temp~sel string "const"
+				fuel_vapour double 0
+				fuel_vapour~sel string "const"
+				comb_product double 0
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10
+				ratio_value~sel string "const"
+				_C_ "Pressure3" "pressure_table" V1
+					symbol string "table"
+					pressure array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "GasTemperature3" "gas_temp_table" V1
+					symbol string "table"
+					gas_temp array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour3" "fuel_vapour_table" V1
+					symbol string "table"
+					fuel_vapour array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts3" "comb_product_table" V1
+					symbol string "table"
+					comb_product array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "AFRatio3" "ratio_value_table" V1
+					symbol string "table"
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "VariableWallTemperature3" "vwtemp" V1
+			0_type string "class"
+			0_bits int 256
+			solidMaterials array-1 none 3 3
+				array-1 none 0 0
+				array-1 none 0 0
+				array-1 none 0 0
+				string ""
+				int 1
+				int 3
+				DEF "<COL> 1 length~mm"
+			ambient_temp double 298.15 "temperature~K"
+			ambient_temp~sel string "const"
+			radiationTemperature double 298.15 "temperature~K"
+			radiationTemperature~sel string "const"
+			convectionType int 0
+			coolant int 0
+			cool_velocity double 25 "velocity~m_s"
+			convectionCoefficient double 30 "heat_transf_coeff~W_m2K"
+			convectionCoefficient~sel string "const"
+			_C_ "AmbientTemperature3" "ambient_temp_table" V1
+				symbol string "table"
+				ambient_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "RadiationSinkTemperature3" "radiationTemperature_table" V1
+				symbol string "table"
+				radiationTemperature array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "ConvectionCoefficient3" "convectionCoefficient_table" V1
+				symbol string "table"
+				convectionCoefficient array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+		..
+		_C_ "ResultsSpecification3" "results" V1
+			0_type string "class"
+			positions int 2
+			axial_points int INF
+			user_table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF
+			type_results int 1
+			0_bits int 768
+		..
+		_C_ "AcousticsPipe" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			hornSegments int 7
+			lossesType int 0
+			resistance double 0.01 "ac_impedance~kg_m4s"
+			end_correction int 1
+			0_bits int 256
+		..
+		_C_ "AbsorptiveMaterial" "absorptiveMaterial" V1
+			0_type string "class"
+			flowResistivity double 100000 "fl_resist~Ns_m4"
+			materialPorosity double 0 "dimensionless~no"
+			0_bits int 256
+		..
+	..
+..
+__
+ADDON ASE  "Pipe" "bt_pipe" Cpp res/cpp/bt__pipe  !! "line4"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Pipe" "bt_pipe" V1
+		0_page string "general"
+		0_version int 17
+		ord long 4
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralPipe" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string ""
+			lbl_element_date string "13. Jul 2009 11:16:18"
+			pipe_length double 5 "length~mm"
+			gridPoints int 10
+			diameter double 1.5 "length~mm"
+			diameter~sel string "const"
+			hydraulicSetting int 0
+			isBendingRadius int 0
+			hydraulicUnit int 0
+			hydrDiameter double INF "length~mm"
+			hydrDiameter~sel string "const"
+			hydrArea double INF "area~mm2"
+			hydrArea~sel string "const"
+			bending_radius double 100000 "length~mm"
+			bending_radius~sel string "const"
+			lam_fric_coeff double 0 "dimensionless~no"
+			lam_fric_coeff~sel string "const"
+			turbulentFriction int 0
+			friction_coeff double 0 "dimensionless~no"
+			friction_coeff~sel string "const"
+			surfaceRoughness double 0.1 "length~mm"
+			surfaceRoughness~sel string "const"
+			frictionMultiplier double 1 "dimensionless~no"
+			frictionMultiplier~sel string "const"
+			absorptiveMaterial int 0
+			gasWallTransfer int 1
+			heatCoefficient double 10 "heat_transf_coeff~W_m2K"
+			heat_transf_fact double 1 "dimensionless~no"
+			heat_transf_fact~sel string "const"
+			wall_temp double 26.85 "temperature~degC"
+			wall_temp~sel string "const"
+			btn_var_wall_temp int 0
+			perforation int 1
+			type int 0
+			inner_type int 0
+			inner_pipe int 0
+			outer_pipe int 0
+			outer_plenum int 0
+			porosity double INF "dimensionless~no"
+			porosity~sel string "const"
+			porosity_in double INF "dimensionless~no"
+			porosity_out double INF "dimensionless~no"
+			perf_hole_diam double INF "length~mm"
+			perf_hole_diam~sel string "const"
+			perf_wall_thick double INF "length~mm"
+			perf_wall_thick~sel string "const"
+			enableChemistry int 0
+			singleZone string "None"
+			atmChemistry int 0
+			chemistrySelection string "None"
+			0_bits int 2
+			_C_ "Diameter3" "diameter_table" V1
+				symbol string "table"
+				diameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicDiameterInPipe" "hydrDiameter_table" V1
+				symbol string "table"
+				hydrDiameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicAreaInPipe" "hydrArea_table" V1
+				symbol string "table"
+				hydrArea array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2"
+				0_bits int 256
+			..
+			_C_ "BendingRadius3" "bending_radius_table" V1
+				symbol string "table"
+				bending_radius array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "LamFrictionCoefficient3" "lam_fric_coeff_table" V1
+				symbol string "table"
+				lam_fric_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "FrictionCoefficient3" "friction_coeff_table" V1
+				symbol string "table"
+				friction_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "SurfaceRoughness3" "surfaceRoughness_table" V1
+				symbol string "table"
+				surfaceRoughness array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "FrictionMultiplier3" "frictionMultiplier_table" V1
+				symbol string "table"
+				frictionMultiplier array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "HeatTransferFactor3" "heat_transf_fact_table" V1
+				symbol string "table"
+				heat_transf_fact array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "WallTemperature3" "wall_temp_table" V1
+				symbol string "table"
+				tree_invisible int 0
+				wall_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "Porosity3" "porosity_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				porosity array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "PerfHoleDiam3" "perf_hole_diam_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_hole_diam array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "PerfWallThick3" "perf_wall_thick_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_wall_thick array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+		..
+		_C_ "Initialization3" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 0
+				pressure double 100 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 80 "temperature~degC"
+				gas_temp~sel string "const"
+				fuel_vapour double 0
+				fuel_vapour~sel string "const"
+				comb_product double 0
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10
+				ratio_value~sel string "const"
+				_C_ "Pressure3" "pressure_table" V1
+					symbol string "table"
+					pressure array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "GasTemperature3" "gas_temp_table" V1
+					symbol string "table"
+					gas_temp array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour3" "fuel_vapour_table" V1
+					symbol string "table"
+					fuel_vapour array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts3" "comb_product_table" V1
+					symbol string "table"
+					comb_product array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "AFRatio3" "ratio_value_table" V1
+					symbol string "table"
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "VariableWallTemperature3" "vwtemp" V1
+			0_type string "class"
+			0_bits int 256
+			solidMaterials array-1 none 3 3
+				array-1 none 0 0
+				array-1 none 0 0
+				array-1 none 0 0
+				string ""
+				int 1
+				int 3
+				DEF "<COL> 1 length~mm"
+			ambient_temp double 298.15 "temperature~K"
+			ambient_temp~sel string "const"
+			radiationTemperature double 298.15 "temperature~K"
+			radiationTemperature~sel string "const"
+			convectionType int 0
+			coolant int 0
+			cool_velocity double 25 "velocity~m_s"
+			convectionCoefficient double 30 "heat_transf_coeff~W_m2K"
+			convectionCoefficient~sel string "const"
+			_C_ "AmbientTemperature3" "ambient_temp_table" V1
+				symbol string "table"
+				ambient_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "RadiationSinkTemperature3" "radiationTemperature_table" V1
+				symbol string "table"
+				radiationTemperature array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "ConvectionCoefficient3" "convectionCoefficient_table" V1
+				symbol string "table"
+				convectionCoefficient array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+		..
+		_C_ "ResultsSpecification3" "results" V1
+			0_type string "class"
+			positions int 2
+			axial_points int INF
+			user_table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF
+			type_results int 1
+			0_bits int 768
+		..
+		_C_ "AcousticsPipe" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			hornSegments int 7
+			lossesType int 0
+			resistance double 0.01 "ac_impedance~kg_m4s"
+			end_correction int 1
+			0_bits int 256
+		..
+		_C_ "AbsorptiveMaterial" "absorptiveMaterial" V1
+			0_type string "class"
+			flowResistivity double 100000 "fl_resist~Ns_m4"
+			materialPorosity double 0 "dimensionless~no"
+			0_bits int 256
+		..
+	..
+..
+__
+ADDON ASE  "Pipe" "bt_pipe" Cpp res/cpp/bt__pipe  !! "line5"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Pipe" "bt_pipe" V1
+		0_page string "general"
+		0_version int 17
+		ord long 5
+		0_bits int 2
+		0_ok int 1
+		_C_ "GeneralPipe" "general" V1
+			0_type string "class"
+			lbl_element_author string "unknown"
+			lbl_element_comment string ""
+			res_name string ""
+			lbl_element_date string "13. Jul 2009 11:16:23"
+			pipe_length double 3 "length~mm"
+			gridPoints int 10
+			diameter double 1.5 "length~mm"
+			diameter~sel string "const"
+			hydraulicSetting int 0
+			isBendingRadius int 0
+			hydraulicUnit int 0
+			hydrDiameter double INF "length~mm"
+			hydrDiameter~sel string "const"
+			hydrArea double INF "area~mm2"
+			hydrArea~sel string "const"
+			bending_radius double 100000 "length~mm"
+			bending_radius~sel string "const"
+			lam_fric_coeff double 0 "dimensionless~no"
+			lam_fric_coeff~sel string "const"
+			turbulentFriction int 0
+			friction_coeff double 0 "dimensionless~no"
+			friction_coeff~sel string "const"
+			surfaceRoughness double 0.1 "length~mm"
+			surfaceRoughness~sel string "const"
+			frictionMultiplier double 1 "dimensionless~no"
+			frictionMultiplier~sel string "const"
+			absorptiveMaterial int 0
+			gasWallTransfer int 1
+			heatCoefficient double 10 "heat_transf_coeff~W_m2K"
+			heat_transf_fact double 1 "dimensionless~no"
+			heat_transf_fact~sel string "const"
+			wall_temp double 26.85 "temperature~degC"
+			wall_temp~sel string "const"
+			btn_var_wall_temp int 0
+			perforation int 1
+			type int 0
+			inner_type int 0
+			inner_pipe int 0
+			outer_pipe int 0
+			outer_plenum int 0
+			porosity double INF "dimensionless~no"
+			porosity~sel string "const"
+			porosity_in double INF "dimensionless~no"
+			porosity_out double INF "dimensionless~no"
+			perf_hole_diam double INF "length~mm"
+			perf_hole_diam~sel string "const"
+			perf_wall_thick double INF "length~mm"
+			perf_wall_thick~sel string "const"
+			enableChemistry int 0
+			singleZone string "None"
+			atmChemistry int 0
+			chemistrySelection string "None"
+			0_bits int 2
+			_C_ "Diameter3" "diameter_table" V1
+				symbol string "table"
+				diameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicDiameterInPipe" "hydrDiameter_table" V1
+				symbol string "table"
+				hydrDiameter array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "HydraulicAreaInPipe" "hydrArea_table" V1
+				symbol string "table"
+				hydrArea array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2"
+				0_bits int 256
+			..
+			_C_ "BendingRadius3" "bending_radius_table" V1
+				symbol string "table"
+				bending_radius array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "LamFrictionCoefficient3" "lam_fric_coeff_table" V1
+				symbol string "table"
+				lam_fric_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "FrictionCoefficient3" "friction_coeff_table" V1
+				symbol string "table"
+				friction_coeff array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "SurfaceRoughness3" "surfaceRoughness_table" V1
+				symbol string "table"
+				surfaceRoughness array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "FrictionMultiplier3" "frictionMultiplier_table" V1
+				symbol string "table"
+				frictionMultiplier array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "HeatTransferFactor3" "heat_transf_fact_table" V1
+				symbol string "table"
+				heat_transf_fact array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "WallTemperature3" "wall_temp_table" V1
+				symbol string "table"
+				tree_invisible int 0
+				wall_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "Porosity3" "porosity_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				porosity array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+				0_bits int 256
+			..
+			_C_ "PerfHoleDiam3" "perf_hole_diam_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_hole_diam array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+			_C_ "PerfWallThick3" "perf_wall_thick_table" V1
+				symbol string "table"
+				tree_invisible int 1
+				perf_wall_thick array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 length~mm"
+				0_bits int 256
+			..
+		..
+		_C_ "Initialization3" "global_init" V1
+			0_type string "class"
+			0_bits int 2
+			_C_ "Struct" "local" V1
+				0_type string "struct"
+				0_value int 1
+				comb_local_set int 1
+				pressure double 10 "pressure~bar"
+				pressure~sel string "const"
+				gas_temp double 100 "temperature~degC"
+				gas_temp~sel string "const"
+				fuel_vapour double 0
+				fuel_vapour~sel string "const"
+				comb_product double 0
+				comb_product~sel string "const"
+				ratio_type int 0
+				ratio_value double 10
+				ratio_value~sel string "const"
+				_C_ "Pressure3" "pressure_table" V1
+					symbol string "table"
+					pressure array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 pressure~Pa"
+					0_bits int 256
+				..
+				_C_ "GasTemperature3" "gas_temp_table" V1
+					symbol string "table"
+					gas_temp array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 temperature~K"
+					0_bits int 256
+				..
+				_C_ "FuelVapour3" "fuel_vapour_table" V1
+					symbol string "table"
+					fuel_vapour array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "CombustionProducts3" "comb_product_table" V1
+					symbol string "table"
+					comb_product array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+				_C_ "AFRatio3" "ratio_value_table" V1
+					symbol string "table"
+					comb_afr int 0
+					ratio_value array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 length~mm <COL> 1 dimensionless~no"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "global" V1
+				0_type string "struct"
+				0_value int 0
+				comb_global_set int 0
+				pressure double 100 "pressure~bar"
+				gas_temp double 80 "temperature~degC"
+				fuel_vapour double 1
+				comb_product double 0
+				ratio_value double 10000
+				fraction1 double INF
+				fraction2 double INF
+				fraction3 double INF
+			..
+		..
+		_C_ "VariableWallTemperature3" "vwtemp" V1
+			0_type string "class"
+			0_bits int 256
+			solidMaterials array-1 none 3 3
+				array-1 none 0 0
+				array-1 none 0 0
+				array-1 none 0 0
+				string ""
+				int 1
+				int 3
+				DEF "<COL> 1 length~mm"
+			ambient_temp double 298.15 "temperature~K"
+			ambient_temp~sel string "const"
+			radiationTemperature double 298.15 "temperature~K"
+			radiationTemperature~sel string "const"
+			convectionType int 0
+			coolant int 0
+			cool_velocity double 25 "velocity~m_s"
+			convectionCoefficient double 30 "heat_transf_coeff~W_m2K"
+			convectionCoefficient~sel string "const"
+			_C_ "AmbientTemperature3" "ambient_temp_table" V1
+				symbol string "table"
+				ambient_temp array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "RadiationSinkTemperature3" "radiationTemperature_table" V1
+				symbol string "table"
+				radiationTemperature array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+			_C_ "ConvectionCoefficient3" "convectionCoefficient_table" V1
+				symbol string "table"
+				convectionCoefficient array-1 none 2 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 2
+					DEF "<COL> 0 time~s <COL> 1 temperature~K"
+				0_bits int 256
+			..
+		..
+		_C_ "ResultsSpecification3" "results" V1
+			0_type string "class"
+			positions int 2
+			axial_points int INF
+			user_table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF
+			type_results int 1
+			0_bits int 768
+		..
+		_C_ "AcousticsPipe" "acoustics" V1
+			0_type string "class"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			hornSegments int 7
+			lossesType int 0
+			resistance double 0.01 "ac_impedance~kg_m4s"
+			end_correction int 1
+			0_bits int 256
+		..
+		_C_ "AbsorptiveMaterial" "absorptiveMaterial" V1
+			0_type string "class"
+			flowResistivity double 100000 "fl_resist~Ns_m4"
+			materialPorosity double 0 "dimensionless~no"
+			0_bits int 256
+		..
+	..
+..
+__
+ENDSECTION
+SECTION GLOBAL_ADDON
+ADDON ASE  "ProjectGlobals" "global" Cpp res/cpp/bt_globl.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "ProjectGlobals" "global" V1
+		tree_title string "Simulation Control"
+		0_page string "cycleSimulation"
+		0_version int 17
+		0_bits int 2
+		0_ok int 1
+		_C_ "GlobalsGeneralNew" "general" V1
+			0_type string "class"
+			date string "6. Jul 2009 16:04:52"
+			project_id string ""
+			run_id string ""
+			cycleSimulation int 1
+			aftertreatment int 0
+			linearAcoustics int 0
+		..
+		_C_ "CycleSimulation" "cycleSimulation" V1
+			0_type string "class"
+			speciesTransport int 0
+			referenceSpeed double 2000 "ang_vel~rpm"
+			referenceCycleType int 1
+			endOfSimulation double 24 "simtime1~deg~deg"
+			convergenceControl int 0
+			pipeDiscretizations int 1
+			cflMultiplierEnabled int 0
+			averageCellSize double INF "length~mm"
+			simulationStepSize double 1 "angle~deg"
+			cflMultiplier double INF
+			0_bits int 2
+			_C_ "ClassicSpeciesSetup" "classicSpecies" V1
+				0_type string "class"
+				fuelSelection int 0
+				standardFuel int 2
+				file string ""
+				nondefault int 1
+				lowerHeatingValue double 50000 "evap_heat~kJ_kg"
+				stoichiometricAFRatio double 17.2
+				realGasFactor int 0
+				enableHumidity int 0
+				propertyDependencies int 0
+				referencePressure double 1 "pressure~bar"
+				referenceTemperature double 24.85 "temperature~degC"
+				0_bits int 0
+				_C_ "AirHumidity" "humidity" V1
+					0_type string "class"
+					humidity int 0
+					relative double 0 "dimensionless~no"
+					absolute double 0 "density~kg_m3"
+					referenceTemperature double 273.15 "temperature~K"
+					referencePressure double 0 "pressure~Pa"
+					stoichiometricAdaptation int 0
+					0_bits int 256
+				..
+				_C_ "ClassicInitialization" "initialization" V1
+					0_type string "class"
+					ratioType int 0
+					initSets array-1 none 5 3
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						double 0
+						int 1
+						int 5
+						DEF "<COL> 0 pressure~bar <COL> 1 temperature~K <COL> 2 dimensionless~no <COL> 3 dimensionless~no <COL> 4 dimensionless~no"
+				..
+			..
+			_C_ "GeneralSpeciesSetup" "generalSpecies" V1
+				0_type string "class"
+				species array-1 none 1 3
+					array-1 none 0 0
+					string ""
+					int 1
+					int 1
+					DEF
+				chemistry array-1 none 2 3
+					array-1 none 0 0
+					array-1 none 0 0
+					string ""
+					int 1
+					int 2
+					DEF
+				fuelComposition int 0
+				fuelSpecies array-1 none 3 3
+					array-1 none 0 0
+					array-1 none 0 0
+					array-1 none 0 0
+					string ""
+					int 1
+					int 3
+					DEF "<COL> 2 density~kg_m3"
+				userDatabase int 0
+				fileName string ""
+				0_bits int 256
+				_C_ "GeneralInitialization" "initialization" V1
+					0_type string "class"
+					initMassFraction array-1 none 0 3
+						double 0
+						int 1
+						int 1
+						DEF "<COL> 0 pressure~Pa <COL> 1 temperature~K <COL> 2 dimensionless~no <COL> 3 dimensionless~no <COL> 4 dimensionless~no <COL> 5 dimensionless~no"
+					ratioType int 0
+					initSets array-1 none 5 3
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						array-1 double 0 0
+						double 0
+						int 1
+						int 5
+						DEF "<COL> 0 pressure~bar <COL> 1 temperature~K <COL> 2 dimensionless~no <COL> 3 dimensionless~no <COL> 4 dimensionless~no"
+				..
+			..
+			_C_ "ConvergenceControl" "convergence" V1
+				0_type string "class"
+				0_bits int 256
+				convergence_table array-1 none 4 3
+					array-1 none 0 0
+					array-1 none 0 0
+					array-1 none 0 0
+					array-1 none 0 0
+					string ""
+					int 1
+					int 4
+					DEF
+				control int 0
+				uuid_table array-1 none 1 3
+					array-1 none 0 0
+					string ""
+					int 1
+					int 1
+					DEF
+				parameter_table array-1 none 1 3
+					array-1 none 0 0
+					string ""
+					int 1
+					int 1
+					DEF
+				value_table array-1 none 1 3
+					array-1 none 0 0
+					string ""
+					int 1
+					int 1
+					DEF
+				unit_table array-1 none 1 3
+					array-1 none 0 0
+					string ""
+					int 1
+					int 1
+					DEF
+			..
+			_C_ "RestartControl" "restartControl" V1
+				0_type string "class"
+				restartSimulation string "No"
+				restartOptions int 0
+				file string ""
+				timeReset int 0
+				saveFile int 0
+				intervalOptions int 1
+				restartInterval double 360 "simtime1~deg~deg"
+				intervalEnabled int 0
+				backupInterval double INF "simtime1~deg~deg"
+			..
+			_C_ "OutputControl" "outputControl" V1
+				0_type string "class"
+				animation int 0
+				tracedCyclesEnable int 0
+				acousticCyclesEnable int 0
+				tracedCycles int 5
+				acousticCycles int 0
+				savingInterval double 0.1 "simtime1~deg~deg"
+				pressure double 1 "pressure~bar"
+				temperature double 298 "temperature~K"
+				propertyDependencies int 0
+			..
+			_C_ "FireControl" "fire_control" V1
+				0_type string "class"
+				boost_cycles int INF
+				fire_cycles int INF
+				0_bits int 256
+			..
+		..
+		_C_ "BoostGlobalInit" "global_init" V1
+			0_type string "class"
+			choose_ratio int 0
+			tbl_global_init array-1 none 5 3
+				array-1 double 2 0
+100
+10
+				array-1 double 2 0
+80
+100
+				array-1 double 2 0
+1
+1
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+10000
+10000
+				double 0
+				int 1
+				int 5
+				DEF "<COL> 0 pressure~bar <COL> 1 temperature~degC <COL> 2 dimensionless~no <COL> 3 dimensionless~no <COL> 4 dimensionless~no"
+			0_bits int 2
+		..
+		_C_ "GlobalsCatAnalysis" "bt_cat_globals" V1
+			0_type string "class"
+			start_time double 0 "time~s"
+			sim_end_time double INF "time~s"
+			integration_step double INF "time~s"
+			logging_mult int 1
+			output_type int 0
+			species_table array-1 none 0 3
+				string ""
+				int 1
+				int 1
+				DEF
+			solid_species array-1 none 0 3
+				string ""
+				int 1
+				int 1
+				DEF
+			useThermodynamicsDb int 0
+			thermodynamicsDbName string ""
+			chemistry array-1 none 2 3
+				array-1 none 0 0
+				array-1 none 0 0
+				string ""
+				int 1
+				int 2
+				DEF
+			restartSimulation string "No"
+			writeRestartFile int 0
+			writingOptions int 0
+			afterSteps int 10
+			highRobustness int 0
+			refinementFactor double 1 "dimensionless~no"
+			turnOffResultWriting int 0
+		..
+		_C_ "GlobalsAcoustics" "ac_globals" V1
+			0_type string "class"
+			frequencyMin double 1 "frequency~Hz"
+			frequencyMax double 2000 "frequency~Hz"
+			frequencyPoints double 101
+			referenceInsertionLoss int 0
+			pressurePipe double 1.013 "pressure~bar"
+			temperaturePipe double 20.85 "temperature~degC"
+			massflow_mach int 0
+			machNumber double 0 "dimensionless~no"
+			massflow double 0 "massflow~kg_s"
+			length double 0 "length~mm"
+			diameter double INF "length~mm"
+			fileType int 0
+			file string ""
+			pressureSystem double 1.013 "pressure~bar"
+			temperatureSystem double 20.85 "temperature~degC"
+			massflow_mach1 int 0
+			inletMachNumber double 0 "dimensionless~no"
+			outletMachNumber double 0 "dimensionless~no"
+			massflow_s double 0 "massflow~kg_s"
+			inletDiameter double INF "length~mm"
+			outletDiameter double INF "length~mm"
+			0_bits int 2
+			_C_ "SaveElementsMatrices" "save" V1
+				0_type string "class"
+				isSaveElement int 0
+				elements array-1 none 2 3
+					array-1 none 0 0
+					array-1 none 0 0
+					string ""
+					int 1
+					int 2
+					DEF
+				isSaveMatrices int 0
+				transferMatrices array-1 none 2 3
+					array-1 none 0 0
+					array-1 none 0 0
+					string ""
+					int 1
+					int 2
+					DEF
+			..
+			_C_ "AcousticsInitialization" "init" V1
+				0_type string "class"
+				ratioType int 0
+				initSets array-1 none 5 3
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					array-1 double 0 0
+					double 0
+					int 1
+					int 5
+					DEF "<COL> 0 pressure~bar <COL> 1 temperature~K <COL> 2 dimensionless~no <COL> 3 dimensionless~no <COL> 4 dimensionless~no"
+			..
+		..
+		_C_ "GlobalsUserParameters" "parameters" V1
+			0_type string "class"
+			parameters array-1 none 2 3
+				array-1 none 6 0
+					string "HDSM_LNK_SIMULATION"
+					string "HDSM_LNK_HOST"
+					string "HDSM_LNK_PORT"
+					string "HDSM_LNK_IFACE_CHANNEL*1"
+					string "HDSM_LNK_IFACE_CHANNEL*2"
+					string "HDSM_LNK_IFACE_CHANNEL*3"
+				array-1 none 6 0
+					string "ON"
+					string "localhost"
+					string "7777"
+					string "CHECKVALVE*1"
+					string "CHECKVALVE*2"
+					string "PLENUM*1"
+				string ""
+				int 1
+				int 2
+				DEF
+			0_bits int 2
+		..
+		_C_ "BMEPControl" "bmep_control" V1
+			0_type string "class"
+			0_bits int 256
+			desired_bmep double INF "pressure~Pa"
+			control int 0
+			lower_limit1 double INF "mass~kg"
+			upper_limit1 double INF "mass~kg"
+			guess1 double INF "mass~kg"
+			gain1 double INF "inv_pressure~1_Pa"
+			lower_limit2 double INF "dimensionless~no"
+			upper_limit2 double INF "dimensionless~no"
+			guess2 double INF "dimensionless~no"
+			gain2 double INF "inv_pressure~1_Pa"
+			lower_limit3 double INF "angle~deg"
+			upper_limit3 double INF "angle~deg"
+			guess3 double INF "angle~deg"
+			gain3 double INF "inv_pressure~1_Pa"
+			element_table array-1 none 1 3
+				array-1 none 0 0
+				string ""
+				int 1
+				int 1
+				DEF
+			uuid_table array-1 none 1 3
+				array-1 none 0 0
+				string ""
+				int 1
+				int 1
+				DEF
+		..
+		_C_ "FiringOrder" "firing_order" V1
+			0_type string "class"
+			tblFiring array-1 none 1 3
+				array-1 double 0 0
+				double 0
+				int 1
+				int 1
+				DEF "<COL> 0 angle~deg"
+		..
+		_C_ "EngineOnly" "engine_only" V1
+			0_type string "class"
+			0_bits int 256
+			_C_ "Struct" "engine_load_st" V1
+				0_type string "struct"
+				eo_coeff_a double INF "speed_load_a~Nmrpm"
+				eo_coeff_a~sel string "const"
+				eo_coeff_b double INF "moment~Nm"
+				eo_coeff_b~sel string "const"
+				eo_coeff_c double INF "speed_load_c~Nm_rpm"
+				eo_coeff_c~sel string "const"
+				eo_coeff_d double INF "speed_load_d~Nm_rpm2"
+				eo_coeff_d~sel string "const"
+				_C_ "EOCoeffATbl" "eo_coeff_a_table" V1
+					symbol string "table"
+					param int 1
+					eo_coeff_a array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 angle~deg <COL> 1 speed_load_a~Nmrpm"
+					0_bits int 256
+				..
+				_C_ "EOCoeffBTbl" "eo_coeff_b_table" V1
+					symbol string "table"
+					param int 1
+					eo_coeff_b array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 angle~deg <COL> 1 moment~Nm"
+					0_bits int 256
+				..
+				_C_ "EOCoeffCTbl" "eo_coeff_c_table" V1
+					symbol string "table"
+					param int 1
+					eo_coeff_c array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 angle~deg <COL> 1 speed_load_c~Nm_rpm"
+					0_bits int 256
+				..
+				_C_ "EOCoeffDTbl" "eo_coeff_d_table" V1
+					symbol string "table"
+					param int 1
+					eo_coeff_d array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 angle~deg <COL> 1 speed_load_d~Nm_rpm2"
+					0_bits int 256
+				..
+			..
+		..
+		_C_ "Driver" "driver" V1
+			0_type string "class"
+			0_bits int 256
+			_C_ "Struct" "clutch_st" V1
+				0_type string "struct"
+				max_clutch_tor double INF "moment~Nm"
+			..
+			_C_ "Struct" "driver_st" V1
+				0_type string "struct"
+				shifting_time double INF "time~s"
+				clutch_ped_on double INF "dimensionless~percent"
+				acc_ped_off double INF "dimensionless~percent"
+				acc_ped_on double INF "dimensionless~percent"
+				clutch_ped_off double INF "dimensionless~percent"
+			..
+			_C_ "Struct" "gear_shift_st" V1
+				0_type string "struct"
+				min_eng_speed double INF "ang_vel~rpm"
+				max_eng_speed double INF "ang_vel~rpm"
+			..
+			_C_ "Struct" "velocity_st" V1
+				0_type string "struct"
+				veh_velocity double INF "velocity~m_s"
+				veh_velocity~sel string "const"
+				_C_ "VelocityTbl" "veh_velocity_table" V1
+					symbol string "table"
+					veh_velocity array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 velocity~m_s"
+					0_bits int 256
+				..
+			..
+			_C_ "Struct" "gear_box" V1
+				0_type string "struct"
+				gear_step int INF
+				tbl_gear_ratio array-1 none 2 3
+					array-1 double 0 0
+					array-1 double 0 0
+					double 0
+					int 1
+					int 2
+					DEF
+			..
+		..
+		_C_ "EngineVehicle" "engine_vehicle" V1
+			0_type string "class"
+			0_bits int 256
+			ev_inertia_drvtr double INF "mom_inert~kgm2"
+			ev_veh_mass double INF "mass~kg"
+			ev_roll_rad double INF "length~m"
+			_C_ "Struct" "veh_load_st" V1
+				0_type string "struct"
+				ev_coeff_a double INF "velo_load_a~Nkm_h"
+				ev_coeff_a~sel string "const"
+				ev_coeff_b double INF "force~N"
+				ev_coeff_b~sel string "const"
+				ev_coeff_c double INF "velo_load_c~Nh_km"
+				ev_coeff_c~sel string "const"
+				ev_coeff_d double INF "velo_load_d~Nh2_km2"
+				ev_coeff_d~sel string "const"
+				_C_ "EVCoeffATbl" "ev_coeff_a_table" V1
+					symbol string "table"
+					ev_coeff_a array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 velo_load_a~Nkm_h"
+					0_bits int 256
+				..
+				_C_ "EVCoeffBTbl" "ev_coeff_b_table" V1
+					symbol string "table"
+					ev_coeff_b array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 force~N"
+					0_bits int 256
+				..
+				_C_ "EVCoeffCTbl" "ev_coeff_c_table" V1
+					symbol string "table"
+					ev_coeff_c array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 velo_load_c~Nh_km"
+					0_bits int 256
+				..
+				_C_ "EVCoeffDTbl" "ev_coeff_d_table" V1
+					symbol string "table"
+					ev_coeff_d array-1 none 2 3
+						array-1 double 1 0
+0
+						array-1 double 1 0
+0
+						double 0
+						int 1
+						int 2
+						DEF "<COL> 0 time~s <COL> 1 velo_load_d~Nh2_km2"
+					0_bits int 256
+				..
+			..
+		..
+		_C_ "EngineFriction" "engine_friction" V1
+			0_type string "class"
+			friction_model int 1
+			friction_multiplier double 1 "dimensionless~no"
+			friction_list array-1 none 1 3
+				array-1 none 1 0
+					wrapper ASEClass
+					_C_ "FrictionItem" "friction_list" V1
+						engine_load double INF "pressure~bar~bar"
+						tblFMEP array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 ang_vel~rpm <COL> 1 pressure~bar~bar"
+						0_type string "class"
+					..
+
+				wrapper ASEClass
+				_C_ "FrictionItem" "friction_list" V1
+					engine_load double INF "pressure~bar~bar"
+					tblFMEP array-1 none 2 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 2
+						DEF "<COL> 0 ang_vel~rpm <COL> 1 pressure~bar~bar"
+					0_type string "class"
+				..
+
+				int 1
+				int 1
+				DEF
+			_C_ "EngineFrictionPatton" "friction_patton" V1
+				0_type string "class"
+				0_bits int 256
+				cyl_arranged int 0
+				numb_main_bearings int INF
+				main_bearing_d double INF "length~mm"
+				main_bearing_l double INF "length~mm"
+				be_conrod_bd double INF "length~mm"
+				be_conrod_bl double INF "length~mm"
+				valve_type int 0
+				numb_camshafts int 1
+				max_valve_lift double INF "length~mm"
+				cam_type int 0
+				oil_type int 0
+				oil_temp double 293.15 "temperature~K"
+				injection_pump int 0
+			..
+		..
+	..
+..
+__
+ADDON ASE  "SolidMaterials" "solid" Cpp res/cpp/bt_solid.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "SolidMaterials" "solid" V1
+		0_page string "solidMaterialsGeneral"
+		0_version int 17
+		_C_ "GeneralSolidMaterials" "solidMaterialsGeneral" V1
+			0_type string "class"
+			solidMaterialsList array-1 none 1 3
+				array-1 none 2 0
+					wrapper ASEClass
+					_C_ "MaterialSolidMaterials" "solidMaterialsList" V1
+						tree_title string "Steel"
+						density int 5600 "density~kg_m3"
+						conduct int 50 "conductivity~W_mK"
+						conduct~sel string "const"
+						spec_heat int 400 "spec_heat~J_kgK"
+						spec_heat~sel string "const"
+						opaque int 1
+						emissivityInner double 0.8 "dimensionless~no"
+						emissivityOuter double 0.8 "dimensionless~no"
+						0_type string "class"
+						_C_ "SolidThermalCond" "conduct_table" V1
+							symbol string "table"
+							conduct array-1 none 2 3
+								array-1 double 2 0
+0
+0
+								array-1 double 2 0
+0
+0
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+							0_bits int 256
+						..
+						_C_ "SolidHeatCapacity" "spec_heat_table" V1
+							symbol string "table"
+							spec_heat array-1 none 2 3
+								array-1 double 2 0
+0
+0
+								array-1 double 2 0
+0
+0
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+							0_bits int 256
+						..
+					..
+
+					wrapper ASEClass
+					_C_ "MaterialSolidMaterials" "solidMaterialsList" V1
+						tree_title string "Air"
+						density int 1 "density~kg_m3"
+						conduct double 1 "conductivity~W_mK"
+						conduct~sel string "table"
+						spec_heat double 1000 "spec_heat~J_kgK"
+						spec_heat~sel string "table"
+						opaque int 0
+						emissivityInner int 0 "dimensionless~no"
+						emissivityOuter int 0 "dimensionless~no"
+						0_type string "class"
+						_C_ "SolidThermalCond" "conduct_table" V1
+							symbol string "table"
+							conduct array-1 none 2 3
+								array-1 double 28 0
+273.15
+283.15
+293.15
+303.15
+313.15
+333.15
+353.15
+373.15
+393.15
+413.15
+433.15
+453.15
+473.15
+523.15
+573.15
+623.15
+673.15
+723.15
+773.15
+823.15
+873.15
+923.15
+973.15
+1073.15
+1123.15
+1173.15
+1223.15
+1273.15
+								array-1 double 28 0
+0.02418
+0.02494
+0.02569
+0.02643
+0.02716
+0.0286
+0.03001
+0.03139
+0.03275
+0.03408
+0.03539
+0.03668
+0.03795
+0.04106
+0.04409
+0.04705
+0.04996
+0.05282
+0.05564
+0.05841
+0.06114
+0.06383
+0.06646
+0.06906
+0.07154
+0.07398
+0.07633
+0.08077
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+							0_bits int 256
+						..
+						_C_ "SolidHeatCapacity" "spec_heat_table" V1
+							symbol string "table"
+							spec_heat array-1 none 2 3
+								array-1 double 28 0
+273.15
+283.15
+293.15
+303.15
+313.15
+333.15
+353.15
+373.15
+393.15
+413.15
+433.15
+453.15
+473.15
+523.15
+573.15
+623.15
+673.15
+723.15
+773.15
+823.15
+873.15
+923.15
+973.15
+1073.15
+1123.15
+1173.15
+1223.15
+1273.15
+								array-1 double 28 0
+1006
+1007
+1007
+1007
+1007
+1009
+1010
+1012
+1014
+1016
+1019
+1022
+1026
+1035
+1046
+1057
+1069
+1081
+1093
+1105
+1116
+1126
+1137
+1146
+1155
+1163
+1171
+1185
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+							0_bits int 256
+						..
+					..
+
+				wrapper ASEClass
+				_C_ "MaterialSolidMaterials" "solidMaterialsList" V1
+					tree_title string "Enter material name"
+					density double 1000 "density~kg_m3"
+					conduct double 1 "conductivity~W_mK"
+					conduct~sel string "const"
+					spec_heat double 1000 "spec_heat~J_kgK"
+					spec_heat~sel string "const"
+					opaque int 1
+					emissivityInner double 1 "dimensionless~no"
+					emissivityOuter double 1 "dimensionless~no"
+					0_type string "class"
+					_C_ "SolidThermalCond" "conduct_table" V1
+						symbol string "table"
+						conduct array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+						0_bits int 256
+					..
+					_C_ "SolidHeatCapacity" "spec_heat_table" V1
+						symbol string "table"
+						spec_heat array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+						0_bits int 256
+					..
+				..
+
+				int 2
+				int 1
+				DEF
+		..
+	..
+..
+__
+ADDON ASE  "ReferenceElement" "refel" Cpp res/cpp/bt_refel.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "ReferenceElement" "refel" V1
+		refel string "(none)"
+		elem_code int 0
+		elem_ord int 0
+		0_version int 17
+	..
+..
+__
+ADDON ASE  "CSR_Dialog" "csr_dialog" Cpp res/cpp/bt___csr.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "CSR_Dialog" "csr_dialog" V1
+		0_row_caseSetTable array-1 none 10 1
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			int 0
+			DEF
+		caseSetTable array-1 none 4 4
+			array-1 none 10 0
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+			array-1 none 10 0
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+			array-1 none 10 0
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+			array-1 none 10 0
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+				string ""
+			string ""
+			int 10
+			int 4
+			array-1 none 4 0
+				string ""
+				string ""
+				string ""
+				string ""
+			DEF
+		0_version int 17
+	..
+..
+__
+ADDON ASE  "LiquidMaterials" "liquid" Cpp res/cpp/bt_liquid.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "LiquidMaterials" "liquid" V1
+		0_page string "liquidMaterialsGeneral"
+		0_version int 17
+		_C_ "GeneralLiquidMaterials" "liquidMaterialsGeneral" V1
+			0_type string "class"
+			liquidMaterialsList array-1 none 1 3
+				array-1 none 4 0
+					wrapper ASEClass
+					_C_ "MaterialLiquidMaterials" "liquidMaterialsList" V1
+						tree_title string "WATER"
+						molarweight double 18.015340805 "gasconst_triao~kg_kmol"
+						liqdens double 1000 "density~kg_m3"
+						liqdens~sel string "table"
+						spec_heat double 4187 "spec_heat~J_kgK"
+						spec_heat~sel string "table"
+						conduct double 0.6 "conductivity~W_mK"
+						conduct~sel string "table"
+						evapheat double 2265000 "evap_heat~J_kg"
+						evapheat~sel string "table"
+						vappress double 90400 "pressure~Pa"
+						vappress~sel string "table"
+						0_type string "class"
+						_C_ "LiquidDensity" "liqdens_table" V1
+							symbol string "table"
+							liqdens array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+1004.52
+1001.78
+998.757
+995.444
+991.812
+987.836
+983.492
+978.756
+973.603
+968.009
+961.95
+955.401
+948.337
+940.736
+932.571
+923.819
+914.456
+904.456
+893.796
+882.452
+870.398
+857.611
+844.065
+829.738
+814.604
+798.639
+781.819
+764.119
+745.514
+725.982
+705.496
+684.033
+661.569
+638.079
+613.538
+587.923
+561.208
+533.37
+504.384
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 density~kg_m3"
+							0_bits int 256
+						..
+						_C_ "LiquidHeatCapacity" "spec_heat_table" V1
+							symbol string "table"
+							spec_heat array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+4236
+4211
+4194
+4183
+4177
+4176
+4179
+4185
+4193
+4203
+4215
+4229
+4245
+4262
+4285
+4310
+4339
+4371
+4408
+4449
+4497
+4551
+4614
+4686
+4770
+4869
+4986
+5126
+5296
+5507
+5773
+6120
+6585
+7258
+8270
+10078
+14980
+53920
+900000
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+							0_bits int 256
+						..
+						_C_ "LiquidThermalCond" "conduct_table" V1
+							symbol string "table"
+							conduct array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+0.5619
+0.5787
+0.5944
+0.6089
+0.6221
+0.634
+0.6446
+0.654
+0.6622
+0.6691
+0.6748
+0.6793
+0.6827
+0.6848
+0.6858
+0.6856
+0.6843
+0.6818
+0.6783
+0.6736
+0.6678
+0.6609
+0.6529
+0.6439
+0.6338
+0.6226
+0.6105
+0.5973
+0.5831
+0.5678
+0.5516
+0.5345
+0.5163
+0.4972
+0.4771
+0.4562
+0.4342
+0.4114
+0.3877
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+							0_bits int 256
+						..
+						_C_ "LiquidEvapHeat" "evapheat_table" V1
+							symbol string "table"
+							evapheat array-1 none 2 3
+								array-1 double 38 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+								array-1 double 38 0
+2489000
+2470000
+2451000
+2431000
+2411000
+2390000
+2368000
+2346000
+2322000
+2298000
+2273000
+2247000
+2219000
+2191000
+2161000
+2131000
+2098000
+2065000
+2029000
+1993000
+1954000
+1913000
+1870000
+1825000
+1778000
+1727000
+1674000
+1617000
+1557000
+1492000
+1422000
+1346000
+1263000
+1170000
+1065000
+941400
+787400
+563600
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 evap_heat~J_kg"
+							0_bits int 256
+						..
+						_C_ "LiquidVapPress" "vappress_table" V1
+							symbol string "table"
+							vappress array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+483.6
+990.9
+1920
+3537
+6233
+10550
+17210
+27170
+41650
+62120
+90400
+128600
+179300
+245300
+329700
+436300
+569000
+732000
+930100
+1168000
+1452000
+1787000
+2179000
+2635000
+3161000
+3765000
+4453000
+5234000
+6117000
+7109000
+8219000
+9458000
+10840000
+12360000
+14050000
+15910000
+17960000
+20210000
+22670000
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 pressure~Pa"
+							0_bits int 256
+						..
+					..
+
+					wrapper ASEClass
+					_C_ "MaterialLiquidMaterials" "liquidMaterialsList" V1
+						tree_title string "UREA"
+						molarweight double 60.05526 "gasconst_triao~kg_kmol"
+						liqdens double 1000 "density~kg_m3"
+						liqdens~sel string "table"
+						spec_heat double 4187 "spec_heat~J_kgK"
+						spec_heat~sel string "table"
+						conduct double 0.6 "conductivity~W_mK"
+						conduct~sel string "table"
+						evapheat double 2265000 "evap_heat~J_kg"
+						evapheat~sel string "table"
+						vappress double 90400 "pressure~Pa"
+						vappress~sel string "table"
+						0_type string "class"
+						_C_ "LiquidDensity" "liqdens_table" V1
+							symbol string "table"
+							liqdens array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+1004.52
+1001.78
+998.757
+995.444
+991.812
+987.836
+983.492
+978.756
+973.603
+968.009
+961.95
+955.401
+948.337
+940.736
+932.571
+923.819
+914.456
+904.456
+893.796
+882.452
+870.398
+857.611
+844.065
+829.738
+814.604
+798.639
+781.819
+764.119
+745.514
+725.982
+705.496
+684.033
+661.569
+638.079
+613.538
+587.923
+561.208
+533.37
+504.384
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 density~kg_m3"
+							0_bits int 256
+						..
+						_C_ "LiquidHeatCapacity" "spec_heat_table" V1
+							symbol string "table"
+							spec_heat array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+4236
+4211
+4194
+4183
+4177
+4176
+4179
+4185
+4193
+4203
+4215
+4229
+4245
+4262
+4285
+4310
+4339
+4371
+4408
+4449
+4497
+4551
+4614
+4686
+4770
+4869
+4986
+5126
+5296
+5507
+5773
+6120
+6585
+7258
+8270
+10078
+14980
+53920
+900000
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+							0_bits int 256
+						..
+						_C_ "LiquidThermalCond" "conduct_table" V1
+							symbol string "table"
+							conduct array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+0.5619
+0.5787
+0.5944
+0.6089
+0.6221
+0.634
+0.6446
+0.654
+0.6622
+0.6691
+0.6748
+0.6793
+0.6827
+0.6848
+0.6858
+0.6856
+0.6843
+0.6818
+0.6783
+0.6736
+0.6678
+0.6609
+0.6529
+0.6439
+0.6338
+0.6226
+0.6105
+0.5973
+0.5831
+0.5678
+0.5516
+0.5345
+0.5163
+0.4972
+0.4771
+0.4562
+0.4342
+0.4114
+0.3877
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+							0_bits int 256
+						..
+						_C_ "LiquidEvapHeat" "evapheat_table" V1
+							symbol string "table"
+							evapheat array-1 none 2 3
+								array-1 double 38 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+								array-1 double 38 0
+2489000
+2470000
+2451000
+2431000
+2411000
+2390000
+2368000
+2346000
+2322000
+2298000
+2273000
+2247000
+2219000
+2191000
+2161000
+2131000
+2098000
+2065000
+2029000
+1993000
+1954000
+1913000
+1870000
+1825000
+1778000
+1727000
+1674000
+1617000
+1557000
+1492000
+1422000
+1346000
+1263000
+1170000
+1065000
+941400
+787400
+563600
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 evap_heat~J_kg"
+							0_bits int 256
+						..
+						_C_ "LiquidVapPress" "vappress_table" V1
+							symbol string "table"
+							vappress array-1 none 2 3
+								array-1 double 39 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+								array-1 double 39 0
+483.6
+990.9
+1920
+3537
+6233
+10550
+17210
+27170
+41650
+62120
+90400
+128600
+179300
+245300
+329700
+436300
+569000
+732000
+930100
+1168000
+1452000
+1787000
+2179000
+2635000
+3161000
+3765000
+4453000
+5234000
+6117000
+7109000
+8219000
+9458000
+10840000
+12360000
+14050000
+15910000
+17960000
+20210000
+22670000
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 pressure~Pa"
+							0_bits int 256
+						..
+					..
+
+					wrapper ASEClass
+					_C_ "MaterialLiquidMaterials" "liquidMaterialsList" V1
+						tree_title string "ADBLUE"
+						molarweight double 184.2 "gasconst_triao~kg_kmol"
+						liqdens double 1000 "density~kg_m3"
+						liqdens~sel string "table"
+						spec_heat double 4187 "spec_heat~J_kgK"
+						spec_heat~sel string "table"
+						conduct double 0.57 "conductivity~W_mK"
+						conduct~sel string "const"
+						evapheat double 2265000 "evap_heat~J_kg"
+						evapheat~sel string "table"
+						vappress double 90400 "pressure~Pa"
+						vappress~sel string "table"
+						0_type string "class"
+						_C_ "LiquidDensity" "liqdens_table" V1
+							symbol string "table"
+							liqdens array-1 none 2 3
+								array-1 double 6 0
+273.15
+283.15
+303.15
+333.15
+353.15
+373.15
+								array-1 double 6 0
+1100
+1096
+1086
+1069
+1055
+1042
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 density~kg_m3"
+							0_bits int 256
+						..
+						_C_ "LiquidHeatCapacity" "spec_heat_table" V1
+							symbol string "table"
+							spec_heat array-1 none 2 3
+								array-1 double 3 0
+270
+280
+290
+								array-1 double 3 0
+4236
+4211
+4194
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+							0_bits int 256
+						..
+						_C_ "LiquidThermalCond" "conduct_table" V1
+							symbol string "table"
+							conduct array-1 none 2 3
+								array-1 double 2 0
+0
+0
+								array-1 double 2 0
+0
+0
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+							0_bits int 256
+						..
+						_C_ "LiquidEvapHeat" "evapheat_table" V1
+							symbol string "table"
+							evapheat array-1 none 2 3
+								array-1 double 12 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+								array-1 double 12 0
+2489000
+2470000
+2451000
+2431000
+2411000
+2390000
+2368000
+2346000
+2322000
+2298000
+2273000
+2247000
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 evap_heat~J_kg"
+							0_bits int 256
+						..
+						_C_ "LiquidVapPress" "vappress_table" V1
+							symbol string "table"
+							vappress array-1 none 2 3
+								array-1 double 7 0
+293.23
+303.41
+313.34
+328.33
+343.41
+358.36
+373.36
+								array-1 double 7 0
+2300
+4110
+7060
+15030
+30690
+60980
+118220
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 pressure~Pa"
+							0_bits int 256
+						..
+					..
+
+					wrapper ASEClass
+					_C_ "MaterialLiquidMaterials" "liquidMaterialsList" V1
+						tree_title string "DIESEL1"
+						molarweight double 179.328264117 "gasconst_triao~kg_kmol"
+						liqdens double 1000 "density~kg_m3"
+						liqdens~sel string "table"
+						spec_heat double 4187 "spec_heat~J_kgK"
+						spec_heat~sel string "table"
+						conduct double 0.6 "conductivity~W_mK"
+						conduct~sel string "table"
+						evapheat double 2265000 "evap_heat~J_kg"
+						evapheat~sel string "table"
+						vappress double 90400 "pressure~Pa"
+						vappress~sel string "table"
+						0_type string "class"
+						_C_ "LiquidDensity" "liqdens_table" V1
+							symbol string "table"
+							liqdens array-1 none 2 3
+								array-1 double 43 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+660
+670
+680
+690
+								array-1 double 43 0
+825.6
+819.1
+812.6
+806
+799.3
+792.6
+785.8
+779
+772
+765
+757.9
+750.8
+743.5
+736.1
+728.6
+721.1
+713.3
+705.5
+697.6
+689.5
+681.2
+672.8
+664.2
+655.4
+646.5
+637.2
+627.8
+618
+608
+597.6
+586.8
+575.5
+563.8
+551.4
+538.3
+524.3
+509.1
+492.5
+473.7
+451.8
+424.2
+381.4
+300
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 density~kg_m3"
+							0_bits int 256
+						..
+						_C_ "LiquidHeatCapacity" "spec_heat_table" V1
+							symbol string "table"
+							spec_heat array-1 none 2 3
+								array-1 double 43 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+660
+670
+680
+690
+								array-1 double 43 0
+1907.78
+1951.64
+1996.57
+2042.45
+2089.13
+2136.53
+2184.54
+2233.08
+2282.09
+2331.5
+2381.27
+2431.36
+2481.75
+2532.42
+2583.38
+2634.62
+2686.18
+2738.09
+2790.4
+2843.16
+2896.47
+2950.43
+3005.17
+3060.84
+3117.65
+3175.83
+3235.69
+3297.61
+3362.08
+3429.71
+3501.32
+3578
+3661.24
+3753.16
+3856.87
+3977.12
+4121.72
+4304.41
+4552.42
+4929.63
+5638.78
+8057.62
+10000
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+							0_bits int 256
+						..
+						_C_ "LiquidThermalCond" "conduct_table" V1
+							symbol string "table"
+							conduct array-1 none 2 3
+								array-1 double 43 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+660
+670
+680
+690
+								array-1 double 43 0
+0.141898
+0.139572
+0.137246
+0.13492
+0.132594
+0.130268
+0.127942
+0.125616
+0.12329
+0.120964
+0.118638
+0.116312
+0.113986
+0.11166
+0.109334
+0.107008
+0.104682
+0.102356
+0.10003
+0.097704
+0.095378
+0.093052
+0.090726
+0.0884
+0.086074
+0.083748
+0.081422
+0.079096
+0.07677
+0.074444
+0.072118
+0.069792
+0.067466
+0.06514
+0.062814
+0.060488
+0.058162
+0.055836
+0.05351
+0.051184
+0.048858
+0.046532
+0.044206
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+							0_bits int 256
+						..
+						_C_ "LiquidEvapHeat" "evapheat_table" V1
+							symbol string "table"
+							evapheat array-1 none 2 3
+								array-1 double 42 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+660
+670
+680
+								array-1 double 42 0
+360421
+356862
+353251
+349585
+345863
+342081
+338236
+334328
+330351
+326303
+322181
+317980
+313697
+309327
+304865
+300305
+295642
+290870
+285980
+280966
+275817
+270524
+265076
+259460
+253660
+247660
+241441
+234978
+228246
+221211
+213833
+206064
+197843
+189090
+179703
+169540
+158401
+145984
+131797
+114936
+93370
+59718.6
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 evap_heat~J_kg"
+							0_bits int 256
+						..
+						_C_ "LiquidVapPress" "vappress_table" V1
+							symbol string "table"
+							vappress array-1 none 2 3
+								array-1 double 43 0
+270
+280
+290
+300
+310
+320
+330
+340
+350
+360
+370
+380
+390
+400
+410
+420
+430
+440
+450
+460
+470
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+580
+590
+600
+610
+620
+630
+640
+650
+660
+670
+680
+690
+								array-1 double 43 0
+35.8893
+69.6127
+129.091
+229.872
+394.563
+654.995
+1054.7
+1651.64
+2521.17
+3759.02
+5484.42
+7843.01
+11009.6
+15190.4
+20625.4
+27589.2
+36392.3
+47381.1
+60936.7
+77474.3
+97440.5
+121310
+149583
+182780
+221434
+266092
+317302
+375608
+441547
+515638
+598378
+690230
+791626
+902950
+1024540
+1156680
+1299590
+1453420
+1618280
+1794180
+1981070
+2178820
+2387220
+								double 0
+								int 2
+								int 2
+								DEF "<COL> 0 temperature~K <COL> 1 pressure~Pa"
+							0_bits int 256
+						..
+					..
+
+				wrapper ASEClass
+				_C_ "MaterialLiquidMaterials" "liquidMaterialsList" V1
+					tree_title string "Enter material name"
+					molarweight double 18 "gasconst_triao~kg_kmol"
+					liqdens double 1000 "density~kg_m3"
+					liqdens~sel string "const"
+					spec_heat double 4187 "spec_heat~J_kgK"
+					spec_heat~sel string "const"
+					conduct double 0.6 "conductivity~W_mK"
+					conduct~sel string "const"
+					evapheat double 2265000 "evap_heat~J_kg"
+					evapheat~sel string "const"
+					vappress double 90400 "pressure~Pa"
+					vappress~sel string "const"
+					0_type string "class"
+					_C_ "LiquidDensity" "liqdens_table" V1
+						symbol string "table"
+						liqdens array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 density~kg_m3"
+						0_bits int 256
+					..
+					_C_ "LiquidHeatCapacity" "spec_heat_table" V1
+						symbol string "table"
+						spec_heat array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 spec_heat~J_kgK"
+						0_bits int 256
+					..
+					_C_ "LiquidThermalCond" "conduct_table" V1
+						symbol string "table"
+						conduct array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 conductivity~W_mK"
+						0_bits int 256
+					..
+					_C_ "LiquidEvapHeat" "evapheat_table" V1
+						symbol string "table"
+						evapheat array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 evap_heat~J_kg"
+						0_bits int 256
+					..
+					_C_ "LiquidVapPress" "vappress_table" V1
+						symbol string "table"
+						vappress array-1 none 2 3
+							array-1 double 2 0
+0
+0
+							array-1 double 2 0
+0
+0
+							double 0
+							int 2
+							int 2
+							DEF "<COL> 0 temperature~K <COL> 1 pressure~Pa"
+						0_bits int 256
+					..
+				..
+
+				int 4
+				int 1
+				DEF
+		..
+	..
+..
+__
+ADDON ASE  "TestBedReferenceElementsDialog" "test_bed_ref" Cpp res/cpp/test_bed_ref.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "TestBedReferenceElementsDialog" "test_bed_ref" V1
+		refel_1 string "(none)"
+		elem_ord_1 int 0
+		refel_2 string "(none)"
+		elem_ord_2 int 0
+		refel_3 string "(none)"
+		elem_ord_3 int 0
+		refel_4 string "(none)"
+		elem_ord_4 int 0
+		refel_5 string "(none)"
+		elem_ord_5 int 0
+		0_version int 17
+	..
+..
+__
+ADDON ASE  "ExportEngineDataDialog" "export_engine_data" Cpp res/cpp/engine_data.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "ExportEngineDataDialog" "export_engine_data" V1
+		caseSet string "Case Set 1"
+		casesList string ""
+		file string ""
+		0_version int 17
+	..
+..
+__
+ADDON ASE  "EnvironmentSettings" "environ_settings" Cpp res/cpp/environ.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "EnvironmentSettings" "environ_settings" V1
+		settings array-1 none 0 0
+			DEF
+		0_version int 17
+	..
+..
+__
+ADDON ASE  "ViewLogfile" "viewlogfile" Cpp $(AWS_HOME)/clients/common/res/cpp/viewlogfile  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "ViewLogfile" "viewlogfile" V1
+		list array-1 none 0 0
+			DEF
+		onlineView int 1
+		0_version int 17
+		_C_ "Struct" "status" V1
+			0_type string "struct"
+			case int 0
+			state string ""
+			progress string ""
+			cpuTime string ""
+			processID string ""
+		..
+		_C_ "Struct" "s_task" V1
+			0_type string "struct"
+			taskRadio int 0
+			taskCombo int 0
+		..
+	..
+..
+__
+ADDON ASE  "JobStatus" "jobstatus" Cpp $(AWS_HOME)/clients/common/res/cpp/jobstatus  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "JobStatus" "jobstatus" V1
+		caseList array-1 none 2 3
+			array-1 none 0 0
+			array-1 none 0 0
+			string ""
+			int 1
+			int 2
+			DEF
+		state string ""
+		progress string ""
+		cpuTime string ""
+		processID string ""
+		0_version int 17
+	..
+..
+__
+ADDON ASE  "SaveOptions" "save_options" Cpp res/cpp/environ.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "SaveOptions" "save_options" V1
+		alwaysSave int 0
+		0_version int 17
+	..
+..
+__
+ENDSECTION
+SECTION CONTEXT_ADDON
+ADDON ASE  "Macro" "macro" Cpp res/cpp/macro.h  !! "context"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 17
+	_C_ "Macro" "macro" V1
+		TITLE string ""
+		CUSTOMER_LOGO string ""
+		0_version int 17
+	..
+..
+__
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_options
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E32322E31223E0A3C6F626A65637420747970653D226A6D732E6775692E7375626D69742E5375626D697373696F6E222069643D2231223E0A3C646963742069643D2232223E0A3C7374723E6370755F746F5F76616C3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D2233223E0A3C646963742069643D2234223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C696665
+74696D655F746F5F76616C3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D2235223E0A3C646963742069643D2236223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6D616E75616C5F747970653C2F7374723E0A3C6F626A65637420747970653D226A6D732E6775692E7375626D69742E4D616E75616C4A6F625375626D697373696F6E222069643D2237223E0A3C646963742069643D2238223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E64623C2F7374723E0A3C2F646963743E0A3C2F6F62
+6A6563743E0A3C7374723E7461736B733C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D2239223E0A3C646963742069643D223130223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223131223E0A3C7374723E6372656174696F6E3C2F7374723E0A3C7374723E73696D756C6174696F6E3C2F7374723E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726F635F7065725F6A6F623C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E6E616D653C2F7374723E0A3C7374723E425F434E475F496E6A6563746F7220323031312D30372D30
+372031303A34333A35353C2F7374723E0A3C7374723E6B6565706F70656E3C2F7374723E0A3C66616C73652F3E0A3C7374723E6D616E75616C3C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F637072696F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D223132223E0A3C646963742069643D223133223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E303C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726570726F636573735F6572726F723C2F7374723E0A3C66616C73652F3E0A3C7374723E6C696371756575655F746F5F76616C3C2F737472
+3E0A3C6F626A65637420747970653D226163742E626F7865642E496E74222069643D223134223E0A3C646963742069643D223135223E0A3C7374723E76616C75653C2F7374723E0A3C6E756D3E31323C2F6E756D3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726F635F7065725F6A6F625F6669783C2F7374723E0A3C747275652F3E0A3C7374723E686967685F7072696F726974793C2F7374723E0A3C66616C73652F3E0A3C7374723E6C696371756575655F746F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E426F6F6C222069643D223136223E0A3C646963742069643D223137223E0A3C7374723E
+76616C75653C2F7374723E0A3C747275652F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E70726570726F636573733C2F7374723E0A3C6C6973742069643D223138222F3E0A3C7374723E6370755F746F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E426F6F6C222069643D223139223E0A3C646963742069643D223230223E0A3C7374723E76616C75653C2F7374723E0A3C66616C73652F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C69666574696D655F746F3C2F7374723E0A3C6F626A65637420747970653D226163742E626F7865642E426F6F6C222069643D223231223E0A3C64
+6963742069643D223232223E0A3C7374723E76616C75653C2F7374723E0A3C66616C73652F3E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E63617365733C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D223233223E0A3C646963742069643D223234223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223235223E0A3C7475706C652069643D223236223E0A3C7374723E6D657468616E653C2F7374723E0A3C7374723E4761733C2F7374723E0A3C2F7475706C653E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6C6963706F6C3C2F
+7374723E0A3C6F626A65637420747970653D226A6D732E6775692E7375626D69742E4C6963656E7365506F6C696379222069643D223237223E0A3C646963742069643D223238223E0A3C7374723E76616C75653C2F7374723E0A3C7374723E6465646963617465643C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6163743E0A
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_backend
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E32322E31223E0A3C6C6973742069643D2231223E0A3C7475706C652069643D2232223E0A3C7374722F3E0A3C6C6973742069643D2233223E0A3C6F626A65637420747970653D226A6D732E6775692E6261636B656E642E486F7374222069643D2234223E0A3C646963742069643D2235223E0A3C7374723E70726F6A6469723C2F7374723E0A3C7374723E266C743B50524F4A4543545F4449524543544F52593E3C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E617467727A77643030323431
+333C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6C6973743E0A3C2F7475706C653E0A3C2F6C6973743E0A3C2F6163743E0A
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_submission_name
+425F434E475F496E6A6563746F7220323031312D30372D30372031303A34333A3535
+ENDSECTION
+SECTION EMBEDDED
+AWS_JMS_Section_jms_fea_cache
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E32322E31223E0A3C646963742069643D2231222F3E0A3C2F6163743E0A
+ENDSECTION

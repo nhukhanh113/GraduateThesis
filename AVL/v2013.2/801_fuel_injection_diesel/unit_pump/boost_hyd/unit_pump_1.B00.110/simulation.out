@@ -1,0 +1,40 @@
+
+ o------------------------------------------------------------o
+ | AVL BOOST Hydsim / FixStep solver / v2020.1 / March 2020 |
+ o------------------------------------------------------------o
+
+ Internal data file name .... unit_pump_1.inp                                                 
+ Input control file name .... unit_pump_1.lst                                                 
+
+   EQUIPMENT (ELEMENTS):
+
+       1  InjPipe         -MODULE 23
+       2  CylHeBo1        -MODULE 23
+       3  Pressure_Tem    -MODULE 05
+       4  Nozzlevol       -MODULE 21
+       5  Needle          -MODULE 52
+       6  NeeLeak         -MODULE 38
+       7  InjBore         -MODULE 23
+       8  SAC_Orifice     -MODULE 57
+       9  NozzHol         -MODULE 00
+      10  InjVol          -MODULE 21
+      11  Plunger         -MODULE 30
+      12  Pump_Volume     -MODULE 21
+      13  Plunger_Leak    -MODULE 38
+      14  CutOffVa        -MODULE 44
+      15  BoschBP         -MODULE 05
+      16  BackPvol        -MODULE 21
+      17  BPLine          -MODULE 23
+      18  Cam_Profile     -MODULE 12
+
+   EQUATION SYSTEM:
+
+      NR. ORDINARY DIFF. EQUATIONS =  9
+      NR. PARTIAL  DIFF. EQUATIONS =  8
+
+ Output file name (for general use) ....unit_pump_1.dat                                                 
+ Output file name (for Impress chart) ..unit_pump_1.GID                                                 
+
+ *** Calculation completed ***
+ -----------------------------
+

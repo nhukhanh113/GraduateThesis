@@ -1,0 +1,44 @@
+# Hydsim MetaTemplate for ASE-PP2
+
+# *** Hydsim ***
+
+# File Variables:
+ModelFile = "../noname.hyd"
+
+# Result Node:
+FOLDER "Hydsim" "noname" "Hydsim - noname/Case Set 1.Case 1"
+
+	FOLDER "elements" "Elements" "no description"
+		FOLDER "@1" "Rail_Pressure (1)" 
+			uuid = 607E58D1C589-000D5E91-57454C434F-01
+			symbol = boundary
+			CURVE "1@3" "pressure (Rail_Pressure)" 
+				xlocation = GIDAS "noname.GID" "time"
+				xunit = "s"
+				ylocation = GIDAS "noname.GID" "Rail_Pressur(1):pressure"
+				yunit = "pressure"
+			..
+			CURVE "1@4" "temperature (Rail_Pressure)" 
+				xlocation = GIDAS "noname.GID" "time"
+				xunit = "s"
+				ylocation = GIDAS "noname.GID" "Rail_Pressur(1):temperature"
+				yunit = "temperature"
+			..
+		..
+		FOLDER "@7" "Nozzle_Orifice (7)" 
+			uuid = 607E5A11121A-00123F1F-57454C434F-01
+			symbol = h_nozzle
+			CURVE "7@7" "mass rate (Nozzle_Orifice)" 
+				xlocation = GIDAS "noname.GID" "time"
+				xunit = "s"
+				ylocation = GIDAS "noname.GID" "Nozzle_Orifi(7):mass rate"
+				yunit = "massflow"
+			..
+		..
+	..
+
+	FOLDER "adjust" "Search Adjust" 
+	..
+
+..
+

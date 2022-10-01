@@ -1,0 +1,56 @@
+BOOST Python job started.
+Wed, 21 Sep 2022 09:42:40
+    AAA    VV   VV  LL        BBBBBB    OOOOO    OOOOO    SSSSS  TTTTTTTT
+   AAAAA   VV   VV  LL        BBBBBBB  OOOOOOO  OOOOOOO  SSSSSS  TTTTTTTT
+  AA   AA  VV   VV  LL        BB   BB  OO   OO  OO   OO  SS         TT
+  AAAAAAA  VV   VV  LL        BBBBBB   OO   OO  OO   OO  SSSSSS     TT
+  AAAAAAA  VVV VVV  LL        BB   BB  OO   OO  OO   OO      SS     TT
+  AA   AA   VVVVV   LLLLL     BBBBBBB  OOOOOOO  OOOOOOO  SSSSSS     TT
+  AA   AA    VVV    LLLLL     BBBBBB    OOOOO    OOOOO   SSSSS      TT
+
+  V E R S I O N   v2020.1.0.0.0
+  AVL - Advanced Simulation Technologies
+  Platform: x86_64-unknown-winnt_i16v15
+  Build date: Apr 10 2020 22:45:12
+  Git build hash: 1409f548a4242bab2b2928aec6c4cb6c0577282f
+
+  System date: 21.09.2022
+
+
+  input file name:     D4s.bst
+  sys_1DCFD_solver Permanent license
+
+WARNING 111134 COMPOSITE     35 CLRINI       0.00 DEGCRA
+    The evaluated part of the target pressure drop for the Core Pipe of
+    AIRCLEANER   1  is smaller that 1E-4 Pa!
+    The laminar friction factor and the
+    turbulent friction coefficient are set to 1E-6.
+  Starting calculation
+  --------------------------------------
+   Cycle   IMEP [bar] of cylinder
+  compl.       1       2       3       4
+  --------------------------------------
+       2   -2.46    0.16   -2.47   -1.24
+       3    1.75    8.77    2.62    6.10
+       4   12.06   12.74   13.05   13.24
+       5   12.64   11.82   12.22   12.28
+       6   12.43   12.22   12.14   12.55
+       7   12.59   12.33   12.28   12.60
+       8   12.65   12.36   12.37   12.70
+       9   12.76   12.51   12.48   12.83
+      10   12.87   12.57   12.52   12.87
+      11   12.90   12.60   12.56   12.90
+      12   12.91   12.60   12.57   12.90
+      13   12.91   12.60   12.57   12.90
+      14   12.91   12.60   12.57   12.90
+      15   12.91   12.60   12.56   12.90
+   4 warning(s) issued. Please check messages.
+  Calculation converged!
+  Successful finish for D4s.bst
+
+Results tree writer (Boost PPD writer) 2020 R1
+Impress chart results tree generation completed.
+Result unpacker (boost_unpack) v2020 R1
+Results unpacking completed. 
+Wed, 21 Sep 2022 09:43:00
+BOOST Python job completed.

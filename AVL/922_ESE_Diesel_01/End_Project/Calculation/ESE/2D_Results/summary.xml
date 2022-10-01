@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="summary.xsl" type="text/xsl"?>
+<summary>
+  <element name="ESOValues" shortname="EV" ord="1">
+    <dvalue name="Air mass at start of high pressure cycle" unit="kg">0.00237740177363</dvalue>
+    <dvalue name="Air purity" unit="-">0.951568276797</dvalue>
+    <dvalue name="Air-fuel ratio of combustion" unit="-">20.6476237859</dvalue>
+    <dvalue name="Break mean effective pressure BMEP" unit="bar">15.3788389284</dvalue>
+    <dvalue name="Break specific fuel consumption BSFC" unit="kg/kWh">0.272597441637</dvalue>
+    <dvalue name="Combustion Noise - A + CAV Filter" unit="dB">96.3035406926</dvalue>
+    <dvalue name="Combustion Noise - A Filter" unit="dB">206.675547002</dvalue>
+    <dvalue name="Combustion Noise - CAV Filter" unit="dB">96.2742712523</dvalue>
+    <dvalue name="Combustion Noise" unit="dB">225.197347714</dvalue>
+    <dvalue name="Excess air ratio" unit="-">1.38529874862</dvalue>
+    <dvalue name="Friction mean effective pressure FMEP" unit="bar">0.64159211123</dvalue>
+    <dvalue name="Indicated efficiency" unit="-">0.324901163912</dvalue>
+    <dvalue name="Indicated fuel consumption (total fuel mass) ISFCtt" unit="kg/kWh">0.26168035909</dvalue>
+    <dvalue name="Indicated fuel consumption (trapped fuel mass) ISFCtr" unit="kg/kWh">0.26168035909</dvalue>
+    <dvalue name="Indicated mean effective pressure IMEP" unit="bar">16.0204310396</dvalue>
+    <dvalue name="Indicated power" unit="kW">24.9698067654</dvalue>
+    <dvalue name="Indicated specific power" unit="kW/l">24.0306465594</dvalue>
+    <dvalue name="Indicated specific torque" unit="Nm/l">127.486539521</dvalue>
+    <dvalue name="Indicated torque" unit="Nm">132.468939159</dvalue>
+    <dvalue name="Injected fuel mass" unit="kg">0.000121002000014</dvalue>
+    <dvalue name="Mean mass" unit="kg">0.00254844085706</dvalue>
+    <dvalue name="Mechanical efficiency" unit="-">0.95995163241</dvalue>
+    <dvalue name="Total mass at start of high pressure cycle" unit="kg">0.00249840377364</dvalue>
+    <dvalue name="Volume displacement" unit="m^3">0.00103908177017</dvalue>
+  </element>
+</summary>

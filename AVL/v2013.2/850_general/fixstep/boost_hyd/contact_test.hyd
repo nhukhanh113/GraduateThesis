@@ -1,0 +1,3325 @@
+VERSION-10.00
+SECTION CONTROL
+_C_ "GTEManager" "gtemanager" V1
+	_C_ "General" "general" V1
+		PagePortrait int 1
+		PageLandscape int 0
+		Grid int 1
+		GridOn int 0
+		GridValue double 4
+		GridOffset double 5
+		PageWidth double 1191
+		PageHeight double 1684
+		PageStandard int 1
+		PageUserDefined int 0
+		PageFormat string "A2"
+		PageUnit string "pt"
+		0_bits int 2
+	..
+	_C_ "Model" "model" V1
+		_C_ "noname" "strings" V1
+		..
+	..
+	_C_ "Domain" "Model" V1
+		_C_ "Domain" "Boundary X = 0.  1" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Large Orifice 5" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Mass 2" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Piston 3" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Pressure 6" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "Volume 4" V1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_REV" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_CYCLES_PER_SEC" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_DEGCRANK_PER_DEGCAM" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1000"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED1" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED2" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "1.0"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Variable" "_UNITS_SPEED3" V1
+			var_type string "local"
+			var_enabled int 1
+			var_value string "0.00016666666666666666"
+			var_unit string "dimensionless~one"
+			var_hidden int 1
+			var_variant int 0
+		..
+		_C_ "Domain" "mechanical" V1
+			var_variant int 0
+		..
+		_C_ "Domain" "mechanical" V1
+			var_variant int 0
+		..
+	..
+	_C_ "VariantDomain" "Model" V1
+		_C_ "Variant" "Case Set 1" V1
+			variant_names array-1 none 1 0
+				string "Case 1"
+				DEF
+			variant_vars array-1 none 0 0
+				DEF
+			variant_values array-1 none 0 0
+				DEF
+			variant_active string "Case 1"
+			variant_realized string "Case 1"
+		..
+	..
+..
+ENDSECTION
+SECTION GRAPHIC
+TTEXTRECTANGLE-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 -T- 219.182 28.5201 445 65 "Arial" 16 4 0 0 0 0 0 "PISTON - MASS  CONTACT" "" 
+TTEXTRECTANGLE-21 "" 1 0 0 0 0 0 1 1 0 0 0 0 0 0 -T- 338.414 513.639 483.414 528.639 "Arial" 14 4 0 0 0 0 0 "CONTACT STIFFNESS" "" 
+TTEXTRECTANGLE-21 "" 2 0 0 0 0 0 1 1 0 0 0 0 0 0 -T- 338.414 642.639 495 657.639 "Arial" 14 4 0 0 0 0 0 "Mechanical Spring" "" 
+ENDSECTION
+SECTION MODEL
+OS-1.50
+GTEEditorKit
+65
+OSOBJECT "Element" 0 101 0 0 0 0
+Type 1 3
+Id 1 1
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "3E4D032A9012-0019F5FF-504D4F5437-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 8 0 0 0 0 0 1 0 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+265.605 683.173 
+381.143 683.173 
+381.143 741.889 
+265.605 741.889 
+265.605 683.173 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+265.605 683.173 
+381.143 683.173 
+381.143 741.889 
+265.605 741.889 
+265.605 683.173 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+265.605 741.889 
+265.605 683.173 
+381.143 683.173 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+267.5 741.889 
+381.143 741.889 
+381.143 685.068 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 250 0 0 0 0 8066 -REALIZE- 0 0 2 
+284.546 734.313 
+360.308 734.313 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 250 0 0 0 0 8066 -REALIZE- 0 0 2 
+284.546 690.75 
+360.308 690.75 0 
+TPOLYGON-21 "" 0 0 0 250 50 50 1 1 250 50 50 1 0 8066 -REALIZE- 11 
+322.428 692.644 
+331.898 705.902 
+324.321 705.902 
+324.321 717.267 
+331.898 717.267 
+322.428 730.525 
+312.957 717.267 
+320.533 717.267 
+320.533 705.902 
+312.957 705.902 
+322.428 692.644 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 130 - "Arial" 23 1 2 " 1" "" 379.143 685.173 1 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 27 1 7 " " "" 323.374 712.531 2 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 20 1 1 " " "" 323.374 712.531 3 
+TTEXT-21 "" 0 0 0 0 0 0 5 3 0 0 0 5 1 4224 - "adobe-helvetica" 18 1 0 "Boundary X = 0." "" 396.713 701.246 10 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 1 101 0 0 0 0
+Type 1 11
+Id 1 2
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "3E4D032A9020-0019F61E-504D4F5437-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 9 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+262.297 561.522 
+382.388 561.522 
+382.388 622.552 
+262.297 622.552 
+262.297 561.522 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 1 200 200 200 0 0 256 - 5 
+262.297 561.522 
+382.388 561.522 
+382.388 622.552 
+262.297 622.552 
+262.297 561.522 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+262.297 622.552 
+262.297 561.522 
+382.388 561.522 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+264.266 622.552 
+382.388 622.552 
+382.388 563.491 0 
+TCIRCLE-21 "" 0 0 0 0 0 0 1 1 100 200 100 1 0 8066 -REALIZE- 321.358 591.053 19.6871 19.6871 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 130 - "Arial" 24 1 2 "2" "" 380.388 563.522 1 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 28 1 7 " " "" 322.343 592.037 2 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 19 1 1 " " "" 322.343 592.037 3 
+TTEXT-21 "" 0 0 0 0 0 0 5 3 0 0 0 5 1 4224 - "Arial" 18 1 3 "Mass" "" 387.388 592.037 10 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 2 101 0 0 0 0
+Type 1 20
+Id 1 3
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "3E4D032A9022-0019F62D-504D4F5437-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 10 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+385.366 485.703 
+257.495 485.703 
+257.495 420.72 
+385.366 420.72 
+385.366 485.703 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+385.366 485.703 
+257.495 485.703 
+257.495 420.72 
+385.366 420.72 
+385.366 485.703 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+385.366 420.72 
+385.366 485.703 
+257.495 485.703 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+383.27 420.72 
+257.495 420.72 
+257.495 483.607 0 
+TPOLYGON-21 "" 0 0 0 250 250 250 0 0 250 250 150 1 0 8066 -REALIZE- 4 
+353.922 443.779 
+291.035 443.779 
+291.035 427.009 
+353.922 427.009 0 
+TMULTILINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 4 
+353.922 481.511 
+353.922 427.009 
+291.035 481.511 
+291.035 427.009 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 100 200 100 1 0 8066 -REALIZE- 4 
+349.73 443.779 
+295.227 443.779 
+295.227 464.741 
+349.73 464.741 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 100 200 100 1 0 8066 -REALIZE- 4 
+318.286 464.741 
+318.286 481.511 
+326.671 481.511 
+326.671 464.741 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 130 - "Arial" 25 1 2 "3" "" 383.366 422.72 1 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 29 1 7 " " "" 321.43 453.212 2 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 21 1 1 " " "" 321.43 453.212 3 
+TTEXT-21 "" 0 0 0 0 0 0 5 3 0 0 0 5 1 4224 - "Arial" 18 1 3 "Piston" "" 390.366 453.2115 10 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 3 101 0 0 0 0
+Type 1 21
+Id 1 4
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "3E4D032A9022-0019F63D-504D4F5437-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 11 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+261.455 310.125 
+383.399 310.125 
+383.399 372.097 
+261.455 372.097 
+261.455 310.125 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+261.455 310.125 
+383.399 310.125 
+383.399 372.097 
+261.455 372.097 
+261.455 310.125 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+261.455 372.097 
+261.455 310.125 
+383.399 310.125 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+263.454 372.097 
+383.399 372.097 
+383.399 312.124 0 
+TPOLYGON-21 "" 0 0 0 250 250 150 0 0 250 250 150 1 0 8066 -REALIZE- 25 
+281.445 324.118 
+291.441 324.118 
+291.441 318.121 
+301.436 318.121 
+301.436 324.118 
+331.422 324.118 
+331.422 318.121 
+341.418 318.121 
+341.418 324.118 
+351.413 324.118 
+351.413 340.112 
+357.41 340.112 
+357.41 350.107 
+351.413 350.107 
+351.413 360.103 
+321.427 360.103 
+321.427 366.1 
+311.431 366.1 
+311.431 360.103 
+281.445 360.103 
+281.445 350.107 
+275.448 350.107 
+275.448 340.112 
+281.445 340.112 
+281.445 324.118 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+275.448 340.112 
+281.445 340.112 
+281.445 324.118 
+291.441 324.118 
+291.441 318.121 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 4 
+301.436 318.121 
+301.436 324.118 
+331.422 324.118 
+331.422 318.121 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+341.418 318.121 
+341.418 324.118 
+351.413 324.118 
+351.413 340.112 
+357.41 340.112 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+357.41 350.107 
+351.413 350.107 
+351.413 360.103 
+321.427 360.103 
+321.427 366.1 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+311.431 366.1 
+311.431 360.103 
+281.445 360.103 
+281.445 350.107 
+275.448 350.107 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 130 - "Arial" 23 1 2 "4" "" 381.399 312.125 1 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 28 1 7 " " "" 322.427 341.111 2 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 20 1 1 " " "" 322.427 341.111 3 
+TTEXT-21 "" 0 0 0 0 0 0 5 3 0 0 0 5 1 4224 - "Arial" 18 1 3 "Volume" "" 388.399 341.111 10 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 4 101 0 0 0 0
+Type 1 22
+Id 1 5
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "3E4D032A9020-0019F64D-504D4F5437-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 12 0 0 0 0 0 1 1 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+262.471 196.696 
+386.437 196.696 
+386.437 259.695 
+262.471 259.695 
+262.471 196.696 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+262.471 196.696 
+386.437 196.696 
+386.437 259.695 
+262.471 259.695 
+262.471 196.696 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+262.471 259.695 
+262.471 196.696 
+386.437 196.696 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+264.503 259.695 
+386.437 259.695 
+386.437 198.728 0 
+TPOLYGON-21 "" 0 0 0 0 0 0 1 1 250 250 150 1 0 8066 -REALIZE- 4 
+292.954 206.857 
+343.76 206.857 
+343.76 247.501 
+292.954 247.501 0 
+TMULTILINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 2 - 2 
+276.696 227.179 
+357.985 227.179 0 
+TCIRCLE-21 "" 0 0 0 0 0 0 1 1 100 220 100 1 0 8066 -REALIZE- 318.357 217.018 20.3223 6.09669 0 
+TPOLYGON-21 "" 0 0 0 100 220 100 1 0 100 220 100 1 0 8066 -REALIZE- 7 
+292.954 206.857 
+292.954 212.954 
+297.019 217.018 
+339.695 217.018 
+343.76 212.954 
+343.76 206.857 
+292.954 206.857 0 
+TCIRCLE-21 "" 0 0 0 0 0 0 1 1 100 220 100 1 0 8066 -REALIZE- 318.357 237.34 20.3223 6.09669 0 
+TPOLYGON-21 "" 0 0 0 100 220 100 1 0 100 220 100 1 0 8066 -REALIZE- 7 
+297.019 237.34 
+292.954 241.405 
+292.954 247.501 
+343.76 247.501 
+343.76 241.405 
+339.695 237.34 
+297.019 237.34 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 1 1 200 200 200 0 0 8066 -REALIZE- 0 0 5 
+292.954 206.857 
+343.76 206.857 
+343.76 247.501 
+292.954 247.501 
+292.954 206.857 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 130 - "Arial" 24 1 2 "5" "" 384.437 198.696 1 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 28 1 7 " " "" 324.454 228.195 2 
+TTEXT-21 "" 0 0 0 0 0 0 0 4 0 0 0 4 0 130 - "Arial" 21 1 1 " " "" 324.454 228.195 3 
+TTEXT-21 "" 0 0 0 0 0 0 5 3 0 0 0 5 1 4224 - "Arial" 18 1 3 "Large Orifice" "" 391.437 228.1955 10 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Element" 5 101 0 0 0 0
+Type 1 5
+Id 1 6
+Error 1 0
+RefId 1 -1
+HostElemId 1 -1
+HostLineId 1 -1
+HostInfo 10 
+UUId 12 os_UUId 1 "474D86C7986C-0019D6ED-415447525A-01"
+..
+GTEElement
+Managed 1
+Angle 0
+Root
+TMULTI-21 "" 13 0 0 0 0 0 1 0 200 200 200 0 0 0 - 0 
+TPOLYGON-21 "" 0 0 0 200 200 200 0 1 200 200 200 1 0 8066 -REALIZE- 5 
+257 81 
+387 81 
+387 147.06557377 
+257 147.06557377 
+257 81 5 
+TPOLYGON-21 "" 0 0 0 0 220 0 1 0 200 200 200 0 0 256 - 5 
+257 81 
+387 81 
+387 147.06557377 
+257 147.06557377 
+257 81 4 
+TPOLYLINE-21 "" 0 0 0 240 240 240 1 0 200 200 200 0 0 8066 -REALIZE- 0 0 3 
+257 147.06557377 
+257 81 
+387 81 0 
+TPOLYLINE-21 "" 0 0 0 100 100 100 1 0 220 220 220 0 0 8066 -REALIZE- 0 0 3 
+259.131147541 147.06557377 
+387 147.06557377 
+387 83.131147541 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+278.31147541 138.540983607 
+363.557377049 138.540983607 0 
+TPOLYLINE-21 "" 0 0 0 0 0 0 2 1 0 0 0 0 0 8066 -REALIZE- 0 0 2 
+278.31147541 89.5245901639 
+363.557377049 89.5245901639 0 
+TPOLYGON-21 "" 0 0 0 50 50 250 1 1 50 50 250 1 0 8066 -REALIZE- 11 
+320.93442623 91.6557377049 
+331.590163934 106.573770492 
+323.06557377 106.573770492 
+323.06557377 119.360655738 
+331.590163934 119.360655738 
+320.93442623 134.278688525 
+310.278688525 119.360655738 
+318.803278689 119.360655738 
+318.803278689 106.573770492 
+310.278688525 106.573770492 
+320.93442623 91.6557377049 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 26 1 0 "p" "" 286.836065574 100.180327869 0 
+TTEXT-21 "" 0 0 0 0 0 0 0 0 0 0 0 0 0 2 - "Arial" 26 1 0 "T" "" 337.983606557 102.31147541 0 
+TTEXT-21 "" 0 0 0 0 0 0 -2 2 0 0 0 2 0 16514 -NODOSCALEDIM- "Arial" 12 1 2 "6" "" 385 83 1 
+TTEXT-21 "" 0 0 0 0 0 0 -1 3 0 0 0 5 1 20608 -NODOSCALEDIM- "Arial" 18 1 3 "Pressure" "" 404 114.032786885 10 
+..
+--
+PARAMETER 0
+MAP EMPTY
+CLIENTDATA
+OSOBJECT "Anchor" 6 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 1
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 294.016 683.173 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 290.516 682.173 0 
+DefModel
+--
+OSOBJECT "Anchor" 7 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 10
+Id 1 2
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 0 3458 -NODOSCALEDIM- 322.428 683.173 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 318.928 682.173 0 
+DefModel
+--
+OSOBJECT "Anchor" 8 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 3
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 350.838 683.173 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 347.338 682.173 0 
+DefModel
+--
+OSOBJECT "Anchor" 9 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 4
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 381.143 713.478 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 373.143 707.478 0 
+DefModel
+--
+OSOBJECT "Anchor" 10 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 5
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 350.838 741.889 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 347.338 728.889 0 
+DefModel
+--
+OSOBJECT "Anchor" 11 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 6
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 322.428 741.889 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 318.928 728.889 0 
+DefModel
+--
+OSOBJECT "Anchor" 12 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 7
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 294.016 741.889 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 290.516 728.889 0 
+DefModel
+--
+OSOBJECT "Anchor" 13 201 1 101 0 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 8
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 265.605 713.478 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 266.605 707.478 0 
+DefModel
+--
+OSOBJECT "Anchor" 14 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 9
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 291.828 561.522 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 288.328 560.522 0 
+DefModel
+--
+OSOBJECT "Anchor" 15 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 10
+Id 1 10
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 0 3458 -NODOSCALEDIM- 323.358 561.522 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 319.858 560.522 0 
+DefModel
+--
+OSOBJECT "Anchor" 16 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 11
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 350.889 561.522 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 347.389 560.522 0 
+DefModel
+--
+OSOBJECT "Anchor" 17 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 12
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 382.388 593.021 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 374.388 587.021 0 
+DefModel
+--
+OSOBJECT "Anchor" 18 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 13
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 350.889 622.552 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 347.389 609.552 0 
+DefModel
+--
+OSOBJECT "Anchor" 19 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 9
+Id 1 14
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 0 3458 -NODOSCALEDIM- 321.358 622.552 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 317.858 609.552 0 
+DefModel
+--
+OSOBJECT "Anchor" 20 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 15
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 291.828 622.552 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 288.328 609.552 0 
+DefModel
+--
+OSOBJECT "Anchor" 21 201 1 101 1 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 16
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 262.297 593.021 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 263.297 587.021 0 
+DefModel
+--
+OSOBJECT "Anchor" 22 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 17
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 1 3459 -NODOSCALEDIM- 385.366 485.703 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 377.366 472.703 0 
+DefModel
+--
+OSOBJECT "Anchor" 23 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 18
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 353.922 485.703 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 350.422 472.703 0 
+DefModel
+--
+OSOBJECT "Anchor" 24 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 9
+Id 1 19
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 0 3458 -NODOSCALEDIM- 322.478 485.703 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 318.978 472.703 0 
+DefModel
+--
+OSOBJECT "Anchor" 25 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 20
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 291.035 485.703 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 287.535 472.703 0 
+DefModel
+--
+OSOBJECT "Anchor" 26 201 1 101 2 109
+Type 1 3
+SubType 1 0
+Status 1 3
+Id 1 21
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 128 0 1 1 0 128 0 1 1 3459 -NODOSCALEDIM- 257.495 485.703 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 258.495 472.703 0 
+DefModel
+--
+OSOBJECT "Anchor" 27 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 22
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 257.495 452.164 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 258.495 446.164 0 
+DefModel
+--
+OSOBJECT "Anchor" 28 201 1 101 2 109
+Type 1 3
+SubType 1 0
+Status 1 3
+Id 1 23
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 128 0 1 1 0 128 0 1 1 3459 -NODOSCALEDIM- 257.495 420.72 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 258.495 419.72 0 
+DefModel
+--
+OSOBJECT "Anchor" 29 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 24
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 291.035 420.72 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 287.535 419.72 0 
+DefModel
+--
+OSOBJECT "Anchor" 30 201 1 101 2 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 25
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 322.478 420.72 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 318.978 419.72 0 
+DefModel
+--
+OSOBJECT "Anchor" 31 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 26
+Occupied 9 0
+Letter 1 74
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 353.922 420.72 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 350.422 419.72 0 
+DefModel
+--
+OSOBJECT "Anchor" 32 201 1 101 2 109
+Type 1 3
+SubType 1 0
+Status 1 3
+Id 1 27
+Occupied 9 0
+Letter 1 75
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 128 0 1 1 0 128 0 1 1 3459 -NODOSCALEDIM- 385.366 420.72 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 377.366 419.72 0 
+DefModel
+--
+OSOBJECT "Anchor" 33 201 1 101 2 109
+Type 1 2
+SubType 1 0
+Status 1 3
+Id 1 28
+Occupied 9 0
+Letter 1 76
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 0 0 1 1 255 0 0 1 2 3459 -NODOSCALEDIM- 385.366 452.164 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 377.366 446.164 0 
+DefModel
+--
+OSOBJECT "Anchor" 34 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 29
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 261.455 310.125 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 262.455 309.125 0 
+DefModel
+--
+OSOBJECT "Anchor" 35 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 30
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 291.441 310.125 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 287.941 309.125 0 
+DefModel
+--
+OSOBJECT "Anchor" 36 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 31
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 324.427 310.125 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 320.927 309.125 0 
+DefModel
+--
+OSOBJECT "Anchor" 37 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 32
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 351.413 310.125 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 347.913 309.125 0 
+DefModel
+--
+OSOBJECT "Anchor" 38 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 33
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 383.399 342.111 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 375.399 336.111 0 
+DefModel
+--
+OSOBJECT "Anchor" 39 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 34
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 383.399 372.097 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 375.399 359.097 0 
+DefModel
+--
+OSOBJECT "Anchor" 40 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 35
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 351.413 372.097 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 347.913 359.097 0 
+DefModel
+--
+OSOBJECT "Anchor" 41 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 36
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 321.427 372.097 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 317.927 359.097 0 
+DefModel
+--
+OSOBJECT "Anchor" 42 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 37
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 291.441 372.097 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 287.941 359.097 0 
+DefModel
+--
+OSOBJECT "Anchor" 43 201 1 101 3 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 38
+Occupied 9 0
+Letter 1 74
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 261.455 342.111 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 262.455 336.111 0 
+DefModel
+--
+OSOBJECT "Anchor" 44 201 1 101 4 109
+Type 1 1
+SubType 1 0
+Status 1 10
+Id 1 39
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 321.438 196.696 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 317.938 195.696 0 
+DefModel
+--
+OSOBJECT "Anchor" 45 201 1 101 4 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 40
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 323.438 259.695 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 319.938 246.695 0 
+DefModel
+--
+OSOBJECT "Anchor" 46 201 1 101 0 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 41
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 335.534481764 683.173 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 335.534481764 684.173 0 
+DefLocal
+Label 
+Index 8
+Type 4
+Input 3
+Conn 1
+Symbol 1 1 1
+.. 
+--
+OSOBJECT "Anchor" 47 201 1 101 1 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 42
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 334.982226856 561.522 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 334.982226856 562.522 0 
+DefLocal
+Label 
+Index 8
+Type 4
+Input 3
+Conn 1
+Symbol 1 1 1
+.. 
+--
+OSOBJECT "Anchor" 48 201 1 101 2 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 43
+Occupied 9 0
+Letter 1 77
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 334.888919962 420.72 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 334.888919962 421.72 0 
+DefLocal
+Label 
+Index 12
+Type 4
+Input 3
+Conn 1
+Symbol 1 1 1
+.. 
+--
+OSOBJECT "Anchor" 49 201 1 101 3 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 44
+Occupied 9 0
+Letter 1 75
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 335.261821444 310.125 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 335.261821444 311.125 0 
+DefLocal
+Label 
+Index 10
+Type 4
+Input 3
+Conn 1
+Symbol 1 1 1
+.. 
+--
+OSOBJECT "Anchor" 50 201 1 101 4 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 45
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 337.501520108 196.696 8 8 0 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 337.501520108 197.696 0 
+DefLocal
+Label 
+Index 2
+Type 4
+Input 3
+Conn 1
+Symbol 1 1 1
+.. 
+--
+OSOBJECT "Anchor" 51 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 46
+Occupied 9 0
+Letter 1 65
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 288.967213115 81 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 288.967213115 82 0 
+DefModel
+--
+OSOBJECT "Anchor" 52 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 47
+Occupied 9 0
+Letter 1 66
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 320.93442623 81 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 320.93442623 82 0 
+DefModel
+--
+OSOBJECT "Anchor" 53 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 48
+Occupied 9 0
+Letter 1 67
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 352.901639344 81 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 1 "" "" 352.901639344 82 0 
+DefModel
+--
+OSOBJECT "Anchor" 54 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 49
+Occupied 9 0
+Letter 1 68
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 387 115.098360656 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 5 "" "" 386 115.098360656 0 
+DefModel
+--
+OSOBJECT "Anchor" 55 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 50
+Occupied 9 0
+Letter 1 69
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 352.901639344 147.06557377 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 352.901639344 146.06557377 0 
+DefModel
+--
+OSOBJECT "Anchor" 56 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 9
+Id 1 51
+Occupied 9 0
+Letter 1 70
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 0 3458 -NODOSCALEDIM- 321 147.06557377 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 321 146.06557377 0 
+DefModel
+--
+OSOBJECT "Anchor" 57 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 52
+Occupied 9 0
+Letter 1 71
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 288.967213115 147.06557377 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 7 "" "" 288.967213115 146.06557377 0 
+DefModel
+--
+OSOBJECT "Anchor" 58 201 1 101 5 109
+Type 1 1
+SubType 1 0
+Status 1 3
+Id 1 53
+Occupied 9 0
+Letter 1 72
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 0 0 255 1 1 0 0 255 1 2 3459 -NODOSCALEDIM- 257 115.098360656 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 3 "" "" 259 115.098360656 0 
+DefModel
+--
+OSOBJECT "Anchor" 59 201 1 101 5 109
+Type 1 4
+SubType 1 0
+Status 1 3
+Id 1 54
+Occupied 9 0
+Letter 1 73
+AnchorId 1 -1
+..
+GTEAnchor
+Managed 1
+Point TPOINT-21 "" 0 0 0 255 128 0 1 1 255 128 0 1 1 3459 -NODOSCALEDIM- 257 81 8 8 20 
+Text TTEXT-21 "" 0 0 0 0 0 0 1 1 0 0 0 0 0 129 -NODOSCALEDIM- "Arial" 10 1 0 "" "" 259 82 0 
+DefModel
+--
+OSOBJECT "Line" 60 301 0 0 0 0
+Type 1 2
+Id 1 1
+StartAnchor 1 14
+EndAnchor 1 2
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 7 0 0 255 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+321.358 622.552 
+322.428 683.173 0 
+TTEXT-21 "text" 0 0 0 255 0 0 1 1 0 0 0 0 0 129 - "Arial" 11 1 0 "set_me" "" 323.893 645.8625 0 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+OSOBJECT "Line" 61 301 0 0 0 0
+Type 1 2
+Id 1 2
+StartAnchor 1 19
+EndAnchor 1 10
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 6 0 0 255 0 0 2 1 0 0 0 0 0 0 -T- 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+322.478 485.703 
+323.358 561.522 0 
+TTEXT-21 "text" 0 0 0 255 0 0 1 1 0 0 0 0 0 129 - "Arial" 14 1 0 "set_me" "" 324.918 515.6125 0 
+..
+Class 
+_C_ "noname" "noname" V1
+..
+--
+OSOBJECT "Line" 62 301 0 0 0 0
+Type 1 1
+Id 1 3
+StartAnchor 1 36
+EndAnchor 1 25
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 5 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TTEXT-21 "text" 0 0 0 0 0 255 1 1 0 0 0 0 0 129 - "Arial" 14 1 0 "set_me" "" 323.9525 388.4085 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+321.427 372.097 
+322.478 420.72 0 
+..
+--
+OSOBJECT "Line" 63 301 0 0 0 0
+Type 1 1
+Id 1 4
+StartAnchor 1 39
+EndAnchor 1 51
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 4 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TTEXT-21 "text" 0 0 0 0 0 255 1 1 0 0 0 0 0 129 - "Arial" 14 1 0 "set_me" "" 323.219 163.880786885 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+321.438 196.696 
+321 147.06557377 0 
+..
+--
+OSOBJECT "Line" 64 301 0 0 0 0
+Type 1 1
+Id 1 5
+StartAnchor 1 40
+EndAnchor 1 31
+RefId 1 -1
+UUId 12 
+Error 1 0
+..
+GTELine
+Managed 1
+Root
+TMULTI-21 "" 3 0 0 0 0 255 2 1 0 0 0 0 0 0 -T- 0 
+TTEXT-21 "text" 0 0 0 0 0 255 1 1 0 0 0 0 0 129 - "Arial" 14 1 0 "set_me" "" 325.9325 276.91 0 
+TPOLYLINE-21 "poly" 0 0 0 0 0 0 1 1 0 0 0 0 0 0 - 0 0 2 
+323.438 259.695 
+324.427 310.125 0 
+..
+--
+ENDSECTION
+SECTION ADDON
+ADDON ASE  "Boundary_Mechanical" "boundary_mechanical" Cpp res/cpp/bndmech Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Boundary_Mechanical" "boundary_mechanical" V1
+		name string "Boundary"
+		value int 0
+		SHIF double 0 "simtime~s"
+		xfac double 1
+		0_value_xfac int 1
+		cdec int 0
+		table array-1 none 2 3
+			array-1 double 1 0
+0
+			array-1 double 1 0
+0
+			double 0
+			int 1
+			int 2
+			DEF "<COL> 0 simtime~s <COL> 1 length~mm"
+		file_table string ""
+		aut_rel_table int 0
+		def_pat_table int 0
+		VECT array-1 none 3 3
+			array-1 double 1 0
+1
+			array-1 double 1 0
+0
+			array-1 double 1 0
+0
+			double 0
+			int 1
+			int 3
+			DEF
+		0_version int 999
+		0_bits int 2
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Boundary_Mechanical Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Boundary_Mechanical Set  !! "elem1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Mass" "mass" Cpp res/cpp/mass Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Mass" "mass" V1
+		name string "Mass"
+		MASS double 10 "mass~g~g"
+		FRCX double 0 "force~N"
+		0_value_FRCX int 0
+		FRCY double 0 "force~N"
+		0_value_FRCY int 0
+		0_version int 999
+		0_ok int 1
+		0_bits int 2
+	..
+..
+__
+ADDON ASE  "Initials_Mech2" "initials_mech2" Cpp res/cpp/initials Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Initials_Mech2" "initials_mech2" V1
+		values array-1 none 2 3
+			array-1 double 2 0
+INF
+INF
+			array-1 double 2 0
+INF
+INF
+			double INF
+			int 2
+			int 2
+			DEF "<COL> 0 length~mm <COL> 1 velocity~m_s"
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Mass Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Mass Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 1
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Modifications" "modifications" CppSelectionNClass hydsim.reals_Mass Modify modify Cpp res/cpp/modify Set  !! "elem2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Modifications" "modifications" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		0_version int 999
+		_C_ "Modify" "B_0" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_1" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_2" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+	..
+..
+__
+ADDON ASE  "Piston" "piston" Cpp res/cpp/piston Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Piston" "piston" V1
+		name string "Piston"
+		ELBO int 0
+		MASS double 15 "mass~g~g"
+		FRIC double 0 "force~N"
+		0_value_FRIC int 0
+		LIFT double 1.5 "length~mm"
+		0_value_LIFT int 1
+		StopMod int 0
+		STCI_STCO_STDI_STDO array-1 none 2 3
+			array-1 double 2 0
+100000
+0.1
+			array-1 double 2 0
+100000
+0.1
+			double 0
+			int 2
+			int 2
+			DEF "<ROW> 0 lin_stiff~N_mm <ROW> 1 lin_damping~Ns_mm"
+		ST_CI_CO_DI_DO array-1 none 2 3
+			array-1 double 3 0
+100000
+1.5
+0.005
+			array-1 double 3 0
+100000
+1.5
+0.005
+			double 0
+			int 3
+			int 2
+			DEF "<ROW> 0 lin_stiff~N_mm <ROW> 1 dimensionless~no <ROW> 2 lin_stiff~N_mm"
+		VECT array-1 none 3 3
+			array-1 double 1 0
+1
+			array-1 double 1 0
+0
+			array-1 double 1 0
+0
+			double 0
+			int 1
+			int 3
+			DEF
+		0_version int 999
+		0_ok int 1
+		0_bits int 2
+		_C_ "ElasticBody" "elBo" V1
+			0_type string "class"
+			SDRA double 1 "dimensionless~no"
+			TBLS int 0
+			table1 array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 length~m <COL> 1 length~m"
+			file1 string ""
+			aut_rel1 int 0
+			def_pat1 int 0
+			table2 array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 area~mm2 <COL> 1 length~m"
+			file2 string ""
+			aut_rel2 int 0
+			def_pat2 int 0
+			hyd_ok int 0
+			_C_ "SolidPE" "ps" V1
+				0_type string "class"
+				_C_ "Struct" "global_mat" V1
+					0_type string "struct"
+					0_value int 1
+				..
+				_C_ "Struct" "lsp" V1
+					0_type string "struct"
+					0_value int 0
+					solid string ""
+					temperature double INF "temperature~K"
+				..
+			..
+			_C_ "Struct" "addmass" V1
+				0_type string "struct"
+				0_value int 1
+				mass array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 mass~kg"
+			..
+			_C_ "Struct" "addfric" V1
+				0_type string "struct"
+				0_value int 1
+				force array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 force~N"
+			..
+		..
+		_C_ "Struct" "cross_section" V1
+			0_type string "struct"
+			AorD_1 int 0
+			_C_ "Struct" "piston_area" V1
+				0_type string "struct"
+				AQIN_AQOU array-1 none 2 3
+					array-1 double 1 0
+10
+					array-1 double 1 0
+10
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 area~mm2"
+			..
+			_C_ "Struct" "piston_diam" V1
+				0_type string "struct"
+				DPIN_DPOU array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 length~mm"
+			..
+		..
+		_C_ "Struct" "stoparea" V1
+			0_type string "struct"
+			0_value int 0
+			AorD_2 int 0
+			_C_ "Struct" "piston_stop_area" V1
+				0_type string "struct"
+				SQIN_SQOU array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 area~mm2"
+			..
+			_C_ "Struct" "piston_stop_diam" V1
+				0_type string "struct"
+				DSIN_DSOU array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<ROW> 0 length~mm"
+			..
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Piston Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Piston Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 1
+		A_2 int 0
+		A_3 int 0
+		A_4 int 1
+		A_5 int 1
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Modifications" "modifications" CppSelectionNClass hydsim.reals_Piston Modify modify Cpp res/cpp/modify Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Modifications" "modifications" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		0_version int 999
+		_C_ "Modify" "B_0" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_1" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_2" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_3" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_4" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_5" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_6" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+	..
+..
+__
+ADDON ASE  "Initials_Mech9" "initials_mech9" Cpp res/cpp/initials Set  !! "elem3"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Initials_Mech9" "initials_mech9" V1
+		values_x array-1 none 2 3
+			array-1 double 2 0
+INF
+INF
+			array-1 double 2 0
+INF
+INF
+			double 0
+			int 2
+			int 2
+			DEF "<COL> 0 length~mm <COL> 1 velocity~m_s"
+		values_xyz array-1 none 2 3
+			array-1 double 4 0
+0
+0
+0
+0
+			array-1 double 4 0
+0
+0
+0
+0
+			double 0
+			int 4
+			int 2
+			DEF "<COL> 0 length~mm <COL> 1 velocity~m_s"
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Volume" "volume" Cpp res/cpp/volume Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Volume" "volume" V1
+		name string "Volume"
+		VOLU double 300 "volume~mm3"
+		0_version int 999
+		0_bits int 2
+		_C_ "FluidPE" "pf" V1
+			0_type string "class"
+			fluidtype array-1 none 0 3
+				string "Diesel fuel"
+				int 1
+				int 1
+				DEF
+			0_value int -1
+			0_bits int 2
+			_C_ "Struct" "lfp" V1
+				0_type string "struct"
+				0_value int 0
+				fluid string ""
+				temperature double INF "temperature~K"
+			..
+			_C_ "Struct" "convar" V1
+				0_type string "struct"
+				0_value int 1
+			..
+			_C_ "Struct" "alt" V1
+				0_type string "struct"
+				0_value int 0
+				elasticity double 0 "strength~N_mm2"
+				density double 0 "density~kg_m3"
+				viscosity double 0 "kin_visc~cSt~mm2_s"
+				tension double INF "lin_stiff~N_mm"
+				refpress double 1 "pressure~bar"
+			..
+			_C_ "Struct" "altvar" V1
+				0_type string "struct"
+				0_value int 0
+				list array-1 none 5 0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					DEF "<COL> 0 pressure~bar <COL> 1 strength~N_mm2 <COL> 2 density~kg_m3 <COL> 3 kin_visc~cSt~mm2_s <COL> 4 lin_stiff~N_mm"
+				file_list string ""
+				aut_rel_list int 0
+				def_pat_list int 0
+				emod_calc int 0
+			..
+		..
+		_C_ "Struct" "cavit" V1
+			0_type string "struct"
+			0_value int 1
+			PLIM double 0.001 "pressure~bar"
+			CAVO double 0 "volume~mm3"
+		..
+		_C_ "Struct" "heatr" V1
+			0_type string "struct"
+			0_value int 0
+			HETR double INF "heat_transf_coeff~W_m2K"
+			AREA double INF "area~mm2"
+			TOUT double 20 "temperature~degC"
+		..
+	..
+..
+__
+ADDON ASE  "Initials_Hydr1" "initials_hydr1" Cpp res/cpp/initials Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Initials_Hydr1" "initials_hydr1" V1
+		values array-1 none 2 3
+			array-1 double 1 0
+100
+			array-1 double 1 0
+20
+			double INF
+			int 1
+			int 2
+			DEF "<COL> 0 pressure~bar <COL> 1 temperature~degC"
+		0_version int 999
+		0_bits int 2
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Volume Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		A_10 int 0
+		A_11 int 0
+		A_12 int 0
+		A_13 int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Volume Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 1
+		A_2 int 1
+		A_3 int 0
+		A_4 int 1
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		A_10 int 0
+		A_11 int 0
+		A_12 int 0
+		A_13 int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Modifications" "modifications" CppSelectionNClass hydsim.reals_Volume Modify modify Cpp res/cpp/modify Set  !! "elem4"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Modifications" "modifications" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		0_version int 999
+		_C_ "Modify" "B_0" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_1" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_2" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+	..
+..
+__
+ADDON ASE  "Orifice" "orifice" Cpp res/cpp/orifice Set  !! "elem5"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Orifice" "orifice" V1
+		name string "Orifice"
+		AorD int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+		_C_ "FluidPE" "pf" V1
+			0_type string "class"
+			fluidtype array-1 none 0 3
+				string "Diesel fuel"
+				int 1
+				int 1
+				DEF
+			0_value int -1
+			0_bits int 2
+			_C_ "Struct" "lfp" V1
+				0_type string "struct"
+				0_value int 0
+				fluid string ""
+				temperature double INF "temperature~K"
+			..
+			_C_ "Struct" "convar" V1
+				0_type string "struct"
+				0_value int 1
+			..
+			_C_ "Struct" "alt" V1
+				0_type string "struct"
+				0_value int 0
+				elasticity double 0 "strength~N_mm2"
+				density double 0 "density~kg_m3"
+				viscosity double 0 "kin_visc~cSt~mm2_s"
+				tension double INF "lin_stiff~N_mm"
+				refpress double 1 "pressure~bar"
+			..
+			_C_ "Struct" "altvar" V1
+				0_type string "struct"
+				0_value int 0
+				list array-1 none 5 0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					DEF "<COL> 0 pressure~bar <COL> 1 strength~N_mm2 <COL> 2 density~kg_m3 <COL> 3 kin_visc~cSt~mm2_s <COL> 4 lin_stiff~N_mm"
+				file_list string ""
+				aut_rel_list int 0
+				def_pat_list int 0
+				emod_calc int 0
+			..
+		..
+		_C_ "Struct" "orif_area" V1
+			0_type string "struct"
+			csect array-1 none 2 3
+				array-1 double 1 0
+1
+				array-1 double 1 0
+1
+				double 0
+				int 1
+				int 2
+				DEF "<ROW> 0 area~mm2"
+		..
+		_C_ "Struct" "orif_diam" V1
+			0_type string "struct"
+			cdiam array-1 none 2 3
+				array-1 double 1 0
+INF
+				array-1 double 1 0
+INF
+				double 0
+				int 1
+				int 2
+				DEF "<ROW> 0 length~mm"
+		..
+		_C_ "Struct" "constres" V1
+			0_type string "struct"
+			0_value int 1
+			FLOW int 0
+			fres_new double 1 "dimensionless~no"
+			Qmax double 0 "volflow~mm3_s"
+			prec double 10 "pressure~MPa"
+			fres_cal double 1
+		..
+		_C_ "Struct" "varres" V1
+			0_type string "struct"
+			0_value int 0
+			rescoef array-1 none 2 3
+				array-1 double 3 0
+0
+0
+0
+				array-1 double 3 0
+0
+0
+0
+				double 0
+				int 3
+				int 2
+				DEF "<COL> 0 dimensionless~no <COL> 1 dimensionless~no"
+			file_rescoef string ""
+			aut_rel_rescoef int 0
+			def_pat_rescoef int 0
+		..
+		_C_ "Struct" "extcont" V1
+			0_type string "struct"
+			0_value int 0
+			CONDATA array-1 none 2 3
+				array-1 double 3 0
+0
+0.5
+1
+				array-1 double 3 0
+0
+1
+0.5
+				double 0
+				int 3
+				int 2
+				DEF "<ROW> 0 area~mm2 <ROW> 1 dimensionless~no <ROW> 2 dimensionless~no"
+		..
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Orifice Set  !! "elem5"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Orifice Set  !! "elem5"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Store" "store" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 1
+		A_3 int 0
+		A_4 int 1
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Modifications" "modifications" CppSelectionNClass hydsim.reals_Orifice Modify modify Cpp res/cpp/modify Set  !! "elem5"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Modifications" "modifications" V1
+		A_0 int 0
+		A_1 int 0
+		A_2 int 0
+		A_3 int 0
+		A_4 int 0
+		A_5 int 0
+		A_6 int 0
+		A_7 int 0
+		A_8 int 0
+		A_9 int 0
+		A_10 int 0
+		0_version int 999
+		_C_ "Modify" "B_0" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_1" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_2" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_3" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_4" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_5" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_6" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_7" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_8" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_9" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+		_C_ "Modify" "B_10" V1
+			SHIF double 0 "simtime~s"
+			xfac double 1
+			0_value_xfac int 1
+			table array-1 none 2 3
+				array-1 double 2 0
+0
+0
+				array-1 double 2 0
+0
+0
+				double 0
+				int 2
+				int 2
+				DEF "<COL> 0 simtime~s"
+		..
+	..
+..
+__
+ADDON ASE  "Boundary_Pressure" "boundary_pressure" Cpp res/cpp/bndpres Set  !! "elem6"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Boundary_Pressure" "boundary_pressure" V1
+		name string "Pressure"
+		SHIF double 0 "simtime~s"
+		xfac double 1
+		0_value_xfac int 1
+		cdec int 0
+		table array-1 none 3 5
+			array-1 double 4 0
+0
+0.001
+0.0015
+0.006
+			array-1 double 4 0
+10
+10
+0.1
+0.1
+			array-1 double 4 0
+20
+20
+20
+20
+			double 0
+			int 1
+			int 3
+			array-1 
+			array-1 none 3 0
+				wrapper ASEClass
+				_C_ "noname" "noname" V1
+					valid int 1
+					keys array-1 none 5 0
+						string "key_id"
+						string "key_file"
+						string "key_label"
+						string "key_start"
+						string "key_end"
+						DEF
+					specs array-1 none 5 0
+						string "ASCII"
+						string "D:\Hydsim\v4.5.4\Test\hydsim/contact_test_pressure.dat"
+						string "Col 1"
+						int -1
+						int -1
+						DEF
+				..
+
+				wrapper ASEClass
+				_C_ "noname" "noname" V1
+					valid int 1
+					keys array-1 none 5 0
+						string "key_id"
+						string "key_file"
+						string "key_label"
+						string "key_start"
+						string "key_end"
+						DEF
+					specs array-1 none 5 0
+						string "ASCII"
+						string "D:\Hydsim\v4.5.4\Test\hydsim/contact_test_pressure.dat"
+						string "Col 2"
+						int -1
+						int -1
+						DEF
+				..
+
+				wrapper 
+			DEF "<COL> 0 simtime~s <COL> 1 pressure~MPa <COL> 2 temperature~degC"
+		file_table string "D:\Hydsim\v4.5.4\Test\hydsim\contact_test_pressure.dat"
+		aut_rel_table int 0
+		def_pat_table int 0
+		0_version int 999
+		0_bits int 2
+		file_mod_time long 1196263096
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Show" "show" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem6"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Show" "show" V1
+		A_0 int 0
+		A_1 int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Store" "store" CppSelectionN hydsim.results_Boundary_Pressure Set  !! "elem6"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Store" "store" V1
+		A_0 int 1
+		A_1 int 0
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+	..
+..
+__
+ADDON ASE  "Mech_Connection" "mech_connection" Cpp res/cpp/mechcon Set  !! "line1"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Mech_Connection" "mech_connection" V1
+		name string "Spring/Damper"
+		dir int 0
+		0_page string "force"
+		VECT array-1 none 3 3
+			array-1 double 1 0
+1
+			array-1 double 1 0
+0
+			array-1 double 1 0
+0
+			double 0
+			int 1
+			int 3
+			DEF
+		0_version int 999
+		0_bits int 2
+		_C_ "MLForce" "force" V1
+			0_type string "class"
+			0_value int -1
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 1
+				data double 100 "force~N"
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 0
+				data array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 force~N"
+			..
+		..
+		_C_ "MLStiffness" "stiff" V1
+			0_type string "class"
+			0_value int -1
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 1
+				data double 200 "lin_stiff~N_mm"
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 0
+				data array-1 none 2 3
+					array-1 double 0 0
+					array-1 double 0 0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 lin_stiff~N_mm"
+			..
+		..
+		_C_ "MLDamping" "damp" V1
+			0_type string "class"
+			0_value int -1
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 1
+				data double 2 "lin_damping~Ns_m"
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 0
+				dep int 0
+				data array-1 none 2 3
+					array-1 double 1 0
+0
+					array-1 double 1 0
+0
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 lin_damping~Ns_m"
+			..
+		..
+		_C_ "MLArea" "area" V1
+			0_type string "class"
+			0_value int 0
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 1
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 0
+				data array-1 none 3 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 3
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2 <COL> 2 area~mm2"
+				InputAreaFlag int 0
+				OutputAreaFlag int 0
+			..
+		..
+	..
+..
+__
+ADDON ASE  "Mech_Connection" "mech_connection" Cpp res/cpp/mechcon Set  !! "line2"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Mech_Connection" "mech_connection" V1
+		name string "Contact"
+		dir int 0
+		0_page string "force"
+		VECT array-1 none 3 3
+			array-1 double 1 0
+1
+			array-1 double 1 0
+0
+			array-1 double 1 0
+0
+			double 0
+			int 1
+			int 3
+			DEF
+		0_version int 999
+		0_bits int 2
+		_C_ "MLForce" "force" V1
+			0_type string "class"
+			0_value int -1
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 0
+				data double 100 "force~N"
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 1
+				data array-1 none 2 3
+					array-1 double 4 0
+-1.5
+0
+0.0001
+1.5
+					array-1 double 4 0
+0
+0
+100
+100
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 force~N"
+			..
+		..
+		_C_ "MLStiffness" "stiff" V1
+			0_type string "class"
+			0_value int -1
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 0
+				data double INF "lin_stiff~N_mm"
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 1
+				data array-1 none 2 3
+					array-1 double 4 0
+-1.5
+0
+0.0001
+1.5
+					array-1 double 4 0
+0
+0
+100000
+100000
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 lin_stiff~N_mm"
+			..
+		..
+		_C_ "MLDamping" "damp" V1
+			0_type string "class"
+			0_value int -1
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 0
+				data double 0 "lin_damping~Ns_m"
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 1
+				dep int 0
+				data array-1 none 2 3
+					array-1 double 4 0
+-1.5
+0
+0.0001
+1.5
+					array-1 double 4 0
+0
+0
+100
+100
+					double 0
+					int 1
+					int 2
+					DEF "<COL> 0 length~mm <COL> 1 lin_damping~Ns_m"
+			..
+		..
+		_C_ "MLArea" "area" V1
+			0_type string "class"
+			0_value int 0
+			_C_ "Struct" "con" V1
+				0_type string "struct"
+				0_value int 1
+			..
+			_C_ "Struct" "var" V1
+				0_type string "struct"
+				0_value int 0
+				data array-1 none 3 3
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					array-1 double 2 0
+0
+0
+					double 0
+					int 2
+					int 3
+					DEF "<COL> 0 length~mm <COL> 1 area~mm2 <COL> 2 area~mm2"
+				InputAreaFlag int 0
+				OutputAreaFlag int 0
+			..
+		..
+	..
+..
+__
+ENDSECTION
+SECTION GLOBAL_ADDON
+ADDON ASE  "Fluids" "fluids" Cpp res/cpp/fluids.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Fluids" "fluids" V1
+		fluidtype array-1 none 0 0
+			DEF
+		spec_het double 1960 "spec_heat~J_kgK"
+		therm_exp double 0.001 "heat_expan_coeff~1_K"
+		therm_con double 0.145 "conductivity~W_mK"
+		ref_temp double 293.15 "temperature~K"
+		0_version int 999
+		0_ok int 1
+		0_bits int 2
+		_C_ "Struct" "pdb" V1
+			0_type string "struct"
+			0_value int 0
+			fluid string ""
+			temperature double INF "temperature~K"
+		..
+		_C_ "Struct" "var" V1
+			0_type string "struct"
+			0_value int 0
+			list array-1 none 5 0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				array-1 double 1 0
+0
+				DEF "<COL> 0 pressure~bar <COL> 1 strength~N_m2 <COL> 2 density~kg_m3 <COL> 3 kin_visc~mm2_s~mm2_s <COL> 4 lin_stiff~N_mm"
+			file_list string ""
+			aut_rel_list int 0
+			def_pat_list int 0
+			emod_calc int 0
+		..
+		_C_ "Struct" "con" V1
+			0_type string "struct"
+			0_value int 1
+			elasticity double 200 "strength~N_mm2~N_mm2"
+			density double 150 "density~kg_m3"
+			viscosity double 3 "kin_visc~mm2_s~mm2_s"
+			tension double 2.9e-005 "lin_stiff~N_mm"
+			refpress double 1 "pressure~bar"
+		..
+		_C_ "VogelDV" "dyn_visc" V1
+			0_type string "class"
+			Vogel_B double 0 "temperature~K"
+			Vogel_C double 0 "temperature~K"
+		..
+	..
+..
+__
+ADDON ASE  "Numerics" "numerics" Cpp res/cpp/numerics.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "Numerics" "numerics" V1
+		0_version int 999
+		0_bits int 2
+		0_ok int 1
+		_C_ "Struct" "main" V1
+			0_type string "struct"
+			basis int 0
+			rspeed double 1000 "ang_vel~rpm~rpm"
+			0_value int 0
+			_C_ "Struct" "engine_speed" V1
+				0_type string "struct"
+				0_value int 0
+				etype int 1
+				fixed_ratio int 1
+				espeed double 0 "ang_vel~rpm~rpm"
+				start double 0 "angle~deg~deg"
+				ref_crank int 0
+			..
+		..
+		_C_ "Struct" "solver_options" V1
+			0_type string "struct"
+			solver_type int 0
+			_C_ "Struct" "no_label" V1
+				0_type string "struct"
+				error_type int 2
+				vs_tolerance double 1e-005
+				max_time_step double 1e+030 "time~s"
+				0_value_max_time_step int 0
+				ini_time_step double 1e-007 "time~s"
+				0_value_ini_time_step int 0
+				calc_end_time double 0.006 "time~s"
+				num_store_values double 600
+			..
+			_C_ "Struct" "cc" V1
+				0_type string "struct"
+				0_value int 1
+				cc_step double 5e-008 "time~s"
+				cc_time double 0.006 "time~s"
+				cc_values double 600
+			..
+			_C_ "Struct" "vc" V1
+				0_type string "struct"
+				0_value int 0
+				_C_ "VarCalcStep" "table" V1
+					0_type string "class"
+					list array-1 none 3 3
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						array-1 double 2 0
+0
+0
+						double 0
+						int 2
+						int 3
+						DEF "<COL> 0 time~s <COL> 1 time~s"
+					0_value int 0
+				..
+			..
+			_C_ "Struct" "restart" V1
+				0_type string "struct"
+				restart_calculation int 0
+				rst_intrvl int 0
+				0_value_rst_intrvl int 0
+			..
+		..
+		_C_ "Struct" "out" V1
+			0_type string "struct"
+			solmap int 0
+			runtime int 1
+			output int 0
+			0_value int 0
+		..
+	..
+..
+__
+ADDON ASE  "ShowLog" "showlog" Cpp res/cpp/showlog.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "ShowLog" "showlog" V1
+		list array-1 double 0 3
+			string ""
+			int 1
+			int 1
+			DEF
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Animate_Nozzle_Flow_CR_22" "CR_22" Cpp res/cpp/animate_nozzle_flow.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "Animate_Nozzle_Flow_CR_22" "CR_22" V1
+		table array-1 none 4 3
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			string ""
+			int 1
+			int 4
+			DEF
+		active int 1
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "Animate_Nozzle_Flow_UI_SID" "UI_SID" Cpp res/cpp/animate_nozzle_flow.h  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "Animate_Nozzle_Flow_UI_SID" "UI_SID" V1
+		table array-1 none 3 3
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			array-1 none 1 0
+				string ""
+			string ""
+			int 1
+			int 3
+			DEF
+		active int 1
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "HydMode" "hydmode" Cpp res/cpp/mode.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "HydMode" "hydmode" V1
+		flow int 0
+		conn int 1
+		Q_recalc int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "BoundaryCycling" "boundarycycling" Cpp res/cpp/boundary_cycling.h Set  !! "global"
+_C_ "noname" "noname" V1
+	set int 1
+	0_version int 999
+	_C_ "BoundaryCycling" "boundarycycling" V1
+		bhyd int 0
+		bmch int 0
+		bhmc int 0
+		bgas int 0
+		tfat int 0
+		tgas int 0
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "ViewLogfile" "viewlogfile" Cpp $(AWS_HOME)/clients/common/res/cpp/viewlogfile  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "ViewLogfile" "viewlogfile" V1
+		list array-1 none 0 0
+			DEF
+		onlineView int 1
+		0_version int 999
+		_C_ "Struct" "status" V1
+			0_type string "struct"
+			case int 0
+			state string ""
+			progress string ""
+			cpuTime string ""
+			processID string ""
+		..
+		_C_ "Struct" "s_task" V1
+			0_type string "struct"
+			taskRadio int 0
+			taskCombo int 0
+		..
+	..
+..
+__
+ADDON ASE  "JobStatus" "jobstatus" Cpp $(AWS_HOME)/clients/common/res/cpp/jobstatus  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "JobStatus" "jobstatus" V1
+		caseList array-1 none 2 3
+			array-1 none 0 0
+			array-1 none 0 0
+			string ""
+			int 1
+			int 2
+			DEF
+		state string ""
+		progress string ""
+		cpuTime string ""
+		processID string ""
+		0_version int 999
+	..
+..
+__
+ADDON ASE  "ReferencedSpecies" "referenced_species"  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "ReferencedSpecies" "referenced_species" V1
+	..
+..
+__
+ADDON ASE  "LocalPart" "local_part"  !! "global"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "LocalPart" "local_part" V1
+	..
+..
+__
+ENDSECTION
+SECTION CONTEXT_ADDON
+ADDON ASE  "Macro" "macro" Cpp res/cpp/macro.h  !! "context"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 999
+	_C_ "Macro" "macro" V1
+		TITLE string ""
+		CUSTOMER_LOGO string ""
+		0_version int 999
+		TITLE1 string ""
+		TITLE2 string ""
+		COMMENT string ""
+		REPORT string ""
+		HEADER string ""
+		FIGURE string ""
+		AVL_LOGO string ""
+	..
+..
+__
+ENDSECTION

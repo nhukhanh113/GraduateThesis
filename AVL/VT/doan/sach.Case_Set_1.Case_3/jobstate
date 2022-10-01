@@ -1,0 +1,21 @@
+[state]
+  state    failed
+  task     "simulation"
+  msg      "Simulation"
+  origin   "job starter"
+
+[progress]
+  progress 0
+
+[time]
+  cpuTime        0.00
+  wallClockTime  0.00
+
+[processInfo]
+  submission AWSQueue
+  pid      4992
+  jobid    0
+  queue    JMS
+  port     0
+
+[end]
